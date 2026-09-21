@@ -211,7 +211,18 @@
   .hero-bg video{ width:100%; height:100%; object-fit:cover; display:block; }
 
   /* the poster word, sandwiched between the sky and the cut-out skyline */
-  .hero-type{ position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+  .hero-type{
+    position:absolute; inset:0; width:100%; height:100%; overflow:visible;
+    /* Nothing may paint below the skyline cut-out. .hero-city spans
+       23.6111%..65.2778% of the frame, but its alpha only reaches full
+       coverage at row 260 of 300 and the last 26 rows are empty — so a
+       letter riding past that band pops out over the moving water with
+       nothing left to hide it. Clip inside the fully opaque band (row
+       260 -> 23.6111 + 41.6667*260/300 = 59.72%) so the straight cut is
+       buried in solid building pixels. Extending the cut-out instead
+       would paint a frozen still over water and people that move. */
+    clip-path:inset(0 0 40.28% 0);
+  }
   .hero-type text{
     font-family:'Poppins', sans-serif;
     font-weight:200;
