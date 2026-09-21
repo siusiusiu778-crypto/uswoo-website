@@ -335,6 +335,11 @@
     '  opacity:.35;transition:border-color .12s,opacity .12s}' +
     ':host([data-over]) .ring{border-color:#c96442;opacity:1}' +
     ':host([data-filled]) .ring{display:none}' +
+    // The dashed ring is EDITING chrome — a drop target hint for the design
+    // canvas. A deployed page has no drop target, so it must never paint
+    // there: without this gate every slot flashes a dashed box for as long
+    // as the sidecar + photo take to arrive, which reads as a render bug.
+    ':host(:not([data-editable])) .ring{display:none}' +
     // Controls overlay INSIDE the frame, pinned to the top-right corner, so
     // a full-bleed slot in an overflow:hidden container still shows them
     // (the old below-mask placement got clipped). Credit sits bottom-left,
