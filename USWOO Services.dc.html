@@ -28,7 +28,7 @@
   header.nav.scrolled{ background:color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
   .nav-inner{ max-width:1180px; margin:0 auto; padding:18px clamp(20px, 5vw, 56px); display:flex; align-items:center; justify-content:space-between; gap:24px; }
   .wordmark{ font-family:'Poppins', sans-serif; font-weight:700; font-size:1.3rem; letter-spacing:0.01em; color:var(--hero-ink); text-decoration:none; white-space:nowrap; transition:color 0.3s ease; }
-  .scrolled .wordmark{ color:var(--ink); } .wordmark span{ color:var(--pink); }
+  .scrolled .wordmark{ color:var(--ink); }
   nav.links{ display:flex; gap:clamp(12px, 1.8vw, 22px); align-items:center; overflow-x:auto; scrollbar-width:none; }
   nav.links::-webkit-scrollbar{ display:none; }
   nav.links a{ color:var(--hero-ink-soft); text-decoration:none; font-size:0.86rem; font-weight:500; white-space:nowrap; padding:4px 2px; border-bottom:1px solid transparent; transition:color 0.3s ease, border-color 0.15s ease; }
@@ -84,7 +84,6 @@
   .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
   .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
   .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
-  .footer-word .wm span{ color:var(--pink); }
   @media (max-width: 560px){ .footer-top{ flex-direction:column; } }
 
   .svc-hero{ padding:clamp(40px,6vw,64px) 0 clamp(56px,8vw,88px); }
@@ -147,7 +146,7 @@
 </style><script src="./image-slot.js?v=2"></script></helmet>
 <header class="nav scrolled" id="siteNav">
   <div class="nav-inner">
-    <a class="wordmark" href="./USWOO Home.dc.html">USWOO<span>.</span></a>
+    <a class="wordmark" href="./USWOO Home.dc.html">USWOO</a>
     <nav class="links">
       <a href="./USWOO Services.dc.html" class="active">Services</a>
       <a href="./USWOO City Guides.dc.html">City Guides</a>
@@ -324,7 +323,7 @@
       </div>
     </div>
     <div class="footer-word">
-      <div class="wm">USWOO<span>.</span></div>
+      <div class="wm">USWOO</div>
     </div>
   </div>
 </footer>
