@@ -72,8 +72,6 @@
   .press-feature{ display:flex; flex-direction:column; text-decoration:none; }
   .press-feature-media{ position:relative; aspect-ratio:16/11; border-radius:14px; overflow:hidden; }
   .press-feature-media image-slot{ border-radius:14px; }
-  .press-pill{ position:absolute; left:16px; bottom:16px; z-index:2; display:inline-flex; align-items:center; gap:7px; background:rgba(20,20,20,0.55); backdrop-filter:blur(6px); color:#fff; font-size:0.76rem; font-weight:600; letter-spacing:0.02em; padding:6px 14px 6px 10px; border-radius:99px; }
-  .press-pill::before{ content:''; width:7px; height:7px; border-radius:50%; background:var(--pink); flex:none; }
   .press-feature-body{ padding-top:20px; display:flex; flex-direction:column; gap:10px; }
   .press-feature-meta{ display:flex; align-items:center; gap:10px; font-size:0.8rem; color:var(--ink-faint); }
   .press-feature-meta .src{ font-weight:700; color:var(--ink-soft); letter-spacing:0.03em; text-transform:uppercase; }
@@ -89,7 +87,8 @@
   .press-side-tags .src{ font-weight:700; color:var(--ink-soft); letter-spacing:0.03em; text-transform:uppercase; }
   .press-side-media{ width:64px; aspect-ratio:1/1; flex:none; border-radius:10px; overflow:hidden; }
   .press-side-media image-slot{ border-radius:10px; }
-  .press-icon{ width:44px; height:44px; border-radius:50%; background:#fff; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; flex:none; font-size:1.2rem; }
+  .press-icon svg{ width:20px; height:20px; }
+  .press-icon{ width:44px; height:44px; border-radius:50%; background:#fff; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; flex:none; }
   @media (max-width:860px){ .press-grid{ grid-template-columns:1fr; gap:40px; } }
 
   /* Renter stories — founders-corner style carousel */
@@ -157,7 +156,6 @@
         <a class="press-feature" href="#featured-press">
           <div class="press-feature-media">
             <image-slot id="press-feature-img" shape="rounded" radius="14" placeholder="Featured press photo" src="https://images.unsplash.com/photo-1516149893016-813d9a01d5d3?auto=format&fit=crop&w=1200&q=80" credit="Photo by Devin Avery on Unsplash" credit-href="https://unsplash.com/@devintavery" style="width:100%;height:100%"></image-slot>
-            <span class="press-pill">Featured</span>
           </div>
           <div class="press-feature-body">
             <div class="press-feature-meta"><span class="src">INMAN</span><span>·</span><span>Jun 10, 2025</span></div>
@@ -216,7 +214,6 @@
         <a class="media-card story-card" href="#renter-stories">
           <div class="media-card-media">
             <image-slot id="story-img-1" shape="rounded" radius="8" placeholder="First apartment" src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=700&q=80" credit="Marcus Loke" credit-href="https://unsplash.com/@marcusloke" style="width:100%;height:100%"></image-slot>
-            <span class="press-pill">First Apartment</span>
           </div>
           <div class="media-card-body">
             <h3>From campus to first apartment</h3>
@@ -227,7 +224,6 @@
         <a class="media-card story-card" href="#renter-stories">
           <div class="media-card-media">
             <image-slot id="story-img-2" shape="rounded" radius="8" placeholder="Moving cities" src="https://images.unsplash.com/photo-1772724317350-520faccb15e6?auto=format&fit=crop&w=700&q=80" credit="Apartment Life" credit-href="https://unsplash.com/@apartmentlife" style="width:100%;height:100%"></image-slot>
-            <span class="press-pill">Move-in Experience</span>
           </div>
           <div class="media-card-body">
             <h3>Moving cities made easier</h3>
@@ -238,7 +234,6 @@
         <a class="media-card story-card" href="#renter-stories">
           <div class="media-card-media">
             <image-slot id="story-img-3" shape="rounded" radius="8" placeholder="Cozy living room" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=700&q=80" credit="Minh Pham" credit-href="https://unsplash.com/@minhphamdesign" style="width:100%;height:100%"></image-slot>
-            <span class="press-pill">Renewal &amp; Next Move</span>
           </div>
           <div class="media-card-body">
             <h3>Finding a better fit</h3>
@@ -273,7 +268,7 @@
 
       <div class="moments-row">
         <div class="moment-item">
-          <div class="press-icon">📍</div>
+          <div class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
           <div>
             <h4>New City Launches</h4>
             <p>Expanding our footprint across key U.S. cities.</p>
@@ -281,7 +276,7 @@
           </div>
         </div>
         <div class="moment-item">
-          <div class="press-icon">🤝</div>
+          <div class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.2 13.8a5 5 0 0 0 7.1 0l2.3-2.3a5 5 0 0 0-7.1-7.1l-1.3 1.3"/><path d="M13.8 10.2a5 5 0 0 0-7.1 0l-2.3 2.3a5 5 0 0 0 7.1 7.1l1.3-1.3"/></svg></div>
           <div>
             <h4>New Partnerships</h4>
             <p>Stronger collaborations that create more value.</p>
@@ -289,7 +284,7 @@
           </div>
         </div>
         <div class="moment-item">
-          <div class="press-icon">🏅</div>
+          <div class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.4 7.4 21l4.6-2.7 4.6 2.7-1.2-7.6"/></svg></div>
           <div>
             <h4>Industry Recognition</h4>
             <p>Honored to be acknowledged by leading organizations.</p>
