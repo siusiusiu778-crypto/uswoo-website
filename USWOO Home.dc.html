@@ -217,11 +217,32 @@
     font-weight:200;
     font-size:256px;
     letter-spacing:0.05em;
-    text-anchor:middle;
+    text-anchor:start;
     fill:#FFFFFF;
     fill-opacity:0.93;
   }
   .hero-type g{ transform-box:view-box; transform-origin:640px 378px; }
+
+  /* The letters lift out from behind the cut-out skyline one after another.
+     150 viewBox units puts a glyph's cap below the roofline at the start, so
+     the opaque buildings hide it until it clears them. The translate rides
+     the parent <g>'s responsive scale, so the travel shrinks with the type. */
+  @keyframes hero-letter-rise{
+    from{ transform:translateY(150px); opacity:0; }
+    to  { transform:translateY(0);     opacity:1; }
+  }
+  .hero-type text{
+    opacity:0;
+    animation:hero-letter-rise 1.05s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  }
+  .hero-type text:nth-of-type(1){ animation-delay:0.20s; }
+  .hero-type text:nth-of-type(2){ animation-delay:0.35s; }
+  .hero-type text:nth-of-type(3){ animation-delay:0.50s; }
+  .hero-type text:nth-of-type(4){ animation-delay:0.65s; }
+  .hero-type text:nth-of-type(5){ animation-delay:0.80s; }
+  @media (prefers-reduced-motion:reduce){
+    .hero-type text{ animation:none; opacity:1; }
+  }
 
   /* the skyline, matted out of the same footage, laid back over the word */
   .hero-city{
@@ -447,7 +468,13 @@
           <source src="./assets/uswoo-hero-video.mp4" type="video/mp4">
         </video>
         <svg class="hero-type" viewBox="0 0 1280 720" preserveAspectRatio="none" focusable="false">
-          <g><text x="692" y="396">USWOO</text></g>
+          <g>
+            <text x="185.39" y="396">U</text>
+            <text x="363.30" y="396">S</text>
+            <text x="517.92" y="396">W</text>
+            <text x="768.53" y="396">O</text>
+            <text x="983.57" y="396">O</text>
+          </g>
         </svg>
         <img class="hero-city" src="./assets/uswoo-hero-city.webp" alt="" decoding="async">
       </div>
