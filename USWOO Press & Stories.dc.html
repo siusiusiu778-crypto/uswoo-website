@@ -85,8 +85,10 @@
   .press-side-tags .src{ font-weight:700; color:var(--ink-soft); letter-spacing:0.03em; text-transform:uppercase; }
   .press-side-media{ width:64px; aspect-ratio:1/1; flex:none; border-radius:10px; overflow:hidden; }
   .press-side-media image-slot{ border-radius:10px; }
+  /* icon sits beside the heading, on its line — no framing */
+  .icon-head{ display:flex; align-items:center; gap:10px; }
+  .press-icon{ display:flex; flex:none; color:var(--ink); }
   .press-icon svg{ width:20px; height:20px; }
-  .press-icon{ width:44px; height:44px; border-radius:50%; background:#fff; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; flex:none; }
   @media (max-width:860px){ .press-grid{ grid-template-columns:1fr; gap:40px; } }
 
   /* Renter stories — founders-corner style carousel */
@@ -121,8 +123,7 @@
 
   /* Brand moments */
   .moments-row{ margin-top:36px; display:grid; grid-template-columns:repeat(3, 1fr); gap:32px; }
-  .moment-item{ display:flex; gap:16px; align-items:flex-start; }
-  .moment-item .press-icon{ margin-top:2px; }
+  .moment-item{ display:block; }
   .moment-item h4{ font-family:'Poppins', sans-serif; font-weight:600; font-size:1.02rem; }
   .moment-item p{ margin-top:6px; color:var(--ink-soft); font-size:0.88rem; }
   .moment-item .link-arrow{ margin-top:10px; font-size:0.82rem; }
@@ -266,28 +267,28 @@
 
       <div class="moments-row">
         <div class="moment-item">
-          <div class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-          <div>
+          <div class="icon-head">
+            <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
             <h4>New City Launches</h4>
-            <p>Expanding our footprint across key U.S. cities.</p>
-            <span class="link-arrow">See Where We Are →</span>
           </div>
+          <p>Expanding our footprint across key U.S. cities.</p>
+          <span class="link-arrow">See Where We Are →</span>
         </div>
         <div class="moment-item">
-          <div class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.2 13.8a5 5 0 0 0 7.1 0l2.3-2.3a5 5 0 0 0-7.1-7.1l-1.3 1.3"/><path d="M13.8 10.2a5 5 0 0 0-7.1 0l-2.3 2.3a5 5 0 0 0 7.1 7.1l1.3-1.3"/></svg></div>
-          <div>
+          <div class="icon-head">
+            <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.2 13.8a5 5 0 0 0 7.1 0l2.3-2.3a5 5 0 0 0-7.1-7.1l-1.3 1.3"/><path d="M13.8 10.2a5 5 0 0 0-7.1 0l-2.3 2.3a5 5 0 0 0 7.1 7.1l1.3-1.3"/></svg></span>
             <h4>New Partnerships</h4>
-            <p>Stronger collaborations that create more value.</p>
-            <span class="link-arrow">See Our Partners →</span>
           </div>
+          <p>Stronger collaborations that create more value.</p>
+          <span class="link-arrow">See Our Partners →</span>
         </div>
         <div class="moment-item">
-          <div class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.4 7.4 21l4.6-2.7 4.6 2.7-1.2-7.6"/></svg></div>
-          <div>
+          <div class="icon-head">
+            <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.4 7.4 21l4.6-2.7 4.6 2.7-1.2-7.6"/></svg></span>
             <h4>Industry Recognition</h4>
-            <p>Honored to be acknowledged by leading organizations.</p>
-            <span class="link-arrow">About USWOO →</span>
           </div>
+          <p>Honored to be acknowledged by leading organizations.</p>
+          <span class="link-arrow">About USWOO →</span>
         </div>
       </div>
     </div>
