@@ -1,0 +1,22 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/USWOO Home.dc.html" },
+    { "source": "/home", "destination": "/USWOO Home.dc.html" },
+    { "source": "/services", "destination": "/USWOO Services.dc.html" },
+    { "source": "/city-guides", "destination": "/USWOO City Guides.dc.html" },
+    { "source": "/press", "destination": "/USWOO Press & Stories.dc.html" },
+    { "source": "/about", "destination": "/USWOO About Us.dc.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*).dc.html",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/(support|image-slot).js",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;500;600;700&display=swap');
+  :root{
+    --paper: #FFFFFF; --paper-raised: #F6F5F3; --ink: #141414; --ink-soft: #656260; --ink-faint: #9C9894;
+    --line: #E7E4E0; --black: #0F0F0F; --pink: #B8860B; --pink-tint: #F6E9C9; --focus: #B8860B;
+    --hero-ink: #FFFFFF; --hero-ink-soft: #E7E3DE;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:'Inter', -apple-system, 'Segoe UI', sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3{ font-family:'Poppins', 'Inter', sans-serif; font-weight:600; text-wrap:balance; margin:0; line-height:1.12; }
+  a{ color:inherit; }
+  img,svg{ max-width:100%; display:block; } button{ font:inherit; }
+  .wrap{ max-width:1560px; margin:0 auto; padding:0 clamp(16px, 2.4vw, 32px); }
+  .eyebrow{ font-size:0.78rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); display:flex; align-items:baseline; gap:0.6em; }
+  .eyebrow .idx{ color:var(--pink); font-weight:700; }
+  header.nav{ position:sticky; top:0; z-index:40; background:color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+  .nav-inner{ max-width:1180px; margin:0 auto; padding:18px clamp(20px, 5vw, 56px); display:flex; align-items:center; justify-content:space-between; gap:24px; }
+  .wordmark{ font-family:'Poppins', sans-serif; font-weight:700; font-size:1.3rem; letter-spacing:0.01em; color:var(--ink); text-decoration:none; white-space:nowrap; }
+  .wordmark span{ color:var(--pink); }
+  nav.links{ display:flex; gap:clamp(12px, 1.8vw, 22px); align-items:center; overflow-x:auto; scrollbar-width:none; }
+  nav.links::-webkit-scrollbar{ display:none; }
+  nav.links a{ color:var(--ink-soft); text-decoration:none; font-size:0.86rem; font-weight:500; white-space:nowrap; padding:4px 2px; border-bottom:1px solid transparent; transition:color 0.3s ease, border-color 0.15s ease; }
+  nav.links a:hover, nav.links a:focus-visible{ color:var(--ink); border-bottom-color:var(--pink); }
+  nav.links a.active{ color:var(--ink); border-bottom-color:var(--pink); }
+  .nav-cta{ background:var(--black); color:#fff !important; font-size:0.85rem; font-weight:600; padding:10px 18px; border-radius:2px; text-decoration:none !important; border-bottom:none !important; white-space:nowrap; }
+  .nav-cta:hover{ opacity:0.85; }
+  .btn{ display:inline-flex; align-items:center; gap:10px; font-size:0.9rem; font-weight:600; padding:14px 26px; border-radius:2px; text-decoration:none; cursor:pointer; border:1px solid transparent; transition:transform 0.15s ease, opacity 0.15s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease; }
+  .btn:hover{ transform:translateY(-1px); }
+  .btn-primary{ background:var(--black); color:#fff; } .btn-primary:hover{ opacity:0.88; }
+  .btn-outline{ background:transparent; color:var(--ink); border-color:var(--line); }
+  .btn-outline:hover{ border-color:var(--ink-soft); }
+  .btn-row{ display:flex; gap:14px; flex-wrap:wrap; }
+  .link-arrow{ display:inline-flex; align-items:center; gap:8px; font-size:0.9rem; font-weight:600; text-decoration:none; color:var(--ink); border-bottom:1px solid var(--ink); padding-bottom:2px; }
+  .link-arrow:hover{ color:var(--pink); border-color:var(--pink); }
+  :focus-visible{ outline:2px solid var(--focus); outline-offset:3px; }
+  section{ padding:clamp(56px, 9vw, 100px) 0; }
+  .band-paper{ background:var(--paper); }
+  .band-raised{ background:var(--paper-raised); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .section-head{ max-width:640px; }
+  .section-head h2{ font-size:clamp(1.8rem, 3.6vw, 2.6rem); margin-top:12px; }
+  .section-head p.lede{ margin-top:16px; max-width:56ch; color:var(--ink-soft); font-size:1.02rem; }
+  footer{ background:var(--black); color:#fff; padding-top:48px; }
+  .footer-top{ display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.14); }
+  .footer-col{ min-width:200px; }
+  .footer-col .ft-label{ font-size:0.72rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px; }
+  .newsletter-form{ display:flex; align-items:flex-end; gap:10px; border-bottom:1px solid rgba(255,255,255,0.4); padding-bottom:8px; max-width:280px; }
+  .newsletter-form input{ flex:1; background:transparent; border:none; color:#fff; font-family:'Inter', sans-serif; font-size:0.92rem; padding:4px 0; }
+  .newsletter-form input::placeholder{ color:rgba(255,255,255,0.5); }
+  .newsletter-form input:focus{ outline:none; }
+  .newsletter-form button{ background:none; border:none; color:var(--pink); font-size:1.1rem; cursor:pointer; padding:0 2px 4px; }
+  .footer-links{ list-style:none; margin:0; padding:0; display:grid; gap:8px; }
+  .footer-links a{ text-decoration:none; font-size:0.9rem; color:rgba(255,255,255,0.82); transition:color 0.15s ease; }
+  .footer-links a:hover{ color:var(--pink); }
+  .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
+  .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
+  .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
+  .footer-word .wm span{ color:var(--pink); }
+  @media (max-width: 560px){ .footer-top{ flex-direction:column; } }
+
+  /* 01 Intro */
+  .about-intro{ padding-top:clamp(48px,7vw,72px); }
+  .about-intro-grid{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center; }
+  .about-intro-text h1{ font-size:clamp(2rem, 3.8vw, 2.8rem); }
+  .about-intro-text p{ margin-top:16px; max-width:44ch; color:var(--ink-soft); font-size:1rem; }
+  .about-intro-text .btn-row{ margin-top:26px; }
+  .about-intro-media{ position:relative; }
+  .about-intro-media image-slot{ aspect-ratio:5/4; }
+  .about-quote-card{ position:absolute; right:-24px; bottom:-28px; width:56%; background:#fff; border:1px solid var(--line); padding:22px 24px; box-shadow:0 18px 40px rgba(0,0,0,0.1); }
+  .about-quote-card .quote-mark{ font-family:'Poppins', serif; font-size:2.4rem; line-height:1; color:var(--pink); }
+  .about-quote-lines{ margin-top:12px; display:grid; gap:8px; }
+  .about-quote-lines span{ display:block; height:1px; background:var(--line); }
+  .about-quote-lines span:nth-child(1){ width:100%; } .about-quote-lines span:nth-child(2){ width:80%; } .about-quote-lines span:nth-child(3){ width:55%; }
+  .about-quote-attr{ margin-top:16px; font-size:0.86rem; color:var(--ink-soft); display:flex; align-items:center; gap:8px; }
+  .about-quote-attr::before{ content:'—'; }
+  @media (max-width:860px){ .about-intro-grid{ grid-template-columns:1fr; } .about-quote-card{ position:static; width:100%; margin-top:20px; box-shadow:none; } }
+
+  /* 02 Our story */
+  .story-media-wide{ margin-top:32px; aspect-ratio:21/8; }
+  .story-essentials{ margin-top:40px; display:grid; grid-template-columns:repeat(4, 1fr); gap:28px; }
+  .story-essential-item{ text-align:left; }
+  .story-essential-item .press-icon{ width:44px; height:44px; border-radius:50%; background:var(--paper-raised); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-size:1.15rem; }
+  .story-essential-item h4{ margin-top:14px; font-family:'Poppins', sans-serif; font-weight:600; font-size:0.98rem; }
+  .story-essential-item p{ margin-top:6px; color:var(--ink-soft); font-size:0.86rem; }
+  @media (max-width:860px){ .story-essentials{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:480px){ .story-essentials{ grid-template-columns:1fr; } }
+
+  /* 03 Timeline */
+  .timeline-track{ position:relative; margin-top:56px; display:grid; grid-template-columns:repeat(4, 1fr); gap:28px; }
+  .timeline-track::before{ content:''; position:absolute; top:-28px; left:0; right:0; height:1px; background:var(--line); }
+  .timeline-item{ position:relative; }
+  .timeline-dot{ position:absolute; top:-33px; left:0; width:10px; height:10px; border-radius:50%; background:var(--ink); }
+  .timeline-num{ position:absolute; top:-52px; left:-2px; font-size:0.76rem; font-weight:700; color:var(--ink-faint); }
+  .timeline-media{ aspect-ratio:4/3; }
+  .timeline-item h4{ margin-top:14px; font-family:'Poppins', sans-serif; font-weight:600; font-size:1rem; }
+  .timeline-item p{ margin-top:6px; color:var(--ink-soft); font-size:0.86rem; }
+  @media (max-width:860px){ .timeline-track{ grid-template-columns:1fr 1fr; row-gap:48px; } }
+  @media (max-width:480px){ .timeline-track{ grid-template-columns:1fr; } }
+
+  /* 05 CTA */
+  .cta-band{ text-align:center; }
+  .cta-band .wrap{ display:flex; flex-direction:column; align-items:center; }
+  .cta-band .eyebrow{ justify-content:center; }
+  .cta-band h2{ margin-top:14px; font-size:clamp(2rem, 4.2vw, 3rem); }
+  .cta-band .sub{ margin-top:14px; max-width:48ch; color:var(--ink-soft); }
+  .cta-essentials{ margin-top:36px; display:flex; gap:44px; flex-wrap:wrap; justify-content:center; }
+  .cta-essentials .story-essential-item{ max-width:220px; text-align:center; }
+  .cta-essentials .press-icon{ margin:0 auto; }
+  .cta-band .btn-row{ margin-top:34px; justify-content:center; }
+</style><script src="./image-slot.js"></script></helmet>
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a class="wordmark" href="./USWOO Home.dc.html">USWOO<span>.</span></a>
+    <nav class="links">
+      <a href="./USWOO Services.dc.html">Services</a>
+      <a href="./USWOO City Guides.dc.html">City Guides</a>
+      <a href="./USWOO Press &amp; Stories.dc.html">Press &amp; Stories</a>
+      <a href="./USWOO About Us.dc.html" class="active">About Us</a>
+    </nav>
+    <a class="nav-cta" href="./USWOO Home.dc.html#cta">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="about-intro band-paper">
+    <div class="wrap">
+      <div class="about-intro-grid">
+        <div class="about-intro-text">
+          <p class="eyebrow"><span class="idx">01</span> About USWOO</p>
+          <h1>Built around a better way to rent.</h1>
+          <p>USWOO started with a simple idea: renting in a new city should feel easier, more connected and more human.</p>
+          <p>Today, we help renters navigate homes, move-in services and local resources across multiple U.S. cities.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#our-story">Our Story →</a>
+          </div>
+        </div>
+        <div class="about-intro-media">
+          <image-slot id="about-intro-img" shape="rect" placeholder="USWOO team" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" credit="Dylan Gillis" credit-href="https://unsplash.com/@mainermedia" style="width:100%;height:100%"></image-slot>
+          <div class="about-quote-card">
+            <div class="quote-mark">”</div>
+            <div class="about-quote-lines"><span></span><span></span><span></span></div>
+            <div class="about-quote-attr">USWOO Team</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-raised" id="our-story">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow"><span class="idx">02</span> Our Story</p>
+        <h2>We started with renters. Then built around everything they needed.</h2>
+        <p class="lede">What began as leasing support has grown into a broader rental experience — connecting renters with homes, services and local partners before, during and after move-in.</p>
+      </div>
+
+      <div class="story-media-wide"><image-slot id="story-wide-img" shape="rect" placeholder="Team collaborating" src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=1600&q=80" credit="Redd Francisco" credit-href="https://unsplash.com/@reddfrancisco" style="width:100%;height:100%"></image-slot></div>
+
+      <div class="story-essentials">
+        <div class="story-essential-item">
+          <div class="press-icon">🏢</div>
+          <h4>Find the right home</h4>
+          <p>Leasing support across multiple cities.</p>
+        </div>
+        <div class="story-essential-item">
+          <div class="press-icon">🛋️</div>
+          <h4>Move in with ease</h4>
+          <p>Furniture, Wi-Fi, and essentials.</p>
+        </div>
+        <div class="story-essential-item">
+          <div class="press-icon">📶</div>
+          <h4>Settle in with support</h4>
+          <p>Local services and community.</p>
+        </div>
+        <div class="story-essential-item">
+          <div class="press-icon">📍</div>
+          <h4>Stay connected</h4>
+          <p>Resources that make city life easier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-paper" id="how-we-got-here">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow"><span class="idx">03</span> How We Got Here</p>
+        <h2>How we got here.</h2>
+      </div>
+
+      <div class="timeline-track">
+        <div class="timeline-item">
+          <span class="timeline-num">01</span>
+          <span class="timeline-dot"></span>
+          <div class="timeline-media"><image-slot id="timeline-img-1" shape="rect" placeholder="NYC skyline" src="https://images.unsplash.com/photo-1643297698131-8d4c7f15ddd6?auto=format&fit=crop&w=500&q=80" credit="Harrison Mitchell" credit-href="https://unsplash.com/@harrisonmitchell" style="width:100%;height:100%"></image-slot></div>
+          <h4>Founded</h4>
+          <p>Started by helping international renters navigate the New York rental market.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-num">02</span>
+          <span class="timeline-dot"></span>
+          <div class="timeline-media"><image-slot id="timeline-img-2" shape="rect" placeholder="Growth" src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?auto=format&fit=crop&w=500&q=80" credit="Isaac Smith" credit-href="https://unsplash.com/@isaacmsmith" style="width:100%;height:100%"></image-slot></div>
+          <h4>6,000+ Leases</h4>
+          <p>Expanded our renter network and leasing partnerships.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-num">03</span>
+          <span class="timeline-dot"></span>
+          <div class="timeline-media"><image-slot id="timeline-img-3" shape="rect" placeholder="New Jersey skyline" src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=500&q=80" credit="Jonathan Roger" credit-href="https://unsplash.com/@jonathanroger" style="width:100%;height:100%"></image-slot></div>
+          <h4>Beyond New York</h4>
+          <p>Grew into New Jersey and additional U.S. cities.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-num">04</span>
+          <span class="timeline-dot"></span>
+          <div class="timeline-media"><image-slot id="timeline-img-4" shape="rect" placeholder="Modern apartment" src="https://images.unsplash.com/photo-1624204386084-dd8c05e32226?auto=format&fit=crop&w=500&q=80" credit="Tobias Wilden" credit-href="https://unsplash.com/@tobiasw" style="width:100%;height:100%"></image-slot></div>
+          <h4>USWOO Today</h4>
+          <p>Built a broader city-based rental and lifestyle service network.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band band-paper" id="grow-with-uswoo">
+    <div class="wrap">
+      <p class="eyebrow"><span class="idx">04</span> Careers</p>
+      <h2>Grow with USWOO.</h2>
+      <p class="sub">We're building a team for people who understand cities, renters and what great service actually feels like.</p>
+
+      <div class="cta-essentials">
+        <div class="story-essential-item">
+          <div class="press-icon">👥</div>
+          <h4>Meaningful work</h4>
+          <p>Make an impact on renters' lives every day.</p>
+        </div>
+        <div class="story-essential-item">
+          <div class="press-icon">📈</div>
+          <h4>Learn &amp; grow</h4>
+          <p>Hands-on experience in real estate, lifestyle and more.</p>
+        </div>
+        <div class="story-essential-item">
+          <div class="press-icon">❤️</div>
+          <h4>Great team culture</h4>
+          <p>Collaborative, supportive and people-first.</p>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#grow-with-uswoo">View Open Roles →</a>
+        <a class="btn btn-outline" href="#grow-with-uswoo">Join Our Team →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="ft-label">Stay in the Loop</div>
+        <form class="newsletter-form" onSubmit="{{ preventDefault }}">
+          <input type="email" placeholder="Email address" aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">Follow</div>
+        <ul class="footer-links">
+          <li><a href="#top">Instagram →</a></li>
+          <li><a href="#top">LinkedIn →</a></li>
+          <li><a href="#top">TikTok →</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">USWOO</div>
+        <p class="footer-copy">© 2026 USWOO<br>New York City</p>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">Legal</div>
+        <ul class="footer-links">
+          <li><a href="#top">Terms &amp; Conditions →</a></li>
+          <li><a href="#top">Privacy Policy →</a></li>
+          <li><a href="#top">Cookies Policy →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-word">
+      <div class="wm">USWOO<span>.</span></div>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      preventDefault: (e) => e.preventDefault(),
+    };
+  }
+}
+</script>
+</body>
+</html>

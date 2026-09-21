@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root{
+    --paper: #FFFFFF;
+    --paper-raised: #F6F5F3;
+    --ink: #141414;
+    --ink-soft: #656260;
+    --ink-faint: #9C9894;
+    --line: #E7E4E0;
+    --black: #0F0F0F;
+    --pink: #B8860B;
+    --pink-tint: #F6E9C9;
+    --focus: #B8860B;
+    --hero-ink: #FFFFFF;
+    --hero-ink-soft: #E7E3DE;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
+  }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', -apple-system, 'Segoe UI', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3{
+    font-family:'Poppins', 'Inter', sans-serif;
+    font-weight:600;
+    text-wrap:balance;
+    margin:0;
+    line-height:1.12;
+  }
+
+  a{ color:inherit; }
+  img,svg{ max-width:100%; display:block; }
+  button{ font:inherit; }
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 clamp(20px, 5vw, 56px);
+  }
+  #help .wrap, #locations .wrap, #about .wrap{
+    max-width:1560px;
+    padding:0 clamp(16px, 2.4vw, 32px);
+  }
+
+  .eyebrow{
+    font-size:0.78rem;
+    font-weight:600;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    display:flex;
+    align-items:baseline;
+    gap:0.6em;
+  }
+  .eyebrow .idx{ color:var(--pink); font-weight:700; }
+  .on-hero .eyebrow{ color:var(--hero-ink-soft); }
+  .on-hero .eyebrow .idx{ color:var(--pink); }
+
+  header.nav{
+    position:sticky;
+    top:0;
+    z-index:40;
+    background:transparent;
+    border-bottom:1px solid transparent;
+    transition:background 0.3s ease, border-color 0.3s ease;
+  }
+  header.nav.scrolled{
+    background:color-mix(in srgb, var(--paper) 92%, transparent);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1180px;
+    margin:0 auto;
+    padding:18px clamp(20px, 5vw, 56px);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+  }
+  .wordmark{
+    font-family:'Poppins', sans-serif;
+    font-weight:700;
+    font-size:1.3rem;
+    letter-spacing:0.01em;
+    color:var(--hero-ink);
+    text-decoration:none;
+    white-space:nowrap;
+    transition:color 0.3s ease;
+  }
+  .scrolled .wordmark{ color:var(--ink); }
+  .wordmark span{ color:var(--pink); }
+  nav.links{
+    display:flex;
+    gap:clamp(12px, 1.8vw, 22px);
+    align-items:center;
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+  nav.links::-webkit-scrollbar{ display:none; }
+  nav.links a{
+    color:var(--hero-ink-soft);
+    text-decoration:none;
+    font-size:0.86rem;
+    font-weight:500;
+    white-space:nowrap;
+    padding:4px 2px;
+    border-bottom:1px solid transparent;
+    transition:color 0.3s ease, border-color 0.15s ease;
+  }
+  .scrolled nav.links a{ color:var(--ink-soft); }
+  nav.links a:hover, nav.links a:focus-visible{
+    color:var(--hero-ink);
+    border-bottom-color:var(--pink);
+  }
+  .scrolled nav.links a:hover, .scrolled nav.links a:focus-visible{ color:var(--ink); }
+  .nav-cta{
+    background:var(--black);
+    color:#fff !important;
+    font-size:0.85rem;
+    font-weight:600;
+    padding:10px 18px;
+    border-radius:2px;
+    text-decoration:none !important;
+    border-bottom:none !important;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{ opacity:0.85; }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-size:0.9rem;
+    font-weight:600;
+    padding:14px 26px;
+    border-radius:2px;
+    text-decoration:none;
+    cursor:pointer;
+    border:1px solid transparent;
+    transition:transform 0.15s ease, opacity 0.15s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+  .btn:hover{ transform:translateY(-1px); }
+  .btn-primary{ background:var(--black); color:#fff; }
+  .btn-primary:hover{ opacity:0.88; }
+  .btn-outline{
+    background:transparent;
+    color:var(--hero-ink);
+    border-color:color-mix(in srgb, var(--hero-ink) 45%, transparent);
+  }
+  .btn-outline:hover{ border-color:var(--hero-ink); }
+  .btn-outline.on-paper{
+    color:var(--ink);
+    border-color:var(--line);
+  }
+  .btn-outline.on-paper:hover{ border-color:var(--ink-soft); }
+  .btn-pink{ background:var(--pink); color:#fff; }
+  .btn-pink:hover{ opacity:0.9; }
+  .btn-row{ display:flex; gap:14px; flex-wrap:wrap; }
+
+  :focus-visible{ outline:2px solid var(--focus); outline-offset:3px; }
+
+  .hero{
+    position:relative;
+    color:var(--hero-ink);
+    overflow:hidden;
+    min-height:100vh;
+    margin-top:-73px;
+    display:flex;
+    align-items:flex-end;
+  }
+  .hero-bg{ position:absolute; inset:0; z-index:0; container-type:size; }
+
+  /* .hero-frame reproduces, as a real box, the rectangle the video used to
+     occupy under object-fit:cover / object-position:50% 35%. Everything inside
+     it can then be placed in the source footage's own 1280x720 coordinates and
+     stays registered to the skyline at any viewport size. */
+  .hero-frame{
+    position:absolute;
+    /* viewport-unit fallback for browsers without container query units */
+    width:max(100%, 177.7778vh);
+    height:max(100%, 56.25vw);
+    left:calc((100% - max(100%, 177.7778vh)) * 0.5);
+    top:calc((100% - max(100%, 56.25vw)) * 0.35);
+    width:max(100cqw, 177.7778cqh);
+    height:max(100cqh, 56.25cqw);
+    left:calc((100cqw - max(100cqw, 177.7778cqh)) * 0.5);
+    top:calc((100cqh - max(100cqh, 56.25cqw)) * 0.35);
+  }
+  .hero-bg video{ width:100%; height:100%; object-fit:cover; display:block; }
+
+  /* the poster word, sandwiched between the sky and the cut-out skyline */
+  .hero-type{ position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+  .hero-type text{
+    font-family:'Poppins', sans-serif;
+    font-weight:200;
+    font-size:256px;
+    letter-spacing:0.05em;
+    text-anchor:middle;
+    fill:#FFFFFF;
+    fill-opacity:0.93;
+  }
+  .hero-type g{ transform-box:view-box; transform-origin:640px 378px; }
+
+  /* the skyline, matted out of the same footage, laid back over the word */
+  .hero-city{
+    position:absolute; left:0; top:23.6111%;
+    width:100%; height:41.6667%;
+    object-fit:fill;
+  }
+
+  /* Anything narrower than 16/9 crops the footage horizontally, so the word has
+     to shrink with the surviving slice. Scaling about a point on the roofline
+     keeps the same share of the letters buried at every step. */
+  .hero-type g{ transform:scale(0.24); }
+  @media (min-aspect-ratio:1/2) { .hero-type g{ transform:scale(0.28); } }
+  @media (min-aspect-ratio:9/16){ .hero-type g{ transform:scale(0.32); } }
+  @media (min-aspect-ratio:3/4) { .hero-type g{ transform:scale(0.40); } }
+  @media (min-aspect-ratio:1/1) { .hero-type g{ transform:scale(0.54); } }
+  @media (min-aspect-ratio:5/4) { .hero-type g{ transform:scale(0.68); } }
+  @media (min-aspect-ratio:3/2) { .hero-type g{ transform:scale(0.82); } }
+  @media (min-aspect-ratio:16/9){ .hero-type g{ transform:none; } }
+
+  /* Short windows crop the footage vertically, which walks the skyline down
+     into the headline. The word is anchored to the skyline and cannot move off
+     it, so below these heights there is simply no room for it. */
+  @media (max-height:710px){ .hero-type{ display:none; } }
+  @media (min-width:1600px) and (max-height:780px){ .hero-type{ display:none; } }
+  @media (min-width:2200px) and (max-height:860px){ .hero-type{ display:none; } }
+
+  .hero-scrim{
+    position:absolute; inset:0;
+    z-index:1;
+    background:
+      linear-gradient(0deg, rgba(6,6,6,0.64) 0%, rgba(6,6,6,0.06) 32%, rgba(6,6,6,0) 52%),
+      linear-gradient(180deg, rgba(6,6,6,0.5) 0%, rgba(6,6,6,0) 16%);
+  }
+  .hero .wrap{
+    position:relative;
+    z-index:2;
+    padding-top:clamp(48px, 8vw, 80px);
+    padding-bottom:clamp(40px, 6vw, 64px);
+    width:100%;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .hero h1{
+    color:var(--hero-ink);
+    font-size:clamp(2rem, 4.6vw, 3.2rem);
+    max-width:16ch;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .hero .sub{
+    margin-top:14px;
+    max-width:42ch;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:clamp(0.98rem, 1.4vw, 1.08rem);
+    color:var(--hero-ink-soft);
+  }
+
+  section{ padding:clamp(56px, 9vw, 100px) 0; }
+  .band-paper{ background:var(--paper); }
+  .band-raised{ background:var(--paper-raised); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+
+  .section-head{ max-width:640px; }
+  .section-head h2{ font-size:clamp(1.8rem, 3.6vw, 2.6rem); margin-top:12px; }
+  .section-head p.lede{ margin-top:16px; max-width:56ch; color:var(--ink-soft); font-size:1.02rem; }
+  .section-head.centered{ max-width:640px; margin:0 auto; text-align:center; }
+  .section-head.centered .eyebrow{ justify-content:center; }
+  .section-head.centered p.lede{ margin-left:auto; margin-right:auto; }
+
+  /* stretch, not start: the captions wrap to a different number of lines, and
+     the cards should still line up along the bottom */
+  .flow{ margin-top:56px; display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; align-items:stretch; }
+  .flow-step{
+    position:relative; text-align:left; padding:16px 16px 24px;
+    background:var(--paper-raised); border:1px solid var(--line); border-radius:20px;
+  }
+  .flow-num{ margin-top:20px; font-size:0.75rem; font-weight:700; letter-spacing:0.06em; color:var(--pink); }
+  .flow-step h3{ margin-top:16px; font-size:0.92rem; font-family:'Poppins', sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; }
+  .flow-step p{ margin-top:8px; font-size:0.88rem; color:var(--ink-soft); }
+  .flow-media{
+    aspect-ratio:4/3; border-radius:14px;
+    overflow:hidden; position:relative;
+  }
+  .flow-media img{ width:100%; height:100%; object-fit:cover; }
+  .flow-badge{ position:absolute; top:12px; left:12px; background:#fff; color:var(--ink); font-size:0.68rem; font-weight:700; letter-spacing:0.05em; padding:5px 10px; border-radius:999px; }
+  @media (max-width:860px){ .flow{ grid-template-columns:1fr; } }
+  .flow-step{
+    opacity:0; transform:translateX(160px);
+    transition:opacity 1.1s ease, transform 1.1s ease;
+  }
+  #help.in-view .flow-step{ opacity:1; transform:translateX(0); }
+  #help.in-view .flow-step:nth-child(1){ transition-delay:0.2s; }
+  #help.in-view .flow-step:nth-child(2){ transition-delay:0.45s; }
+  #help.in-view .flow-step:nth-child(3){ transition-delay:0.7s; }
+
+  .locations-pin-wrap{ margin-top:40px; }
+  .locations-row{ display:flex; gap:14px; height:clamp(380px, 42vw, 560px); width:100%; }
+  .location-card{
+    position:relative; flex:1; overflow:hidden; text-decoration:none; display:block;
+    border-radius:14px; background:var(--paper-raised);
+  }
+  .location-media{ position:absolute; inset:0; }
+  .location-dark-overlay{
+    position:absolute; inset:0; background:rgba(0,0,0,0.78);
+    transition:opacity 0.6s ease;
+  }
+  .location-card.active .location-dark-overlay{ opacity:0; }
+  .location-label{
+    position:absolute; top:22px; left:22px; font-size:0.7rem; font-weight:600;
+    letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.7);
+    transition:color 0.5s ease;
+  }
+  .location-card.active .location-label{ color:#fff; }
+  .location-code{
+    position:absolute; left:18px; bottom:6px; font-family:'Poppins', sans-serif; font-style:normal;
+    font-weight:300; font-size:clamp(2.4rem, 7vw, 4.8rem); line-height:1; color:rgba(255,255,255,0.55);
+    transition:color 0.5s ease;
+  }
+  .location-card.active .location-code{ color:#fff; }
+  @media (max-width:860px){
+    .locations-row{ flex-wrap:wrap; height:auto; }
+    .location-card{ flex:1 1 calc(50% - 7px); height:220px; }
+    .location-card .location-dark-overlay{ opacity:0; }
+    .location-card .location-label{ color:#fff; }
+    .location-card .location-code{ color:#fff; }
+  }
+  @media (max-width:520px){
+    .locations-row{ height:auto; }
+    .location-card{ flex:1 1 100%; height:220px; }
+  }
+  #locations .section-head{
+    opacity:0; transform:translateY(24px);
+    transition:opacity 0.7s ease, transform 0.7s ease;
+  }
+  #locations.in-view .section-head{ opacity:1; transform:translateY(0); }
+  .location-card{
+    opacity:0; transform:translateY(28px);
+    transition:opacity 0.6s ease, transform 0.6s ease;
+  }
+  #locations.in-view .location-card{ opacity:1; transform:translateY(0); }
+  #locations.in-view .location-card:nth-child(1){ transition-delay:0.05s; }
+  #locations.in-view .location-card:nth-child(2){ transition-delay:0.15s; }
+  #locations.in-view .location-card:nth-child(3){ transition-delay:0.25s; }
+  #locations.in-view .location-card:nth-child(4){ transition-delay:0.35s; }
+  #locations.in-view .location-card:nth-child(5){ transition-delay:0.45s; }
+  .location-card image-slot{
+    filter:blur(18px); transform:scale(1.06);
+    transition:filter 1.4s ease, transform 1.4s ease;
+  }
+  #locations.in-view .location-card image-slot{ filter:blur(0); transform:scale(1); }
+
+  .about-split{ margin-top:8px; display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:center; }
+  .about-copy .section-head{ max-width:100%; text-align:left; margin:0; }
+  .about-copy .section-head .eyebrow{ justify-content:flex-start; }
+  .about-copy .btn{ margin-top:28px; }
+  .stat-grid2{ display:grid; grid-template-columns:1fr 1fr; gap:36px 32px; }
+  .stat-item .num{ font-family:'Poppins', sans-serif; font-size:clamp(2rem, 3.2vw, 2.6rem); font-weight:700; letter-spacing:-0.01em; }
+  .stat-item .num .accent{ color:var(--pink); }
+  .stat-item .pill{
+    display:inline-block; margin-top:10px; font-size:0.68rem; font-weight:700; letter-spacing:0.06em;
+    text-transform:uppercase; color:var(--pink); background:var(--pink-tint); padding:4px 10px; border-radius:20px;
+  }
+  .stat-item .desc{ margin-top:10px; font-size:0.88rem; color:var(--ink-soft); max-width:26ch; }
+  @media (max-width:860px){ .about-split{ grid-template-columns:1fr; } }
+  @media (max-width:520px){ .stat-grid2{ grid-template-columns:1fr; } }
+
+  .cta-band .wrap{ text-align:center; display:flex; flex-direction:column; align-items:center; }
+  .cta-band .eyebrow{ justify-content:center; }
+  .cta-band h2{ margin-top:14px; font-size:clamp(2rem, 4.2vw, 3.2rem); }
+  .cta-band .lede{ margin-top:16px; max-width:48ch; margin-left:auto; margin-right:auto; }
+  .cta-band .btn-row{ margin-top:34px; justify-content:center; }
+
+  footer{ background:var(--black); color:#fff; padding-top:48px; }
+  .footer-top{ display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.14); }
+  .footer-col{ min-width:200px; }
+  .footer-col .ft-label{ font-size:0.72rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px; }
+  .newsletter-form{ display:flex; align-items:flex-end; gap:10px; border-bottom:1px solid rgba(255,255,255,0.4); padding-bottom:8px; max-width:280px; }
+  .newsletter-form input{ flex:1; background:transparent; border:none; color:#fff; font-family:'Inter', sans-serif; font-size:0.92rem; padding:4px 0; }
+  .newsletter-form input::placeholder{ color:rgba(255,255,255,0.5); }
+  .newsletter-form input:focus{ outline:none; }
+  .newsletter-form button{ background:none; border:none; color:var(--pink); font-size:1.1rem; cursor:pointer; padding:0 2px 4px; }
+  .footer-links{ list-style:none; margin:0; padding:0; display:grid; gap:8px; }
+  .footer-links a{ text-decoration:none; font-size:0.9rem; color:rgba(255,255,255,0.82); transition:color 0.15s ease; }
+  .footer-links a:hover{ color:var(--pink); }
+  .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
+  .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
+  .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
+  .footer-word .wm span{ color:var(--pink); }
+
+  @media (max-width: 860px){
+    .flow{ grid-template-columns:1fr 1fr; }
+  }
+  @media (max-width: 560px){
+    .flow{ grid-template-columns:1fr; }
+    .footer-top{ flex-direction:column; }
+  }
+
+</style><script src="./image-slot.js"></script></helmet>
+<header class="nav" id="siteNav" ref="{{ navRef }}">
+  <div class="nav-inner">
+    <a class="wordmark" href="./USWOO Home.dc.html">USWOO<span>.</span></a>
+    <nav class="links">
+      <a href="./USWOO Services.dc.html">Services</a>
+      <a href="./USWOO City Guides.dc.html">City Guides</a>
+      <a href="./USWOO Press & Stories.dc.html">Press &amp; Stories</a>
+      <a href="./USWOO About Us.dc.html">About Us</a>
+    </nav>
+    <a class="nav-cta" href="#cta">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero on-hero" id="heroSection" ref="{{ heroRef }}">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-frame">
+        <video ref="{{ heroVideoRef }}" autoplay muted loop playsinline preload="auto" poster="./assets/uswoo-hero-poster.jpg">
+          <source src="./assets/uswoo-hero-video.mp4" type="video/mp4">
+        </video>
+        <svg class="hero-type" viewBox="0 0 1280 720" preserveAspectRatio="none" focusable="false">
+          <g><text x="692" y="396">USWOO</text></g>
+        </svg>
+        <img class="hero-city" src="./assets/uswoo-hero-city.webp" alt="" decoding="async">
+      </div>
+    </div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="wrap">
+      <h1>Find Your Place in the City.</h1>
+      <p class="sub">More than finding an apartment. We help you figure out where to live, how to settle in, and what comes next.</p>
+    </div>
+  </section>
+
+  <section class="band-paper" id="help">
+    <div class="wrap">
+      <div class="section-head centered">
+        <p class="eyebrow"><span class="idx">02</span> How We Help</p>
+        <h2>A Better Way to Find Home.</h2>
+        <p class="lede">Finding a place isn't just about square footage or rent. It's about the neighborhood, the commute, and the life you want to build around it.</p>
+      </div>
+
+      <div class="flow">
+        <div class="flow-step">
+          <div class="flow-media">
+            <image-slot id="help-img-1" shape="rect" placeholder="Drop a photo" src="./assets/help-know-where.webp" style="width:100%;height:100%"></image-slot>
+            <span class="flow-badge">01</span>
+          </div>
+          <h3>Know Where to Live</h3>
+          <p>Neighborhoods, commute, schools and lifestyle.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-media">
+            <image-slot id="help-img-2" shape="rect" placeholder="Drop a photo" src="./assets/help-find-move.webp" style="width:100%;height:100%"></image-slot>
+            <span class="flow-badge">02</span>
+          </div>
+          <h3>Find &amp; Move</h3>
+          <p>The right home, with support from touring to move-in.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-media">
+            <image-slot id="help-img-3" shape="rect" placeholder="Drop a photo" style="width:100%;height:100%"></image-slot>
+            <span class="flow-badge">03</span>
+          </div>
+          <h3>Settle In &amp; Connect</h3>
+          <p>Local resources, community and connections after you move.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-paper" id="locations">
+    <div class="wrap">
+      <div class="section-head centered">
+        <p class="eyebrow"><span class="idx">03</span> Our Locations</p>
+        <h2>Where We Operate.</h2>
+        <p class="lede">USWOO helps renters find home across five major U.S. markets.</p>
+      </div>
+    </div>
+    <div class="wrap">
+    <div class="locations-pin-wrap" ref="{{ locPinWrapRef }}">
+      <div class="locations-row" ref="{{ locationsRowRef }}">
+        <a class="location-card" href="./USWOO City Guides.dc.html#explore">
+          <div class="location-media"><image-slot id="loc-nyc" shape="rect" placeholder="New York photo" src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Patrick Tomasso" credit-href="https://unsplash.com/@impatrickt" style="width:100%;height:100%"></image-slot></div>
+          <div class="location-dark-overlay"></div>
+          <div class="location-label">New York</div>
+          <div class="location-code">NYC</div>
+        </a>
+        <a class="location-card" href="./USWOO City Guides.dc.html#explore">
+          <div class="location-media"><image-slot id="loc-chicago" shape="rect" placeholder="Chicago photo" src="./assets/loc-chicago.jpg" credit="Barry Butler Photography" style="width:100%;height:100%"></image-slot></div>
+          <div class="location-dark-overlay"></div>
+          <div class="location-label">Chicago</div>
+          <div class="location-code">CHI</div>
+        </a>
+        <a class="location-card" href="./USWOO City Guides.dc.html#explore">
+          <div class="location-media"><image-slot id="loc-la" shape="rect" placeholder="Los Angeles photo" src="./assets/loc-la.jpg" style="width:100%;height:100%"></image-slot></div>
+          <div class="location-dark-overlay"></div>
+          <div class="location-label">Los Angeles</div>
+          <div class="location-code">LA</div>
+        </a>
+        <a class="location-card" href="./USWOO City Guides.dc.html#explore">
+          <div class="location-media"><image-slot id="loc-dc" shape="rect" placeholder="Washington D.C. photo" src="./assets/loc-dc.jpg" style="width:100%;height:100%"></image-slot></div>
+          <div class="location-dark-overlay"></div>
+          <div class="location-label">Washington, D.C.</div>
+          <div class="location-code">DC</div>
+        </a>
+        <a class="location-card" href="./USWOO City Guides.dc.html#explore">
+          <div class="location-media"><image-slot id="loc-pa" shape="rect" placeholder="Philadelphia photo" src="https://images.unsplash.com/photo-1543372993-5fc1fc83caac?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Pretty Pink" credit-href="https://unsplash.com/@infinitexplorer" style="width:100%;height:100%"></image-slot></div>
+          <div class="location-dark-overlay"></div>
+          <div class="location-label">Philadelphia</div>
+          <div class="location-code">PHL</div>
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="band-raised" id="about">
+    <div class="wrap">
+      <div class="about-split">
+        <div class="about-copy">
+          <div class="section-head">
+            <p class="eyebrow"><span class="idx">04</span> About USWOO</p>
+            <h2>Built on Local Experience.</h2>
+            <p class="lede">Real market knowledge, local relationships, and thousands of renter journeys behind us.</p>
+          </div>
+          <a class="btn btn-outline on-paper" href="./USWOO About Us.dc.html">Know More About Us</a>
+        </div>
+
+        <div class="stat-grid2">
+          <div class="stat-item">
+            <div class="num" style="color: #000000"><span class="accent" data-count="200000" style="color: #000000">0</span><span style="color: #000000">+</span></div>
+            <div class="pill">Clients Served</div>
+            <p class="desc">Renters we've helped find the right place.</p>
+          </div>
+          <div class="stat-item">
+            <div class="num"><span class="accent" data-count="20000" style="color: #000000">0</span><span style="color: #000000">+</span></div>
+            <div class="pill">Leases Per Year</div>
+            <p class="desc">Leases signed across our markets annually.</p>
+          </div>
+          <div class="stat-item">
+            <div class="num"><span class="accent" data-count="10" style="color: #000000">0</span><span style="color: #000000">+</span></div>
+            <div class="pill">Cities &amp; Markets</div>
+            <p class="desc">Metro areas covered by our local teams.</p>
+          </div>
+          <div class="stat-item">
+            <div class="num"><span class="accent" data-count="300" style="color: #000000">0</span><span style="color: #000000">+</span></div>
+            <div class="pill">Partners</div>
+            <p class="desc">Developers, brokerages, and vendors we work with.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-paper cta-band" id="cta">
+    <div class="wrap">
+      <p class="eyebrow"><span class="idx">05</span> CTA</p>
+      <h2>Your City Starts Here.</h2>
+      <p class="lede">Looking for a home, exploring a neighborhood, or figuring out where to start? We're here to help.</p>
+      <div class="btn-row">
+        <a class="btn btn-pink" href="#cta">Find a Home</a>
+        <a class="btn btn-outline on-paper" href="#cta">Talk to USWOO</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="ft-label">Stay in the Loop</div>
+        <form class="newsletter-form" onSubmit="{{ preventDefault }}">
+          <input type="email" placeholder="Email address" aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">Follow</div>
+        <ul class="footer-links">
+          <li><a href="#top">Instagram →</a></li>
+          <li><a href="#top">LinkedIn →</a></li>
+          <li><a href="#top">TikTok →</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">USWOO</div>
+        <p class="footer-copy">© 2026 USWOO<br>New York City</p>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">Legal</div>
+        <ul class="footer-links">
+          <li><a href="#top">Terms &amp; Conditions →</a></li>
+          <li><a href="#top">Privacy Policy →</a></li>
+          <li><a href="#top">Cookies Policy →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-word">
+      <div class="wm">USWOO<span>.</span></div>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    if (this.heroVideoRef) {
+      const video = this.heroVideoRef;
+      video.muted = true;
+      video.loop = true;
+      const tryPlay = () => { const p = video.play(); if (p && p.catch) p.catch(() => {}); };
+      tryPlay();
+      video.addEventListener('canplay', tryPlay);
+    }
+    if (this.navRef && this.heroRef && 'IntersectionObserver' in window) {
+      this._io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) this.navRef.classList.remove('scrolled');
+          else this.navRef.classList.add('scrolled');
+        });
+      }, { threshold: 0, rootMargin: '-72px 0px 0px 0px' });
+      this._io.observe(this.heroRef);
+    }
+    // "How We Help": the three cards slide in from the right, staggered,
+    // the first time the section scrolls into view.
+    const helpSection = document.getElementById('help');
+    if (helpSection && 'IntersectionObserver' in window) {
+      this._helpIo = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            helpSection.classList.add('in-view');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      this._helpIo.observe(helpSection);
+    }
+    // "Our Locations": heading, cards and the featured photo reveal together
+    // (fade/slide up, blur-to-sharp) the first time the section scrolls in.
+    // Watches the fixed-height sticky row rather than the whole (500vh,
+    // pinned-scroll) section — that section is so tall that the row filling
+    // the entire viewport still only counts as a sliver of it, so a
+    // percentage-of-section threshold would rarely, if ever, fire.
+    const locationsSection = document.getElementById('locations');
+    const locationsRowEl = document.querySelector('.locations-row');
+    if (locationsSection && locationsRowEl && 'IntersectionObserver' in window) {
+      this._locIo = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            locationsSection.classList.add('in-view');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      this._locIo.observe(locationsRowEl);
+    }
+    // The five city cards stay dark until the row sits in the middle of the
+    // screen. From there the wheel drives the reveal instead of the page:
+    // down lights the next city, up the previous one. The page is released
+    // again only when wheeling up from the first city or down from the last.
+    if (this.locationsRowRef) {
+      const cards = Array.from(this.locationsRowRef.querySelectorAll('.location-card'));
+      // Wheel travel needed per city, plus a settle time so one flick of a
+      // trackpad (which keeps firing during its momentum) can't run through
+      // several cities at once.
+      const STEP = 240;
+      const COOLDOWN = 450;
+      let activeIndex = -1;
+      let accum = 0;
+      let steppedAt = 0;
+      const paint = () => {
+        cards.forEach((card, i) => card.classList.toggle('active', i === activeIndex));
+      };
+      this._onLocWheel = (e) => {
+        const rect = this.locationsRowRef.getBoundingClientRect();
+        const offset = Math.abs(rect.top + rect.height / 2 - window.innerHeight / 2);
+        if (offset > Math.max(140, rect.height / 3)) return;
+        const down = e.deltaY > 0;
+        if (activeIndex === -1) {
+          // Latch onto the first city, but only on the way down.
+          if (!down) return;
+          e.preventDefault();
+          activeIndex = 0;
+          accum = 0;
+          steppedAt = Date.now();
+          paint();
+          return;
+        }
+        if (down && activeIndex === cards.length - 1) return;
+        if (!down && activeIndex === 0) {
+          activeIndex = -1;
+          accum = 0;
+          steppedAt = Date.now();
+          paint();
+          return;
+        }
+        e.preventDefault();
+        const now = Date.now();
+        if (now - steppedAt < COOLDOWN) {
+          accum = 0;
+          return;
+        }
+        accum += e.deltaY;
+        if (accum >= STEP && activeIndex < cards.length - 1) activeIndex += 1;
+        else if (accum <= -STEP && activeIndex > 0) activeIndex -= 1;
+        else return;
+        accum = 0;
+        steppedAt = now;
+        paint();
+        if (activeIndex === cards.length - 1) {
+          this._citiesRevealed = true;
+          if (this._startStats) this._startStats();
+        }
+      };
+      window.addEventListener('wheel', this._onLocWheel, { passive: false });
+    }
+    // "About USWOO": stat numbers count up from 0 to their real value, but
+    // only once the five cities have all been revealed — otherwise they would
+    // run while the page is still held on the "Our Locations" reveal.
+    const statEls = Array.from(document.querySelectorAll('#about [data-count]'));
+    const statGrid = document.querySelector('.stat-grid2');
+    if (statEls.length && statGrid) {
+      let started = false;
+      const countUp = () => {
+        statEls.forEach((el) => {
+          const target = parseInt(el.getAttribute('data-count'), 10) || 0;
+          const duration = 1200;
+          const start = performance.now();
+          const step = (now) => {
+            const t = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - t, 3);
+            el.textContent = Math.round(target * eased).toLocaleString('en-US');
+            if (t < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+        });
+      };
+      // The wheel lock never engages on the stacked mobile layout, and a
+      // keyboard/anchor jump can carry the page past the cities entirely.
+      const citiesCleared = () => {
+        if (this._citiesRevealed || window.innerWidth <= 860) return true;
+        if (!this.locationsRowRef) return true;
+        return this.locationsRowRef.getBoundingClientRect().bottom < 0;
+      };
+      this._startStats = () => {
+        if (started) return;
+        const rect = statGrid.getBoundingClientRect();
+        const inView = rect.top < window.innerHeight * 0.85 && rect.bottom > 0;
+        if (!inView || !citiesCleared()) return;
+        started = true;
+        window.removeEventListener('scroll', this._startStats);
+        countUp();
+      };
+      window.addEventListener('scroll', this._startStats, { passive: true });
+      this._startStats();
+    }
+  }
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    if (this._helpIo) this._helpIo.disconnect();
+    if (this._locIo) this._locIo.disconnect();
+    if (this._onLocWheel) window.removeEventListener('wheel', this._onLocWheel);
+    if (this._startStats) window.removeEventListener('scroll', this._startStats);
+  }
+  renderVals() {
+    return {
+      navRef: (el) => { this.navRef = el; },
+      heroRef: (el) => { this.heroRef = el; },
+      heroVideoRef: (el) => { this.heroVideoRef = el; },
+      locPinWrapRef: (el) => { this.locPinWrapRef = el; },
+      locationsRowRef: (el) => { this.locationsRowRef = el; },
+      preventDefault: (e) => e.preventDefault(),
+    };
+  }
+}
+</script>
+</body>
+</html>

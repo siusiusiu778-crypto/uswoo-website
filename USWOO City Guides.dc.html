@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;500;600;700&display=swap');
+  :root{
+    --paper: #FFFFFF; --paper-raised: #F6F5F3; --ink: #141414; --ink-soft: #656260; --ink-faint: #9C9894;
+    --line: #E7E4E0; --black: #0F0F0F; --pink: #B8860B; --pink-tint: #F6E9C9; --focus: #B8860B;
+    --hero-ink: #FFFFFF; --hero-ink-soft: #E7E3DE;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:'Inter', -apple-system, 'Segoe UI', sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3{ font-family:'Poppins', 'Inter', sans-serif; font-weight:600; text-wrap:balance; margin:0; line-height:1.12; }
+  a{ color:inherit; }
+  img,svg{ max-width:100%; display:block; } button{ font:inherit; }
+  .wrap{ max-width:1560px; margin:0 auto; padding:0 clamp(16px, 2.4vw, 32px); }
+  .eyebrow{ font-size:0.78rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); display:flex; align-items:baseline; gap:0.6em; }
+  .eyebrow .idx{ color:var(--pink); font-weight:700; }
+  .on-hero .eyebrow{ color:var(--hero-ink-soft); } .on-hero .eyebrow .idx{ color:var(--pink); }
+  header.nav{ position:sticky; top:0; z-index:40; background:transparent; border-bottom:1px solid transparent; transition:background 0.3s ease, border-color 0.3s ease; }
+  header.nav.scrolled{ background:color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+  .nav-inner{ max-width:1180px; margin:0 auto; padding:18px clamp(20px, 5vw, 56px); display:flex; align-items:center; justify-content:space-between; gap:24px; }
+  .wordmark{ font-family:'Poppins', sans-serif; font-weight:700; font-size:1.3rem; letter-spacing:0.01em; color:var(--hero-ink); text-decoration:none; white-space:nowrap; transition:color 0.3s ease; }
+  .scrolled .wordmark{ color:var(--ink); } .wordmark span{ color:var(--pink); }
+  nav.links{ display:flex; gap:clamp(12px, 1.8vw, 22px); align-items:center; overflow-x:auto; scrollbar-width:none; }
+  nav.links::-webkit-scrollbar{ display:none; }
+  nav.links a{ color:var(--hero-ink-soft); text-decoration:none; font-size:0.86rem; font-weight:500; white-space:nowrap; padding:4px 2px; border-bottom:1px solid transparent; transition:color 0.3s ease, border-color 0.15s ease; }
+  .scrolled nav.links a{ color:var(--ink-soft); }
+  nav.links a:hover, nav.links a:focus-visible{ color:var(--hero-ink); border-bottom-color:var(--pink); }
+  .scrolled nav.links a:hover, .scrolled nav.links a:focus-visible{ color:var(--ink); }
+  nav.links a.active{ color:var(--hero-ink); border-bottom-color:var(--pink); }
+  .scrolled nav.links a.active{ color:var(--ink); }
+  .nav-cta{ background:var(--black); color:#fff !important; font-size:0.85rem; font-weight:600; padding:10px 18px; border-radius:2px; text-decoration:none !important; border-bottom:none !important; white-space:nowrap; }
+  .nav-cta:hover{ opacity:0.85; }
+  .btn{ display:inline-flex; align-items:center; gap:10px; font-size:0.9rem; font-weight:600; padding:14px 26px; border-radius:2px; text-decoration:none; cursor:pointer; border:1px solid transparent; transition:transform 0.15s ease, opacity 0.15s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease; }
+  .btn:hover{ transform:translateY(-1px); }
+  .btn-primary{ background:var(--black); color:#fff; } .btn-primary:hover{ opacity:0.88; }
+  .btn-outline{ background:transparent; color:var(--hero-ink); border-color:color-mix(in srgb, var(--hero-ink) 45%, transparent); }
+  .btn-outline:hover{ border-color:var(--hero-ink); }
+  .btn-outline.on-paper{ color:var(--ink); border-color:var(--line); }
+  .btn-outline.on-paper:hover{ border-color:var(--ink-soft); }
+  .btn-pink{ background:var(--pink); color:#fff; } .btn-pink:hover{ opacity:0.9; }
+  .btn-row{ display:flex; gap:14px; flex-wrap:wrap; }
+  :focus-visible{ outline:2px solid var(--focus); outline-offset:3px; }
+  .page-hero{ position:relative; color:var(--hero-ink); overflow:hidden; min-height:clamp(420px, 40vw, 560px); margin-top:-73px; display:flex; align-items:flex-end; }
+  .page-hero-bg{ position:absolute; inset:0; z-index:0; }
+  .page-hero-scrim{ position:absolute; inset:0; z-index:1; background:linear-gradient(0deg, rgba(6,6,6,0.7) 0%, rgba(6,6,6,0.1) 45%, rgba(6,6,6,0) 62%), linear-gradient(180deg, rgba(6,6,6,0.5) 0%, rgba(6,6,6,0) 16%); }
+  .page-hero .wrap{ position:relative; z-index:2; padding-top:clamp(48px, 8vw, 80px); padding-bottom:clamp(40px, 6vw, 64px); width:100%; }
+  .page-hero h1{ color:var(--hero-ink); font-size:clamp(2rem, 4.4vw, 3rem); max-width:20ch; }
+  .page-hero .sub{ margin-top:14px; max-width:48ch; font-size:clamp(0.98rem, 1.4vw, 1.08rem); color:var(--hero-ink-soft); }
+  section{ padding:clamp(56px, 9vw, 100px) 0; }
+  .band-paper{ background:var(--paper); }
+  .band-raised{ background:var(--paper-raised); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .section-head{ max-width:640px; }
+  .section-head h2{ font-size:clamp(1.8rem, 3.6vw, 2.6rem); margin-top:12px; }
+  .section-head p.lede{ margin-top:16px; max-width:56ch; color:var(--ink-soft); font-size:1.02rem; }
+  .section-head.centered{ max-width:640px; margin:0 auto; text-align:center; }
+  .section-head.centered .eyebrow{ justify-content:center; }
+  .section-head.centered p.lede{ margin-left:auto; margin-right:auto; }
+  .cta-band .wrap{ text-align:center; display:flex; flex-direction:column; align-items:center; }
+  .cta-band .eyebrow{ justify-content:center; }
+  .cta-band h2{ margin-top:14px; font-size:clamp(2rem, 4.2vw, 3.2rem); }
+  .cta-band .lede{ margin-top:16px; max-width:48ch; margin-left:auto; margin-right:auto; }
+  .cta-band .btn-row{ margin-top:34px; justify-content:center; }
+  footer{ background:var(--black); color:#fff; padding-top:48px; }
+  .footer-top{ display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.14); }
+  .footer-col{ min-width:200px; }
+  .footer-col .ft-label{ font-size:0.72rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px; }
+  .newsletter-form{ display:flex; align-items:flex-end; gap:10px; border-bottom:1px solid rgba(255,255,255,0.4); padding-bottom:8px; max-width:280px; }
+  .newsletter-form input{ flex:1; background:transparent; border:none; color:#fff; font-family:'Inter', sans-serif; font-size:0.92rem; padding:4px 0; }
+  .newsletter-form input::placeholder{ color:rgba(255,255,255,0.5); }
+  .newsletter-form input:focus{ outline:none; }
+  .newsletter-form button{ background:none; border:none; color:var(--pink); font-size:1.1rem; cursor:pointer; padding:0 2px 4px; }
+  .footer-links{ list-style:none; margin:0; padding:0; display:grid; gap:8px; }
+  .footer-links a{ text-decoration:none; font-size:0.9rem; color:rgba(255,255,255,0.82); transition:color 0.15s ease; }
+  .footer-links a:hover{ color:var(--pink); }
+  .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
+  .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
+  .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
+  .footer-word .wm span{ color:var(--pink); }
+  @media (max-width: 560px){ .footer-top{ flex-direction:column; } }
+
+  .guide-grid{ margin-top:48px; display:grid; grid-template-columns:repeat(3, 1fr); gap:28px; }
+  .guide-card{ background:var(--paper); border:1px solid var(--line); border-radius:2px; overflow:hidden; }
+  .guide-media{ aspect-ratio:4/3; }
+  .guide-body{ padding:22px 24px; }
+  .guide-card h3{ font-size:1.1rem; font-family:'Poppins', sans-serif; font-weight:600; }
+  .guide-card p{ margin-top:8px; font-size:0.9rem; color:var(--ink-soft); }
+  .guide-link{ margin-top:14px; display:inline-flex; align-items:center; gap:6px; font-size:0.85rem; font-weight:600; color:var(--pink); text-decoration:none; }
+  @media (max-width:900px){ .guide-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .guide-grid{ grid-template-columns:1fr; } }
+
+  .cg-lead{ padding-bottom:0; }
+  .cg-lead .section-head.centered{ max-width:760px; }
+  .cg-lead .section-head.centered h2{ font-size:clamp(1.9rem, 3.8vw, 2.7rem); }
+  .cg-lead .section-head.centered p.lede{ max-width:56ch; line-height:1.75; }
+  .cg-lead-media{ margin-top:48px; border-radius:32px; overflow:hidden; aspect-ratio:2.8/1; }
+  .cg-lead-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+  @media (max-width:700px){ .cg-lead-media{ border-radius:20px; aspect-ratio:4/3; margin-top:32px; } }
+
+  .cg-top{ display:grid; grid-template-columns:300px 1fr; border-bottom:1px solid var(--line); }
+  .cg-intro{ padding:56px 40px 56px 0; border-right:1px solid var(--line); }
+  .cg-intro h1{ font-size:clamp(2rem,3.6vw,2.6rem); margin-top:10px; }
+  .cg-intro .sub{ margin-top:14px; font-weight:600; font-size:1rem; }
+  .cg-intro p.desc{ margin-top:10px; font-size:0.92rem; color:var(--ink-soft); }
+  .cg-filters-label{ margin-top:36px; font-size:0.82rem; font-weight:600; color:var(--ink-faint); text-transform:uppercase; letter-spacing:0.06em; }
+  .cg-filters{ margin-top:14px; display:grid; gap:2px; }
+  .cg-filter{ display:flex; align-items:flex-start; gap:12px; padding:14px; border:1px solid transparent; border-radius:2px; cursor:pointer; text-align:left; background:none; width:100%; }
+  .cg-filter.active{ background:var(--paper-raised); border-color:var(--line); }
+  .cg-filter svg{ width:20px; height:20px; stroke:var(--ink); flex:none; margin-top:2px; }
+  .cg-filter .ftext strong{ display:block; font-size:0.92rem; font-weight:600; }
+  .cg-filter .ftext span{ display:block; font-size:0.82rem; color:var(--ink-soft); margin-top:2px; }
+  .cg-filter .radio{ margin-left:auto; width:16px; height:16px; border-radius:3px; border:1px solid var(--ink-faint); flex:none; margin-top:3px; position:relative; }
+  .cg-filter.active .radio{ border-color:var(--ink); background:var(--ink); }
+  .cg-filter.active .radio::after{ content:''; position:absolute; left:4px; top:1px; width:5px; height:9px; border:solid #fff; border-width:0 2px 2px 0; transform:rotate(45deg); }
+  .cg-clear{ margin-top:16px; width:100%; padding:12px; border:1px solid var(--line); background:none; border-radius:2px; font-size:0.86rem; font-weight:600; color:var(--ink-soft); cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; }
+  .cg-clear:hover{ border-color:var(--ink-soft); color:var(--ink); }
+
+  .cg-mappanel{ padding:56px 0 40px 40px; }
+  .cg-tabs{ display:flex; gap:28px; overflow-x:auto; padding-bottom:16px; border-bottom:1px solid var(--line); }
+  .cg-tab{ background:none; border:none; font-size:0.94rem; font-weight:500; color:var(--ink-soft); padding:2px 0 14px; cursor:pointer; white-space:nowrap; border-bottom:2px solid transparent; margin-bottom:-1px; }
+  .cg-tab.active{ color:var(--ink); font-weight:600; border-bottom-color:var(--pink); }
+  .cg-map{ margin-top:24px; aspect-ratio:16/10; background:var(--paper-raised); border:1px solid var(--line); overflow:hidden; position:relative; }
+  .cg-leaflet{ position:absolute; inset:0; }
+  .cg-leaflet .leaflet-control-attribution{ font-size:0.62rem; background:rgba(255,255,255,0.8); }
+  .cg-marker{ width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; border:2px solid #fff; box-shadow:0 1px 4px rgba(0,0,0,0.35); font-size:12px; color:#fff; }
+  .leaflet-div-icon{ background:none; border:none; }
+  .leaflet-tooltip.cg-tooltip{ background:var(--paper); border:1px solid var(--line); border-radius:2px; box-shadow:0 6px 20px rgba(0,0,0,0.18); padding:0; opacity:1; font-family:'Inter', sans-serif; }
+  .leaflet-tooltip.cg-tooltip::before{ display:none; }
+  .cg-hovercard{ padding:12px 14px; max-width:240px; }
+  .cg-hovercard .hc-title{ font-family:'Poppins', sans-serif; font-weight:600; font-size:0.92rem; color:var(--ink); }
+  .cg-hovercard .hc-sub{ margin-top:3px; font-size:0.78rem; font-weight:600; color:var(--pink); text-transform:uppercase; letter-spacing:0.04em; }
+  .cg-hovercard .hc-desc{ margin-top:6px; font-size:0.82rem; color:var(--ink-soft); line-height:1.5; }
+  .cg-legend{ margin-top:20px; display:flex; flex-wrap:wrap; gap:24px; }
+  .cg-legend-item{ display:flex; align-items:center; gap:8px; font-size:0.84rem; color:var(--ink-soft); }
+  .cg-legend-item svg{ width:16px; height:16px; stroke:var(--ink-soft); }
+  @media (max-width:900px){ .cg-top{ grid-template-columns:1fr; } .cg-intro{ border-right:none; border-bottom:1px solid var(--line); padding:40px 0; } .cg-mappanel{ padding:40px 0; } }
+
+  .cg-switch{ display:flex; align-items:center; gap:20px; flex-wrap:wrap; background:var(--paper-raised); border:1px solid var(--line); border-radius:2px; padding:24px 28px; }
+  .cg-switch-icon{ width:48px; height:48px; border-radius:50%; background:#fff; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; flex:none; }
+  .cg-switch-icon svg{ width:20px; height:20px; stroke:var(--ink); }
+  .cg-switch-text{ flex:1; min-width:200px; }
+  .cg-switch-text strong{ display:block; font-size:1rem; }
+  .cg-switch-text span{ display:block; font-size:0.88rem; color:var(--ink-soft); margin-top:2px; }
+</style><script src="./image-slot.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script></helmet>
+<header class="nav scrolled" id="siteNav">
+  <div class="nav-inner">
+    <a class="wordmark" href="./USWOO Home.dc.html">USWOO<span>.</span></a>
+    <nav class="links">
+      <a href="./USWOO Services.dc.html">Services</a>
+      <a href="./USWOO City Guides.dc.html" class="active">City Guides</a>
+      <a href="./USWOO Press & Stories.dc.html">Press &amp; Stories</a>
+      <a href="./USWOO About Us.dc.html">About Us</a>
+    </nav>
+    <a class="nav-cta" href="./USWOO Home.dc.html#cta">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="band-raised cg-lead">
+    <div class="wrap">
+      <div class="section-head centered">
+        <h2>Know the city before you move in.</h2>
+        <p class="lede">Every neighborhood has its own rhythm — schools, business districts, transit lines and the walk to your favorite coffee shop.<br>
+        We map it all out, so you can choose a place that actually fits your life, not just an address on a lease.<br>
+        Explore by school, by commute, or just by vibe.</p>
+      </div>
+      <div class="cg-lead-media">
+        <img src="./assets/cg-lead-skyline.jpg" alt="Manhattan skyline at dusk over the East River" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="band-paper" id="explore" style="padding-bottom:0;">
+    <div class="wrap">
+      <div class="cg-top">
+        <div class="cg-intro">
+          <p class="eyebrow"><span class="idx">01</span></p>
+          <h1>City Guides</h1>
+          <p class="sub">Explore the city your way.</p>
+          <p class="desc">Choose a city, then explore the areas, schools, business districts and lifestyles that matter to you.</p>
+
+          <p class="cg-filters-label">Explore by</p>
+          <div class="cg-filters">
+            <sc-for list="{{ filters }}" as="f" hint-placeholder-count="5">
+              <button class="cg-filter {{ f.activeClass }}" onClick="{{ f.onClick }}">
+                <span dangerouslySetInnerHTML="{{ f.iconHtml }}"></span>
+                <span class="ftext"><strong>{{ f.title }}</strong><span>{{ f.desc }}</span></span>
+                <span class="radio"></span>
+              </button>
+            </sc-for>
+          </div>
+          <button class="cg-clear" onClick="{{ clearFilters }}">Clear all</button>
+        </div>
+
+        <div class="cg-mappanel">
+          <div class="cg-tabs">
+            <sc-for list="{{ cities }}" as="c" hint-placeholder-count="6">
+              <button class="cg-tab {{ c.activeClass }}" onClick="{{ c.onClick }}">{{ c.name }}</button>
+            </sc-for>
+          </div>
+          <div class="cg-map">
+            <div class="cg-leaflet" key="cg-leaflet-map" ref="{{ mapWrapperRef }}" dangerouslySetInnerHTML="{{ mapInnerHtml }}"></div>
+          </div>
+          <div class="cg-legend">
+            <div class="cg-legend-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>Neighborhood</div>
+            <div class="cg-legend-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 10 12 4 2 10l10 6 10-6z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>School</div>
+            <div class="cg-legend-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Business District</div>
+            <div class="cg-legend-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><text x="12" y="16" font-size="10" text-anchor="middle" fill="currentColor" stroke="none">M</text></svg>Transit</div>
+            <div class="cg-legend-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>USWOO Rentals</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-paper" id="cta" style="padding-top:0;">
+    <div class="wrap">
+      <div class="cg-switch">
+        <div class="cg-switch-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></div>
+        <div class="cg-switch-text">
+          <strong>Moving to a different city?</strong>
+          <span>Switch cities above to explore more areas and find your place.</span>
+        </div>
+        <a class="btn btn-outline on-paper" href="#explore">Explore Other Cities</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="ft-label">Stay in the Loop</div>
+        <form class="newsletter-form" onSubmit="{{ preventDefault }}">
+          <input type="email" placeholder="Email address" aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">&rarr;</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">Follow</div>
+        <ul class="footer-links">
+          <li><a href="#top">Instagram &rarr;</a></li>
+          <li><a href="#top">LinkedIn &rarr;</a></li>
+          <li><a href="#top">TikTok &rarr;</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">USWOO</div>
+        <p class="footer-copy">&copy; 2026 USWOO<br>New York City</p>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">Legal</div>
+        <ul class="footer-links">
+          <li><a href="#top">Terms &amp; Conditions &rarr;</a></li>
+          <li><a href="#top">Privacy Policy &rarr;</a></li>
+          <li><a href="#top">Cookies Policy &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-word">
+      <div class="wm">USWOO<span>.</span></div>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const FILTER_ICONS = {
+  neighborhood: '<svg viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="1.6" style="width:20px;height:20px"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>',
+  school: '<svg viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="1.6" style="width:20px;height:20px"><path d="M22 10 12 4 2 10l10 6 10-6z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>',
+  business: '<svg viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="1.6" style="width:20px;height:20px"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>',
+  commute: '<svg viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="1.6" style="width:20px;height:20px"><rect x="5" y="3" width="14" height="14" rx="3"/><circle cx="8.5" cy="21" r="1.2"/><circle cx="15.5" cy="21" r="1.2"/><line x1="5" y1="12" x2="19" y2="12"/></svg>',
+};
+const FILTERS = [
+  { id: 'neighborhood', title: 'Neighborhood', desc: 'Explore popular areas' },
+  { id: 'school', title: 'School', desc: 'Universities & campuses' },
+  { id: 'business', title: 'Business District', desc: 'Work hubs & commercial areas' },
+  { id: 'commute', title: 'Commute', desc: 'Transit & commute time' },
+];
+const CITIES = ['New York & New Jersey', 'Los Angeles', 'Washington, D.C.', 'Chicago', 'Pennsylvania'];
+const NY_SCHOOLS = [
+  { name: 'Parsons School of Design', lat: 40.7336, lng: -73.9903, hub: 'Union Square / Greenwich Village', communities: ['Greenwich Village', 'Union Square', 'East Village', 'NoHo', 'SoHo', 'Chelsea', 'Flatiron'] },
+  { name: 'Pratt Institute', lat: 40.6912, lng: -73.9636, hub: 'Clinton Hill, Brooklyn', communities: ['Clinton Hill', 'Fort Greene', 'Downtown Brooklyn', 'Prospect Heights', 'Bed-Stuy', 'Williamsburg'] },
+  { name: 'SVA', lat: 40.741, lng: -73.9897, hub: 'Gramercy / Flatiron / Chelsea', communities: ['Gramercy', 'Flatiron', 'Kips Bay', 'Chelsea', 'NoMad', 'East Village'] },
+  { name: 'FIT', lat: 40.7466, lng: -73.9943, hub: 'Chelsea, W 27th St', communities: ['Chelsea', 'NoMad', 'Midtown South', 'Flatiron', 'Hudson Yards', "Hell's Kitchen"] },
+  { name: 'Columbia University', lat: 40.8075, lng: -73.9626, hub: 'Morningside Heights', communities: ['Morningside Heights', 'West Harlem', 'Manhattanville', 'Upper West Side', 'Hamilton Heights'] },
+  { name: 'NYU', lat: 40.7295, lng: -73.9965, hub: 'Washington Square / Greenwich Village', communities: ['Greenwich Village', 'East Village', 'NoHo', 'SoHo', 'Union Square', 'Lower East Side', 'Chelsea'] },
+  { name: 'Fordham — Lincoln Center', lat: 40.7739, lng: -73.9846, hub: 'Lincoln Square / Upper West Side', communities: ['Lincoln Square', 'Columbus Circle', 'Upper West Side', "Hell's Kitchen", 'Midtown West'] },
+  { name: 'Fordham — Rose Hill', lat: 40.8623, lng: -73.8857, hub: 'Fordham / Belmont, Bronx', communities: ['Fordham', 'Belmont', 'Arthur Avenue', 'Little Italy of the Bronx', 'Bedford Park', 'Botanical Garden area'] },
+];
+const NY_MARKERS = {
+  business: [
+    { name: 'Midtown Manhattan', lat: 40.7549, lng: -73.984, desc: '34th–59th St area; one of NYC\'s largest core business districts — finance, media, consulting, tech and HQ offices.' },
+    { name: 'Midtown East', lat: 40.7549, lng: -73.9707, desc: 'Grand Central / Park Ave / Lexington Ave; traditional corporate office core — banks, law firms, consulting, finance.' },
+    { name: 'Midtown West', lat: 40.758, lng: -73.9855, desc: 'Times Square / Hudson Yards / Hell\'s Kitchen; media, entertainment, tech and new-generation office towers and HQs.' },
+    { name: 'Financial District (FiDi)', lat: 40.7075, lng: -74.0113, desc: 'Wall Street / World Trade Center; the traditional financial center — banks, insurance, financial services, government.' },
+    { name: 'Hudson Yards', lat: 40.7566, lng: -74.0007, desc: 'West 30s; emerging high-end business district — major corporate HQs, finance, tech and luxury retail.' },
+    { name: 'Flatiron / NoMad', lat: 40.742, lng: -73.989, desc: '20s–30s, Broadway / 5th Ave; concentration of tech, creative, design, advertising and startups.' },
+    { name: 'Chelsea', lat: 40.7465, lng: -74.0014, desc: '14th–30th St West; strong tech, media, advertising and art industries — driven in part by Google\'s presence.' },
+    { name: 'Union Square', lat: 40.7359, lng: -73.9911, desc: '14th St area; tech, startups, retail and creative industries, with many young companies.' },
+    { name: 'SoHo', lat: 40.7233, lng: -74.003, desc: 'Houston–Canal St; concentration of fashion, luxury retail, creative agencies and brand headquarters.' },
+    { name: 'Downtown Brooklyn', lat: 40.6935, lng: -73.9866, desc: 'Brooklyn Civic Center / MetroTech; Brooklyn\'s largest business center — finance, tech, government, education.' },
+    { name: 'Long Island City (LIC)', lat: 40.7447, lng: -73.9485, desc: 'Queens Plaza / Court Square; a main Queens office hub — tech, media, industrial conversion and corporate offices.' },
+  ],
+  commute: [
+    { name: 'Grand Central Terminal', lat: 40.7527, lng: -73.9772 },
+    { name: 'Penn Station', lat: 40.7506, lng: -73.9935 },
+    { name: 'Port Authority Bus Terminal', lat: 40.7568, lng: -73.9903 },
+    { name: 'Atlantic Terminal (Brooklyn)', lat: 40.6845, lng: -73.9776 },
+    { name: 'JFK Airport', lat: 40.6413, lng: -73.7781 },
+    { name: 'LaGuardia Airport', lat: 40.7769, lng: -73.874 },
+    { name: 'Newark Liberty Airport', lat: 40.6895, lng: -74.1745 },
+    { name: 'WTC PATH Station', lat: 40.7126, lng: -74.0122 },
+    { name: '14 St PATH Station', lat: 40.7377, lng: -74.0002 },
+    { name: '23 St PATH Station', lat: 40.7423, lng: -73.9932 },
+    { name: '33 St PATH Station', lat: 40.7484, lng: -73.9885 },
+    { name: '5 Ave Subway Station', lat: 40.7539, lng: -73.9807 },
+    { name: 'Hoboken PATH Station', lat: 40.7357, lng: -74.0294 },
+    { name: 'Newport PATH Station', lat: 40.7267, lng: -74.0339 },
+    { name: 'Exchange Place PATH Station', lat: 40.7164, lng: -74.0333 },
+    { name: 'Grove St PATH Station', lat: 40.7196, lng: -74.0431 },
+    { name: 'Journal Square PATH Station', lat: 40.7326, lng: -74.0629 },
+    { name: 'Times Sq–42 St / 42 St–Port Authority (1,2,3,7,N,Q,R,W,A,C,E,S)', lat: 40.7554, lng: -73.9868 },
+    { name: 'Grand Central–42 St (4,5,6,7,S)', lat: 40.7527, lng: -73.9772 },
+    { name: '34 St–Herald Sq (B,D,F,M,N,Q,R,W)', lat: 40.7497, lng: -73.9878 },
+    { name: '14 St–Union Sq (4,5,6,L,N,Q,R,W)', lat: 40.7359, lng: -73.9906 },
+    { name: 'Fulton St (2,3,4,5,A,C,J,Z)', lat: 40.7101, lng: -74.0087 },
+    { name: 'Atlantic Av–Barclays Ctr (2,3,4,5,B,D,N,Q,R)', lat: 40.6845, lng: -73.9776 },
+    { name: '59 St–Columbus Circle (1,A,B,C,D)', lat: 40.768, lng: -73.9819 },
+    { name: 'West 4 St–Washington Sq (A,B,C,D,E,F,M)', lat: 40.7323, lng: -74.0004 },
+    { name: 'Jay St–MetroTech (A,C,F,R)', lat: 40.6924, lng: -73.9866 },
+    { name: 'Court Sq (7,E,F,G)', lat: 40.7473, lng: -73.9454 },
+    { name: 'Queensboro Plaza (7,N,W)', lat: 40.7508, lng: -73.9403 },
+    { name: 'Jackson Hts–Roosevelt Av / 74 St (7,E,F,M,R)', lat: 40.7465, lng: -73.8913 },
+    { name: 'Lexington Av–53 St / 51 St (4,6,E,M)', lat: 40.7573, lng: -73.9707 },
+    { name: 'Lexington Av–59 St (4,5,6,N,R,W)', lat: 40.7627, lng: -73.9679 },
+    { name: 'Canal St (6,J,N,Q,R,W,Z)', lat: 40.7188, lng: -74.0007 },
+    { name: 'Broadway Junction (A,C,J,L,Z)', lat: 40.6785, lng: -73.9037 },
+  ],
+  neighborhood: [
+    { name: 'Midtown Manhattan', lat: 40.7549, lng: -73.984 },
+    { name: 'Midtown East', lat: 40.7549, lng: -73.9707 },
+    { name: 'Midtown West', lat: 40.758, lng: -73.9855 },
+    { name: 'Financial District (FiDi)', lat: 40.7075, lng: -74.0113 },
+    { name: 'Hudson Yards', lat: 40.7566, lng: -74.0007 },
+    { name: 'Flatiron / NoMad', lat: 40.742, lng: -73.989 },
+    { name: 'Chelsea', lat: 40.7465, lng: -74.0014 },
+    { name: 'Union Square', lat: 40.7359, lng: -73.9911 },
+    { name: 'SoHo', lat: 40.7233, lng: -74.003 },
+    { name: 'Downtown Brooklyn', lat: 40.6935, lng: -73.9866 },
+    { name: 'Long Island City (LIC)', lat: 40.7447, lng: -73.9485 },
+    { name: 'Hoboken, NJ', lat: 40.7439, lng: -74.0323 },
+    { name: 'Newport, NJ', lat: 40.7267, lng: -74.0339 },
+    { name: 'Exchange Place, NJ', lat: 40.7164, lng: -74.0333 },
+    { name: 'Grove St, NJ', lat: 40.7196, lng: -74.0431 },
+    { name: 'Journal Square (JSQ), NJ', lat: 40.7326, lng: -74.0629 },
+  ],
+};
+const LA_SCHOOLS = [
+  { name: 'USC', lat: 34.0224, lng: -118.2851, hub: 'University Park, DTLA-adjacent', communities: ['University Park', 'DTLA', 'Koreatown'] },
+  { name: 'UCLA', lat: 34.0689, lng: -118.4452, hub: 'Westwood', communities: ['Westwood', 'Sawtelle', 'Palms'] },
+  { name: 'Loyola Marymount University', lat: 33.9701, lng: -118.4166, hub: 'Westchester / Playa Vista', communities: ['Westchester', 'Playa Vista', 'Marina del Rey', 'Culver City'] },
+  { name: 'Occidental College', lat: 34.1264, lng: -118.2115, hub: 'Eagle Rock', communities: ['Eagle Rock', 'Highland Park', 'Los Feliz', 'Pasadena'] },
+  { name: 'UC Irvine (UCI)', lat: 33.6405, lng: -117.8443, hub: 'Irvine', communities: ['UTC', 'Spectrum', 'Park Place'] },
+  { name: 'Cal State LA', lat: 34.0664, lng: -118.1706, hub: 'El Sereno', communities: ['El Sereno', 'Alhambra', 'Monterey Park'] },
+  { name: 'Caltech', lat: 34.1377, lng: -118.1253, hub: 'Pasadena', communities: ['Pasadena', 'South Pasadena'] },
+  { name: 'ArtCenter College of Design', lat: 34.1711, lng: -118.1198, hub: 'Pasadena', communities: ['Pasadena', 'Eagle Rock', 'Highland Park'] },
+  { name: 'LA Film School', lat: 34.1017, lng: -118.3255, hub: 'Hollywood', communities: ['Hollywood', 'Koreatown'] },
+  { name: 'Santa Monica College (SMC)', lat: 34.0158, lng: -118.4513, hub: 'Santa Monica', communities: ['Santa Monica', 'Palms', 'Mar Vista'] },
+  { name: 'Pasadena City College (PCC)', lat: 34.1428, lng: -118.1246, hub: 'Pasadena', communities: ['Pasadena', 'Alhambra', 'Arcadia'] },
+  { name: 'West LA College (WLAC)', lat: 34.0136, lng: -118.4066, hub: 'Culver City', communities: ['Culver City', 'Palms'] },
+  { name: 'Otis College of Art and Design', lat: 33.9633, lng: -118.4149, hub: 'Westchester / Playa Vista', communities: ['Westchester', 'Playa Vista', 'Marina del Rey'] },
+];
+const LA_MARKERS = {
+  business: [
+    { name: 'DTLA', lat: 34.0407, lng: -118.2468, desc: 'Downtown LA — Financial District, South Park, Arts District, Historic Core; entertainment, finance, law, tech and startups.' },
+    { name: 'Century City', lat: 34.0586, lng: -118.4176, desc: 'Office towers, Westfield mall and luxury residential; entertainment, law and finance hub with heavy daytime employment.' },
+    { name: 'Culver City', lat: 34.0211, lng: -118.3965, desc: 'Entertainment, tech and creative office plus restaurants and apartments; Downtown, Arts District act as distinct business districts.' },
+    { name: 'Santa Monica', lat: 34.0195, lng: -118.4912, desc: 'Beachside, walkable, tech office and retail; "Silicon Beach" core.' },
+    { name: 'Playa Vista', lat: 33.9737, lng: -118.4287, desc: 'Master-planned community; concentration of tech companies and new apartments.' },
+    { name: 'Burbank', lat: 34.1808, lng: -118.3089, desc: 'Media and entertainment studios hub — major studio and production company offices.' },
+    { name: 'Hollywood', lat: 34.0928, lng: -118.3287, desc: 'Entertainment industry core — studios, production, talent agencies, tourism.' },
+    { name: 'Beverly Hills', lat: 34.0736, lng: -118.4004, desc: 'Luxury retail, hospitality and professional services — brand and lifestyle-driven business district.' },
+    { name: 'Pasadena', lat: 34.1478, lng: -118.1445, desc: 'Independent small-city business district — schools, offices, Old Pasadena retail.' },
+    { name: 'El Segundo', lat: 33.9192, lng: -118.4165, desc: 'Aerospace, tech and corporate offices near LAX.' },
+  ],
+  commute: [
+    { name: 'Union Station', lat: 34.0561, lng: -118.2365 },
+    { name: '7th St / Metro Center', lat: 34.0486, lng: -118.2588 },
+    { name: 'Wilshire / Vermont', lat: 34.0618, lng: -118.2915 },
+    { name: 'Hollywood / Vine', lat: 34.1016, lng: -118.3264 },
+    { name: 'North Hollywood', lat: 34.1683, lng: -118.3769 },
+    { name: 'Culver City Station', lat: 34.0163, lng: -118.3963 },
+    { name: 'Expo / Sepulveda', lat: 34.0294, lng: -118.4297 },
+    { name: 'Downtown Santa Monica', lat: 34.0157, lng: -118.4962 },
+    { name: 'LAX Airport', lat: 33.9416, lng: -118.4085 },
+    { name: 'Bob Hope / Hollywood Burbank Airport', lat: 34.2007, lng: -118.3587 },
+  ],
+  neighborhood: [
+    { name: 'Santa Monica', lat: 34.0195, lng: -118.4912 },
+    { name: 'Venice', lat: 33.985, lng: -118.4695 },
+    { name: 'Marina del Rey', lat: 33.9803, lng: -118.4517 },
+    { name: 'Playa Vista', lat: 33.9737, lng: -118.4287 },
+    { name: 'Westwood', lat: 34.0633, lng: -118.4455 },
+    { name: 'Brentwood', lat: 34.0525, lng: -118.4759 },
+    { name: 'Culver City', lat: 34.0211, lng: -118.3965 },
+    { name: 'Century City', lat: 34.0586, lng: -118.4176 },
+    { name: 'Beverly Hills', lat: 34.0736, lng: -118.4004 },
+    { name: 'West Hollywood', lat: 34.09, lng: -118.3617 },
+    { name: 'Koreatown', lat: 34.0619, lng: -118.3, },
+    { name: 'Silver Lake', lat: 34.0869, lng: -118.2702 },
+    { name: 'Los Feliz', lat: 34.1064, lng: -118.2903 },
+    { name: 'Highland Park', lat: 34.1141, lng: -118.1936 },
+    { name: 'Eagle Rock', lat: 34.1381, lng: -118.2131 },
+    { name: 'Pasadena', lat: 34.1478, lng: -118.1445 },
+    { name: 'DTLA', lat: 34.0407, lng: -118.2468 },
+  ],
+};
+const DC_SCHOOLS = [
+  { name: 'Georgetown University', lat: 38.9076, lng: -77.0723, hub: 'Georgetown', communities: ['Georgetown', 'Burleith', 'Glover Park', 'Foggy Bottom', 'Dupont Circle'] },
+  { name: 'George Washington University (GWU)', lat: 38.9, lng: -77.047, hub: 'Foggy Bottom', communities: ['Foggy Bottom', 'West End', 'Dupont Circle', 'Downtown', 'Georgetown'] },
+  { name: 'American University', lat: 38.9377, lng: -77.0897, hub: 'Tenleytown / AU Park', communities: ['Tenleytown', 'AU Park', 'Spring Valley', 'Friendship Heights', 'Cleveland Park'] },
+  { name: 'Howard University', lat: 38.9227, lng: -77.0195, hub: 'Shaw / U Street area', communities: ['Shaw', 'U Street', 'Columbia Heights', 'LeDroit Park', 'Bloomingdale'] },
+  { name: 'Catholic University of America', lat: 38.9332, lng: -76.9993, hub: 'Brookland', communities: ['Brookland', 'Edgewood', 'NoMa', 'Petworth'] },
+  { name: 'Gallaudet University', lat: 38.9086, lng: -76.9942, hub: 'Near Northeast', communities: ['NoMa', 'Union Market', 'H Street Corridor', 'Capitol Hill'] },
+  { name: 'George Mason University', lat: 38.8317, lng: -77.3072, hub: 'Arlington / Fairfax', communities: ['Arlington', 'Ballston', 'Clarendon', 'Fairfax'] },
+  { name: 'University of Maryland', lat: 38.9869, lng: -76.9426, hub: 'College Park', communities: ['College Park', 'Hyattsville', 'Riverdale Park'] },
+];
+const DC_MARKERS = {
+  business: [
+    { name: 'Downtown DC', lat: 38.9, lng: -77.0278, desc: 'Consulting, law, corporate offices and associations; near Logan Circle and Dupont.' },
+    { name: 'K Street', lat: 38.9027, lng: -77.0397, desc: 'Lobbying, law, public affairs and consulting; near Dupont, Logan Circle and Foggy Bottom.' },
+    { name: 'Penn Quarter / Chinatown', lat: 38.8981, lng: -77.0219, desc: 'Law, associations, media and hospitality; near Downtown and Mt Vernon Triangle.' },
+    { name: 'Foggy Bottom', lat: 38.9, lng: -77.047, desc: 'State Dept, World Bank, IMF, healthcare and GWU; near West End and Georgetown.' },
+    { name: 'Capitol Hill', lat: 38.8899, lng: -77.0091, desc: 'Congress, government and policy; near Navy Yard and NoMa.' },
+    { name: 'NoMa', lat: 38.9058, lng: -77.0025, desc: 'Government agencies, tech, nonprofits and office; near Union Market.' },
+    { name: 'Navy Yard', lat: 38.8763, lng: -77.0043, desc: 'Federal agencies, defense-related and new office; near Capitol Hill.' },
+    { name: 'Rosslyn', lat: 38.8956, lng: -77.0716, desc: 'Consulting, defense and corporate HQ; near Courthouse and Clarendon.' },
+    { name: 'Crystal City / National Landing', lat: 38.8563, lng: -77.0497, desc: 'Defense, government contractors and Amazon HQ2; near Pentagon City.' },
+    { name: 'Bethesda', lat: 38.9847, lng: -77.0947, desc: 'Biotech, healthcare and consulting; near Chevy Chase.' },
+  ],
+  commute: [
+    { name: 'Metro Center (Red+Blue+Orange+Silver)', lat: 38.898, lng: -77.028 },
+    { name: 'Gallery Place–Chinatown (Red+Green+Yellow)', lat: 38.8981, lng: -77.0219 },
+    { name: "L'Enfant Plaza (Blue+Orange+Silver+Green+Yellow)", lat: 38.8853, lng: -77.0217 },
+    { name: 'Rosslyn (Blue+Orange+Silver)', lat: 38.8956, lng: -77.0716 },
+    { name: 'Farragut North / Farragut West', lat: 38.9037, lng: -77.0392 },
+    { name: 'Union Station (Red+Amtrak+regional rail)', lat: 38.897, lng: -77.0057 },
+    { name: 'Fort Totten (Red+Green+Yellow)', lat: 38.9515, lng: -77.0021 },
+    { name: 'Ronald Reagan Washington National Airport (DCA)', lat: 38.8512, lng: -77.0402 },
+    { name: 'Washington Dulles International Airport (IAD)', lat: 38.9531, lng: -77.4565 },
+  ],
+  neighborhood: [
+    { name: 'Georgetown', lat: 38.9076, lng: -77.0723 },
+    { name: 'Dupont Circle', lat: 38.9097, lng: -77.0434 },
+    { name: 'Foggy Bottom', lat: 38.9, lng: -77.047 },
+    { name: 'Logan Circle', lat: 38.9095, lng: -77.0311 },
+    { name: 'Shaw', lat: 38.9126, lng: -77.0225 },
+    { name: 'NoMa', lat: 38.9058, lng: -77.0025 },
+    { name: 'Capitol Hill', lat: 38.8899, lng: -77.0091 },
+    { name: 'Navy Yard', lat: 38.8763, lng: -77.0043 },
+  ],
+};
+const CHI_SCHOOLS = [
+  { name: 'University of Chicago', lat: 41.7886, lng: -87.5987, hub: 'Hyde Park', communities: ['Hyde Park', 'Kenwood', 'Woodlawn', 'South Loop'] },
+  { name: 'Northwestern University', lat: 42.0565, lng: -87.6753, hub: 'Evanston', communities: ['Evanston', 'Rogers Park', 'Edgewater'] },
+  { name: 'DePaul University', lat: 41.9249, lng: -87.6564, hub: 'Lincoln Park', communities: ['Lincoln Park', 'Lakeview', 'Old Town', 'Wrigleyville'] },
+  { name: 'University of Illinois Chicago (UIC)', lat: 41.8708, lng: -87.6505, hub: 'Near West Side', communities: ['West Loop', 'Greektown', 'Little Italy', 'South Loop'] },
+  { name: 'Loyola University Chicago', lat: 42.0008, lng: -87.6614, hub: 'Rogers Park / Edgewater', communities: ['Rogers Park', 'Edgewater', 'Andersonville'] },
+  { name: 'School of the Art Institute of Chicago (SAIC)', lat: 41.8796, lng: -87.6237, hub: 'The Loop', communities: ['Loop', 'South Loop', 'River North', 'Streeterville'] },
+  { name: 'Columbia College Chicago', lat: 41.8721, lng: -87.6254, hub: 'South Loop', communities: ['South Loop', 'Loop', 'Printers Row'] },
+  { name: 'Illinois Institute of Technology (IIT)', lat: 41.8346, lng: -87.6273, hub: 'Bronzeville', communities: ['Bronzeville', 'South Loop', 'Bridgeport'] },
+];
+const CHI_MARKERS = {
+  business: [
+    { name: 'The Loop', lat: 41.8827, lng: -87.6298, desc: 'Finance, law, government and consulting; near South Loop and River North.' },
+    { name: 'West Loop / Fulton Market', lat: 41.8859, lng: -87.6499, desc: 'Tech, consulting, corporate HQ and food; near Fulton Market and River West.' },
+    { name: 'River North', lat: 41.8919, lng: -87.6342, desc: 'Tech, media, design and hospitality; near Streeterville.' },
+    { name: 'Streeterville / Magnificent Mile', lat: 41.8931, lng: -87.6222, desc: 'Healthcare, retail and hospitality; near Gold Coast.' },
+    { name: 'LaSalle Street Corridor', lat: 41.8788, lng: -87.6323, desc: 'Finance, banking and law; near Loop and River North.' },
+    { name: 'Fulton Market', lat: 41.8864, lng: -87.6534, desc: 'Tech, startups and corporate offices; near West Loop.' },
+    { name: 'Medical District', lat: 41.8742, lng: -87.6733, desc: 'Healthcare, biotech and research; near Little Italy and UIC area.' },
+    { name: "O'Hare / Rosemont", lat: 41.9803, lng: -87.8722, desc: 'Corporate offices, logistics and aviation; near Rosemont and northwest suburbs.' },
+    { name: 'Evanston', lat: 42.0451, lng: -87.6877, desc: 'Education, healthcare and professional services.' },
+  ],
+  commute: [
+    { name: 'Clark/Lake (multiple CTA lines, Loop core)', lat: 41.8858, lng: -87.6307 },
+    { name: 'State/Lake', lat: 41.8847, lng: -87.6278 },
+    { name: 'Washington/Wells', lat: 41.8829, lng: -87.6339 },
+    { name: 'Roosevelt (Red/Green/Orange)', lat: 41.8674, lng: -87.6266 },
+    { name: 'Fullerton (Red/Brown/Purple)', lat: 41.9253, lng: -87.6529 },
+    { name: 'Belmont (Red/Brown/Purple)', lat: 41.9397, lng: -87.6538 },
+    { name: 'Jackson', lat: 41.8781, lng: -87.6298 },
+    { name: 'Chicago (Red Line)', lat: 41.8964, lng: -87.6285 },
+    { name: 'Ogilvie Transportation Center', lat: 41.8827, lng: -87.6404 },
+    { name: 'Union Station', lat: 41.8789, lng: -87.6394 },
+    { name: "O'Hare International Airport (ORD)", lat: 41.9742, lng: -87.9073 },
+    { name: 'Midway International Airport (MDW)', lat: 41.7868, lng: -87.7522 },
+  ],
+  neighborhood: [
+    { name: 'The Loop', lat: 41.8827, lng: -87.6298 },
+    { name: 'West Loop', lat: 41.8859, lng: -87.6499 },
+    { name: 'River North', lat: 41.8919, lng: -87.6342 },
+    { name: 'Lincoln Park', lat: 41.9249, lng: -87.6564 },
+    { name: 'Lakeview', lat: 41.9436, lng: -87.6553 },
+    { name: 'Wicker Park / Bucktown', lat: 41.9088, lng: -87.6773 },
+    { name: 'Hyde Park', lat: 41.7886, lng: -87.5987 },
+    { name: 'South Loop', lat: 41.8664, lng: -87.6248 },
+    { name: 'Streeterville', lat: 41.8931, lng: -87.6222 },
+    { name: 'Old Town', lat: 41.9098, lng: -87.6362 },
+    { name: 'Logan Square', lat: 41.9294, lng: -87.7073 },
+    { name: 'Rogers Park / Edgewater', lat: 42.0008, lng: -87.6614 },
+    { name: 'Andersonville', lat: 41.9779, lng: -87.6693 },
+    { name: 'Bronzeville', lat: 41.8206, lng: -87.6156 },
+    { name: 'Woodlawn', lat: 41.78, lng: -87.596 },
+  ],
+};
+const PHL_SCHOOLS = [
+  { name: 'University of Pennsylvania (UPenn)', lat: 39.9522, lng: -75.1932, hub: 'University City', communities: ['University City', 'Spruce Hill', 'Powelton Village', 'Fitler Square'] },
+  { name: 'Drexel University', lat: 39.9566, lng: -75.1899, hub: 'University City', communities: ['University City', 'Powelton Village', 'Logan Square', 'Center City'] },
+  { name: 'Temple University', lat: 39.9812, lng: -75.1554, hub: 'North Philadelphia', communities: ['North Central Philly', 'Fairmount', 'Francisville', 'Fishtown'] },
+  { name: 'Thomas Jefferson University', lat: 39.9489, lng: -75.157, hub: 'Center City', communities: ['Washington Square West', 'Midtown Village', 'Society Hill', 'Old City'] },
+  { name: "Saint Joseph's University", lat: 39.9938, lng: -75.2385, hub: 'City Ave / Wynnefield', communities: ['Wynnefield', 'Bala Cynwyd', 'Manayunk', 'East Falls'] },
+  { name: 'University of the Arts', lat: 39.9469, lng: -75.1633, hub: 'Avenue of the Arts / Center City', communities: ['Rittenhouse', 'Washington Square West', 'Graduate Hospital'] },
+];
+const PHL_MARKERS = {
+  business: [
+    { name: 'Center City', lat: 39.9526, lng: -75.1652, desc: 'Finance, law, consulting and corporate office; near Rittenhouse, Logan Square, Midtown Village.' },
+    { name: 'Market Street West', lat: 39.9522, lng: -75.1682, desc: 'Corporate, finance, law and professional services; near Rittenhouse and Logan Square.' },
+    { name: 'University City', lat: 39.9539, lng: -75.1932, desc: 'Healthcare, biotech, life sciences, education and research; near Fitler Square.' },
+    { name: 'Market East', lat: 39.9524, lng: -75.1555, desc: 'Retail, hospitality, government and entertainment; near Old City and Washington Square West.' },
+    { name: 'Navy Yard', lat: 39.8965, lng: -75.1745, desc: 'Life sciences, corporate, engineering and logistics; near South Philly and Graduate Hospital.' },
+    { name: 'Old City', lat: 39.9506, lng: -75.1444, desc: 'Creative, design, startups and hospitality; near Society Hill.' },
+    { name: 'King of Prussia', lat: 40.0893, lng: -75.3902, desc: 'Corporate offices, retail and healthcare; near Main Line suburbs.' },
+    { name: 'Conshohocken', lat: 40.0776, lng: -75.3013, desc: 'Finance, corporate, healthcare and professional services; near Manayunk.' },
+  ],
+  commute: [
+    { name: '30th Street Station (Amtrak+Regional Rail+local transit)', lat: 39.9566, lng: -75.1819 },
+    { name: 'Suburban Station', lat: 39.9538, lng: -75.1657 },
+    { name: 'Jefferson Station', lat: 39.9526, lng: -75.1583 },
+    { name: 'City Hall / 15th Street', lat: 39.9526, lng: -75.1636 },
+    { name: '69th Street Transportation Center', lat: 39.9673, lng: -75.2578 },
+    { name: 'Philadelphia International Airport (PHL)', lat: 39.8744, lng: -75.2424 },
+  ],
+  neighborhood: [
+    { name: 'Rittenhouse Square', lat: 39.9491, lng: -75.1719 },
+    { name: 'University City', lat: 39.9539, lng: -75.1932 },
+    { name: 'Fitler Square', lat: 39.9483, lng: -75.1775 },
+    { name: 'Logan Square', lat: 39.9583, lng: -75.1719 },
+    { name: 'Old City', lat: 39.9506, lng: -75.1444 },
+    { name: 'Society Hill', lat: 39.9445, lng: -75.1477 },
+    { name: 'Washington Square West / Midtown Village', lat: 39.9469, lng: -75.1596 },
+    { name: 'Fishtown', lat: 39.9709, lng: -75.1291 },
+    { name: 'Northern Liberties', lat: 39.9636, lng: -75.1421 },
+    { name: 'Fairmount', lat: 39.9686, lng: -75.1729 },
+    { name: 'Manayunk', lat: 40.0265, lng: -75.2244 },
+  ],
+};
+const MARKER_COLOR = { school: '#E8892B', business: '#E2B33F', commute: '#8FA6C9', neighborhood: '#C9536B' };
+const CATEGORY_ICON_SVG = {
+  school: '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" style="width:14px;height:14px"><path d="M22 10 12 4 2 10l10 6 10-6z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>',
+  business: '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" style="width:14px;height:14px"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>',
+  neighborhood: '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" style="width:14px;height:14px"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>',
+  commute: '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" style="width:14px;height:14px"><path d="M12 2c-3 0-6 1-6 5v8a3 3 0 0 0 3 3l-1.5 2h9L15 18a3 3 0 0 0 3-3V7c0-4-3-5-6-5z"/><circle cx="8.5" cy="15" r="0.6" fill="#fff"/><circle cx="15.5" cy="15" r="0.6" fill="#fff"/></svg>',
+};
+const CITY_DATA = {
+  'New York & New Jersey': {
+    center: { lat: 40.759, lng: -73.955 }, zoom: 12, minZoom: 10,
+    bounds: [[40.63, -74.11], [40.89, -73.83]],
+    schools: NY_SCHOOLS, markers: NY_MARKERS,
+  },
+  'Los Angeles': {
+    center: { lat: 34.03, lng: -118.34 }, zoom: 10, minZoom: 9,
+    bounds: [[33.85, -118.55], [34.25, -118.1]],
+    schools: LA_SCHOOLS, markers: LA_MARKERS,
+  },
+  'Washington, D.C.': {
+    center: { lat: 38.9, lng: -77.03 }, zoom: 11, minZoom: 10,
+    bounds: [[38.78, -77.55], [39.05, -76.85]],
+    schools: DC_SCHOOLS, markers: DC_MARKERS,
+  },
+  'Chicago': {
+    center: { lat: 41.89, lng: -87.66 }, zoom: 11, minZoom: 9,
+    bounds: [[41.65, -87.95], [42.08, -87.55]],
+    schools: CHI_SCHOOLS, markers: CHI_MARKERS,
+  },
+  'Pennsylvania': {
+    center: { lat: 39.965, lng: -75.19 }, zoom: 12, minZoom: 10,
+    bounds: [[39.83, -75.45], [40.12, -75.0]],
+    schools: PHL_SCHOOLS, markers: PHL_MARKERS,
+  },
+};
+const MAP_INNER_HTML = { __html: '<div id="cg-leaflet-container" style="position:absolute;inset:0;"></div>' };
+
+class Component extends DCLogic {
+  state = { activeFilters: ['neighborhood'], activeCity: 'New York & New Jersey' };
+  mapWrapperRef = { current: null };
+  leafletMap = null;
+  markerLayer = null;
+
+  componentDidMount() {
+    this.pollInit(0);
+  }
+
+  pollInit(attempt) {
+    const container = this.mapWrapperRef.current && this.mapWrapperRef.current.querySelector('#cg-leaflet-container');
+    const ready = window.L && container && container.offsetWidth > 0 && container.offsetHeight > 0;
+    if (ready) { this.initMap(); return; }
+    if (attempt < 60) setTimeout(() => this.pollInit(attempt + 1), 100);
+  }
+
+  initMap() {
+    const container = this.mapWrapperRef.current && this.mapWrapperRef.current.querySelector('#cg-leaflet-container');
+    if (!window.L || !container || this.leafletMap) return;
+    const cd = CITY_DATA[this.state.activeCity] || CITY_DATA['New York & New Jersey'];
+    try {
+    this.leafletMap = window.L.map(container, {
+      center: [cd.center.lat, cd.center.lng],
+      zoom: cd.zoom,
+      minZoom: cd.minZoom,
+      maxZoom: 16,
+      maxBounds: cd.bounds,
+      maxBoundsViscosity: 0.8,
+      scrollWheelZoom: false,
+    });
+    window.L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap, &copy; CARTO',
+      maxZoom: 19,
+    }).addTo(this.leafletMap);
+    this.markerLayer = window.L.layerGroup().addTo(this.leafletMap);
+    this.paintMarkers();
+    setTimeout(() => { try { this.leafletMap.invalidateSize(); } catch (e) {} }, 50);
+    setTimeout(() => { try { this.leafletMap.invalidateSize(); } catch (e) {} }, 400);
+    setTimeout(() => { try { this.leafletMap.invalidateSize(); } catch (e) {} }, 1000);
+    } catch (e) {}
+  }
+
+  paintMarkers() {
+    let dead = false;
+    try {
+      if (!this.leafletMap) dead = true;
+      else {
+        const c = this.leafletMap.getContainer();
+        if (!c || !c.isConnected) dead = true;
+      }
+    } catch (e) { dead = true; }
+    if (dead) {
+      try { if (this.leafletMap) this.leafletMap.remove(); } catch (e) {}
+      this.leafletMap = null;
+      this.markerLayer = null;
+      this.initMap();
+      return;
+    }
+    if (!this.markerLayer) return;
+    this.markerLayer.clearLayers();
+    const cd = CITY_DATA[this.state.activeCity] || CITY_DATA['New York & New Jersey'];
+    const SCHOOLS = cd.schools, MAP_MARKERS = cd.markers;
+    const activeFilters = (this.state.activeFilters && this.state.activeFilters.length) ? this.state.activeFilters : ['neighborhood'];
+    const labeledIcon = (cat, name) => window.L.divIcon({
+      className: '',
+      html: '<div style="display:flex;align-items:center;gap:6px;white-space:nowrap;overflow:visible;">' +
+        '<div class="cg-marker" style="background:' + MARKER_COLOR[cat] + ';flex:none;">' + CATEGORY_ICON_SVG[cat] + '</div>' +
+        '<span style="background:#fff;padding:3px 8px;border-radius:3px;font-size:11.5px;font-weight:600;color:#141414;box-shadow:0 1px 4px rgba(0,0,0,0.25);">' + name + '</span></div>',
+      iconSize: [220, 26],
+      iconAnchor: [13, 13],
+    });
+    const plainIcon = (cat) => window.L.divIcon({
+      className: '',
+      html: '<div class="cg-marker" style="background:' + MARKER_COLOR[cat] + '">' + CATEGORY_ICON_SVG[cat] + '</div>',
+      iconSize: [26, 26],
+    });
+    const hovercard = (title, sub, desc) => '<div class="cg-hovercard"><div class="hc-title">' + title + '</div>' +
+      (sub ? '<div class="hc-sub">' + sub + '</div>' : '') + (desc ? '<div class="hc-desc">' + desc + '</div>' : '') + '</div>';
+    const tipOpts = { className: 'cg-tooltip', direction: 'top', offset: [0, -8], opacity: 1 };
+    activeFilters.forEach((filter) => {
+      if (filter === 'school') {
+        SCHOOLS.forEach((s) => {
+          window.L.marker([s.lat, s.lng], { icon: labeledIcon('school', s.name) })
+            .bindTooltip(hovercard(s.name, s.hub, 'Community: ' + s.communities.join(', ')), tipOpts)
+            .addTo(this.markerLayer);
+        });
+      } else if (filter === 'business' || filter === 'neighborhood') {
+        (MAP_MARKERS[filter] || []).forEach((pt) => {
+          window.L.marker([pt.lat, pt.lng], { icon: plainIcon(filter) })
+            .bindTooltip(hovercard(pt.name, filter === 'business' ? 'Business District' : 'Neighborhood', pt.desc), tipOpts)
+            .addTo(this.markerLayer);
+        });
+      } else if (filter === 'commute') {
+        (MAP_MARKERS.commute || []).forEach((pt) => {
+          window.L.marker([pt.lat, pt.lng], { icon: plainIcon('commute') }).bindTooltip(hovercard(pt.name, 'Transit'), tipOpts).addTo(this.markerLayer);
+        });
+      }
+    });
+  }
+
+  renderVals() {
+    return {
+      mapWrapperRef: this.mapWrapperRef,
+      mapInnerHtml: MAP_INNER_HTML,
+      filters: FILTERS.map((f) => ({
+        title: f.title,
+        desc: f.desc,
+        iconHtml: { __html: FILTER_ICONS[f.id] },
+        activeClass: this.state.activeFilters.indexOf(f.id) !== -1 ? 'active' : '',
+        onClick: () => this.setState((s) => {
+          const has = s.activeFilters.indexOf(f.id) !== -1;
+          return { activeFilters: has ? s.activeFilters.filter((x) => x !== f.id) : s.activeFilters.concat(f.id) };
+        }, () => this.paintMarkers()),
+      })),
+      clearFilters: () => this.setState({ activeFilters: [] }, () => this.paintMarkers()),
+      cities: CITIES.map((name) => ({
+        name,
+        activeClass: this.state.activeCity === name ? 'active' : '',
+        onClick: () => this.setState({ activeCity: name }, () => {
+          if (this.leafletMap) { this.leafletMap.remove(); this.leafletMap = null; this.markerLayer = null; }
+          this.pollInit(0);
+        }),
+      })),
+      preventDefault: (e) => e.preventDefault(),
+    };
+  }
+}
+</script>
+</body>
+</html>
