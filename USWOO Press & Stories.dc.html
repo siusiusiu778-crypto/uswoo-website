@@ -98,13 +98,22 @@
   .carousel-arrow:hover{ background:var(--paper-raised); border-color:var(--ink-soft); }
   .carousel-arrow svg{ width:16px; height:16px; }
   .story-grid{ margin-top:36px; display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; }
-  .story-card{ background:var(--paper); display:flex; flex-direction:column; text-decoration:none; border-radius:18px; overflow:hidden; padding:10px; }
-  .story-card-media{ position:relative; aspect-ratio:4/3; border-radius:8px; overflow:hidden; }
-  .story-card-media image-slot{ border-radius:8px; }
-  .story-card-body{ padding:16px 2px 10px; }
-  .story-card-body .press-pill{ position:absolute; left:16px; bottom:16px; }
-  .story-card-body h3{ margin-top:10px; font-size:1.06rem; }
-  .story-card-body p{ margin-top:8px; color:var(--ink-soft); font-size:0.9rem; }
+
+  /* ── Media card ────────────────────────────────────────────────────────
+     One card shared by the Home "how we help" steps and the Press
+     renter-story cards. The geometry is identical in both places; only
+     --card-bg flips, so the card always contrasts with the band behind it
+     (white card on a raised band, raised card on a paper band).
+     Nested radius: inner 8 + 10 padding = outer 18. */
+  .media-card{ background:var(--card-bg, var(--paper)); border:1px solid var(--line); border-radius:18px; overflow:hidden; padding:10px; display:flex; flex-direction:column; text-align:left; text-decoration:none; }
+  .media-card-media{ position:relative; aspect-ratio:4/3; border-radius:8px; overflow:hidden; }
+  .media-card-media image-slot{ border-radius:8px; }
+  .media-card-body{ padding:16px 2px 10px; }
+  .media-card-body h3{ font-size:1.06rem; }
+  .media-card-body p{ margin-top:8px; color:var(--ink-soft); font-size:0.9rem; }
+
+  /* This band is raised, so the card takes the paper tone. */
+  .story-card{ --card-bg:var(--paper); }
   .story-card-meta{ margin-top:14px; display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--ink-faint); }
   .story-card-meta .dot{ width:3px; height:3px; border-radius:50%; background:var(--ink-faint); }
   .carousel-dots{ margin-top:36px; display:flex; align-items:center; justify-content:center; gap:20px; }
@@ -204,34 +213,34 @@
       </div>
 
       <div class="story-grid">
-        <a class="story-card" href="#renter-stories">
-          <div class="story-card-media">
+        <a class="media-card story-card" href="#renter-stories">
+          <div class="media-card-media">
             <image-slot id="story-img-1" shape="rounded" radius="8" placeholder="First apartment" src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=700&q=80" credit="Marcus Loke" credit-href="https://unsplash.com/@marcusloke" style="width:100%;height:100%"></image-slot>
             <span class="press-pill">First Apartment</span>
           </div>
-          <div class="story-card-body">
+          <div class="media-card-body">
             <h3>From campus to first apartment</h3>
             <p>How one renter found the right neighborhood near NYU and settled in with ease.</p>
             <div class="story-card-meta"><span>Jun 12, 2025</span><span class="dot"></span><span>5 min read</span></div>
           </div>
         </a>
-        <a class="story-card" href="#renter-stories">
-          <div class="story-card-media">
+        <a class="media-card story-card" href="#renter-stories">
+          <div class="media-card-media">
             <image-slot id="story-img-2" shape="rounded" radius="8" placeholder="Moving cities" src="https://images.unsplash.com/photo-1772724317350-520faccb15e6?auto=format&fit=crop&w=700&q=80" credit="Apartment Life" credit-href="https://unsplash.com/@apartmentlife" style="width:100%;height:100%"></image-slot>
             <span class="press-pill">Move-in Experience</span>
           </div>
-          <div class="story-card-body">
+          <div class="media-card-body">
             <h3>Moving cities made easier</h3>
             <p>From apartment search to furniture, Wi-Fi and move-in — all in one place.</p>
             <div class="story-card-meta"><span>May 28, 2025</span><span class="dot"></span><span>4 min read</span></div>
           </div>
         </a>
-        <a class="story-card" href="#renter-stories">
-          <div class="story-card-media">
+        <a class="media-card story-card" href="#renter-stories">
+          <div class="media-card-media">
             <image-slot id="story-img-3" shape="rounded" radius="8" placeholder="Cozy living room" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=700&q=80" credit="Minh Pham" credit-href="https://unsplash.com/@minhphamdesign" style="width:100%;height:100%"></image-slot>
             <span class="press-pill">Renewal &amp; Next Move</span>
           </div>
-          <div class="story-card-body">
+          <div class="media-card-body">
             <h3>Finding a better fit</h3>
             <p>A renter's journey from renewal decision to finding a new home that feels right.</p>
             <div class="story-card-meta"><span>Apr 30, 2025</span><span class="dot"></span><span>6 min read</span></div>

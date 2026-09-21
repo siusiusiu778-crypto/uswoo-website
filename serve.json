@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/USWOO Home.dc.html" },
+    { "source": "/home", "destination": "/USWOO Home.dc.html" },
+    { "source": "/services", "destination": "/USWOO Services.dc.html" },
+    { "source": "/city-guides", "destination": "/USWOO City Guides.dc.html" },
+    { "source": "/press", "destination": "/USWOO Press & Stories.dc.html" },
+    { "source": "/about", "destination": "/USWOO About Us.dc.html" }
+  ]
+}

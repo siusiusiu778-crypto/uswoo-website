@@ -298,19 +298,22 @@
   /* stretch, not start: the captions wrap to a different number of lines, and
      the cards should still line up along the bottom */
   .flow{ margin-top:56px; display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; align-items:stretch; }
-  .flow-step{
-    position:relative; text-align:left; padding:16px 16px 24px;
-    background:var(--paper-raised); border:1px solid var(--line); border-radius:20px;
-  }
-  .flow-num{ margin-top:20px; font-size:0.75rem; font-weight:700; letter-spacing:0.06em; color:var(--pink); }
-  .flow-step h3{ margin-top:16px; font-size:0.92rem; font-family:'Poppins', sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; }
-  .flow-step p{ margin-top:8px; font-size:0.88rem; color:var(--ink-soft); }
-  .flow-media{
-    aspect-ratio:4/3; border-radius:14px;
-    overflow:hidden; position:relative;
-  }
-  .flow-media img{ width:100%; height:100%; object-fit:cover; }
-  .flow-badge{ position:absolute; top:12px; left:12px; background:#fff; color:var(--ink); font-size:0.68rem; font-weight:700; letter-spacing:0.05em; padding:5px 10px; border-radius:999px; }
+
+  /* ── Media card ────────────────────────────────────────────────────────
+     One card shared by the Home "how we help" steps and the Press
+     renter-story cards. The geometry is identical in both places; only
+     --card-bg flips, so the card always contrasts with the band behind it
+     (white card on a raised band, raised card on a paper band).
+     Nested radius: inner 8 + 10 padding = outer 18. */
+  .media-card{ background:var(--card-bg, var(--paper)); border:1px solid var(--line); border-radius:18px; overflow:hidden; padding:10px; display:flex; flex-direction:column; text-align:left; text-decoration:none; }
+  .media-card-media{ position:relative; aspect-ratio:4/3; border-radius:8px; overflow:hidden; }
+  .media-card-media image-slot{ border-radius:8px; }
+  .media-card-body{ padding:16px 2px 10px; }
+  .media-card-body h3{ font-size:1.06rem; }
+  .media-card-body p{ margin-top:8px; color:var(--ink-soft); font-size:0.9rem; }
+
+  /* This band is paper, so the card takes the raised tone. */
+  .flow-step{ --card-bg:var(--paper-raised); }
   @media (max-width:860px){ .flow{ grid-template-columns:1fr; } }
   .flow-step{
     opacity:0; transform:translateX(160px);
@@ -467,29 +470,32 @@
       </div>
 
       <div class="flow">
-        <div class="flow-step">
-          <div class="flow-media">
-            <image-slot id="help-img-1" shape="rect" placeholder="Drop a photo" src="./assets/help-know-where.webp" style="width:100%;height:100%"></image-slot>
-            <span class="flow-badge">01</span>
+        <div class="media-card flow-step">
+          <div class="media-card-media">
+            <image-slot id="help-img-1" shape="rounded" radius="8" placeholder="Drop a photo" src="./assets/help-know-where.webp" style="width:100%;height:100%"></image-slot>
           </div>
-          <h3>Know Where to Live</h3>
-          <p>Neighborhoods, commute, schools and lifestyle.</p>
+          <div class="media-card-body">
+            <h3>Know Where to Live</h3>
+            <p>Neighborhoods, commute, schools and lifestyle.</p>
+          </div>
         </div>
-        <div class="flow-step">
-          <div class="flow-media">
-            <image-slot id="help-img-2" shape="rect" placeholder="Drop a photo" src="./assets/help-find-move.webp" style="width:100%;height:100%"></image-slot>
-            <span class="flow-badge">02</span>
+        <div class="media-card flow-step">
+          <div class="media-card-media">
+            <image-slot id="help-img-2" shape="rounded" radius="8" placeholder="Drop a photo" src="./assets/help-find-move.webp" style="width:100%;height:100%"></image-slot>
           </div>
-          <h3>Find &amp; Move</h3>
-          <p>The right home, with support from touring to move-in.</p>
+          <div class="media-card-body">
+            <h3>Find &amp; Move</h3>
+            <p>The right home, with support from touring to move-in.</p>
+          </div>
         </div>
-        <div class="flow-step">
-          <div class="flow-media">
-            <image-slot id="help-img-3" shape="rect" placeholder="Drop a photo" style="width:100%;height:100%"></image-slot>
-            <span class="flow-badge">03</span>
+        <div class="media-card flow-step">
+          <div class="media-card-media">
+            <image-slot id="help-img-3" shape="rounded" radius="8" placeholder="Drop a photo" style="width:100%;height:100%"></image-slot>
           </div>
-          <h3>Settle In &amp; Connect</h3>
-          <p>Local resources, community and connections after you move.</p>
+          <div class="media-card-body">
+            <h3>Settle In &amp; Connect</h3>
+            <p>Local resources, community and connections after you move.</p>
+          </div>
         </div>
       </div>
     </div>
