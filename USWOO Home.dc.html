@@ -111,7 +111,6 @@
     transition:color 0.3s ease;
   }
   .scrolled .wordmark{ color:var(--ink); }
-  .wordmark span{ color:var(--pink); }
   nav.links{
     display:flex;
     gap:clamp(12px, 1.8vw, 22px);
@@ -212,17 +211,49 @@
   .hero-bg video{ width:100%; height:100%; object-fit:cover; display:block; }
 
   /* the poster word, sandwiched between the sky and the cut-out skyline */
-  .hero-type{ position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+  .hero-type{
+    position:absolute; inset:0; width:100%; height:100%; overflow:visible;
+    /* Nothing may paint below the skyline cut-out. .hero-city spans
+       23.6111%..65.2778% of the frame, but its alpha only reaches full
+       coverage at row 260 of 300 and the last 26 rows are empty — so a
+       letter riding past that band pops out over the moving water with
+       nothing left to hide it. Clip inside the fully opaque band (row
+       260 -> 23.6111 + 41.6667*260/300 = 59.72%) so the straight cut is
+       buried in solid building pixels. Extending the cut-out instead
+       would paint a frozen still over water and people that move. */
+    clip-path:inset(0 0 40.28% 0);
+  }
   .hero-type text{
     font-family:'Poppins', sans-serif;
     font-weight:200;
     font-size:256px;
     letter-spacing:0.05em;
-    text-anchor:middle;
+    text-anchor:start;
     fill:#FFFFFF;
     fill-opacity:0.93;
   }
   .hero-type g{ transform-box:view-box; transform-origin:640px 378px; }
+
+  /* The letters lift out from behind the cut-out skyline one after another.
+     150 viewBox units puts a glyph's cap below the roofline at the start, so
+     the opaque buildings hide it until it clears them. The translate rides
+     the parent <g>'s responsive scale, so the travel shrinks with the type. */
+  @keyframes hero-letter-rise{
+    from{ transform:translateY(150px); opacity:0; }
+    to  { transform:translateY(0);     opacity:1; }
+  }
+  .hero-type text{
+    opacity:0;
+    animation:hero-letter-rise 1.05s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  }
+  .hero-type text:nth-of-type(1){ animation-delay:0.20s; }
+  .hero-type text:nth-of-type(2){ animation-delay:0.35s; }
+  .hero-type text:nth-of-type(3){ animation-delay:0.50s; }
+  .hero-type text:nth-of-type(4){ animation-delay:0.65s; }
+  .hero-type text:nth-of-type(5){ animation-delay:0.80s; }
+  @media (prefers-reduced-motion:reduce){
+    .hero-type text{ animation:none; opacity:1; }
+  }
 
   /* the skyline, matted out of the same footage, laid back over the word */
   .hero-city{
@@ -298,19 +329,22 @@
   /* stretch, not start: the captions wrap to a different number of lines, and
      the cards should still line up along the bottom */
   .flow{ margin-top:56px; display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; align-items:stretch; }
-  .flow-step{
-    position:relative; text-align:left; padding:16px 16px 24px;
-    background:var(--paper-raised); border:1px solid var(--line); border-radius:20px;
-  }
-  .flow-num{ margin-top:20px; font-size:0.75rem; font-weight:700; letter-spacing:0.06em; color:var(--pink); }
-  .flow-step h3{ margin-top:16px; font-size:0.92rem; font-family:'Poppins', sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; }
-  .flow-step p{ margin-top:8px; font-size:0.88rem; color:var(--ink-soft); }
-  .flow-media{
-    aspect-ratio:4/3; border-radius:14px;
-    overflow:hidden; position:relative;
-  }
-  .flow-media img{ width:100%; height:100%; object-fit:cover; }
-  .flow-badge{ position:absolute; top:12px; left:12px; background:#fff; color:var(--ink); font-size:0.68rem; font-weight:700; letter-spacing:0.05em; padding:5px 10px; border-radius:999px; }
+
+  /* ── Media card ────────────────────────────────────────────────────────
+     One card shared by the Home "how we help" steps and the Press
+     renter-story cards. The geometry is identical in both places; only
+     --card-bg flips, so the card always contrasts with the band behind it
+     (white card on a raised band, raised card on a paper band).
+     Nested radius: inner 8 + 10 padding = outer 18. */
+  .media-card{ background:var(--card-bg, var(--paper)); border:1px solid var(--line); border-radius:18px; overflow:hidden; padding:10px; display:flex; flex-direction:column; text-align:left; text-decoration:none; }
+  .media-card-media{ position:relative; aspect-ratio:4/3; border-radius:8px; overflow:hidden; }
+  .media-card-media image-slot{ border-radius:8px; }
+  .media-card-body{ padding:16px 2px 10px; }
+  .media-card-body h3{ font-size:1.06rem; }
+  .media-card-body p{ margin-top:8px; color:var(--ink-soft); font-size:0.9rem; }
+
+  /* This band is paper, so the card takes the raised tone. */
+  .flow-step{ --card-bg:var(--paper-raised); }
   @media (max-width:860px){ .flow{ grid-template-columns:1fr; } }
   .flow-step{
     opacity:0; transform:translateX(160px);
@@ -413,7 +447,6 @@
   .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
   .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
   .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
-  .footer-word .wm span{ color:var(--pink); }
 
   @media (max-width: 860px){
     .flow{ grid-template-columns:1fr 1fr; }
@@ -423,10 +456,10 @@
     .footer-top{ flex-direction:column; }
   }
 
-</style><script src="./image-slot.js"></script></helmet>
+</style><script src="./image-slot.js?v=2"></script></helmet>
 <header class="nav" id="siteNav" ref="{{ navRef }}">
   <div class="nav-inner">
-    <a class="wordmark" href="./USWOO Home.dc.html">USWOO<span>.</span></a>
+    <a class="wordmark" href="./USWOO Home.dc.html">USWOO</a>
     <nav class="links">
       <a href="./USWOO Services.dc.html">Services</a>
       <a href="./USWOO City Guides.dc.html">City Guides</a>
@@ -446,7 +479,13 @@
           <source src="./assets/uswoo-hero-video.mp4" type="video/mp4">
         </video>
         <svg class="hero-type" viewBox="0 0 1280 720" preserveAspectRatio="none" focusable="false">
-          <g><text x="692" y="396">USWOO</text></g>
+          <g>
+            <text x="185.39" y="396">U</text>
+            <text x="363.30" y="396">S</text>
+            <text x="517.92" y="396">W</text>
+            <text x="768.53" y="396">O</text>
+            <text x="983.57" y="396">O</text>
+          </g>
         </svg>
         <img class="hero-city" src="./assets/uswoo-hero-city.webp" alt="" decoding="async">
       </div>
@@ -467,29 +506,32 @@
       </div>
 
       <div class="flow">
-        <div class="flow-step">
-          <div class="flow-media">
-            <image-slot id="help-img-1" shape="rect" placeholder="Drop a photo" src="./assets/help-know-where.webp" style="width:100%;height:100%"></image-slot>
-            <span class="flow-badge">01</span>
+        <div class="media-card flow-step">
+          <div class="media-card-media">
+            <image-slot id="help-img-1" shape="rounded" radius="8" placeholder="Drop a photo" src="./assets/help-know-where.webp" style="width:100%;height:100%"></image-slot>
           </div>
-          <h3>Know Where to Live</h3>
-          <p>Neighborhoods, commute, schools and lifestyle.</p>
+          <div class="media-card-body">
+            <h3>Know Where to Live</h3>
+            <p>Neighborhoods, commute, schools and lifestyle.</p>
+          </div>
         </div>
-        <div class="flow-step">
-          <div class="flow-media">
-            <image-slot id="help-img-2" shape="rect" placeholder="Drop a photo" src="./assets/help-find-move.webp" style="width:100%;height:100%"></image-slot>
-            <span class="flow-badge">02</span>
+        <div class="media-card flow-step">
+          <div class="media-card-media">
+            <image-slot id="help-img-2" shape="rounded" radius="8" placeholder="Drop a photo" src="./assets/help-find-move.webp" style="width:100%;height:100%"></image-slot>
           </div>
-          <h3>Find &amp; Move</h3>
-          <p>The right home, with support from touring to move-in.</p>
+          <div class="media-card-body">
+            <h3>Find &amp; Move</h3>
+            <p>The right home, with support from touring to move-in.</p>
+          </div>
         </div>
-        <div class="flow-step">
-          <div class="flow-media">
-            <image-slot id="help-img-3" shape="rect" placeholder="Drop a photo" style="width:100%;height:100%"></image-slot>
-            <span class="flow-badge">03</span>
+        <div class="media-card flow-step">
+          <div class="media-card-media">
+            <image-slot id="help-img-3" shape="rounded" radius="8" placeholder="Drop a photo" style="width:100%;height:100%"></image-slot>
           </div>
-          <h3>Settle In &amp; Connect</h3>
-          <p>Local resources, community and connections after you move.</p>
+          <div class="media-card-body">
+            <h3>Settle In &amp; Connect</h3>
+            <p>Local resources, community and connections after you move.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -507,31 +549,31 @@
     <div class="locations-pin-wrap" ref="{{ locPinWrapRef }}">
       <div class="locations-row" ref="{{ locationsRowRef }}">
         <a class="location-card" href="./USWOO City Guides.dc.html#explore">
-          <div class="location-media"><image-slot id="loc-nyc" shape="rect" placeholder="New York photo" src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Patrick Tomasso" credit-href="https://unsplash.com/@impatrickt" style="width:100%;height:100%"></image-slot></div>
+          <div class="location-media"><image-slot id="loc-nyc" shape="rounded" radius="14" placeholder="New York photo" src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Patrick Tomasso" credit-href="https://unsplash.com/@impatrickt" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
           <div class="location-label">New York</div>
           <div class="location-code">NYC</div>
         </a>
         <a class="location-card" href="./USWOO City Guides.dc.html#explore">
-          <div class="location-media"><image-slot id="loc-chicago" shape="rect" placeholder="Chicago photo" src="./assets/loc-chicago.jpg" credit="Barry Butler Photography" style="width:100%;height:100%"></image-slot></div>
+          <div class="location-media"><image-slot id="loc-chicago" shape="rounded" radius="14" placeholder="Chicago photo" src="./assets/loc-chicago.jpg" credit="Barry Butler Photography" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
           <div class="location-label">Chicago</div>
           <div class="location-code">CHI</div>
         </a>
         <a class="location-card" href="./USWOO City Guides.dc.html#explore">
-          <div class="location-media"><image-slot id="loc-la" shape="rect" placeholder="Los Angeles photo" src="./assets/loc-la.jpg" style="width:100%;height:100%"></image-slot></div>
+          <div class="location-media"><image-slot id="loc-la" shape="rounded" radius="14" placeholder="Los Angeles photo" src="./assets/loc-la.jpg" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
           <div class="location-label">Los Angeles</div>
           <div class="location-code">LA</div>
         </a>
         <a class="location-card" href="./USWOO City Guides.dc.html#explore">
-          <div class="location-media"><image-slot id="loc-dc" shape="rect" placeholder="Washington D.C. photo" src="./assets/loc-dc.jpg" style="width:100%;height:100%"></image-slot></div>
+          <div class="location-media"><image-slot id="loc-dc" shape="rounded" radius="14" placeholder="Washington D.C. photo" src="./assets/loc-dc.jpg" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
           <div class="location-label">Washington, D.C.</div>
           <div class="location-code">DC</div>
         </a>
         <a class="location-card" href="./USWOO City Guides.dc.html#explore">
-          <div class="location-media"><image-slot id="loc-pa" shape="rect" placeholder="Philadelphia photo" src="https://images.unsplash.com/photo-1543372993-5fc1fc83caac?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Pretty Pink" credit-href="https://unsplash.com/@infinitexplorer" style="width:100%;height:100%"></image-slot></div>
+          <div class="location-media"><image-slot id="loc-pa" shape="rounded" radius="14" placeholder="Philadelphia photo" src="https://images.unsplash.com/photo-1543372993-5fc1fc83caac?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Pretty Pink" credit-href="https://unsplash.com/@infinitexplorer" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
           <div class="location-label">Philadelphia</div>
           <div class="location-code">PHL</div>
@@ -625,7 +667,7 @@
       </div>
     </div>
     <div class="footer-word">
-      <div class="wm">USWOO<span>.</span></div>
+      <div class="wm">USWOO</div>
     </div>
   </div>
 </footer>

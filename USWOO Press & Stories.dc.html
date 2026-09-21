@@ -26,7 +26,6 @@
   header.nav{ position:sticky; top:0; z-index:40; background:color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
   .nav-inner{ max-width:1180px; margin:0 auto; padding:18px clamp(20px, 5vw, 56px); display:flex; align-items:center; justify-content:space-between; gap:24px; }
   .wordmark{ font-family:'Poppins', sans-serif; font-weight:700; font-size:1.3rem; letter-spacing:0.01em; color:var(--ink); text-decoration:none; white-space:nowrap; }
-  .wordmark span{ color:var(--pink); }
   nav.links{ display:flex; gap:clamp(12px, 1.8vw, 22px); align-items:center; overflow-x:auto; scrollbar-width:none; }
   nav.links::-webkit-scrollbar{ display:none; }
   nav.links a{ color:var(--ink-soft); text-decoration:none; font-size:0.86rem; font-weight:500; white-space:nowrap; padding:4px 2px; border-bottom:1px solid transparent; transition:color 0.3s ease, border-color 0.15s ease; }
@@ -64,67 +63,78 @@
   .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
   .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
   .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
-  .footer-word .wm span{ color:var(--pink); }
   @media (max-width: 560px){ .footer-top{ flex-direction:column; } }
 
-  /* Page hero — split layout (matches Services) */
-  .split-hero{ padding:0; }
-  .split-hero-grid{ display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); align-items:stretch; height:clamp(440px,52vw,620px); }
-  .split-hero-text{ padding:clamp(48px,7vw,72px) clamp(20px,4vw,48px) clamp(48px,7vw,72px) clamp(88px,11vw,140px); display:flex; flex-direction:column; justify-content:center; max-width:560px; min-width:0; height:100%; box-sizing:border-box; }
-  .split-hero-text .eyebrow{ margin-bottom:14px; }
-  .split-hero-text h1{ font-size:clamp(2rem, 3.6vw, 2.7rem); color:var(--ink); max-width:14ch; }
-  .split-hero-text .sub{ margin-top:18px; max-width:44ch; color:var(--ink-soft); font-size:1rem; }
-  .split-hero-text .btn-row{ margin-top:26px; }
-  .split-hero-media{ width:100%; height:100%; min-width:0; overflow:hidden; }
-  @media (max-width:860px){ .split-hero-grid{ grid-template-columns:1fr; } .split-hero-media{ aspect-ratio:4/3; } }
-
-  /* Featured press */
-  .press-grid{ margin-top:36px; display:grid; grid-template-columns:1.35fr 1fr; gap:28px; align-items:stretch; }
-  .press-feature{ border:1px solid var(--line); display:flex; flex-direction:column; }
-  .press-feature-media{ aspect-ratio:16/10; }
-  .press-feature-body{ padding:clamp(20px,2.4vw,32px); display:flex; flex-direction:column; gap:14px; }
-  .press-feature-tags{ display:flex; align-items:center; gap:12px; font-size:0.76rem; color:var(--ink-faint); }
-  .press-feature-tags .tag{ background:var(--paper-raised); border:1px solid var(--line); color:var(--ink-soft); font-weight:600; letter-spacing:0.04em; text-transform:uppercase; padding:3px 10px; border-radius:2px; }
+  /* Featured press — big story + latest-post list */
+  .press-grid{ margin-top:36px; display:grid; grid-template-columns:1.3fr 1fr; gap:56px; align-items:start; }
+  .press-feature{ display:flex; flex-direction:column; text-decoration:none; }
+  .press-feature-media{ position:relative; aspect-ratio:16/11; border-radius:14px; overflow:hidden; }
+  .press-feature-media image-slot{ border-radius:14px; }
+  .press-feature-body{ padding-top:20px; display:flex; flex-direction:column; gap:10px; }
+  .press-feature-meta{ display:flex; align-items:center; gap:10px; font-size:0.8rem; color:var(--ink-faint); }
+  .press-feature-meta .src{ font-weight:700; color:var(--ink-soft); letter-spacing:0.03em; text-transform:uppercase; }
   .press-feature-body h3{ font-size:clamp(1.3rem, 2vw, 1.6rem); }
   .press-feature-body p{ color:var(--ink-soft); font-size:0.94rem; }
-  .press-side-list{ display:flex; flex-direction:column; gap:18px; }
-  .press-side-item{ display:flex; gap:16px; align-items:flex-start; border:1px solid var(--line); padding:16px; }
-  .press-side-media{ width:80px; aspect-ratio:1/1; flex:none; }
-  .press-side-tags{ font-size:0.72rem; color:var(--ink-faint); display:flex; gap:10px; }
+  .press-latest-head{ font-family:'Poppins', sans-serif; font-weight:600; font-size:1.15rem; margin-bottom:20px; }
+  .press-side-list{ display:flex; flex-direction:column; }
+  .press-side-item{ display:flex; gap:16px; align-items:center; padding:18px 0; border-top:1px solid var(--line); text-decoration:none; }
+  .press-side-list a.press-side-item:last-child{ border-bottom:1px solid var(--line); }
+  .press-side-text{ flex:1; min-width:0; }
+  .press-side-item h4{ font-family:'Poppins', sans-serif; font-weight:600; font-size:0.96rem; line-height:1.35; }
+  .press-side-tags{ margin-top:8px; font-size:0.78rem; color:var(--ink-faint); display:flex; align-items:center; gap:8px; }
   .press-side-tags .src{ font-weight:700; color:var(--ink-soft); letter-spacing:0.03em; text-transform:uppercase; }
-  .press-side-item h4{ margin-top:6px; font-family:'Poppins', sans-serif; font-weight:600; font-size:0.98rem; line-height:1.35; }
-  .press-side-item .link-arrow{ margin-top:8px; font-size:0.8rem; border-bottom:none; }
-  .press-coverage-bar{ margin-top:20px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; background:var(--paper-raised); border:1px solid var(--line); padding:22px 28px; }
-  .press-coverage-left{ display:flex; align-items:center; gap:18px; }
-  .press-icon{ width:44px; height:44px; border-radius:50%; background:#fff; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; flex:none; font-size:1.2rem; }
-  .press-coverage-left strong{ display:block; font-family:'Poppins', sans-serif; font-size:1.02rem; }
-  .press-coverage-left span{ display:block; color:var(--ink-soft); font-size:0.88rem; margin-top:2px; }
-  @media (max-width:860px){ .press-grid{ grid-template-columns:1fr; } .press-side-item{ flex-direction:row; } }
+  .press-side-media{ width:64px; aspect-ratio:1/1; flex:none; border-radius:10px; overflow:hidden; }
+  .press-side-media image-slot{ border-radius:10px; }
+  /* Icon hangs in its own column, left of the text edge; the copy and the
+     link share the heading's left edge. align-self centres the glyph on
+     the heading row, so it reads as sitting on the title's line. */
+  .icon-grid{ display:grid; grid-template-columns:auto 1fr; column-gap:12px; }
+  .icon-grid > .press-icon{ grid-column:1; grid-row:1; align-self:center; }
+  .icon-grid > h4, .icon-grid > p, .icon-grid > .link-arrow{ grid-column:2; }
+  .icon-grid > .link-arrow{ justify-self:start; }
+  .press-icon{ display:flex; flex:none; color:var(--ink); }
+  .press-icon svg{ width:20px; height:20px; }
+  @media (max-width:860px){ .press-grid{ grid-template-columns:1fr; gap:40px; } }
 
-  /* Renter stories */
+  /* Renter stories — founders-corner style carousel */
+  .carousel-arrow{ width:38px; height:38px; border-radius:50%; border:1px solid var(--line); background:var(--paper); display:flex; align-items:center; justify-content:center; cursor:pointer; color:var(--ink); transition:background 0.15s ease, border-color 0.15s ease; }
+  .carousel-arrow:hover{ background:var(--paper-raised); border-color:var(--ink-soft); }
+  .carousel-arrow svg{ width:16px; height:16px; }
   .story-grid{ margin-top:36px; display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; }
-  .story-card{ border:1px solid var(--line); background:var(--paper); display:flex; flex-direction:column; }
-  .story-card-media{ position:relative; aspect-ratio:4/3; }
-  .story-quote{ position:absolute; left:16px; top:16px; width:40px; height:40px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; font-family:'Poppins', serif; font-size:1.3rem; color:var(--pink); box-shadow:0 6px 14px rgba(0,0,0,0.1); }
-  .story-card-body{ padding:20px 22px 24px; }
-  .story-card-body .eyebrow{ font-size:0.7rem; }
-  .story-card-body h3{ margin-top:8px; font-size:1.06rem; }
-  .story-card-body p{ margin-top:8px; color:var(--ink-soft); font-size:0.9rem; }
-  .story-card-body .link-arrow{ margin-top:14px; font-size:0.85rem; }
+
+  /* ── Media card ────────────────────────────────────────────────────────
+     One card shared by the Home "how we help" steps and the Press
+     renter-story cards. The geometry is identical in both places; only
+     --card-bg flips, so the card always contrasts with the band behind it
+     (white card on a raised band, raised card on a paper band).
+     Nested radius: inner 8 + 10 padding = outer 18. */
+  .media-card{ background:var(--card-bg, var(--paper)); border:1px solid var(--line); border-radius:18px; overflow:hidden; padding:10px; display:flex; flex-direction:column; text-align:left; text-decoration:none; }
+  .media-card-media{ position:relative; aspect-ratio:4/3; border-radius:8px; overflow:hidden; }
+  .media-card-media image-slot{ border-radius:8px; }
+  .media-card-body{ padding:16px 2px 10px; }
+  .media-card-body h3{ font-size:1.06rem; }
+  .media-card-body p{ margin-top:8px; color:var(--ink-soft); font-size:0.9rem; }
+
+  /* This band is raised, so the card takes the paper tone. */
+  .story-card{ --card-bg:var(--paper); }
+  .story-card-meta{ margin-top:14px; display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--ink-faint); }
+  .story-card-meta .dot{ width:3px; height:3px; border-radius:50%; background:var(--ink-faint); }
+  .carousel-dots{ margin-top:36px; display:flex; align-items:center; justify-content:center; gap:20px; }
+  .carousel-dots .dots{ display:flex; align-items:center; gap:10px; }
+  .carousel-dots .dot-btn{ width:8px; height:8px; border-radius:50%; background:var(--line); border:none; padding:0; cursor:pointer; }
+  .carousel-dots .dot-btn.active{ background:var(--ink); width:22px; border-radius:5px; }
   @media (max-width:860px){ .story-grid{ grid-template-columns:1fr; } }
 
   /* Brand moments */
   .moments-row{ margin-top:36px; display:grid; grid-template-columns:repeat(3, 1fr); gap:32px; }
-  .moment-item{ display:flex; gap:16px; align-items:flex-start; }
-  .moment-item .press-icon{ margin-top:2px; }
   .moment-item h4{ font-family:'Poppins', sans-serif; font-weight:600; font-size:1.02rem; }
   .moment-item p{ margin-top:6px; color:var(--ink-soft); font-size:0.88rem; }
   .moment-item .link-arrow{ margin-top:10px; font-size:0.82rem; }
   @media (max-width:860px){ .moments-row{ grid-template-columns:1fr; } }
-</style><script src="./image-slot.js"></script></helmet>
+</style><script src="./image-slot.js?v=2"></script></helmet>
 <header class="nav" id="siteNav">
   <div class="nav-inner">
-    <a class="wordmark" href="./USWOO Home.dc.html">USWOO<span>.</span></a>
+    <a class="wordmark" href="./USWOO Home.dc.html">USWOO</a>
     <nav class="links">
       <a href="./USWOO Services.dc.html">Services</a>
       <a href="./USWOO City Guides.dc.html">City Guides</a>
@@ -137,19 +147,6 @@
 
 <main id="top">
 
-  <section class="split-hero band-paper">
-    <div class="split-hero-grid">
-      <div class="split-hero-text">
-        <p class="eyebrow">Press &amp; Stories</p>
-        <h1>Stories worth sharing.</h1>
-        <p class="sub">See how USWOO is growing across cities, partnerships and renter experiences.</p>
-      </div>
-      <div class="split-hero-media">
-        <image-slot id="press-hero-1" shape="rect" placeholder="Drop a press hero image" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1400&q=80" credit="AbsolutVision" credit-href="https://unsplash.com/@codzilla_swiss" style="width:100%;height:100%"></image-slot>
-      </div>
-    </div>
-  </section>
-
   <section class="band-paper" id="featured-press">
     <div class="wrap">
       <div class="section-head">
@@ -159,52 +156,41 @@
 
       <div class="press-grid">
         <a class="press-feature" href="#featured-press">
-          <div class="press-feature-media"><image-slot id="press-feature-img" shape="rect" placeholder="Featured press photo" src="https://images.unsplash.com/photo-1685483056339-ce532462d06c?auto=format&fit=crop&w=1000&q=80" credit="Tim Wildsmith" credit-href="https://unsplash.com/@timwildsmith" style="width:100%;height:100%"></image-slot></div>
+          <div class="press-feature-media">
+            <image-slot id="press-feature-img" shape="rounded" radius="14" placeholder="Featured press photo" src="https://images.unsplash.com/photo-1516149893016-813d9a01d5d3?auto=format&fit=crop&w=1200&q=80" credit="Photo by Devin Avery on Unsplash" credit-href="https://unsplash.com/@devintavery" style="width:100%;height:100%"></image-slot>
+          </div>
           <div class="press-feature-body">
-            <div class="press-feature-tags"><span class="tag">Featured</span><span>INMAN</span><span>·</span><span>Jun 10, 2025</span></div>
+            <div class="press-feature-meta"><span class="src">INMAN</span><span>·</span><span>Jun 10, 2025</span></div>
             <h3>USWOO Expands Leasing Support for International Renters in the U.S.</h3>
-            <p>USWOO continues to scale its end-to-end rental services and local partnerships to support international renters in more U.S. cities.</p>
-            <span class="link-arrow">Read Story →</span>
           </div>
         </a>
 
-        <div class="press-side-list">
-          <a class="press-side-item" href="#featured-press">
-            <div class="press-side-media"><image-slot id="press-side-1" shape="rect" placeholder="Developers" src="https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=300&q=80" credit="Luke van Zyl" credit-href="https://unsplash.com/@lukevz" style="width:100%;height:100%"></image-slot></div>
-            <div>
-              <div class="press-side-tags"><span class="src">BISNOW</span><span>May 22, 2025</span></div>
-              <h4>USWOO Partners With Developers to Elevate Renter Experience</h4>
-              <span class="link-arrow">→</span>
-            </div>
-          </a>
-          <a class="press-side-item" href="#featured-press">
-            <div class="press-side-media"><image-slot id="press-side-2" shape="rect" placeholder="Renter services" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=300&q=80" credit="Cytonn Photography" credit-href="https://unsplash.com/@cytonn_photography" style="width:100%;height:100%"></image-slot></div>
-            <div>
-              <div class="press-side-tags"><span class="src">Commercial Observer</span><span>May 15, 2025</span></div>
-              <h4>Why Renter Services Are the Next Competitive Advantage</h4>
-              <span class="link-arrow">→</span>
-            </div>
-          </a>
-          <a class="press-side-item" href="#featured-press">
-            <div class="press-side-media"><image-slot id="press-side-3" shape="rect" placeholder="NJ market" src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=300&q=80" credit="Marlene Céline Nordvik" credit-href="https://unsplash.com/@zarlinaa" style="width:100%;height:100%"></image-slot></div>
-            <div>
-              <div class="press-side-tags"><span class="src">Real Estate NJ</span><span>Apr 30, 2025</span></div>
-              <h4>USWOO Boosts Leasing Performance in NJ Market</h4>
-              <span class="link-arrow">→</span>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="press-coverage-bar">
-        <div class="press-coverage-left">
-          <div class="press-icon">🗞️</div>
-          <div>
-            <strong>Press Coverage</strong>
-            <span>Company news, partnerships, market expansion and industry recognition.</span>
+        <div>
+          <p class="press-latest-head">Latest Press</p>
+          <div class="press-side-list">
+            <a class="press-side-item" href="#featured-press">
+              <div class="press-side-text">
+                <h4>USWOO Partners With Developers to Elevate Renter Experience</h4>
+                <div class="press-side-tags"><span class="src">BISNOW</span><span>·</span><span>May 22, 2025</span></div>
+              </div>
+              <div class="press-side-media"><image-slot id="press-side-1" shape="rounded" radius="10" placeholder="Developers" src="https://images.unsplash.com/photo-1741699427788-74db37639fc3?auto=format&fit=crop&w=300&q=80" credit="Photo by Zoshua Colah on Unsplash" credit-href="https://unsplash.com/@zoshuacolah" style="width:100%;height:100%"></image-slot></div>
+            </a>
+            <a class="press-side-item" href="#featured-press">
+              <div class="press-side-text">
+                <h4>Why Renter Services Are the Next Competitive Advantage</h4>
+                <div class="press-side-tags"><span class="src">Commercial Observer</span><span>·</span><span>May 15, 2025</span></div>
+              </div>
+              <div class="press-side-media"><image-slot id="press-side-2" shape="rounded" radius="10" placeholder="Renter services" src="https://images.unsplash.com/photo-1714647211955-95c3104dc418?auto=format&fit=crop&w=300&q=80" credit="Photo by Vitaly Gariev on Unsplash" credit-href="https://unsplash.com/@silverkblack" style="width:100%;height:100%"></image-slot></div>
+            </a>
+            <a class="press-side-item" href="#featured-press">
+              <div class="press-side-text">
+                <h4>USWOO Boosts Leasing Performance in NJ Market</h4>
+                <div class="press-side-tags"><span class="src">Real Estate NJ</span><span>·</span><span>Apr 30, 2025</span></div>
+              </div>
+              <div class="press-side-media"><image-slot id="press-side-3" shape="rounded" radius="10" placeholder="NJ market" src="https://images.unsplash.com/photo-1774921665173-832f122fe44b?auto=format&fit=crop&w=300&q=80" credit="Photo by Madeline Liu on Unsplash" credit-href="https://unsplash.com/@madeline_sd" style="width:100%;height:100%"></image-slot></div>
+            </a>
           </div>
         </div>
-        <span class="link-arrow">View All Press →</span>
       </div>
     </div>
   </section>
@@ -216,46 +202,53 @@
           <p class="eyebrow"><span class="idx">02</span> Renter Stories</p>
           <h2>Real moves. Real stories.</h2>
         </div>
-        <span class="link-arrow">Explore Renter Stories →</span>
       </div>
 
       <div class="story-grid">
-        <a class="story-card" href="#renter-stories">
-          <div class="story-card-media">
-            <image-slot id="story-img-1" shape="rect" placeholder="First apartment" src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=700&q=80" credit="Marcus Loke" credit-href="https://unsplash.com/@marcusloke" style="width:100%;height:100%"></image-slot>
-            <div class="story-quote">”</div>
+        <a class="media-card story-card" href="#renter-stories">
+          <div class="media-card-media">
+            <image-slot id="story-img-1" shape="rounded" radius="8" placeholder="First apartment" src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=700&q=80" credit="Marcus Loke" credit-href="https://unsplash.com/@marcusloke" style="width:100%;height:100%"></image-slot>
           </div>
-          <div class="story-card-body">
-            <p class="eyebrow">First Apartment</p>
+          <div class="media-card-body">
             <h3>From campus to first apartment</h3>
             <p>How one renter found the right neighborhood near NYU and settled in with ease.</p>
-            <span class="link-arrow">Read Story →</span>
+            <div class="story-card-meta"><span>Jun 12, 2025</span><span class="dot"></span><span>5 min read</span></div>
           </div>
         </a>
-        <a class="story-card" href="#renter-stories">
-          <div class="story-card-media">
-            <image-slot id="story-img-2" shape="rect" placeholder="Moving cities" src="https://images.unsplash.com/photo-1772724317350-520faccb15e6?auto=format&fit=crop&w=700&q=80" credit="Apartment Life" credit-href="https://unsplash.com/@apartmentlife" style="width:100%;height:100%"></image-slot>
-            <div class="story-quote">”</div>
+        <a class="media-card story-card" href="#renter-stories">
+          <div class="media-card-media">
+            <image-slot id="story-img-2" shape="rounded" radius="8" placeholder="Moving cities" src="https://images.unsplash.com/photo-1772724317350-520faccb15e6?auto=format&fit=crop&w=700&q=80" credit="Apartment Life" credit-href="https://unsplash.com/@apartmentlife" style="width:100%;height:100%"></image-slot>
           </div>
-          <div class="story-card-body">
-            <p class="eyebrow">Move-in Experience</p>
+          <div class="media-card-body">
             <h3>Moving cities made easier</h3>
             <p>From apartment search to furniture, Wi-Fi and move-in — all in one place.</p>
-            <span class="link-arrow">Read Story →</span>
+            <div class="story-card-meta"><span>May 28, 2025</span><span class="dot"></span><span>4 min read</span></div>
           </div>
         </a>
-        <a class="story-card" href="#renter-stories">
-          <div class="story-card-media">
-            <image-slot id="story-img-3" shape="rect" placeholder="Cozy living room" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=700&q=80" credit="Minh Pham" credit-href="https://unsplash.com/@minhphamdesign" style="width:100%;height:100%"></image-slot>
-            <div class="story-quote">”</div>
+        <a class="media-card story-card" href="#renter-stories">
+          <div class="media-card-media">
+            <image-slot id="story-img-3" shape="rounded" radius="8" placeholder="Cozy living room" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=700&q=80" credit="Minh Pham" credit-href="https://unsplash.com/@minhphamdesign" style="width:100%;height:100%"></image-slot>
           </div>
-          <div class="story-card-body">
-            <p class="eyebrow">Renewal &amp; Next Move</p>
+          <div class="media-card-body">
             <h3>Finding a better fit</h3>
             <p>A renter's journey from renewal decision to finding a new home that feels right.</p>
-            <span class="link-arrow">Read Story →</span>
+            <div class="story-card-meta"><span>Apr 30, 2025</span><span class="dot"></span><span>6 min read</span></div>
           </div>
         </a>
+      </div>
+
+      <div class="carousel-dots" aria-hidden="true">
+        <button class="carousel-arrow" type="button" aria-label="Previous story">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="dots">
+          <button class="dot-btn active" type="button" aria-label="Story 1"></button>
+          <button class="dot-btn" type="button" aria-label="Story 2"></button>
+          <button class="dot-btn" type="button" aria-label="Story 3"></button>
+        </div>
+        <button class="carousel-arrow" type="button" aria-label="Next story">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
       </div>
     </div>
   </section>
@@ -268,29 +261,23 @@
       </div>
 
       <div class="moments-row">
-        <div class="moment-item">
-          <div class="press-icon">📍</div>
-          <div>
-            <h4>New City Launches</h4>
-            <p>Expanding our footprint across key U.S. cities.</p>
-            <span class="link-arrow">See Where We Are →</span>
-          </div>
+        <div class="moment-item icon-grid">
+          <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <h4>New City Launches</h4>
+          <p>Expanding our footprint across key U.S. cities.</p>
+          <span class="link-arrow">See Where We Are →</span>
         </div>
-        <div class="moment-item">
-          <div class="press-icon">🤝</div>
-          <div>
-            <h4>New Partnerships</h4>
-            <p>Stronger collaborations that create more value.</p>
-            <span class="link-arrow">See Our Partners →</span>
-          </div>
+        <div class="moment-item icon-grid">
+          <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.2 13.8a5 5 0 0 0 7.1 0l2.3-2.3a5 5 0 0 0-7.1-7.1l-1.3 1.3"/><path d="M13.8 10.2a5 5 0 0 0-7.1 0l-2.3 2.3a5 5 0 0 0 7.1 7.1l1.3-1.3"/></svg></span>
+          <h4>New Partnerships</h4>
+          <p>Stronger collaborations that create more value.</p>
+          <span class="link-arrow">See Our Partners →</span>
         </div>
-        <div class="moment-item">
-          <div class="press-icon">🏅</div>
-          <div>
-            <h4>Industry Recognition</h4>
-            <p>Honored to be acknowledged by leading organizations.</p>
-            <span class="link-arrow">About USWOO →</span>
-          </div>
+        <div class="moment-item icon-grid">
+          <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.4 7.4 21l4.6-2.7 4.6 2.7-1.2-7.6"/></svg></span>
+          <h4>Industry Recognition</h4>
+          <p>Honored to be acknowledged by leading organizations.</p>
+          <span class="link-arrow">About USWOO →</span>
         </div>
       </div>
     </div>
@@ -330,7 +317,7 @@
       </div>
     </div>
     <div class="footer-word">
-      <div class="wm">USWOO<span>.</span></div>
+      <div class="wm">USWOO</div>
     </div>
   </div>
 </footer>

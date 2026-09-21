@@ -28,7 +28,7 @@
   header.nav.scrolled{ background:color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
   .nav-inner{ max-width:1180px; margin:0 auto; padding:18px clamp(20px, 5vw, 56px); display:flex; align-items:center; justify-content:space-between; gap:24px; }
   .wordmark{ font-family:'Poppins', sans-serif; font-weight:700; font-size:1.3rem; letter-spacing:0.01em; color:var(--hero-ink); text-decoration:none; white-space:nowrap; transition:color 0.3s ease; }
-  .scrolled .wordmark{ color:var(--ink); } .wordmark span{ color:var(--pink); }
+  .scrolled .wordmark{ color:var(--ink); }
   nav.links{ display:flex; gap:clamp(12px, 1.8vw, 22px); align-items:center; overflow-x:auto; scrollbar-width:none; }
   nav.links::-webkit-scrollbar{ display:none; }
   nav.links a{ color:var(--hero-ink-soft); text-decoration:none; font-size:0.86rem; font-weight:500; white-space:nowrap; padding:4px 2px; border-bottom:1px solid transparent; transition:color 0.3s ease, border-color 0.15s ease; }
@@ -84,7 +84,6 @@
   .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
   .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
   .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
-  .footer-word .wm span{ color:var(--pink); }
   @media (max-width: 560px){ .footer-top{ flex-direction:column; } }
 
   .svc-hero{ padding:clamp(40px,6vw,64px) 0 clamp(56px,8vw,88px); }
@@ -144,10 +143,10 @@
   .wechat-cta span{ display:block; font-size:0.95rem; color:var(--ink-soft); margin-top:2px; }
   .testimonial-media{ min-height:416px; border-radius:0 16px 16px 0; overflow:hidden; border:1px solid var(--line); }
   @media (max-width:860px){ .testimonial-block{ grid-template-columns:1fr; } .testimonial-card{ border-radius:0 0 16px 16px; border-right:1px solid var(--line); border-top:none; } .testimonial-media{ min-height:260px; order:-1; border-radius:16px 16px 0 0; border-bottom:none; } }
-</style><script src="./image-slot.js"></script></helmet>
+</style><script src="./image-slot.js?v=2"></script></helmet>
 <header class="nav scrolled" id="siteNav">
   <div class="nav-inner">
-    <a class="wordmark" href="./USWOO Home.dc.html">USWOO<span>.</span></a>
+    <a class="wordmark" href="./USWOO Home.dc.html">USWOO</a>
     <nav class="links">
       <a href="./USWOO Services.dc.html" class="active">Services</a>
       <a href="./USWOO City Guides.dc.html">City Guides</a>
@@ -220,8 +219,8 @@
     <div class="wrap">
       <div class="section-head centered">
         <p class="eyebrow"><span class="idx">03</span> BEYOND THE LEASE</p>
-        <h2>Life in the city, made easier.</h2>
-        <p class="lede" style="margin-top:16px;">Through Hi NY, USWOO connects renters with practical services and local resources that make moving, settling in and building a life in the city easier.</p>
+        <h2>Thoughtful support for everyday life.</h2>
+        <p class="lede" style="margin-top:16px;">Through Hi NY, USWOO takes care of the details that make settling into a new city feel easier, from move in essentials to the small everyday needs that are easy to overlook. Our support is personal, practical, and designed to make life feel a little more effortless.</p>
       </div>
 
       <div class="essentials-grid-dark">
@@ -274,13 +273,12 @@
       <div class="testimonial-block">
         <div class="testimonial-card">
           <div class="quote-mark">&ldquo;</div>
-          <p class="quote-text">USWOO made moving to a new city effortless. From the first tour to setting up Wi-Fi, every step was handled with care.</p>
-          <div class="testimonial-dots"><span class="active"></span><span></span><span></span><span></span></div>
+          <p class="quote-text">A new city feels different when you don&rsquo;t have to figure it all out alone.</p>
+          <p class="quote-text">We&rsquo;re here for the details that make settling in feel a little more like home.</p>
           <div class="wechat-cta">
             <div class="wechat-qr"><image-slot id="wechat-qr" shape="rect" placeholder="Upload WeChat QR code" style="width:100%;height:100%"></image-slot></div>
             <div>
-              <strong>Talk to USWOO on WeChat</strong>
-              <span>Scan to connect with our team</span>
+              <strong>Connect with us on WeChat.</strong>
             </div>
           </div>
         </div>
@@ -325,7 +323,7 @@
       </div>
     </div>
     <div class="footer-word">
-      <div class="wm">USWOO<span>.</span></div>
+      <div class="wm">USWOO</div>
     </div>
   </div>
 </footer>

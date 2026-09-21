@@ -23,15 +23,19 @@
   .wrap{ max-width:1560px; margin:0 auto; padding:0 clamp(16px, 2.4vw, 32px); }
   .eyebrow{ font-size:0.78rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); display:flex; align-items:baseline; gap:0.6em; }
   .eyebrow .idx{ color:var(--pink); font-weight:700; }
-  header.nav{ position:sticky; top:0; z-index:40; background:color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+  header.nav{ position:sticky; top:0; z-index:40; background:transparent; border-bottom:1px solid transparent; transition:background 0.3s ease, border-color 0.3s ease; }
+  header.nav.scrolled{ background:color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
   .nav-inner{ max-width:1180px; margin:0 auto; padding:18px clamp(20px, 5vw, 56px); display:flex; align-items:center; justify-content:space-between; gap:24px; }
-  .wordmark{ font-family:'Poppins', sans-serif; font-weight:700; font-size:1.3rem; letter-spacing:0.01em; color:var(--ink); text-decoration:none; white-space:nowrap; }
-  .wordmark span{ color:var(--pink); }
+  .wordmark{ font-family:'Poppins', sans-serif; font-weight:700; font-size:1.3rem; letter-spacing:0.01em; color:var(--hero-ink); text-decoration:none; white-space:nowrap; transition:color 0.3s ease; }
+  .scrolled .wordmark{ color:var(--ink); }
   nav.links{ display:flex; gap:clamp(12px, 1.8vw, 22px); align-items:center; overflow-x:auto; scrollbar-width:none; }
   nav.links::-webkit-scrollbar{ display:none; }
-  nav.links a{ color:var(--ink-soft); text-decoration:none; font-size:0.86rem; font-weight:500; white-space:nowrap; padding:4px 2px; border-bottom:1px solid transparent; transition:color 0.3s ease, border-color 0.15s ease; }
-  nav.links a:hover, nav.links a:focus-visible{ color:var(--ink); border-bottom-color:var(--pink); }
-  nav.links a.active{ color:var(--ink); border-bottom-color:var(--pink); }
+  nav.links a{ color:var(--hero-ink-soft); text-decoration:none; font-size:0.86rem; font-weight:500; white-space:nowrap; padding:4px 2px; border-bottom:1px solid transparent; transition:color 0.3s ease, border-color 0.15s ease; }
+  .scrolled nav.links a{ color:var(--ink-soft); }
+  nav.links a:hover, nav.links a:focus-visible{ color:var(--hero-ink); border-bottom-color:var(--pink); }
+  .scrolled nav.links a:hover, .scrolled nav.links a:focus-visible{ color:var(--ink); }
+  nav.links a.active{ color:var(--hero-ink); border-bottom-color:var(--pink); }
+  .scrolled nav.links a.active{ color:var(--ink); }
   .nav-cta{ background:var(--black); color:#fff !important; font-size:0.85rem; font-weight:600; padding:10px 18px; border-radius:2px; text-decoration:none !important; border-bottom:none !important; white-space:nowrap; }
   .nav-cta:hover{ opacity:0.85; }
   .btn{ display:inline-flex; align-items:center; gap:10px; font-size:0.9rem; font-weight:600; padding:14px 26px; border-radius:2px; text-decoration:none; cursor:pointer; border:1px solid transparent; transition:transform 0.15s ease, opacity 0.15s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease; }
@@ -64,32 +68,60 @@
   .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
   .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
   .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
-  .footer-word .wm span{ color:var(--pink); }
   @media (max-width: 560px){ .footer-top{ flex-direction:column; } }
 
-  /* 01 Intro */
-  .about-intro{ padding-top:clamp(48px,7vw,72px); }
-  .about-intro-grid{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center; }
-  .about-intro-text h1{ font-size:clamp(2rem, 3.8vw, 2.8rem); }
-  .about-intro-text p{ margin-top:16px; max-width:44ch; color:var(--ink-soft); font-size:1rem; }
-  .about-intro-text .btn-row{ margin-top:26px; }
-  .about-intro-media{ position:relative; }
-  .about-intro-media image-slot{ aspect-ratio:5/4; }
-  .about-quote-card{ position:absolute; right:-24px; bottom:-28px; width:56%; background:#fff; border:1px solid var(--line); padding:22px 24px; box-shadow:0 18px 40px rgba(0,0,0,0.1); }
-  .about-quote-card .quote-mark{ font-family:'Poppins', serif; font-size:2.4rem; line-height:1; color:var(--pink); }
-  .about-quote-lines{ margin-top:12px; display:grid; gap:8px; }
-  .about-quote-lines span{ display:block; height:1px; background:var(--line); }
-  .about-quote-lines span:nth-child(1){ width:100%; } .about-quote-lines span:nth-child(2){ width:80%; } .about-quote-lines span:nth-child(3){ width:55%; }
-  .about-quote-attr{ margin-top:16px; font-size:0.86rem; color:var(--ink-soft); display:flex; align-items:center; gap:8px; }
-  .about-quote-attr::before{ content:'—'; }
-  @media (max-width:860px){ .about-intro-grid{ grid-template-columns:1fr; } .about-quote-card{ position:static; width:100%; margin-top:20px; box-shadow:none; } }
+  /* 01 Hero — looping city footage, the nav rides over it */
+  .about-hero{ position:relative; overflow:hidden; color:var(--hero-ink); margin-top:-73px; min-height:clamp(460px, 74vh, 760px); display:flex; align-items:flex-end; padding:0; }
+  .about-hero-bg{ position:absolute; inset:0; z-index:0; overflow:hidden; }
+  .hero-slides{ display:flex; width:200%; height:100%; transform:translateX(0); transition:transform 1.15s cubic-bezier(0.65,0,0.2,1); will-change:transform; }
+  .hero-slide{ position:relative; width:50%; height:100%; flex:none; }
+  .hero-slide img{ width:100%; height:100%; object-fit:cover; object-position:50% 38%; display:block; }
+  @media (prefers-reduced-motion: reduce){ .hero-slides{ transition:none; } }
+  .about-hero-scrim{ position:absolute; inset:0; z-index:1; background:linear-gradient(0deg, rgba(6,6,6,0.78) 0%, rgba(6,6,6,0.30) 22%, rgba(6,6,6,0) 55%), linear-gradient(180deg, rgba(6,6,6,0.46) 0%, rgba(6,6,6,0) 18%); }
+  .about-hero .wrap{ position:relative; z-index:2; width:100%; padding-bottom:clamp(28px, 3.4vw, 44px); display:flex; align-items:flex-end; justify-content:space-between; gap:24px; }
+  .about-hero .eyebrow{ color:var(--hero-ink-soft); }
+  .about-hero .eyebrow .idx{ color:var(--pink); }
+  .scroll-cue{ display:inline-flex; flex-direction:column; align-items:center; gap:10px; flex:none; text-decoration:none; color:var(--hero-ink-soft); font-size:0.7rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; }
+  .scroll-cue:hover{ color:var(--hero-ink); }
+  .scroll-cue .line{ width:1px; height:44px; transform-origin:top; background:linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0)); animation:cue 2.6s ease-in-out infinite; }
+  @keyframes cue{ 0%,100%{ transform:scaleY(0.55); opacity:0.45; } 50%{ transform:scaleY(1); opacity:1; } }
+  @media (prefers-reduced-motion: reduce){ .scroll-cue .line{ animation:none; transform:none; opacity:0.8; } }
+  @media (max-width:640px){ .about-hero .wrap{ align-items:flex-end; } .scroll-cue span:not(.line){ display:none; } }
+
+  /* 02 Slogan — the page's one quiet statement, on paper */
+  .slogan-band{ padding:clamp(76px, 11vw, 136px) 0; }
+  .slogan-inner{ max-width:900px; margin:0 auto; display:flex; flex-direction:column; align-items:center; text-align:center; }
+  .slogan-rule{ width:44px; height:2px; background:var(--pink); }
+  .slogan-inner h1{ margin-top:clamp(24px, 3vw, 34px); font-size:clamp(2.1rem, 5vw, 3.5rem); letter-spacing:-0.012em; max-width:17ch; }
+  .slogan-inner p{ margin-top:clamp(20px, 2.4vw, 28px); max-width:58ch; color:var(--ink-soft); font-size:clamp(1.02rem, 1.4vw, 1.16rem); line-height:1.75; }
+
+  /* 03 Mission — three columns, photo-led */
+  .mission-head{ max-width:640px; margin:0 auto; text-align:center; }
+  .mission-head h2.eyebrow{ font-family:'Inter', sans-serif; justify-content:center; }
+  .mission-grid{ margin-top:clamp(44px, 6vw, 72px); display:grid; grid-template-columns:repeat(3, 1fr); gap:clamp(28px, 3.4vw, 48px); align-items:start; }
+  .mission-item{ display:flex; flex-direction:column; }
+  .mission-media{ aspect-ratio:4/3; overflow:hidden; border-radius:14px; }
+  .mission-media image-slot{ border-radius:14px; overflow:hidden; display:block; }
+  .mission-item .m-num{ display:block; margin-top:clamp(20px, 2.2vw, 28px); font-size:0.74rem; font-weight:700; letter-spacing:0.14em; color:var(--pink); }
+  .mission-item h3{ margin-top:10px; font-family:'Poppins', sans-serif; font-weight:600; font-size:clamp(1.12rem, 1.6vw, 1.32rem); }
+  .mission-item p{ margin-top:14px; color:var(--ink-soft); font-size:0.98rem; line-height:1.78; }
+  @media (max-width:900px){ .mission-grid{ grid-template-columns:1fr; gap:48px; max-width:560px; margin-left:auto; margin-right:auto; } .mission-media{ aspect-ratio:16/9; } }
+  .mission-head .lede{ margin-top:16px; max-width:52ch; margin-left:auto; margin-right:auto; color:var(--ink-soft); font-size:1.02rem; line-height:1.7; }
+  .mission-head h2{ margin-top:12px; font-size:clamp(1.8rem, 3.4vw, 2.5rem); }
 
   /* 02 Our story */
   .story-media-wide{ margin-top:32px; aspect-ratio:21/8; }
   .story-essentials{ margin-top:40px; display:grid; grid-template-columns:repeat(4, 1fr); gap:28px; }
   .story-essential-item{ text-align:left; }
-  .story-essential-item .press-icon{ width:44px; height:44px; border-radius:50%; background:var(--paper-raised); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-size:1.15rem; }
-  .story-essential-item h4{ margin-top:14px; font-family:'Poppins', sans-serif; font-weight:600; font-size:0.98rem; }
+  /* Icon hangs in its own column, left of the text edge; the copy shares
+     the heading's left edge. The centred careers row keeps .icon-head. */
+  .icon-grid{ display:grid; grid-template-columns:auto 1fr; column-gap:12px; }
+  .icon-grid > .press-icon{ grid-column:1; grid-row:1; align-self:center; }
+  .icon-grid > h4, .icon-grid > p{ grid-column:2; }
+  .icon-head{ display:flex; align-items:center; gap:10px; }
+  .press-icon{ display:flex; flex:none; color:var(--ink); }
+  .press-icon svg{ width:20px; height:20px; }
+  .story-essential-item h4{ font-family:'Poppins', sans-serif; font-weight:600; font-size:0.98rem; }
   .story-essential-item p{ margin-top:6px; color:var(--ink-soft); font-size:0.86rem; }
   @media (max-width:860px){ .story-essentials{ grid-template-columns:1fr 1fr; } }
   @media (max-width:480px){ .story-essentials{ grid-template-columns:1fr; } }
@@ -114,12 +146,12 @@
   .cta-band .sub{ margin-top:14px; max-width:48ch; color:var(--ink-soft); }
   .cta-essentials{ margin-top:36px; display:flex; gap:44px; flex-wrap:wrap; justify-content:center; }
   .cta-essentials .story-essential-item{ max-width:220px; text-align:center; }
-  .cta-essentials .press-icon{ margin:0 auto; }
+  .cta-essentials .icon-head{ justify-content:center; }
   .cta-band .btn-row{ margin-top:34px; justify-content:center; }
-</style><script src="./image-slot.js"></script></helmet>
-<header class="nav" id="siteNav">
+</style><script src="./image-slot.js?v=2"></script></helmet>
+<header class="nav" id="siteNav" ref="{{ navRef }}">
   <div class="nav-inner">
-    <a class="wordmark" href="./USWOO Home.dc.html">USWOO<span>.</span></a>
+    <a class="wordmark" href="./USWOO Home.dc.html">USWOO</a>
     <nav class="links">
       <a href="./USWOO Services.dc.html">Services</a>
       <a href="./USWOO City Guides.dc.html">City Guides</a>
@@ -132,26 +164,59 @@
 
 <main id="top">
 
-  <section class="about-intro band-paper">
+  <section class="about-hero" id="heroSection" ref="{{ heroRef }}">
+    <div class="about-hero-bg" aria-hidden="true">
+      <div class="hero-slides" ref="{{ heroSlidesRef }}">
+        <div class="hero-slide"><img src="./assets/about-hero-bedroom.webp" alt="" decoding="async"></div>
+        <div class="hero-slide"><img src="./assets/about-hero-kitchen-dance.jpg" alt="" decoding="async"></div>
+      </div>
+    </div>
+    <div class="about-hero-scrim" aria-hidden="true"></div>
     <div class="wrap">
-      <div class="about-intro-grid">
-        <div class="about-intro-text">
-          <p class="eyebrow"><span class="idx">01</span> About USWOO</p>
-          <h1>Built around a better way to rent.</h1>
-          <p>USWOO started with a simple idea: renting in a new city should feel easier, more connected and more human.</p>
-          <p>Today, we help renters navigate homes, move-in services and local resources across multiple U.S. cities.</p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="#our-story">Our Story →</a>
-          </div>
-        </div>
-        <div class="about-intro-media">
-          <image-slot id="about-intro-img" shape="rect" placeholder="USWOO team" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" credit="Dylan Gillis" credit-href="https://unsplash.com/@mainermedia" style="width:100%;height:100%"></image-slot>
-          <div class="about-quote-card">
-            <div class="quote-mark">”</div>
-            <div class="about-quote-lines"><span></span><span></span><span></span></div>
-            <div class="about-quote-attr">USWOO Team</div>
-          </div>
-        </div>
+      <p class="eyebrow">About USWOO</p>
+      <a class="scroll-cue" href="#mission"><span class="line" aria-hidden="true"></span>Scroll</a>
+    </div>
+  </section>
+
+  <section class="slogan-band band-paper">
+    <div class="wrap">
+      <div class="slogan-inner">
+        <span class="slogan-rule" aria-hidden="true"></span>
+        <h1>Find Your Place. Feel at Home.</h1>
+        <p>USWOO helps international students and young professionals feel at home in a new city, with thoughtful support that goes beyond finding a place to live.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-raised" id="mission">
+    <div class="wrap">
+      <div class="mission-head">
+        <p class="eyebrow"><span class="idx">01</span> Our Mission</p>
+        <h2>What we care about most.</h2>
+        <p class="lede">Whether it's your first apartment tour or your third year in the city, this is what USWOO shows up for.</p>
+      </div>
+
+      <div class="mission-grid">
+        <article class="mission-item">
+          <div class="mission-media"><image-slot id="mission-img-1" shape="rounded" radius="14" placeholder="Friends talking it through" src="https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Toa Heftiba" credit-href="https://unsplash.com/@heftiba" style="width:100%;height:100%"></image-slot></div>
+          <span class="m-num">01</span>
+          <h3>We Know What It’s Like</h3>
+          <p>Moving to a new country comes with a lot of unknowns. Finding a home is only one part of it. We understand the questions, the small worries, and all the details that come with starting over somewhere new.</p>
+        </article>
+
+        <article class="mission-item">
+          <div class="mission-media"><image-slot id="mission-img-2" shape="rounded" radius="14" placeholder="Carrying boxes into a new home" src="https://images.unsplash.com/photo-1758523670969-dd1b1254062d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Vitaly Garlev" credit-href="https://unsplash.com/@silverkblack" style="width:100%;height:100%"></image-slot></div>
+          <span class="m-num">02</span>
+          <h3>We Take Care of the Details</h3>
+          <p>From finding the right apartment to getting settled into everyday life, we’re here to make things feel easier and less overwhelming. Because when you’re far from home, the little things matter.</p>
+        </article>
+
+        <article class="mission-item">
+          <div class="mission-media"><image-slot id="mission-img-3" shape="rounded" radius="14" placeholder="People together" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Priscilla Du Preez" credit-href="https://unsplash.com/@priscilladupreez" style="width:100%;height:100%"></image-slot></div>
+          <span class="m-num">03</span>
+          <h3>We’re Here Beyond Move In</h3>
+          <p>Our support doesn’t end when you get the keys. As you settle in, meet people, and build your life here, we want USWOO to be a familiar place you can come back to.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -167,23 +232,23 @@
       <div class="story-media-wide"><image-slot id="story-wide-img" shape="rect" placeholder="Team collaborating" src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=1600&q=80" credit="Redd Francisco" credit-href="https://unsplash.com/@reddfrancisco" style="width:100%;height:100%"></image-slot></div>
 
       <div class="story-essentials">
-        <div class="story-essential-item">
-          <div class="press-icon">🏢</div>
+        <div class="story-essential-item icon-grid">
+          <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 10.2 12 3.6l8.5 6.6V20a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1Z"/><path d="M9.5 21v-6h5v6"/></svg></span>
           <h4>Find the right home</h4>
           <p>Leasing support across multiple cities.</p>
         </div>
-        <div class="story-essential-item">
-          <div class="press-icon">🛋️</div>
+        <div class="story-essential-item icon-grid">
+          <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M3 18.5v-4.5a2 2 0 0 1 4 0V16h10v-2a2 2 0 0 1 4 0v4.5"/></svg></span>
           <h4>Move in with ease</h4>
           <p>Furniture, Wi-Fi, and essentials.</p>
         </div>
-        <div class="story-essential-item">
-          <div class="press-icon">📶</div>
+        <div class="story-essential-item icon-grid">
+          <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="m5.6 5.6 3.9 3.9"/><path d="m14.5 14.5 3.9 3.9"/><path d="m18.4 5.6-3.9 3.9"/><path d="m9.5 14.5-3.9 3.9"/></svg></span>
           <h4>Settle in with support</h4>
           <p>Local services and community.</p>
         </div>
-        <div class="story-essential-item">
-          <div class="press-icon">📍</div>
+        <div class="story-essential-item icon-grid">
+          <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.6 8.4-2.1 5.1-5.1 2.1 2.1-5.1Z"/></svg></span>
           <h4>Stay connected</h4>
           <p>Resources that make city life easier.</p>
         </div>
@@ -239,18 +304,24 @@
 
       <div class="cta-essentials">
         <div class="story-essential-item">
-          <div class="press-icon">👥</div>
-          <h4>Meaningful work</h4>
+          <div class="icon-head">
+            <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.5 20v-1.5a4 4 0 0 0-4-4h-5a4 4 0 0 0-4 4V20"/><circle cx="9" cy="7.5" r="3.5"/><path d="M21.5 20v-1.5a4 4 0 0 0-3-3.87"/><path d="M16 4.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <h4>Meaningful work</h4>
+          </div>
           <p>Make an impact on renters' lives every day.</p>
         </div>
         <div class="story-essential-item">
-          <div class="press-icon">📈</div>
-          <h4>Learn &amp; grow</h4>
+          <div class="icon-head">
+            <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 16.5 5.5-5.5 3.5 3.5L21 5.5"/><path d="M15 5.5h6v6"/></svg></span>
+            <h4>Learn &amp; grow</h4>
+          </div>
           <p>Hands-on experience in real estate, lifestyle and more.</p>
         </div>
         <div class="story-essential-item">
-          <div class="press-icon">❤️</div>
-          <h4>Great team culture</h4>
+          <div class="icon-head">
+            <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.1 5.8a4.6 4.6 0 0 0-6.5 0l-.6.6-.6-.6a4.6 4.6 0 1 0-6.5 6.5l7.1 7.1 7.1-7.1a4.6 4.6 0 0 0 0-6.5Z"/></svg></span>
+            <h4>Great team culture</h4>
+          </div>
           <p>Collaborative, supportive and people-first.</p>
         </div>
       </div>
@@ -296,13 +367,45 @@
       </div>
     </div>
     <div class="footer-word">
-      <div class="wm">USWOO<span>.</span></div>
+      <div class="wm">USWOO</div>
     </div>
   </div>
 </footer>
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
+  componentDidMount() {
+    // Hero background: two photos, swapping places by sliding left/right on a
+    // timer. Ping-pongs between the two rather than looping one-way, since
+    // there are only two slides.
+    if (this.heroSlidesRef) {
+      const track = this.heroSlidesRef;
+      const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduceMotion) {
+        let showingSecond = false;
+        this._heroSlideTimer = setInterval(() => {
+          showingSecond = !showingSecond;
+          track.style.transform = showingSecond ? 'translateX(-50%)' : 'translateX(0)';
+        }, 4800);
+      }
+    }
+    // The nav is transparent while the footage is behind it, opaque after.
+    if (this.navRef && this.heroRef && 'IntersectionObserver' in window) {
+      this._io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) this.navRef.classList.remove('scrolled');
+          else this.navRef.classList.add('scrolled');
+        });
+      }, { threshold: 0, rootMargin: '-72px 0px 0px 0px' });
+      this._io.observe(this.heroRef);
+    }
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    if (this._heroSlideTimer) clearInterval(this._heroSlideTimer);
+  }
+
   renderVals() {
     return {
       preventDefault: (e) => e.preventDefault(),
