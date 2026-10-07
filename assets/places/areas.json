@@ -1,0 +1,3567 @@
+[
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Midtown Manhattan",
+  "images": [
+   "assets/places/area-ny-midtown-manhattan-1.jpg",
+   "assets/places/area-ny-midtown-manhattan-2.jpg",
+   "assets/places/area-ny-midtown-manhattan-3.jpg"
+  ],
+  "desc": "The city's busiest core around Times Square, Fifth Ave and Rockefeller Center. Endless subway lines and short commutes, but mostly high-rise rentals with premium prices.",
+  "desc_zh": "围绕时代广场、第五大道和洛克菲勒中心的城市核心区，地铁线路极多、通勤最短；以高层出租公寓为主，租金高、比较喧闹。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg",
+    "author": "Dllu",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Midtown_Manhattan,_New_York--Unsplash.com--2016.jpg",
+    "author": "Theo Tsongidis theodoret",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:432_Park_Avenue_from_base.jpg",
+    "author": "Sir MemeGod",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Midtown East",
+  "images": [
+   "assets/places/area-ny-midtown-east-1.jpg",
+   "assets/places/area-ny-midtown-east-2.jpg",
+   "assets/places/area-ny-midtown-east-3.jpg"
+  ],
+  "desc": "Around Grand Central and Turtle Bay: doorman high-rises, a calmer after-work feel and fast subway/Metro-North access. Popular with finance and consulting staff; rents are high.",
+  "desc_zh": "中央车站与龟湾一带，多为门卫高层公寓，下班后相对安静，地铁和Metro-North通勤便利；金融、咨询从业者多，租金偏高。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Park_Avenue_towards_Grand_Central_Terminal,_New_York_City,_NY.jpg",
+    "author": "Warren LeMay",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:42nd_Street_%5E_Park_Avenue,_New_York_City_-_Tourists_Approaching_Grand_Central_Terminal,_2007_-_panoramio.jpg",
+    "author": "Chris English",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chrysler_Building_2005_4.jpg",
+    "author": "Misterweiss at English Wikipedia",
+    "license": "Public domain"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Midtown West",
+  "images": [
+   "assets/places/area-ny-midtown-west-1.jpg",
+   "assets/places/area-ny-midtown-west-2.jpg",
+   "assets/places/area-ny-midtown-west-3.jpg"
+  ],
+  "desc": "Hell's Kitchen and the Theater District: lively restaurant rows, new towers near the Hudson and quick trains from Times Square and Port Authority. Busy, young and pricey.",
+  "desc_zh": "地狱厨房和剧院区，餐厅林立、夜生活丰富，哈德逊河边新楼多，时代广场和巴士总站交通方便；氛围年轻热闹，租金不低。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Times_Square_during_daytime.jpg",
+    "author": "Jerry Steinfield",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Ninth-north.jpg",
+    "author": "Roger Rowlett",
+    "license": "CC BY-SA 2.5"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:34th_Street_10th_Avenue_03.jpg",
+    "author": "Tdorante10",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Financial District (FiDi)",
+  "images": [
+   "assets/places/area-ny-financial-district-fidi-1.jpg",
+   "assets/places/area-ny-financial-district-fidi-2.jpg",
+   "assets/places/area-ny-financial-district-fidi-3.jpg"
+  ],
+  "desc": "Wall Street's canyons turned residential: converted towers with gyms and doormen, nearly every subway line plus PATH and ferries. Quiet on weekends, better value than Midtown.",
+  "desc_zh": "华尔街一带，许多写字楼改建为带健身房和门卫的公寓，几乎所有地铁线加PATH和轮渡汇集；周末偏安静，性价比好于中城。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:New_York_City_(New_York,_USA),_Wall_Street_--_2012_--_6614.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:New_York_Stock_Exchange_August_2017_02.jpg",
+    "author": "Arild Vågen",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:40_Wall_Street_April_2022.jpg",
+    "author": "Kidfly182",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Hudson Yards",
+  "images": [
+   "assets/places/area-ny-hudson-yards-1.jpg",
+   "assets/places/area-ny-hudson-yards-2.jpg",
+   "assets/places/area-ny-hudson-yards-3.jpg"
+  ],
+  "desc": "Manhattan's newest district: glassy luxury towers, the Vessel, the High Line and a big mall, served by the 7 train. Polished and convenient, with some of the city's highest rents.",
+  "desc_zh": "曼哈顿最新开发区，玻璃幕墙豪华高楼、Vessel、高线公园和大型商场，乘7号线可达；环境精致便利，租金属全市最高之列。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Midtown_Manhattan_from_Weehawken_September_2021_HDR.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:10%26_30_Hudson_Yards.jpg",
+    "author": "Kidfly182",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:HudsonYards_05-06-19-1_(47003439824).jpg",
+    "author": "Ajay Suresh from New York, NY, USA",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Flatiron / NoMad",
+  "images": [
+   "assets/places/area-ny-flatiron-nomad-1.jpg",
+   "assets/places/area-ny-flatiron-nomad-2.jpg",
+   "assets/places/area-ny-flatiron-nomad-3.jpg"
+  ],
+  "desc": "Around the Flatiron Building and Madison Square Park: prewar lofts, great restaurants and many subway lines. Central and stylish, loved by tech and creative workers; rents are high.",
+  "desc_zh": "熨斗大厦与麦迪逊广场公园周边，战前loft建筑漂亮、餐厅出色、地铁线多；位置居中、很有格调，深受科技和创意从业者喜爱，租金较高。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Broadway_26th-27th_Streets.jpg",
+    "author": "Beyond My Ken",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:At_New_York,_USA_2017_298.jpg",
+    "author": "Photograph by Mike Peel (www.mikepeel.net).",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pecora_Bianca_on_Broadway_(50041624187).jpg",
+    "author": "Eden, Janine and Jim from New York City",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Chelsea",
+  "images": [
+   "assets/places/area-ny-chelsea-1.jpg",
+   "assets/places/area-ny-chelsea-2.jpg",
+   "assets/places/area-ny-chelsea-3.jpg"
+  ],
+  "desc": "Brownstones, art galleries, the High Line and Chelsea Market on Manhattan's west side. Walkable and social, with A/C/E and 1 trains; rents run high.",
+  "desc_zh": "曼哈顿西侧，褐石排屋、画廊、高线公园和切尔西市场汇聚，步行友好、社交氛围浓，A/C/E和1号线通达；租金偏高。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:At_New_York_City_2023_045_-_10th_Avenue_and_14th_Street,_Manhattan.jpg",
+    "author": "Photograph by Mike Peel (www.mikepeel.net).",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:High_Line_New_York_August_2013.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:High_Line_at_Chelsea_Market_from_street_level,_September_2025.jpg",
+    "author": "Pi.1415926535",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Union Square",
+  "images": [
+   "assets/places/area-ny-union-square-1.jpg",
+   "assets/places/area-ny-union-square-2.jpg",
+   "assets/places/area-ny-union-square-3.jpg"
+  ],
+  "desc": "A lively hub around the park and Greenmarket, steps from NYU and The New School. Many subway lines meet here, making it a top student pick; expect small, pricey units.",
+  "desc_zh": "以联合广场公园和农夫市集为中心，紧邻NYU和新学院；多条地铁线交汇，是学生热门选择，但房型偏小、租金较贵。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Union_Square_New_York_by_David_Shankbone.jpg",
+    "author": "David Shankbone",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Union_Square_Farmers_Market.jpg",
+    "author": "Postdlf",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:14th_St_Bway_td_(2018-03-22)_06_-_1,_5,_15_Union_Square_West.jpg",
+    "author": "Tdorante10",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "SoHo",
+  "images": [
+   "assets/places/area-ny-soho-1.jpg",
+   "assets/places/area-ny-soho-2.jpg",
+   "assets/places/area-ny-soho-3.jpg"
+  ],
+  "desc": "Cobblestone streets, cast-iron lofts and flagship stores. Stylish and central, but apartments are scarce, often walk-ups, and among Manhattan's most expensive.",
+  "desc_zh": "鹅卵石街道、铸铁loft建筑和品牌旗舰店聚集，时尚且位置居中；但房源稀少、多为无电梯楼，租金在曼哈顿属顶级。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Burton_69-Greene-Street-NY_2021-06-25_10-31_G90T8429.jpg",
+    "author": "Axel Tschentscher",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Cast_Iron_Buildings_-_SoHo_Historic_District.jpg",
+    "author": "50greenestreet",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Greene_from_W_Houston.jpg",
+    "author": "CucombreLibre",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Downtown Brooklyn",
+  "images": [
+   "assets/places/area-ny-downtown-brooklyn-1.jpg",
+   "assets/places/area-ny-downtown-brooklyn-2.jpg",
+   "assets/places/area-ny-downtown-brooklyn-3.jpg"
+  ],
+  "desc": "A fast-growing cluster of new high-rises near MetroTech, NYU Tandon and Barclays Center. A dozen subway lines reach Manhattan in minutes, with more space for the money.",
+  "desc_zh": "MetroTech、NYU Tandon和巴克莱中心附近新建高楼密集，十余条地铁线几分钟到曼哈顿；同样预算比曼哈顿空间更大。",
+  "region": "Brooklyn, New York",
+  "region_zh": "纽约布鲁克林",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Downtown_Brooklyn_Skyline_2023.jpg",
+    "author": "FluffballsM&Ms",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_01.jpg",
+    "author": "Ad Meskens",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Fulton_Mall,_Brooklyn_New_York.jpg",
+    "author": "TheTTGuy",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Long Island City (LIC)",
+  "images": [
+   "assets/places/area-ny-long-island-city-lic-1.jpg",
+   "assets/places/area-ny-long-island-city-lic-2.jpg",
+   "assets/places/area-ny-long-island-city-lic-3.jpg"
+  ],
+  "desc": "Queens waterfront towers facing the Midtown skyline, one stop from Manhattan on the 7, E/M and N/W. Newer amenity buildings at slightly lower rents than Manhattan.",
+  "desc_zh": "皇后区滨水高楼，正对中城天际线，乘7、E/M、N/W一站到曼哈顿；楼新、设施全，租金略低于曼哈顿。",
+  "region": "Queens, New York",
+  "region_zh": "纽约皇后区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Long_Island_City_New_York_October_2016.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Long_Island_City_New_York_May_2015_panorama_3.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Hunter%27s_Pt_Community_Pk_td_(2019-04-11)_11_-_Zipper_Building_(533_48th_Avenue).jpg",
+    "author": "Tdorante10",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Hoboken, NJ",
+  "images": [
+   "assets/places/area-ny-hoboken-nj-1.jpg",
+   "assets/places/area-ny-hoboken-nj-2.jpg",
+   "assets/places/area-ny-hoboken-nj-3.jpg"
+  ],
+  "desc": "A compact, walkable mile-square city of brownstones and bars on the Hudson. A young-professional favorite; PATH and ferries reach Manhattan in 10–15 min, rents a bit lower.",
+  "desc_zh": "哈德逊河畔一平方英里的小城，褐石建筑和酒吧林立，年轻上班族最爱；PATH和轮渡10–15分钟到曼哈顿，租金略低。",
+  "region": "Hoboken, NJ",
+  "region_zh": "新泽西州霍博肯",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pier_A_Park_Hoboken_June_2015_panorama_3.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:77_Park_Avenue_Hoboken_November_2021.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Hoboken_November_2021_009.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Newport, NJ",
+  "images": [
+   "assets/places/area-ny-newport-nj-1.jpg",
+   "assets/places/area-ny-newport-nj-2.jpg",
+   "assets/places/area-ny-newport-nj-3.jpg"
+  ],
+  "desc": "A planned waterfront community of high-rise rentals with a mall, riverside walkway and its own PATH stop. Quiet and safe-feeling, with easy commutes to Midtown or Downtown.",
+  "desc_zh": "规划型滨水社区，以高层出租公寓为主，配有商场和河滨步道，自带PATH站；安静、安全感强，通勤中城或下城都方便。",
+  "region": "Jersey City, NJ",
+  "region_zh": "新泽西州泽西市",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Newport_Jersey_City_May_2015.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Newport_Jersey_City_November_2021_005.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Newport_Jersey_City_November_2021_006.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Exchange Place, NJ",
+  "images": [
+   "assets/places/area-ny-exchange-place-nj-1.jpg",
+   "assets/places/area-ny-exchange-place-nj-2.jpg",
+   "assets/places/area-ny-exchange-place-nj-3.jpg"
+  ],
+  "desc": "Jersey City's financial waterfront of glass towers with Lower Manhattan views. One PATH stop to WTC; new luxury rentals, quiet after office hours.",
+  "desc_zh": "泽西市的金融滨水区，玻璃高楼林立，正对下曼哈顿景观；PATH一站到世贸中心，新建豪华公寓多，下班后较安静。",
+  "region": "Jersey City, NJ",
+  "region_zh": "新泽西州泽西市",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Jersey_City_skyline_with_the_Colgate_Clock,_Jersey_City,_New_Jersey.jpg",
+    "author": "Christian David",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Harborside_Financial_Center_Harborside_Plaza_5_and_Trump_Plaza.jpg",
+    "author": "Beyond My Ken",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_from_Jersey_City_July_2014_002.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Grove St, NJ",
+  "images": [
+   "assets/places/area-ny-grove-st-nj-1.jpg",
+   "assets/places/area-ny-grove-st-nj-2.jpg",
+   "assets/places/area-ny-grove-st-nj-3.jpg"
+  ],
+  "desc": "Downtown Jersey City's social heart: brownstones, a pedestrian plaza, bars and restaurants. PATH to WTC or 33rd St; popular with young renters and good value vs. Manhattan.",
+  "desc_zh": "泽西市下城的社交中心，褐石排屋、步行广场、酒吧餐厅聚集；PATH可到世贸或33街，年轻租客多，比曼哈顿划算。",
+  "region": "Jersey City, NJ",
+  "region_zh": "新泽西州泽西市",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:JC_Hall_SE_sunny_morning_jeh.JPG",
+    "author": "Jim.henderson",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Downtown_Jersey_City_November_2021_003.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Van_Vorst_Park_Jersey_City_August_2020.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "NY",
+  "name": "Journal Square (JSQ), NJ",
+  "images": [
+   "assets/places/area-ny-journal-square-jsq-nj-1.jpg",
+   "assets/places/area-ny-journal-square-jsq-nj-2.jpg",
+   "assets/places/area-ny-journal-square-jsq-nj-3.jpg"
+  ],
+  "desc": "Jersey City's transit hub, booming with new high-rise rentals around the PATH station. More affordable than the waterfront, about 20 min to Manhattan, with diverse food.",
+  "desc_zh": "泽西市交通枢纽，PATH站周边新建高层公寓不断；租金比滨水区更亲民，约20分钟到曼哈顿，各国美食丰富。",
+  "region": "Jersey City, NJ",
+  "region_zh": "新泽西州泽西市",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Journal_Square_Jersey_City_November_2021_002.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pavonia_Avenue,_Jersey_City.jpg",
+    "author": "Alfred Twu",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Journal_Square_-_Jersey_City,_NJ_(55191652498).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "NY",
+  "name": "Midtown Manhattan",
+  "images": [
+   "assets/places/area-ny-midtown-manhattan-1.jpg",
+   "assets/places/area-ny-midtown-manhattan-2.jpg",
+   "assets/places/area-ny-midtown-manhattan-3.jpg"
+  ],
+  "desc": "34th–59th St: one of NYC's largest core business districts, home to finance, media, consulting, tech and corporate HQs.",
+  "desc_zh": "34至59街一带，纽约最大的核心商务区之一，汇聚金融、传媒、咨询、科技和企业总部。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg",
+    "author": "Dllu",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Midtown_Manhattan,_New_York--Unsplash.com--2016.jpg",
+    "author": "Theo Tsongidis theodoret",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:432_Park_Avenue_from_base.jpg",
+    "author": "Sir MemeGod",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "NY",
+  "name": "Midtown East",
+  "images": [
+   "assets/places/area-ny-midtown-east-1.jpg",
+   "assets/places/area-ny-midtown-east-2.jpg",
+   "assets/places/area-ny-midtown-east-3.jpg"
+  ],
+  "desc": "Grand Central, Park Ave and Lexington Ave: the traditional corporate core of banks, law firms, consulting and finance.",
+  "desc_zh": "中央车站、公园大道和列克星敦大道一带，传统企业办公核心，银行、律所、咨询和金融机构集中。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Park_Avenue_towards_Grand_Central_Terminal,_New_York_City,_NY.jpg",
+    "author": "Warren LeMay",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:42nd_Street_%5E_Park_Avenue,_New_York_City_-_Tourists_Approaching_Grand_Central_Terminal,_2007_-_panoramio.jpg",
+    "author": "Chris English",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chrysler_Building_2005_4.jpg",
+    "author": "Misterweiss at English Wikipedia",
+    "license": "Public domain"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "NY",
+  "name": "Midtown West",
+  "images": [
+   "assets/places/area-ny-midtown-west-1.jpg",
+   "assets/places/area-ny-midtown-west-2.jpg",
+   "assets/places/area-ny-midtown-west-3.jpg"
+  ],
+  "desc": "Times Square, Hudson Yards and Hell's Kitchen: media, entertainment, tech and new-generation office towers and HQs.",
+  "desc_zh": "时代广场、哈德逊园区和地狱厨房一带，传媒、娱乐、科技公司与新一代写字楼和总部集中。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Times_Square_during_daytime.jpg",
+    "author": "Jerry Steinfield",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Ninth-north.jpg",
+    "author": "Roger Rowlett",
+    "license": "CC BY-SA 2.5"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:34th_Street_10th_Avenue_03.jpg",
+    "author": "Tdorante10",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "NY",
+  "name": "Financial District (FiDi)",
+  "images": [
+   "assets/places/area-ny-financial-district-fidi-1.jpg",
+   "assets/places/area-ny-financial-district-fidi-2.jpg",
+   "assets/places/area-ny-financial-district-fidi-3.jpg"
+  ],
+  "desc": "Wall Street and the World Trade Center: the traditional financial center for banks, insurance, financial services and government.",
+  "desc_zh": "华尔街与世贸中心一带，传统金融中心，银行、保险、金融服务和政府机构集中。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:New_York_City_(New_York,_USA),_Wall_Street_--_2012_--_6614.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:New_York_Stock_Exchange_August_2017_02.jpg",
+    "author": "Arild Vågen",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:40_Wall_Street_April_2022.jpg",
+    "author": "Kidfly182",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "NY",
+  "name": "Hudson Yards",
+  "images": [
+   "assets/places/area-ny-hudson-yards-1.jpg",
+   "assets/places/area-ny-hudson-yards-2.jpg",
+   "assets/places/area-ny-hudson-yards-3.jpg"
+  ],
+  "desc": "West 30s: an emerging high-end district of major corporate HQs, finance, tech and luxury retail.",
+  "desc_zh": "西30街一带的新兴高端商务区，大型企业总部、金融、科技和高端零售集中。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Midtown_Manhattan_from_Weehawken_September_2021_HDR.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:10%26_30_Hudson_Yards.jpg",
+    "author": "Kidfly182",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:HudsonYards_05-06-19-1_(47003439824).jpg",
+    "author": "Ajay Suresh from New York, NY, USA",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "NY",
+  "name": "Flatiron / NoMad",
+  "images": [
+   "assets/places/area-ny-flatiron-nomad-1.jpg",
+   "assets/places/area-ny-flatiron-nomad-2.jpg",
+   "assets/places/area-ny-flatiron-nomad-3.jpg"
+  ],
+  "desc": "Broadway and Fifth Ave in the 20s–30s: a hub for tech, creative, design, advertising and startups.",
+  "desc_zh": "百老汇与第五大道20至30街段，科技、创意、设计、广告和初创公司聚集地。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Broadway_26th-27th_Streets.jpg",
+    "author": "Beyond My Ken",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:At_New_York,_USA_2017_298.jpg",
+    "author": "Photograph by Mike Peel (www.mikepeel.net).",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pecora_Bianca_on_Broadway_(50041624187).jpg",
+    "author": "Eden, Janine and Jim from New York City",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "NY",
+  "name": "Chelsea",
+  "images": [
+   "assets/places/area-ny-chelsea-1.jpg",
+   "assets/places/area-ny-chelsea-2.jpg",
+   "assets/places/area-ny-chelsea-3.jpg"
+  ],
+  "desc": "West 14th–30th St: strong in tech, media, advertising and art, anchored partly by Google's large presence.",
+  "desc_zh": "西14至30街，科技、传媒、广告和艺术产业发达，谷歌大型办公室是重要支柱。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:At_New_York_City_2023_045_-_10th_Avenue_and_14th_Street,_Manhattan.jpg",
+    "author": "Photograph by Mike Peel (www.mikepeel.net).",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:High_Line_New_York_August_2013.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:High_Line_at_Chelsea_Market_from_street_level,_September_2025.jpg",
+    "author": "Pi.1415926535",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "NY",
+  "name": "Union Square",
+  "images": [
+   "assets/places/area-ny-union-square-1.jpg",
+   "assets/places/area-ny-union-square-2.jpg",
+   "assets/places/area-ny-union-square-3.jpg"
+  ],
+  "desc": "Around 14th St: tech, startups, retail and creative firms, with many young companies.",
+  "desc_zh": "14街一带，科技、初创、零售和创意公司集中，年轻企业众多。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Union_Square_New_York_by_David_Shankbone.jpg",
+    "author": "David Shankbone",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Union_Square_Farmers_Market.jpg",
+    "author": "Postdlf",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:14th_St_Bway_td_(2018-03-22)_06_-_1,_5,_15_Union_Square_West.jpg",
+    "author": "Tdorante10",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "NY",
+  "name": "SoHo",
+  "images": [
+   "assets/places/area-ny-soho-1.jpg",
+   "assets/places/area-ny-soho-2.jpg",
+   "assets/places/area-ny-soho-3.jpg"
+  ],
+  "desc": "Houston to Canal St: fashion, luxury retail, creative agencies and brand headquarters.",
+  "desc_zh": "Houston街至Canal街之间，时尚、奢侈品零售、创意机构和品牌总部集中。",
+  "region": "Manhattan, New York",
+  "region_zh": "纽约曼哈顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Burton_69-Greene-Street-NY_2021-06-25_10-31_G90T8429.jpg",
+    "author": "Axel Tschentscher",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Cast_Iron_Buildings_-_SoHo_Historic_District.jpg",
+    "author": "50greenestreet",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Greene_from_W_Houston.jpg",
+    "author": "CucombreLibre",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "NY",
+  "name": "Downtown Brooklyn",
+  "images": [
+   "assets/places/area-ny-downtown-brooklyn-1.jpg",
+   "assets/places/area-ny-downtown-brooklyn-2.jpg",
+   "assets/places/area-ny-downtown-brooklyn-3.jpg"
+  ],
+  "desc": "Civic Center and MetroTech: Brooklyn's largest business center for finance, tech, government and education.",
+  "desc_zh": "布鲁克林市政中心和MetroTech一带，布鲁克林最大的商务中心，涵盖金融、科技、政府和教育。",
+  "region": "Brooklyn, New York",
+  "region_zh": "纽约布鲁克林",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Downtown_Brooklyn_Skyline_2023.jpg",
+    "author": "FluffballsM&Ms",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_01.jpg",
+    "author": "Ad Meskens",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Fulton_Mall,_Brooklyn_New_York.jpg",
+    "author": "TheTTGuy",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "NY",
+  "name": "Long Island City (LIC)",
+  "images": [
+   "assets/places/area-ny-long-island-city-lic-1.jpg",
+   "assets/places/area-ny-long-island-city-lic-2.jpg",
+   "assets/places/area-ny-long-island-city-lic-3.jpg"
+  ],
+  "desc": "Queens Plaza and Court Square: a main Queens office hub for tech, media, converted industrial space and corporate offices.",
+  "desc_zh": "皇后广场和Court Square一带，皇后区主要办公枢纽，科技、传媒、工业改造空间和企业办公集中。",
+  "region": "Queens, New York",
+  "region_zh": "纽约皇后区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Long_Island_City_New_York_October_2016.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Long_Island_City_New_York_May_2015_panorama_3.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Hunter%27s_Pt_Community_Pk_td_(2019-04-11)_11_-_Zipper_Building_(533_48th_Avenue).jpg",
+    "author": "Tdorante10",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Santa Monica",
+  "images": [
+   "assets/places/area-la-santa-monica-1.jpg",
+   "assets/places/area-la-santa-monica-2.jpg",
+   "assets/places/area-la-santa-monica-3.jpg"
+  ],
+  "desc": "Beach city with the Pier, Third Street Promenade and the E Line to DTLA. Walkable, sunny and safe-feeling, popular with SMC/UCLA students and tech workers; rents are high.",
+  "desc_zh": "海滨城市，有圣莫尼卡码头和第三街步行街，E线轻轨直达市中心；步行友好、阳光充足，SMC/UCLA学生和科技从业者多，租金偏高。",
+  "region": "Santa Monica, CA",
+  "region_zh": "加州圣莫尼卡",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Santa_Monica_%E2%80%93_Third_Street_Promenade_(a)_06_Sept_2017.jpg",
+    "author": "Cayambe",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Santa_Monica_-_Downtown_-_Beach.jpg",
+    "author": "Cayambe",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Santa_Monica_Third_Street_Promenade_%E2%80%93_Market_Pavilion.jpg",
+    "author": "Cayambe",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Venice",
+  "images": [
+   "assets/places/area-la-venice-1.jpg",
+   "assets/places/area-la-venice-2.jpg",
+   "assets/places/area-la-venice-3.jpg"
+  ],
+  "desc": "Boardwalk, canals and Abbot Kinney's boutiques give Venice a creative, beachy vibe. Bikeable to Santa Monica and Silicon Beach offices; small bungalows rent at a premium.",
+  "desc_zh": "海滨木栈道、运河和Abbot Kinney街小店，氛围文艺随性；骑车可到圣莫尼卡和“硅滩”办公区，小平房租金不便宜。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Los_Angeles_-_Venice_Canal_Historic_District_08.jpg",
+    "author": "Américo Toledano",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Houses_on_Grand_Canal,_Venice_Canal_Historic_District,_Venice,_California.JPG",
+    "author": "Los Angeles",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Venice_Beach,_Los_Angeles,_CA_01.jpg",
+    "author": "Blake Everett",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Marina del Rey",
+  "images": [
+   "assets/places/area-la-marina-del-rey-1.jpg",
+   "assets/places/area-la-marina-del-rey-2.jpg",
+   "assets/places/area-la-marina-del-rey-3.jpg"
+  ],
+  "desc": "Harbor-front apartment complexes with pools, bike paths and sunsets over the boats. Calm and resort-like, close to LMU and Playa Vista; you'll want a car.",
+  "desc_zh": "港湾旁的公寓社区，带泳池、自行车道和游艇夕阳，环境安静、度假感强，靠近LMU和Playa Vista；基本需要开车。",
+  "region": "Marina del Rey, CA",
+  "region_zh": "加州玛丽娜德尔雷",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Marina_del_Rey_P4070297.jpg",
+    "author": "Alexander Migl",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Admiralty_Way_in_Marina_del_Rey,_CA,_USA.jpg",
+    "author": "Tubbydammer",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Boat_Rental_-_panoramio_(1).jpg",
+    "author": "Clotee Pridgen Alloc…",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Playa Vista",
+  "images": [
+   "assets/places/area-la-playa-vista-1.jpg",
+   "assets/places/area-la-playa-vista-2.jpg",
+   "assets/places/area-la-playa-vista-3.jpg"
+  ],
+  "desc": "A newer master-planned community of modern apartments, parks and tech offices. Clean and quiet near LMU and the beach; getting around is mostly by car.",
+  "desc_zh": "新规划社区，现代公寓、公园和科技公司办公室集中；干净安静，靠近LMU和海滩，出行以开车为主。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Playa_Vista_corner_Jefferson_and_Lincoln.jpg",
+    "author": "Jengod",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Institute_for_Creative_Technologies.jpg",
+    "author": "DocFreeman24",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Bluff_Creek_and_Playa_Vista.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Westwood",
+  "images": [
+   "assets/places/area-la-westwood-1.jpg",
+   "assets/places/area-la-westwood-2.jpg",
+   "assets/places/area-la-westwood-3.jpg"
+  ],
+  "desc": "UCLA's college town: Westwood Village shops, cinemas and dense apartments within walking distance of campus. Practical for students; rents are high for the size.",
+  "desc_zh": "UCLA所在的大学城，Westwood Village商店、影院和公寓密集，步行即可到校；对学生很方便，但按面积算租金偏高。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Westwood_Village,_Los_Angeles,_California_(3124966155).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:2019_UCLA_Royce_Hall_2.jpg",
+    "author": "Beyond My Ken",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Janss_Dome,_Westwood_Village,_Los_Angeles,_California_(3125795150).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Brentwood",
+  "images": [
+   "assets/places/area-la-brentwood-1.jpg",
+   "assets/places/area-la-brentwood-2.jpg",
+   "assets/places/area-la-brentwood-3.jpg"
+  ],
+  "desc": "Leafy, upscale residential area west of UCLA with San Vicente's cafés and quiet streets. Safe and calm, mostly pricier apartments; a car or bike helps.",
+  "desc_zh": "UCLA以西的高档住宅区，绿树成荫，San Vicente大道咖啡店多、街道安静；安全宁静，公寓租金偏高，最好有车或自行车。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Brentwood_Country_Mart_4.jpg",
+    "author": "Mx. Granger",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Brentwood_School,_Brentwood,_Los_Angeles,_California_-_2024_December_01.jpg",
+    "author": "Jengod",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Los_Angeles_-_from_Luxe_Hotel,_Brentwood_02.JPG",
+    "author": "Remi Mathis",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Culver City",
+  "images": [
+   "assets/places/area-la-culver-city-1.jpg",
+   "assets/places/area-la-culver-city-2.jpg",
+   "assets/places/area-la-culver-city-3.jpg"
+  ],
+  "desc": "Compact, walkable downtown with restaurants, studios and the E Line. Popular with creatives and tech workers; mid-to-high rents, between the Westside and DTLA.",
+  "desc_zh": "市中心紧凑好逛，餐厅、影视公司林立，有E线轻轨；创意和科技从业者喜爱，租金中高，位于西区与市中心之间。",
+  "region": "Culver City, CA",
+  "region_zh": "加州卡尔弗城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Culver_City_2026_August_02.jpg",
+    "author": "Jengod",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Culver_City_2026_August_03.jpg",
+    "author": "Jengod",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Culver_City_buildings_and_structures_2023_March_18_batch_03.jpg",
+    "author": "Jengod",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Century City",
+  "images": [
+   "assets/places/area-la-century-city-1.jpg",
+   "assets/places/area-la-century-city-2.jpg",
+   "assets/places/area-la-century-city-3.jpg"
+  ],
+  "desc": "High-rise condos and offices around the Westfield mall, minutes from Beverly Hills and UCLA. Polished and convenient but car-oriented; rents are premium.",
+  "desc_zh": "Westfield商场周边的高层公寓和写字楼，几分钟到比佛利山和UCLA；精致便利但以车为主，租金高端。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Century_City_buildings_(June_2026).jpg",
+    "author": "Busition",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Olympic_Boulevard_in_Century_City_(April_2026).jpg",
+    "author": "Busition",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Century_City_van_Santa_Monica_Blvd.jpg",
+    "author": "nl:User:DreCube",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Beverly Hills",
+  "images": [
+   "assets/places/area-la-beverly-hills-1.jpg",
+   "assets/places/area-la-beverly-hills-2.jpg",
+   "assets/places/area-la-beverly-hills-3.jpg"
+  ],
+  "desc": "Palm-lined streets, Rodeo Drive and excellent safety. Apartments south of Wilshire are the attainable option; pricey overall but central to the Westside.",
+  "desc_zh": "棕榈大道、罗迪欧大道，治安极好；Wilshire以南的公寓相对可负担，整体价格偏高，但位于西区中心。",
+  "region": "Beverly Hills, CA",
+  "region_zh": "加州比佛利山",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Buildings_at_North_Rodeo_Drive,_Beverly_Hills,_West_view_20110806_1.jpg",
+    "author": "DXR",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rodeo_Drive_(9641264818).jpg",
+    "author": "William Warby from London, England",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Beverly_Hills,_CA,_USA_-_panoramio_(2).jpg",
+    "author": "Mickey Løgitmark",
+    "license": "CC BY 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "West Hollywood",
+  "images": [
+   "assets/places/area-la-west-hollywood-1.jpg",
+   "assets/places/area-la-west-hollywood-2.jpg",
+   "assets/places/area-la-west-hollywood-3.jpg"
+  ],
+  "desc": "Walkable, lively city known for the Sunset Strip, nightlife and a strong LGBTQ+ community. Lots of apartments and cafés; rents are high but car-light living is possible.",
+  "desc_zh": "以日落大道夜生活和LGBTQ+社区闻名，步行友好、热闹；公寓和咖啡店多，租金较高，但少开车也能生活。",
+  "region": "West Hollywood, CA",
+  "region_zh": "加州西好莱坞",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pacific_Design_Center-(West_Hollywood)_July_2023.jpg",
+    "author": "Benoît Prieur",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Crossroad_North_La_Brea_Avenue_%26_Romaine_Street_(West_Hollywood)_July_2023.jpg",
+    "author": "Benoît Prieur",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:WeHoCityHall.jpg",
+    "author": "No machine-readable author provided. Greenmnm69 assumed (based on copyright claims).",
+    "license": "CC BY 2.5"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Koreatown",
+  "images": [
+   "assets/places/area-la-koreatown-1.jpg",
+   "assets/places/area-la-koreatown-2.jpg",
+   "assets/places/area-la-koreatown-3.jpg"
+  ],
+  "desc": "One of LA's densest, liveliest areas: late-night Korean food, karaoke and big older apartment buildings. B/D Metro lines, close to USC and DTLA; relatively affordable.",
+  "desc_zh": "洛杉矶最密集热闹的街区之一，深夜韩餐、KTV和老式公寓楼林立；有B/D线地铁，靠近USC和市中心，租金相对实惠。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Wilshire_Boulevard_at_Normandie,_Los_Angeles.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:3825_Wilshire_Professional_Building.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Corner_of_Wilshire_and_Western,_Los_Angeles.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Silver Lake",
+  "images": [
+   "assets/places/area-la-silver-lake-1.jpg",
+   "assets/places/area-la-silver-lake-2.jpg",
+   "assets/places/area-la-silver-lake-3.jpg"
+  ],
+  "desc": "Hilly, artsy east-side neighborhood with indie cafés, the reservoir loop and a young creative crowd. Mostly small complexes and duplexes; mid-to-high rents, car helpful.",
+  "desc_zh": "东区丘陵上的文艺街区，独立咖啡馆、水库环线步道，年轻创意人群多；多为小型公寓和双拼屋，租金中高，最好有车。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir_looking_west_2015-10-11.jpg",
+    "author": "Junkyardsparkle",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:View_of_the_Verdugo_Mountains_from_Silverlake.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Silver_Lake_%E2%80%94_Moreno_Highlands.jpg",
+    "author": "Pickaxe of Cortez",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Los Feliz",
+  "images": [
+   "assets/places/area-la-los-feliz-1.jpg",
+   "assets/places/area-la-los-feliz-2.jpg",
+   "assets/places/area-la-los-feliz-3.jpg"
+  ],
+  "desc": "Charming area below Griffith Park and the Observatory, with Vermont Ave's cafés and bookstores. Classic apartment buildings near the B Line; moderately pricey.",
+  "desc_zh": "位于格里菲斯公园和天文台脚下，Vermont大道咖啡店、书店云集；经典老公寓多，靠近B线地铁，租金中等偏高。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:View_of_Griffith_Park_from_Sunset_Boulevard_(cropped2).jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Los_Feliz_Boulevard_(Los_Angeles)_July_2024.JPG",
+    "author": "Alexis Doine",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Los_Feliz,_Los_Angeles,_CA,_USA_-_panoramio_(1).jpg",
+    "author": "kajikawa",
+    "license": "CC BY 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Highland Park",
+  "images": [
+   "assets/places/area-la-highland-park-1.jpg",
+   "assets/places/area-la-highland-park-2.jpg",
+   "assets/places/area-la-highland-park-3.jpg"
+  ],
+  "desc": "Northeast LA's revived Figueroa corridor of vintage shops, bars and taco spots. Near Occidental College with A Line light rail; still cheaper than the Westside.",
+  "desc_zh": "东北洛杉矶复兴的Figueroa商业街，古着店、酒吧和塔可店多；靠近西方学院，有A线轻轨，租金仍比西区便宜。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Highland_Park_030721_20_(51023491096).jpg",
+    "author": "guydeborg",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Arroyo_Seco_Bank_building.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Ebell_Building,_Highland_Park.jpg",
+    "author": "Dreamyshade",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Eagle Rock",
+  "images": [
+   "assets/places/area-la-eagle-rock-1.jpg",
+   "assets/places/area-la-eagle-rock-2.jpg",
+   "assets/places/area-la-eagle-rock-3.jpg"
+  ],
+  "desc": "Laid-back hillside area around Occidental College with Colorado Blvd's cafés. Quieter, greener and family-friendly; moderate rents, a car is useful.",
+  "desc_zh": "西方学院周边的悠闲山坡社区，Colorado大道咖啡店多；安静绿化好，适合家庭，租金适中，建议有车。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Johnson_Student_Center_and_Freeman_College_Union_(cropped).jpg",
+    "author": "The original uploader was Geographer at English Wikipedia.",
+    "license": "CC BY 1.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Public_Library_-_Eagle_Rock_Branch.jpg",
+    "author": "ButterNoodle",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Women%27s_20th_Century_Club.jpg",
+    "author": "Dreamyshade",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "Pasadena",
+  "images": [
+   "assets/places/area-la-pasadena-1.jpg",
+   "assets/places/area-la-pasadena-2.jpg",
+   "assets/places/area-la-pasadena-3.jpg"
+  ],
+  "desc": "Historic small city with walkable Old Pasadena, Caltech and ArtCenter. Clean, safe and cultured, with the A Line to DTLA; rents moderate to high.",
+  "desc_zh": "历史小城，老帕萨迪纳街区适合步行，有加州理工和艺术中心设计学院；干净安全、文化氛围好，A线直达市中心，租金中高。",
+  "region": "Pasadena, CA",
+  "region_zh": "加州帕萨迪纳",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Colorado_Boulevard,_Old_Pasadena,_Pasadena,_California_(14514406151).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pasadena_City_Hall,_Pasadena,_California_(14516407734).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pasadena_Colorado_Street_Bridge_2005.jpg",
+    "author": "Mike Dillon",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "LA",
+  "name": "DTLA",
+  "images": [
+   "assets/places/area-la-dtla-1.jpg",
+   "assets/places/area-la-dtla-2.jpg",
+   "assets/places/area-la-dtla-3.jpg"
+  ],
+  "desc": "Skyscrapers, converted lofts and the Arts District at the hub of the Metro network, near USC. Urban with many new amenity buildings; some blocks feel rough at night.",
+  "desc_zh": "摩天楼、loft改造公寓和艺术区汇聚，是地铁网络枢纽，靠近USC；城市感强、新楼设施多，部分街区夜间治安一般。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Grand_Avenue_from_Walt_Disney_Concert_Hall_(Los_Angeles)_in_July_2022.JPG",
+    "author": "Benoît Prieur",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Downtown_Los_Angeles-Bunker_Hill.jpg",
+    "author": "User:Lan56",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rialto_Theater_(Los_Angeles)_01.jpg",
+    "author": "Visitor7",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "LA",
+  "name": "DTLA",
+  "images": [
+   "assets/places/area-la-dtla-1.jpg",
+   "assets/places/area-la-dtla-2.jpg",
+   "assets/places/area-la-dtla-3.jpg"
+  ],
+  "desc": "Financial District, South Park, Arts District and Historic Core: entertainment, finance, law, tech and startups.",
+  "desc_zh": "包括金融区、South Park、艺术区和历史核心区，娱乐、金融、法律、科技和初创企业集中。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Grand_Avenue_from_Walt_Disney_Concert_Hall_(Los_Angeles)_in_July_2022.JPG",
+    "author": "Benoît Prieur",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Downtown_Los_Angeles-Bunker_Hill.jpg",
+    "author": "User:Lan56",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rialto_Theater_(Los_Angeles)_01.jpg",
+    "author": "Visitor7",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "LA",
+  "name": "Century City",
+  "images": [
+   "assets/places/area-la-century-city-1.jpg",
+   "assets/places/area-la-century-city-2.jpg",
+   "assets/places/area-la-century-city-3.jpg"
+  ],
+  "desc": "Office towers beside the Westfield mall: an entertainment, law and finance hub with heavy daytime employment.",
+  "desc_zh": "Westfield商场旁的写字楼群，娱乐、法律和金融中心，白天就业人口密集。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Century_City_buildings_(June_2026).jpg",
+    "author": "Busition",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Olympic_Boulevard_in_Century_City_(April_2026).jpg",
+    "author": "Busition",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Century_City_van_Santa_Monica_Blvd.jpg",
+    "author": "nl:User:DreCube",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "LA",
+  "name": "Culver City",
+  "images": [
+   "assets/places/area-la-culver-city-1.jpg",
+   "assets/places/area-la-culver-city-2.jpg",
+   "assets/places/area-la-culver-city-3.jpg"
+  ],
+  "desc": "Entertainment, tech and creative offices mixed with restaurants and apartments; Downtown and the Arts District are distinct hubs.",
+  "desc_zh": "娱乐、科技和创意办公与餐厅、公寓混合；市中心和艺术区是两个独立的商务片区。",
+  "region": "Culver City, CA",
+  "region_zh": "加州卡尔弗城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Culver_City_2026_August_02.jpg",
+    "author": "Jengod",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Culver_City_2026_August_03.jpg",
+    "author": "Jengod",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Culver_City_buildings_and_structures_2023_March_18_batch_03.jpg",
+    "author": "Jengod",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "LA",
+  "name": "Santa Monica",
+  "images": [
+   "assets/places/area-la-santa-monica-1.jpg",
+   "assets/places/area-la-santa-monica-2.jpg",
+   "assets/places/area-la-santa-monica-3.jpg"
+  ],
+  "desc": "Beachside and walkable, with tech offices and retail: the core of LA's \"Silicon Beach\".",
+  "desc_zh": "海滨、步行友好，科技办公和零售集中，是洛杉矶“硅滩”的核心。",
+  "region": "Santa Monica, CA",
+  "region_zh": "加州圣莫尼卡",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Santa_Monica_%E2%80%93_Third_Street_Promenade_(a)_06_Sept_2017.jpg",
+    "author": "Cayambe",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Santa_Monica_-_Downtown_-_Beach.jpg",
+    "author": "Cayambe",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Santa_Monica_Third_Street_Promenade_%E2%80%93_Market_Pavilion.jpg",
+    "author": "Cayambe",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "LA",
+  "name": "Playa Vista",
+  "images": [
+   "assets/places/area-la-playa-vista-1.jpg",
+   "assets/places/area-la-playa-vista-2.jpg",
+   "assets/places/area-la-playa-vista-3.jpg"
+  ],
+  "desc": "Master-planned community with a dense cluster of tech companies and new apartments.",
+  "desc_zh": "规划型社区，科技公司密集，新建公寓众多。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Playa_Vista_corner_Jefferson_and_Lincoln.jpg",
+    "author": "Jengod",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Institute_for_Creative_Technologies.jpg",
+    "author": "DocFreeman24",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Bluff_Creek_and_Playa_Vista.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "LA",
+  "name": "Burbank",
+  "images": [
+   "assets/places/area-la-burbank-1.jpg",
+   "assets/places/area-la-burbank-2.jpg",
+   "assets/places/area-la-burbank-3.jpg"
+  ],
+  "desc": "Media and entertainment hub, home to major studios and production company offices.",
+  "desc_zh": "传媒与娱乐中心，多家大型制片厂和制作公司办公室所在地。",
+  "region": "Burbank, CA",
+  "region_zh": "加州伯班克",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Burbank_widok.JPG",
+    "author": "Mateusz Kudła",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Burbank_media_district_along_SR_134_2015-01-11.jpg",
+    "author": "Junkyardsparkle",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Film_sets,_Warner_Bros._Studios_(Burbank)_July_2022_(27).jpg",
+    "author": "Benoît Prieur",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "LA",
+  "name": "Hollywood",
+  "images": [
+   "assets/places/area-la-hollywood-1.jpg",
+   "assets/places/area-la-hollywood-2.jpg",
+   "assets/places/area-la-hollywood-3.jpg"
+  ],
+  "desc": "Core of the entertainment industry: studios, production, talent agencies and tourism.",
+  "desc_zh": "娱乐产业核心，制片厂、制作公司、经纪公司和旅游业集中。",
+  "region": "Los Angeles, CA",
+  "region_zh": "加州洛杉矶",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Cahuenga_Blvd_Hollywood_2012.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Capitol_Records_Building_LA_-_panoramio.jpg",
+    "author": "Gfox228",
+    "license": "CC BY 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Hollywood_Sign.jpg",
+    "author": "Thomas Wolf, www.foto-tw.de",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "LA",
+  "name": "Beverly Hills",
+  "images": [
+   "assets/places/area-la-beverly-hills-1.jpg",
+   "assets/places/area-la-beverly-hills-2.jpg",
+   "assets/places/area-la-beverly-hills-3.jpg"
+  ],
+  "desc": "Luxury retail, hospitality and professional services in a brand- and lifestyle-driven district.",
+  "desc_zh": "奢侈品零售、酒店和专业服务集中，以品牌和生活方式为导向的商务区。",
+  "region": "Beverly Hills, CA",
+  "region_zh": "加州比佛利山",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Buildings_at_North_Rodeo_Drive,_Beverly_Hills,_West_view_20110806_1.jpg",
+    "author": "DXR",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rodeo_Drive_(9641264818).jpg",
+    "author": "William Warby from London, England",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Beverly_Hills,_CA,_USA_-_panoramio_(2).jpg",
+    "author": "Mickey Løgitmark",
+    "license": "CC BY 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "LA",
+  "name": "Pasadena",
+  "images": [
+   "assets/places/area-la-pasadena-1.jpg",
+   "assets/places/area-la-pasadena-2.jpg",
+   "assets/places/area-la-pasadena-3.jpg"
+  ],
+  "desc": "Independent small-city business district: schools, offices and Old Pasadena retail.",
+  "desc_zh": "独立小城的商务区，学校、写字楼和老帕萨迪纳零售并存。",
+  "region": "Pasadena, CA",
+  "region_zh": "加州帕萨迪纳",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Colorado_Boulevard,_Old_Pasadena,_Pasadena,_California_(14514406151).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pasadena_City_Hall,_Pasadena,_California_(14516407734).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pasadena_Colorado_Street_Bridge_2005.jpg",
+    "author": "Mike Dillon",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "LA",
+  "name": "El Segundo",
+  "images": [
+   "assets/places/area-la-el-segundo-1.jpg",
+   "assets/places/area-la-el-segundo-2.jpg",
+   "assets/places/area-la-el-segundo-3.jpg"
+  ],
+  "desc": "Aerospace, tech and corporate offices next to LAX.",
+  "desc_zh": "毗邻洛杉矶国际机场，航空航天、科技和企业办公集中。",
+  "region": "El Segundo, CA",
+  "region_zh": "加州埃尔塞贡多",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:The_Pacific_Coast_Towers.jpg",
+    "author": "Busition",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Times_building_El_Segundo_California_2023-04.jpg",
+    "author": "Jengod",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:The_Point_-_El_Segundo,_California_-_20180514_121733.jpg",
+    "author": "Daderot",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "DC",
+  "name": "Georgetown",
+  "images": [
+   "assets/places/area-dc-georgetown-1.jpg",
+   "assets/places/area-dc-georgetown-2.jpg",
+   "assets/places/area-dc-georgetown-3.jpg"
+  ],
+  "desc": "Historic brick rowhouses, M Street shopping and the C&O Canal next to Georgetown University. Charming and safe, but no Metro station and rents are high.",
+  "desc_zh": "历史红砖排屋、M街购物和C&O运河，紧邻乔治城大学；迷人安全，但没有地铁站，租金偏高。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Key_Bridge_Georgetown_waterfront_Washington_DC_2023-10-28_07-53-55.jpg",
+    "author": "G. Edward Johnson",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:33rd_Street_NW,_Georgetown,_Washington,_DC_(45883407534).jpg",
+    "author": "Warren LeMay from Cincinnati, OH, United States",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:31st_Street_NW,_Georgetown,_Washington,_DC_(32734599488).jpg",
+    "author": "Warren LeMay from Cincinnati, OH, United States",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "DC",
+  "name": "Dupont Circle",
+  "images": [
+   "assets/places/area-dc-dupont-circle-1.jpg",
+   "assets/places/area-dc-dupont-circle-2.jpg",
+   "assets/places/area-dc-dupont-circle-3.jpg"
+  ],
+  "desc": "Lively circle of rowhouses, embassies, bookstores and cafés on the Red Line. Very walkable and social, popular with young professionals and GWU/Georgetown students.",
+  "desc_zh": "排屋、使馆、书店和咖啡馆环绕的热闹街区，红线地铁直达；步行便利、社交氛围好，年轻上班族和GWU/乔治城学生多。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Dupont_Circle_fountain_-_facing_southwest.JPG",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:1700_block_of_Church_Street_NW.jpg",
+    "author": "APK",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:1711_Rhode_Island_Avenue_NW.jpg",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "DC",
+  "name": "Foggy Bottom",
+  "images": [
+   "assets/places/area-dc-foggy-bottom-1.jpg",
+   "assets/places/area-dc-foggy-bottom-2.jpg",
+   "assets/places/area-dc-foggy-bottom-3.jpg"
+  ],
+  "desc": "Home to GWU, the State Department and the Kennedy Center, with its own Metro stop. Convenient for GW students; quieter at night, mid-to-high rents.",
+  "desc_zh": "乔治华盛顿大学、国务院和肯尼迪中心所在地，自带地铁站；GW学生通勤方便，夜间较安静，租金中高。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Historic_Rowhouses_in_Foggy_Bottom,_Washington_DC.jpg",
+    "author": "OhanaSurf",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Foggy_Bottom_rowhouses_1.jpg",
+    "author": "Wikipedian1234",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:600_19th_Street_NW.jpg",
+    "author": "APK",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "DC",
+  "name": "Logan Circle",
+  "images": [
+   "assets/places/area-dc-logan-circle-1.jpg",
+   "assets/places/area-dc-logan-circle-2.jpg",
+   "assets/places/area-dc-logan-circle-3.jpg"
+  ],
+  "desc": "Victorian rowhouses around a leafy circle, steps from 14th Street's restaurants and bars. Stylish and walkable, popular with young professionals; rents are high.",
+  "desc_zh": "绿树环岛周围的维多利亚式排屋，紧邻14街的餐厅和酒吧；时尚、步行友好，年轻上班族喜爱，租金较高。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:1513-1519_Corcoran_Street,_NW.JPG",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:1326-1330_Vermont_Avenue_NW.jpg",
+    "author": "APK",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:2024.08.13_DC_Street,_Washington,_DC_USA_223_11110-Edit_(53922866738).jpg",
+    "author": "Ted Eytan from Washington, DC, USA",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "DC",
+  "name": "Shaw",
+  "images": [
+   "assets/places/area-dc-shaw-1.jpg",
+   "assets/places/area-dc-shaw-2.jpg",
+   "assets/places/area-dc-shaw-3.jpg"
+  ],
+  "desc": "Fast-changing area near Howard University and U Street with music venues, bars and new apartments. Green/Yellow lines; energetic and a bit cheaper than Logan Circle.",
+  "desc_zh": "靠近霍华德大学和U街，音乐场馆、酒吧和新公寓不断涌现，有绿/黄线地铁；氛围活跃，租金略低于Logan Circle。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Retail_on_east_side_of_14th_Street_between_S_and_T_streets.jpg",
+    "author": "Keizers",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:1602-1612_U_Street_NW.jpg",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Gentrified_architecture_in_Shaw_Neighborhood,_Washington,_DC_USA.jpg",
+    "author": "Ted Eytan",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "DC",
+  "name": "NoMa",
+  "images": [
+   "assets/places/area-dc-noma-1.jpg",
+   "assets/places/area-dc-noma-2.jpg",
+   "assets/places/area-dc-noma-3.jpg"
+  ],
+  "desc": "New high-rise rentals north of Union Station near Gallaudet and Union Market. Red Line and Amtrak make commuting easy; modern but still filling in.",
+  "desc_zh": "联合车站以北新建高层公寓区，靠近加劳德特大学和Union Market；红线和Amtrak通勤便利，现代化但仍在发展中。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:800_-_900_blocks_of_First_Street,_N.E..JPG",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Mathematica_DC_offices.jpg",
+    "author": "Dclemens1971",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Union_Square_Complex.JPG",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "DC",
+  "name": "Capitol Hill",
+  "images": [
+   "assets/places/area-dc-capitol-hill-1.jpg",
+   "assets/places/area-dc-capitol-hill-2.jpg",
+   "assets/places/area-dc-capitol-hill-3.jpg"
+  ],
+  "desc": "Tree-lined rowhouse streets around the Capitol and Eastern Market. Calm, with a real community feel and many Hill staffers; Blue/Orange/Silver lines.",
+  "desc_zh": "国会大厦和东方市场周边，林荫街道和排屋，社区感强、氛围安静，国会工作人员多；蓝/橙/银线地铁。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:US_Capitol_east_side.JPG",
+    "author": "Martin Falbisoner",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:G_Street_DC_b_CHHD.JPG",
+    "author": "Smallbones",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:700_block_15th_St_SE_-_Washington_DC_-_2014.jpg",
+    "author": "Tim Evanson",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "DC",
+  "name": "Navy Yard",
+  "images": [
+   "assets/places/area-dc-navy-yard-1.jpg",
+   "assets/places/area-dc-navy-yard-2.jpg",
+   "assets/places/area-dc-navy-yard-3.jpg"
+  ],
+  "desc": "Riverfront district of new apartment towers, Nationals Park and Yards Park. Modern amenities on the Green Line; lively on game days, mid-to-high rents.",
+  "desc_zh": "河滨新区，新建公寓楼、国民公园球场和Yards Park；设施现代，有绿线地铁，比赛日很热闹，租金中高。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Frederick_Douglass_Memorial_Bridge_from_the_southwest_Washington_DC_2022-11-26_16-48-14.jpg",
+    "author": "G. Edward Johnson",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:4th_and_Tingey_Streets_SE.jpg",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Yards_Park_bridge_(87723).jpg",
+    "author": "Rhododendrites",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "DC",
+  "name": "Downtown DC",
+  "images": [
+   "assets/places/area-dc-downtown-dc-1.jpg",
+   "assets/places/area-dc-downtown-dc-2.jpg",
+   "assets/places/area-dc-downtown-dc-3.jpg"
+  ],
+  "desc": "Consulting, law, corporate offices and associations; close to Logan Circle and Dupont.",
+  "desc_zh": "咨询、法律、企业办公和行业协会集中，靠近Logan Circle和杜邦环岛。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:2025_M_Street_Northwest,_Washington_D.C._Office_Building.jpg",
+    "author": "Tony Webster",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Downtown_Washington_DC_7th_st_and_D_st_NW.jpg",
+    "author": "Tony Webster",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Franklin_Park_during_Jazz_%26_Blossoms_event.jpg",
+    "author": "Sdkb",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "DC",
+  "name": "K Street",
+  "images": [
+   "assets/places/area-dc-k-street-1.jpg",
+   "assets/places/area-dc-k-street-2.jpg",
+   "assets/places/area-dc-k-street-3.jpg"
+  ],
+  "desc": "Lobbying, law, public affairs and consulting; near Dupont, Logan Circle and Foggy Bottom.",
+  "desc_zh": "游说、法律、公共事务和咨询机构集中，靠近杜邦环岛、Logan Circle和雾谷。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:2016-10-02_10_05_23_View_north_along_U.S._Route_29_(east_along_K_Street_NW)_at_20th_Street_NW_in_Washington,_D.C..jpg",
+    "author": "Famartin",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:1601_K_Street_NW_Building_in_Washington_DC_(53815490842).jpg",
+    "author": "Tony Webster",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:1700_K_Street_NW_-_Washington_D.C._Office_Building_-_Farragut_Square_(53799204374).jpg",
+    "author": "Tony Webster",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "DC",
+  "name": "Penn Quarter / Chinatown",
+  "images": [
+   "assets/places/area-dc-penn-quarter-chinatown-1.jpg",
+   "assets/places/area-dc-penn-quarter-chinatown-2.jpg",
+   "assets/places/area-dc-penn-quarter-chinatown-3.jpg"
+  ],
+  "desc": "Law, associations, media and hospitality; near Downtown and Mt Vernon Triangle.",
+  "desc_zh": "法律、行业协会、传媒和酒店业集中，靠近市中心和Mt Vernon Triangle。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Friendship_Archway_2.jpg",
+    "author": "Kurt Kaiser",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:600_13th_Street_NW_-_Washington,_D.C..jpg",
+    "author": "APK is not a Womanizer",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Atlantic_Building,_Washington,_D.C._2011.jpg",
+    "author": "Wknight94 talk",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "DC",
+  "name": "Foggy Bottom",
+  "images": [
+   "assets/places/area-dc-foggy-bottom-1.jpg",
+   "assets/places/area-dc-foggy-bottom-2.jpg",
+   "assets/places/area-dc-foggy-bottom-3.jpg"
+  ],
+  "desc": "State Department, World Bank, IMF, healthcare and GWU; near the West End and Georgetown.",
+  "desc_zh": "美国国务院、世界银行、IMF、医疗机构和GWU所在地，靠近West End和乔治城。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Historic_Rowhouses_in_Foggy_Bottom,_Washington_DC.jpg",
+    "author": "OhanaSurf",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Foggy_Bottom_rowhouses_1.jpg",
+    "author": "Wikipedian1234",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:600_19th_Street_NW.jpg",
+    "author": "APK",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "DC",
+  "name": "Capitol Hill",
+  "images": [
+   "assets/places/area-dc-capitol-hill-1.jpg",
+   "assets/places/area-dc-capitol-hill-2.jpg",
+   "assets/places/area-dc-capitol-hill-3.jpg"
+  ],
+  "desc": "Congress, government and policy work; near Navy Yard and NoMa.",
+  "desc_zh": "国会、政府和政策机构集中，靠近Navy Yard和NoMa。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:US_Capitol_east_side.JPG",
+    "author": "Martin Falbisoner",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:G_Street_DC_b_CHHD.JPG",
+    "author": "Smallbones",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:700_block_15th_St_SE_-_Washington_DC_-_2014.jpg",
+    "author": "Tim Evanson",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "DC",
+  "name": "NoMa",
+  "images": [
+   "assets/places/area-dc-noma-1.jpg",
+   "assets/places/area-dc-noma-2.jpg",
+   "assets/places/area-dc-noma-3.jpg"
+  ],
+  "desc": "Government agencies, tech, nonprofits and offices; near Union Market.",
+  "desc_zh": "政府机构、科技公司、非营利组织和写字楼集中，靠近Union Market。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:800_-_900_blocks_of_First_Street,_N.E..JPG",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Mathematica_DC_offices.jpg",
+    "author": "Dclemens1971",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Union_Square_Complex.JPG",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "DC",
+  "name": "Navy Yard",
+  "images": [
+   "assets/places/area-dc-navy-yard-1.jpg",
+   "assets/places/area-dc-navy-yard-2.jpg",
+   "assets/places/area-dc-navy-yard-3.jpg"
+  ],
+  "desc": "Federal agencies, defense-related firms and new offices; near Capitol Hill.",
+  "desc_zh": "联邦机构、国防相关企业和新写字楼集中，靠近国会山。",
+  "region": "Washington, DC",
+  "region_zh": "华盛顿特区",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Frederick_Douglass_Memorial_Bridge_from_the_southwest_Washington_DC_2022-11-26_16-48-14.jpg",
+    "author": "G. Edward Johnson",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:4th_and_Tingey_Streets_SE.jpg",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Yards_Park_bridge_(87723).jpg",
+    "author": "Rhododendrites",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "DC",
+  "name": "Rosslyn",
+  "images": [
+   "assets/places/area-dc-rosslyn-1.jpg",
+   "assets/places/area-dc-rosslyn-2.jpg",
+   "assets/places/area-dc-rosslyn-3.jpg"
+  ],
+  "desc": "Consulting, defense and corporate HQs across the river in Arlington; near Courthouse and Clarendon.",
+  "desc_zh": "河对岸阿灵顿的咨询、国防和企业总部集中地，靠近Courthouse和Clarendon。",
+  "region": "Arlington, VA",
+  "region_zh": "弗吉尼亚州阿灵顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rosslyn_from_Georgetown_2.jpg",
+    "author": "Theodore Christopher",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Key_Bridge_and_Rosslyn.jpg",
+    "author": "APK",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rosslyn_Twin_Towers_03.jpg",
+    "author": "Dclemens1971",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "DC",
+  "name": "Crystal City / National Landing",
+  "images": [
+   "assets/places/area-dc-crystal-city-national-landing-1.jpg",
+   "assets/places/area-dc-crystal-city-national-landing-2.jpg",
+   "assets/places/area-dc-crystal-city-national-landing-3.jpg"
+  ],
+  "desc": "Defense, government contractors and Amazon HQ2; near Pentagon City.",
+  "desc_zh": "国防、政府承包商和亚马逊第二总部所在地，靠近Pentagon City。",
+  "region": "Arlington, VA",
+  "region_zh": "弗吉尼亚州阿灵顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Crystal_City_Skyline.jpg",
+    "author": "Sblover99",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Amazon_HQ2_Phase_1_from_Metropolitan_Park.jpg",
+    "author": "Aapehill",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Crystal_Drive_(7284507080).jpg",
+    "author": "Payton Chung from DCA, USA",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "DC",
+  "name": "Bethesda",
+  "images": [
+   "assets/places/area-dc-bethesda-1.jpg",
+   "assets/places/area-dc-bethesda-2.jpg",
+   "assets/places/area-dc-bethesda-3.jpg"
+  ],
+  "desc": "Biotech, healthcare and consulting, home to NIH; near Chevy Chase.",
+  "desc_zh": "生物科技、医疗和咨询集中，美国国立卫生研究院（NIH）所在地，靠近Chevy Chase。",
+  "region": "Bethesda, MD",
+  "region_zh": "马里兰州贝塞斯达",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Bethesda_(52766746372).jpg",
+    "author": "John Brighenti from Rockville, MD, United States",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:7220_Wisconsin_Ave_-_Bethesda,_Maryland.jpg",
+    "author": "Farragutful",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Bethesda_downtown_intersection_2025-03-30_11-38-17.jpg",
+    "author": "G. Edward Johnson",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "The Loop",
+  "images": [
+   "assets/places/area-chi-the-loop-1.jpg",
+   "assets/places/area-chi-the-loop-2.jpg",
+   "assets/places/area-chi-the-loop-3.jpg"
+  ],
+  "desc": "Downtown Chicago under the 'L': high-rise apartments, theaters, Millennium Park and every train line. Ultra-convenient for SAIC and Columbia students; quieter at night.",
+  "desc_zh": "芝加哥市中心，高架轨道环绕，高层公寓、剧院、千禧公园和所有地铁线汇聚；SAIC和哥伦比亚学院学生通勤极便利，晚上较安静。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_River.jpg",
+    "author": "Michael Lazarev (Asmadeus)",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:@sawyerbengtson_(Unsplash_ExRwUKMHZ6w).jpg",
+    "author": "Sawyer Bengtson sawyerbengtson",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_Skyline_(Unsplash).jpg",
+    "author": "Fineas Anton fineas_anton",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "West Loop",
+  "images": [
+   "assets/places/area-chi-west-loop-1.jpg",
+   "assets/places/area-chi-west-loop-2.jpg",
+   "assets/places/area-chi-west-loop-3.jpg"
+  ],
+  "desc": "Former warehouse district turned dining hotspot, with Randolph's Restaurant Row, lofts and new towers. Near UIC; trendy and pricey, Green/Pink lines.",
+  "desc_zh": "由仓库区转型的美食热点，Randolph街餐厅一条街、loft和新高楼林立；靠近UIC，时髦且租金偏高，有绿/粉线。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Fulton_Market_District_(51627543540).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_20110913_01_Randolph_St._near_Green_Street_(6963117053).jpg",
+    "author": "David Wilson from Oak Park, Illinois, USA",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Jackson_Boulevard,_West_Loop,_Chicago,_Illinois_(11004373093).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "River North",
+  "images": [
+   "assets/places/area-chi-river-north-1.jpg",
+   "assets/places/area-chi-river-north-2.jpg",
+   "assets/places/area-chi-river-north-3.jpg"
+  ],
+  "desc": "Galleries, restaurants and nightlife just north of the river, full of high-rise rentals. Central and lively on the Red/Brown lines; popular with young professionals, rents high.",
+  "desc_zh": "芝加哥河北岸，画廊、餐厅和夜生活集中，高层出租公寓多；位置居中、热闹，有红/棕线，年轻上班族多，租金较高。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_River_toward_Michigan_Avenue_at_blue_hour.jpg",
+    "author": "NorbertNagel",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_(6573480895).jpg",
+    "author": "Jaysin Trevino from Evanston, IL, US",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:333_West_Wacker_18_(6573448093).jpg",
+    "author": "Jaysin Trevino from Evanston, IL, US",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "Lincoln Park",
+  "images": [
+   "assets/places/area-chi-lincoln-park-1.jpg",
+   "assets/places/area-chi-lincoln-park-2.jpg",
+   "assets/places/area-chi-lincoln-park-3.jpg"
+  ],
+  "desc": "Leafy streets of brownstones near DePaul, the zoo and the lakefront park. Safe, social and student-friendly; Red/Brown/Purple lines at Fullerton.",
+  "desc_zh": "褐石建筑与林荫街道，靠近德保罗大学、动物园和湖滨公园；安全、社交氛围好、适合学生，Fullerton站有红/棕/紫线。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Arlington_and_Roslyn_Place_District_7.JPG",
+    "author": "Thshriver",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Arlington_and_Roslyn_Place_District_3.JPG",
+    "author": "Thshriver",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:20150704_07_North_Ave._Beach_(27127678422).jpg",
+    "author": "David Wilson from Oak Park, Illinois, USA",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "Lakeview",
+  "images": [
+   "assets/places/area-chi-lakeview-1.jpg",
+   "assets/places/area-chi-lakeview-2.jpg",
+   "assets/places/area-chi-lakeview-3.jpg"
+  ],
+  "desc": "Big, lively North Side area including Wrigleyville and Boystown, with bars, lakefront paths and plenty of apartments. Red/Brown lines; good value for young renters.",
+  "desc_zh": "北区大型热闹社区，包括Wrigleyville和Boystown，酒吧多、有湖滨步道，公寓选择丰富；红/棕线，年轻租客性价比高。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:From_the_Addison_red_line_stop_-_Wildcat_Way_-_a_street_festival_set_up_on_Sheffield_(5196842256).jpg",
+    "author": "subbu arumugam from chicago, united states",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Brewster_Apartments_3.JPG",
+    "author": "Thshriver",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Approaching_Wrigley_Field,_Chicago,_Illinois_(42488212895).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "Wicker Park / Bucktown",
+  "images": [
+   "assets/places/area-chi-wicker-park-bucktown-1.jpg",
+   "assets/places/area-chi-wicker-park-bucktown-2.jpg",
+   "assets/places/area-chi-wicker-park-bucktown-3.jpg"
+  ],
+  "desc": "Indie shops, music venues and coffee bars around Six Corners, plus The 606 trail. Hip and walkable on the Blue Line; mid-to-high rents in two-flats and lofts.",
+  "desc_zh": "六岔路口周边独立小店、音乐场所和咖啡馆，还有606高架步道；时髦好逛，蓝线直达，双层小楼和loft租金中高。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_North_Ave.jpg",
+    "author": "Daniel Schwen",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:20011225_08_Wicker_Park_(8048650147).jpg",
+    "author": "David Wilson from Oak Park, Illinois, USA",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Bucktown_skyline_(3638079311).jpg",
+    "author": "Payton Chung from DCA, USA",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "Hyde Park",
+  "images": [
+   "assets/places/area-chi-hyde-park-1.jpg",
+   "assets/places/area-chi-hyde-park-2.jpg",
+   "assets/places/area-chi-hyde-park-3.jpg"
+  ],
+  "desc": "UChicago's lakeside neighborhood with stately buildings, bookstores and the Museum of Science and Industry. Quiet and academic; Metra to downtown, moderate rents.",
+  "desc_zh": "芝加哥大学所在的湖滨社区，建筑典雅、书店多，有科学与工业博物馆；安静、学术氛围浓，Metra通勤市中心，租金适中。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rockefeller_Memorial_Chapel,_University_of_Chicago,_59th_Street_and_Woodlawn_Avenue,_Hyde_Park,_Chicago,_IL_-_54213552646.jpg",
+    "author": "w_lemay",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:20160316_26_Ellis_Ave._near_Hyde_Park_Blvd._(30803040235).jpg",
+    "author": "David Wilson from Oak Park, Illinois, USA",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_skyline_from_Promontory_Point.jpg",
+    "author": "John Picken",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "South Loop",
+  "images": [
+   "assets/places/area-chi-south-loop-1.jpg",
+   "assets/places/area-chi-south-loop-2.jpg",
+   "assets/places/area-chi-south-loop-3.jpg"
+  ],
+  "desc": "High-rises near Grant Park, Museum Campus and Columbia College, plus Printer's Row lofts. Easy Red/Green/Orange access; good value compared with the Loop.",
+  "desc_zh": "格兰特公园、博物馆园区和哥伦比亚学院附近的高层公寓区，还有Printer's Row的loft；红/绿/橙线方便，性价比高于Loop。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:South_Loop_Chicago_June_2015_002.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Printer%27s_Row.jpg",
+    "author": "Flickr user: puroticorico Chicago https://www.flickr.com/photos/puroticorico/",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:20120515_04_Financial_Place_@_Congress_Pkwy._(8214999018).jpg",
+    "author": "David Wilson from Oak Park, Illinois, USA",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "Streeterville",
+  "images": [
+   "assets/places/area-chi-streeterville-1.jpg",
+   "assets/places/area-chi-streeterville-2.jpg",
+   "assets/places/area-chi-streeterville-3.jpg"
+  ],
+  "desc": "Lakefront high-rises between the Magnificent Mile and Navy Pier, home to Northwestern's medical campus. Upscale and convenient; rents among Chicago's highest.",
+  "desc_zh": "华丽一英里与海军码头之间的湖滨高楼区，西北大学医学院所在地；高档便利，租金属芝加哥最高之列。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_132_(3857713364).jpg",
+    "author": "DGriebeling",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago-View_from_John_Hancock_Center.jpg",
+    "author": "Viplav Valluri",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago-_Magnificent_Mile_(9694622524).jpg",
+    "author": "Roman Boed from The Netherlands",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "Old Town",
+  "images": [
+   "assets/places/area-chi-old-town-1.jpg",
+   "assets/places/area-chi-old-town-2.jpg",
+   "assets/places/area-chi-old-town-3.jpg"
+  ],
+  "desc": "Historic streets with Second City comedy, Wells Street bars and brick rowhouses near Lincoln Park. Charming and safe on the Brown/Purple lines; moderately pricey.",
+  "desc_zh": "历史街区，有Second City喜剧剧场、Wells街酒吧和红砖排屋，靠近林肯公园；迷人安全，棕/紫线，租金中等偏高。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Buildings_in_Old_Town,_Chicago_2015-18.jpg",
+    "author": "Victor Grigas",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Carl_Street_Studios,_Chicago_2015-15.jpg",
+    "author": "Victor Grigas",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Old_town_art_fair_2014_Chicago_.jpg",
+    "author": "victorgrigas",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "Logan Square",
+  "images": [
+   "assets/places/area-chi-logan-square-1.jpg",
+   "assets/places/area-chi-logan-square-2.jpg",
+   "assets/places/area-chi-logan-square-3.jpg"
+  ],
+  "desc": "Wide boulevards, a weekly farmers market and a strong bar and café scene. Young and creative, on the Blue Line to O'Hare and downtown; still reasonably priced.",
+  "desc_zh": "宽阔林荫大道、每周农夫市集，酒吧咖啡文化浓厚；年轻有创意，蓝线可到奥黑尔机场和市中心，租金仍较合理。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Illinois_Centennial_Memorial_Column.jpg",
+    "author": "Loganresident at en.wikipedia",
+    "license": "CC BY 2.5"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Farmers%27_market_at_Logan_Square_(47879913851).jpg",
+    "author": "Bex Walton from London, England",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:20151110_10_Palmer_St._@_Sawyer_Ave._(33118174315).jpg",
+    "author": "David Wilson from Oak Park, Illinois, USA",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "Rogers Park / Edgewater",
+  "images": [
+   "assets/places/area-chi-rogers-park-edgewater-1.jpg",
+   "assets/places/area-chi-rogers-park-edgewater-2.jpg",
+   "assets/places/area-chi-rogers-park-edgewater-3.jpg"
+  ],
+  "desc": "Diverse lakefront neighborhoods around Loyola with beaches, vintage courtyard buildings and the Red Line. Among the most affordable North Side options for students.",
+  "desc_zh": "罗耀拉大学周边的多元湖滨社区，有海滩、老式庭院公寓和红线地铁；北区对学生最实惠的选择之一。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Berger_Park_Beach_Edgewater_Chicago.JPG",
+    "author": "Alanscottwalker",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Edgewater_Glen_Historic_Streetscape_Hood_Avenue.jpg",
+    "author": "Historywiki80",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Cudahy_Library,_Loyola_University,_Neil_Hartigan_Parkway,_Rogers_Park,_Chicago,_IL.jpg",
+    "author": "w_lemay",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "Andersonville",
+  "images": [
+   "assets/places/area-chi-andersonville-1.jpg",
+   "assets/places/area-chi-andersonville-2.jpg",
+   "assets/places/area-chi-andersonville-3.jpg"
+  ],
+  "desc": "Swedish-rooted, LGBTQ+-friendly strip of indie shops and restaurants on Clark Street. Calm, friendly and walkable near the Red Line; moderate rents.",
+  "desc_zh": "源自瑞典移民的街区，Clark街独立小店和餐厅林立，对LGBTQ+友好；安静友善、适合步行，近红线，租金适中。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Andersonville_2022-10-14.jpg",
+    "author": "Boivie",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Andersonville,_Chicago.JPG",
+    "author": "Zagalejo",
+    "license": "Public domain"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Swedish_American_Museum.JPG",
+    "author": "Zagalejo",
+    "license": "Public domain"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "Bronzeville",
+  "images": [
+   "assets/places/area-chi-bronzeville-1.jpg",
+   "assets/places/area-chi-bronzeville-2.jpg",
+   "assets/places/area-chi-bronzeville-3.jpg"
+  ],
+  "desc": "Historic heart of Black Chicago with greystone mansions, near IIT and the lakefront. Green Line access; affordable, with ongoing revitalization.",
+  "desc_zh": "芝加哥非裔历史文化中心，灰石大宅林立，靠近伊利诺伊理工和湖滨；绿线直达，租金实惠，正在复兴中。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:IIT_Machinery_Hall.jpg",
+    "author": "Joe Ravi",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:The_Forum_(Chicago,_IL).jpg",
+    "author": "Jim Roberts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:IIT_Engineering_1_Building.jpg",
+    "author": "Joe Ravi",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "CHI",
+  "name": "Woodlawn",
+  "images": [
+   "assets/places/area-chi-woodlawn-1.jpg",
+   "assets/places/area-chi-woodlawn-2.jpg",
+   "assets/places/area-chi-woodlawn-3.jpg"
+  ],
+  "desc": "South of the Midway, next to UChicago and Jackson Park, home of the Obama Presidential Center. Affordable rents and new development; check blocks carefully for safety.",
+  "desc_zh": "Midway以南，紧邻芝加哥大学和杰克逊公园（奥巴马总统中心所在地）；租金实惠、新开发多，选房时需仔细了解街区治安。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago,_Illinois_(2026)_-_467.jpg",
+    "author": "Another Believer",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Harper_Library_from_the_Midway_Plaisance.JPG",
+    "author": "IceUnshattered",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago,_Illinois_(2026)_-_465.jpg",
+    "author": "Another Believer",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "CHI",
+  "name": "The Loop",
+  "images": [
+   "assets/places/area-chi-the-loop-1.jpg",
+   "assets/places/area-chi-the-loop-2.jpg",
+   "assets/places/area-chi-the-loop-3.jpg"
+  ],
+  "desc": "Finance, law, government and consulting; near the South Loop and River North.",
+  "desc_zh": "金融、法律、政府和咨询机构集中，靠近South Loop和River North。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_River.jpg",
+    "author": "Michael Lazarev (Asmadeus)",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:@sawyerbengtson_(Unsplash_ExRwUKMHZ6w).jpg",
+    "author": "Sawyer Bengtson sawyerbengtson",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_Skyline_(Unsplash).jpg",
+    "author": "Fineas Anton fineas_anton",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "CHI",
+  "name": "West Loop / Fulton Market",
+  "images": [
+   "assets/places/area-chi-west-loop-fulton-market-1.jpg",
+   "assets/places/area-chi-west-loop-fulton-market-2.jpg",
+   "assets/places/area-chi-west-loop-fulton-market-3.jpg"
+  ],
+  "desc": "Tech, consulting, corporate HQs and food businesses; near Fulton Market and River West.",
+  "desc_zh": "科技、咨询、企业总部和餐饮业集中，靠近Fulton Market和River West。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Fulton_Market,_West_Loop_(47090474824).jpg",
+    "author": "Bex Walton from London, England",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:811_Fulton.jpg",
+    "author": "Tokidoki232",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Looking_up_on_West_Randolph_Street_-_Chicago,_Illinois,_USA_-_October_8,_2023.jpg",
+    "author": "Giorgio Galeotti",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "CHI",
+  "name": "River North",
+  "images": [
+   "assets/places/area-chi-river-north-1.jpg",
+   "assets/places/area-chi-river-north-2.jpg",
+   "assets/places/area-chi-river-north-3.jpg"
+  ],
+  "desc": "Tech, media, design and hospitality; near Streeterville.",
+  "desc_zh": "科技、传媒、设计和酒店业集中，靠近Streeterville。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_River_toward_Michigan_Avenue_at_blue_hour.jpg",
+    "author": "NorbertNagel",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_(6573480895).jpg",
+    "author": "Jaysin Trevino from Evanston, IL, US",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:333_West_Wacker_18_(6573448093).jpg",
+    "author": "Jaysin Trevino from Evanston, IL, US",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "CHI",
+  "name": "Streeterville / Magnificent Mile",
+  "images": [
+   "assets/places/area-chi-streeterville-magnificent-mile-1.jpg",
+   "assets/places/area-chi-streeterville-magnificent-mile-2.jpg",
+   "assets/places/area-chi-streeterville-magnificent-mile-3.jpg"
+  ],
+  "desc": "Healthcare, retail and hospitality; near the Gold Coast.",
+  "desc_zh": "医疗、零售和酒店业集中，靠近黄金海岸。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Michigan_Avenue_Magnificent_Mile_from_Wacker_Drive,_Streeterville,_Chicago,_IL_(52862376397).jpg",
+    "author": "Warren LeMay from Covington, KY, United States",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_-_North_Michigan_Avenue_(4279059586).jpg",
+    "author": "Roger W from Sarasota, Florida, U.S.A.",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_Avenue_Pumping_Station,_Michigan_Avenue,_Streeterville,_Chicago,_IL.jpg",
+    "author": "w_lemay",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "CHI",
+  "name": "LaSalle Street Corridor",
+  "images": [
+   "assets/places/area-chi-lasalle-street-corridor-1.jpg",
+   "assets/places/area-chi-lasalle-street-corridor-2.jpg",
+   "assets/places/area-chi-lasalle-street-corridor-3.jpg"
+  ],
+  "desc": "Finance, banking and law, anchored by the Board of Trade; near the Loop and River North.",
+  "desc_zh": "金融、银行和法律机构集中，以芝加哥期货交易所大楼为地标，靠近Loop和River North。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_Board_of_Trade_Building,_Chicago,_Illinois_(11004312754).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:LaSalle_and_Adams_Street,_Chicago_Loop,_Chicago,_Illinois_(11045657606).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:La_Salle_Street,_Chicago_Loop,_Chicago,_Illin_(9181645256).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "CHI",
+  "name": "Fulton Market",
+  "images": [
+   "assets/places/area-chi-fulton-market-1.jpg",
+   "assets/places/area-chi-fulton-market-2.jpg",
+   "assets/places/area-chi-fulton-market-3.jpg"
+  ],
+  "desc": "Tech, startups and corporate offices in converted warehouses; near the West Loop.",
+  "desc_zh": "仓库改造的办公区，科技、初创和企业办公集中，靠近West Loop。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Archer_Daniels_Midland_Fulton_Market_wheat_mill.jpg",
+    "author": "Tdl1060",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Fulton_Market_Construction.jpg",
+    "author": "Robert Haugland",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_in_2022_Seating_outside_Time_Out_Market_Chicago_(52061941368).jpg",
+    "author": "Chris Rycroft from Madison, Wisconsin, United States",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "CHI",
+  "name": "Medical District",
+  "images": [
+   "assets/places/area-chi-medical-district-1.jpg",
+   "assets/places/area-chi-medical-district-2.jpg",
+   "assets/places/area-chi-medical-district-3.jpg"
+  ],
+  "desc": "Healthcare, biotech and research; near Little Italy and UIC.",
+  "desc_zh": "医疗、生物科技和科研机构集中，靠近小意大利和UIC。",
+  "region": "Chicago, IL",
+  "region_zh": "伊利诺伊州芝加哥",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:RUMC_-_new_tower.jpg",
+    "author": "Nathan Hicks",
+    "license": "CC BY 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Harrison_St_west_through_Rush_Medical_Center_-_Chicago,_IL_-_May_2023.jpg",
+    "author": "AlphaBeta135",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Harrison_St_east_through_Rush_Medical_Center_-_Chicago,_IL_-_May_2023.jpg",
+    "author": "AlphaBeta135",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "CHI",
+  "name": "O'Hare / Rosemont",
+  "images": [
+   "assets/places/area-chi-o-hare-rosemont-1.jpg",
+   "assets/places/area-chi-o-hare-rosemont-2.jpg",
+   "assets/places/area-chi-o-hare-rosemont-3.jpg"
+  ],
+  "desc": "Corporate offices, logistics and aviation beside O'Hare; near the northwest suburbs.",
+  "desc_zh": "奥黑尔机场旁，企业办公、物流和航空业集中，靠近西北郊区。",
+  "region": "Rosemont, IL",
+  "region_zh": "伊利诺伊州罗斯蒙特",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rosemont_Theatre_20230821.jpg",
+    "author": "Nkon21",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Doubletree_By_Hilton_Hotel_Chicago_O%27Hare_Airport-Rosemont.jpg",
+    "author": "SimLibrarian",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Walkable_Rosemont_from_the_air_(13942408124).jpg",
+    "author": "Payton Chung from DCA, USA",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "CHI",
+  "name": "Evanston",
+  "images": [
+   "assets/places/area-chi-evanston-1.jpg",
+   "assets/places/area-chi-evanston-2.jpg",
+   "assets/places/area-chi-evanston-3.jpg"
+  ],
+  "desc": "Education, healthcare and professional services, anchored by Northwestern University.",
+  "desc_zh": "教育、医疗和专业服务集中，以西北大学为核心。",
+  "region": "Evanston, IL",
+  "region_zh": "伊利诺伊州埃文斯顿",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Fountain_Square_Evanston.jpg",
+    "author": "Madcoverboy (talk)",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Northwestern_Lakeshore_with_athletics_facilities_and_Kellog_Global_Hub,_photographed_from_above_on_May_7,_2021.jpg",
+    "author": "Lectrician2",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Evanston,_IL_(14131267425).jpg",
+    "author": "Eric Fredericks from Rancho Cordova, CA, United States",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "PHL",
+  "name": "Rittenhouse Square",
+  "images": [
+   "assets/places/area-phl-rittenhouse-square-1.jpg",
+   "assets/places/area-phl-rittenhouse-square-2.jpg",
+   "assets/places/area-phl-rittenhouse-square-3.jpg"
+  ],
+  "desc": "Philadelphia's most elegant address: a leafy square ringed by cafés, shops and high-rises. Walkable to Center City offices and Penn; rents are the city's highest.",
+  "desc_zh": "费城最优雅的地段，绿树广场四周咖啡馆、商店和高楼环绕；步行可到市中心办公区和宾大，租金全市最高。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Walnut_Street_Rittenhouse_Square.jpg",
+    "author": "Ii2nmd",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:The_Rittenhouse_Claridge,_Walnut_St_looking_east.jpg",
+    "author": "Mihai Bojin",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:253-255_South_20th_Street.JPG",
+    "author": "Андрей Романенко",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "PHL",
+  "name": "University City",
+  "images": [
+   "assets/places/area-phl-university-city-1.jpg",
+   "assets/places/area-phl-university-city-2.jpg",
+   "assets/places/area-phl-university-city-3.jpg"
+  ],
+  "desc": "Home to Penn and Drexel: student housing, Victorian twins and new towers near 30th Street Station. Very convenient for students; prices vary block by block.",
+  "desc_zh": "宾大和德雷塞尔大学所在地，学生公寓、维多利亚式双拼屋和新高楼并存，靠近30街车站；学生生活很方便，租金因街区而异。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:View_of_the_University_of_Pennsylvania%E2%80%99s_Campus_and_West_Philadelphia.jpg",
+    "author": "AnonymousPenguin23",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:University_of_Pennsylvania_Walnut_Street.jpg",
+    "author": "In Sappho We Trust",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Campus_view_-_Drexel_University_-_IMG_7303.JPG",
+    "author": "Daderot",
+    "license": "Public domain"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "PHL",
+  "name": "Fitler Square",
+  "images": [
+   "assets/places/area-phl-fitler-square-1.jpg",
+   "assets/places/area-phl-fitler-square-2.jpg",
+   "assets/places/area-phl-fitler-square-3.jpg"
+  ],
+  "desc": "Quiet, leafy pocket of brick rowhouses by the Schuylkill River Trail. Walk or bike to Penn and Rittenhouse; peaceful and upscale, with limited inventory.",
+  "desc_zh": "斯古吉尔河步道旁宁静的红砖排屋小区，绿树成荫；步行或骑车可到宾大和Rittenhouse，安静高档，房源较少。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Schuylkill_River_Trail_from_the_South_St._bridge.jpg",
+    "author": "SidewalkMD",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Schuykill-river-trail-philadelphia-pa.jpg",
+    "author": "Eagriego",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Schuylkill_River_Trail_2018.jpg",
+    "author": "Ii2nmd",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "PHL",
+  "name": "Logan Square",
+  "images": [
+   "assets/places/area-phl-logan-square-1.jpg",
+   "assets/places/area-phl-logan-square-2.jpg",
+   "assets/places/area-phl-logan-square-3.jpg"
+  ],
+  "desc": "Grand boulevard area along the Benjamin Franklin Parkway with museums, Swann Fountain and high-rises. Calm and central; mid-to-high rents.",
+  "desc_zh": "本杰明·富兰克林大道沿线，博物馆、斯旺喷泉和高层公寓汇聚；安静又居中，租金中高。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Swann_Fountain-27527.jpg",
+    "author": "Ken Thomas",
+    "license": "Public domain"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Benjamin_Franklin_Parkway.jpg",
+    "author": "Ii2nmd",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Logan_Square_-_Philadelphia_(53574397753).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "PHL",
+  "name": "Old City",
+  "images": [
+   "assets/places/area-phl-old-city-1.jpg",
+   "assets/places/area-phl-old-city-2.jpg",
+   "assets/places/area-phl-old-city-3.jpg"
+  ],
+  "desc": "Cobblestone lanes by Independence Hall with converted lofts, galleries and bars. Historic and lively on the Market-Frankford Line; lofts at mid-range prices.",
+  "desc_zh": "独立厅旁的鹅卵石街巷，loft改造公寓、画廊和酒吧林立；历史感与活力兼具，有Market-Frankford线，loft价格中等。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Elfreth%27s_Alley,_Philadelphia.jpg",
+    "author": "Céline Harrand",
+    "license": "Public domain"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Old_City,_Philadelphia,_PA,_USA_-_panoramio_(2).jpg",
+    "author": "Андрей Бобровский",
+    "license": "CC BY 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Elfreth%27s_Alley-2023_03.jpg",
+    "author": "Alberto-g-rovi",
+    "license": "CC BY 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "PHL",
+  "name": "Society Hill",
+  "images": [
+   "assets/places/area-phl-society-hill-1.jpg",
+   "assets/places/area-phl-society-hill-2.jpg",
+   "assets/places/area-phl-society-hill-3.jpg"
+  ],
+  "desc": "Colonial brick rowhouses, gas lamps and I.M. Pei's towers near the Delaware River. Quiet, safe and refined, walkable to Jefferson and Center City; rents on the higher side.",
+  "desc_zh": "殖民时期红砖排屋、煤气灯和贝聿铭设计的高楼，靠近特拉华河；安静安全、格调高，步行可到杰斐逊大学和市中心，租金偏高。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Society_Hill_Towers_PA1.jpg",
+    "author": "Acroterion",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:226_228_Washington_Square,_Philly.JPG",
+    "author": "Smallbones",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:201-213_Delancey_Street_Society_Hill.jpg",
+    "author": "Beyond My Ken",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "PHL",
+  "name": "Washington Square West / Midtown Village",
+  "images": [
+   "assets/places/area-phl-washington-square-west-midtown-village-1.jpg",
+   "assets/places/area-phl-washington-square-west-midtown-village-2.jpg",
+   "assets/places/area-phl-washington-square-west-midtown-village-3.jpg"
+  ],
+  "desc": "Lively, LGBTQ+-friendly 'Gayborhood' of restaurants and bars near Jefferson and its hospitals. Walkable and central; rowhouse units and mid-rises at moderate rents.",
+  "desc_zh": "热闹且LGBTQ+友好的“Gayborhood”，餐厅酒吧多，靠近杰斐逊大学及其医院；步行便利、位置居中，排屋和中层公寓租金适中。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:224-228_West_Washington_Square_from_north.jpg",
+    "author": "Beyond My Ken",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Washington_Square_northeast_entrance.jpg",
+    "author": "Beyond My Ken",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Clinton_St_Historic_District_Philly.JPG",
+    "author": "Smallbones",
+    "license": "Public domain"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "PHL",
+  "name": "Fishtown",
+  "images": [
+   "assets/places/area-phl-fishtown-1.jpg",
+   "assets/places/area-phl-fishtown-2.jpg",
+   "assets/places/area-phl-fishtown-3.jpg"
+  ],
+  "desc": "Former industrial area now known for breweries, music venues and new construction along Frankford Ave. Young and buzzing on the El; good value for newer units.",
+  "desc_zh": "昔日工业区，如今以精酿酒厂、音乐场所和Frankford大道新建公寓闻名；年轻热闹，有El高架线，新房性价比高。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Fishtown_Philadelphia.jpg",
+    "author": "Tim Kiser (w:User:Malepheasant)",
+    "license": "CC BY-SA 2.5"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Sundown_on_Girard_Ave.jpg",
+    "author": "Peetlesnumber1",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Green_Tree_Tavern.jpg",
+    "author": "Eli Pousson",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "PHL",
+  "name": "Northern Liberties",
+  "images": [
+   "assets/places/area-phl-northern-liberties-1.jpg",
+   "assets/places/area-phl-northern-liberties-2.jpg",
+   "assets/places/area-phl-northern-liberties-3.jpg"
+  ],
+  "desc": "Converted warehouses, new apartments and Liberties Walk just north of Old City. Social and walkable with bars and parks; El access, mid-range rents.",
+  "desc_zh": "Old City以北，仓库改造和新公寓林立，有Liberties Walk步行街；酒吧公园多、社交氛围好，El线可达，租金中等。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:622-630_N._4th_Street.jpg",
+    "author": "Beyond My Ken",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Integrity_Title_Insurance.JPG",
+    "author": "Smallbones",
+    "license": "Public domain"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Northern_Liberties_Philadelphia.jpg",
+    "author": "Ii2nmd",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "PHL",
+  "name": "Fairmount",
+  "images": [
+   "assets/places/area-phl-fairmount-1.jpg",
+   "assets/places/area-phl-fairmount-2.jpg",
+   "assets/places/area-phl-fairmount-3.jpg"
+  ],
+  "desc": "Rowhouse neighborhood by the Art Museum, Eastern State Penitentiary and Fairmount Park. Friendly and residential with good bars, close to the river trails; mid-range rents.",
+  "desc_zh": "费城艺术博物馆、东州监狱和费尔芒特公园旁的排屋社区；友好宜居、小酒吧不错，靠近河滨步道，租金中等。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Eastern_State_Penitentiary_(53574639765).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Philadelphia_Skyline_from_Girard_Bridge_-_panoramio.jpg",
+    "author": "Bohao Zhao",
+    "license": "CC BY 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Art_Museum_area.jpg",
+    "author": "GooseGoddessS from Philadelphia",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "neighborhood",
+  "city": "PHL",
+  "name": "Manayunk",
+  "images": [
+   "assets/places/area-phl-manayunk-1.jpg",
+   "assets/places/area-phl-manayunk-2.jpg",
+   "assets/places/area-phl-manayunk-3.jpg"
+  ],
+  "desc": "Hilly river town with Main Street's bars and boutiques and a canal towpath. Popular with young grads, Regional Rail to Center City; rents below downtown.",
+  "desc_zh": "依山傍河的小镇，Main Street酒吧和小店林立，有运河步道；深受毕业生欢迎，区域铁路到市中心，租金低于市中心。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Main_Street_NB_at_Cotton_Street_Philadelphia.jpeg",
+    "author": "Dough4872",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Main_St.,_Manayunk,_Philadelphia,_Aug_2022.jpg",
+    "author": "Mr. Matté (if there is an issue with this image, contact me using this image's Commons talk page, my Commons user tal...",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Manayunk,_Philadelphia.jpg",
+    "author": "Ii2nmd",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "PHL",
+  "name": "Center City",
+  "images": [
+   "assets/places/area-phl-center-city-1.jpg",
+   "assets/places/area-phl-center-city-2.jpg",
+   "assets/places/area-phl-center-city-3.jpg"
+  ],
+  "desc": "Finance, law, consulting and corporate offices; near Rittenhouse, Logan Square and Midtown Village.",
+  "desc_zh": "金融、法律、咨询和企业办公集中，靠近Rittenhouse、Logan Square和Midtown Village。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:2022-10-28_13_50_48_View_north_along_Pennsylvania_State_Route_611_(South_Broad_Street)_just_south_of_Walnut_Street_in_Philadelphia,_Pennsylvania.jpg",
+    "author": "Famartin",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:2022-10-29_15_58_45_View_south_along_Pennsylvania_State_Route_611_(North_Broad_Street)_at_Race_Street_in_Philadelphia,_Pennsylvania.jpg",
+    "author": "Famartin",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:2025-08-04_12_46_39_View_southeast_from_the_Jean-Georges_SkyHigh_Restaurant_at_Comcast_Technology_Center_in_Philadelphia,_Pennsylvania.jpg",
+    "author": "Famartin",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "PHL",
+  "name": "Market Street West",
+  "images": [
+   "assets/places/area-phl-market-street-west-1.jpg",
+   "assets/places/area-phl-market-street-west-2.jpg",
+   "assets/places/area-phl-market-street-west-3.jpg"
+  ],
+  "desc": "Corporate, finance, law and professional services under the city's tallest towers; near Rittenhouse and Logan Square.",
+  "desc_zh": "费城最高楼群所在地，企业、金融、法律和专业服务集中，靠近Rittenhouse和Logan Square。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Philadelphia_downtown.JPG",
+    "author": "Gccwang",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Comcast_Tower_Philadelphia.jpg",
+    "author": "Seth Goldstein",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Market_Street_West_2.jpg",
+    "author": "Ii2nmd",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "PHL",
+  "name": "University City",
+  "images": [
+   "assets/places/area-phl-university-city-1.jpg",
+   "assets/places/area-phl-university-city-2.jpg",
+   "assets/places/area-phl-university-city-3.jpg"
+  ],
+  "desc": "Healthcare, biotech, life sciences, education and research; near Fitler Square.",
+  "desc_zh": "医疗、生物科技、生命科学、教育和科研集中，靠近Fitler Square。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:View_of_the_University_of_Pennsylvania%E2%80%99s_Campus_and_West_Philadelphia.jpg",
+    "author": "AnonymousPenguin23",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:University_of_Pennsylvania_Walnut_Street.jpg",
+    "author": "In Sappho We Trust",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Campus_view_-_Drexel_University_-_IMG_7303.JPG",
+    "author": "Daderot",
+    "license": "Public domain"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "PHL",
+  "name": "Market East",
+  "images": [
+   "assets/places/area-phl-market-east-1.jpg",
+   "assets/places/area-phl-market-east-2.jpg",
+   "assets/places/area-phl-market-east-3.jpg"
+  ],
+  "desc": "Retail, hospitality, government and entertainment; near Old City and Washington Square West.",
+  "desc_zh": "零售、酒店、政府和娱乐业集中，靠近Old City和Washington Square West。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Fashion_District_Philadelphia_entrance_at_9th_Street_and_Market_Street.jpeg",
+    "author": "Dough4872",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Fashion_District_Philadelphia_-_2_(53590614280).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Market_Street,_Philadelphia_14.jpeg",
+    "author": "Katherine Anderson",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "PHL",
+  "name": "Navy Yard",
+  "images": [
+   "assets/places/area-phl-navy-yard-1.jpg",
+   "assets/places/area-phl-navy-yard-2.jpg",
+   "assets/places/area-phl-navy-yard-3.jpg"
+  ],
+  "desc": "Life sciences, corporate, engineering and logistics campus; near South Philly.",
+  "desc_zh": "生命科学、企业、工程和物流园区，靠近南费城。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Philadelphia_Shipyard_with_National_Security_Multi-Mission_Vessel_(NSMV)_under_construction.jpg",
+    "author": "MastersHall",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:USS_Charles_F_Adams_PISMF.jpg",
+    "author": "Chuck Homler, Focus On Wildlife",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Aker_Shipyard_at_Naval_Yard.jpg",
+    "author": "Bestbudbrian",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "PHL",
+  "name": "Old City",
+  "images": [
+   "assets/places/area-phl-old-city-1.jpg",
+   "assets/places/area-phl-old-city-2.jpg",
+   "assets/places/area-phl-old-city-3.jpg"
+  ],
+  "desc": "Creative, design, startups and hospitality; near Society Hill.",
+  "desc_zh": "创意、设计、初创企业和酒店业集中，靠近Society Hill。",
+  "region": "Philadelphia, PA",
+  "region_zh": "宾夕法尼亚州费城",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Elfreth%27s_Alley,_Philadelphia.jpg",
+    "author": "Céline Harrand",
+    "license": "Public domain"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Old_City,_Philadelphia,_PA,_USA_-_panoramio_(2).jpg",
+    "author": "Андрей Бобровский",
+    "license": "CC BY 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Elfreth%27s_Alley-2023_03.jpg",
+    "author": "Alberto-g-rovi",
+    "license": "CC BY 3.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "PHL",
+  "name": "King of Prussia",
+  "images": [
+   "assets/places/area-phl-king-of-prussia-1.jpg",
+   "assets/places/area-phl-king-of-prussia-2.jpg",
+   "assets/places/area-phl-king-of-prussia-3.jpg"
+  ],
+  "desc": "Corporate offices, retail (one of the largest US malls) and healthcare; near the Main Line suburbs.",
+  "desc_zh": "企业办公、零售（全美最大商场之一）和医疗集中，靠近Main Line郊区。",
+  "region": "King of Prussia, PA",
+  "region_zh": "宾夕法尼亚州普鲁士王",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:King_Of_Prussia_mall.jpg",
+    "author": "Ii2nmd",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:King_of_Prussia_Mall_(51709659288).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:King_of_Prussia_Mall_I-276_I-76_US422_US202_Aerial_(51156478182).jpg",
+    "author": "formulanone",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "kind": "business",
+  "city": "PHL",
+  "name": "Conshohocken",
+  "images": [
+   "assets/places/area-phl-conshohocken-1.jpg",
+   "assets/places/area-phl-conshohocken-2.jpg",
+   "assets/places/area-phl-conshohocken-3.jpg"
+  ],
+  "desc": "Finance, corporate, healthcare and professional services on the Schuylkill; near Manayunk.",
+  "desc_zh": "斯古吉尔河畔，金融、企业、医疗和专业服务集中，靠近Manayunk。",
+  "region": "Conshohocken, PA",
+  "region_zh": "宾夕法尼亚州康舍霍肯",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Marriot_Hotel_Conshohocken.jpg",
+    "author": "Montgomery County Planning Commission",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Conshohocken_Riverfront.jpg",
+    "author": "Montgomery County Planning Commission",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Conshohocken_River_Front.jpg",
+    "author": "Montgomery County Planning Commission",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ }
+]

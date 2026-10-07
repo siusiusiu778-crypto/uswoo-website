@@ -1,0 +1,1112 @@
+{
+  "Statue of Liberty": {
+    "slug": "statue-of-liberty",
+    "images": [
+      "assets/poi/statue-of-liberty-1.jpg",
+      "assets/poi/statue-of-liberty-2.jpg",
+      "assets/poi/statue-of-liberty-3.jpg"
+    ],
+    "desc": "Copper icon of freedom on Liberty Island, reached by ferry from Battery Park. Climb to the pedestal or crown for harbor views; book tickets ahead on weekends.",
+    "desc_zh": "矗立在自由岛上的铜铸自由象征，从炮台公园乘渡轮即可抵达。可登上基座或皇冠俯瞰港口，周末建议提前订票。",
+    "neighborhood": "Liberty Island",
+    "neighborhood_zh": "自由岛",
+    "address": "Liberty Island, New York, NY 10004",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Liberty_Island_photo_Don_Ramey_Logan.jpg",
+        "author": "Don Ramey Logan",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Front_view_of_Statue_of_Liberty_(cropped).jpg",
+        "author": "AskALotl",
+        "license": "CC0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Statue_of_Liberty_with_One_World_Trade_Center.jpg",
+        "author": "Steve",
+        "license": "CC BY-SA 2.0"
+      }
+    ]
+  },
+  "One World Trade Center": {
+    "slug": "one-world-trade-center",
+    "images": [
+      "assets/poi/one-world-trade-center-1.jpg",
+      "assets/poi/one-world-trade-center-2.jpg",
+      "assets/poi/one-world-trade-center-3.jpg"
+    ],
+    "desc": "The Western Hemisphere's tallest tower anchors the rebuilt WTC campus. Its One World Observatory, the 9/11 Memorial and the Oculus transit hub are all steps away.",
+    "desc_zh": "西半球最高的大楼，是重建后世贸中心园区的核心。顶层观景台、9/11纪念馆和Oculus交通枢纽都近在咫尺。",
+    "neighborhood": "Financial District",
+    "neighborhood_zh": "金融区",
+    "address": "285 Fulton St, New York, NY 10007",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:One_World_Trade_Center_Building_(2021).jpg",
+        "author": "Praneeth Thalla",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_from_Jersey_City_September_2020_HDR_panorama_(cropped2).jpg",
+        "author": "King of Hearts",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:One_World_Trade_Center,_Financial_District,_Manhattan,_New_York.jpg",
+        "author": "Christian David",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "Brooklyn Bridge": {
+    "slug": "brooklyn-bridge",
+    "images": [
+      "assets/poi/brooklyn-bridge-1.jpg",
+      "assets/poi/brooklyn-bridge-2.jpg",
+      "assets/poi/brooklyn-bridge-3.jpg"
+    ],
+    "desc": "The 1883 stone-towered suspension bridge linking Lower Manhattan and DUMBO. Walk or bike its elevated promenade at sunrise to beat the crowds.",
+    "desc_zh": "建于1883年的石塔悬索桥，连接下曼哈顿与DUMBO。清晨沿高架步道步行或骑行，能避开人潮、欣赏日出。",
+    "neighborhood": "DUMBO / Two Bridges",
+    "neighborhood_zh": "DUMBO / 两桥区",
+    "address": "Brooklyn Bridge Promenade, Park Row & Centre St, New York, NY 10038",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge_-_New_York_City.jpg",
+        "author": "Simone Roda from Italia",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge_and_the_Lower_Manhattan_skyline_from_Pebble_Beach,_New_York.jpg",
+        "author": "Christian David",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge_seen_from_One_World_Trade_Center_Skypod.jpg",
+        "author": "Rickmouser45",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "Washington Square Park": {
+    "slug": "washington-square-park",
+    "images": [
+      "assets/poi/washington-square-park-1.jpg",
+      "assets/poi/washington-square-park-2.jpg",
+      "assets/poi/washington-square-park-3.jpg"
+    ],
+    "desc": "Greenwich Village's lively heart, framed by its marble arch and NYU buildings. Expect street musicians, chess players and students sprawled by the fountain.",
+    "desc_zh": "格林威治村的活力中心，以大理石拱门和纽约大学建筑为背景。街头音乐人、下棋的人和在喷泉边闲坐的学生随处可见。",
+    "neighborhood": "Greenwich Village",
+    "neighborhood_zh": "格林威治村",
+    "address": "Washington Square, New York, NY 10012",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Washington_Square_Arch-Isabella.jpg",
+        "author": "Isabella Ruffalo-Burgat",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:NYC_-_Washington_Square_Park_-_Arch.jpg",
+        "author": "Jean-Christophe BENOIST",
+        "license": "CC BY 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Washington_Square_Park_Grand_Reopening.jpg",
+        "author": "Ludovic Bertron from New York City, Usa",
+        "license": "CC BY 2.0"
+      }
+    ]
+  },
+  "Flatiron Building": {
+    "slug": "flatiron-building",
+    "images": [
+      "assets/poi/flatiron-building-1.jpg",
+      "assets/poi/flatiron-building-2.jpg",
+      "assets/poi/flatiron-building-3.jpg"
+    ],
+    "desc": "The triangular 1902 skyscraper where Fifth Avenue meets Broadway. The surrounding Flatiron district is packed with tech offices, cafes and Madison Square Park.",
+    "desc_zh": "位于第五大道与百老汇交汇处的1902年三角形摩天楼。周边熨斗区聚集了科技公司、咖啡馆和麦迪逊广场公园。",
+    "neighborhood": "Flatiron District",
+    "neighborhood_zh": "熨斗区",
+    "address": "175 Fifth Ave, New York, NY 10010",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Flatiron-Building-NYC-September-2014.jpg",
+        "author": "Acediscovery",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Flatiron_Building_2010.JPG",
+        "author": "Dorff",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Flatiron_Building_in_Detail.jpg",
+        "author": "LMBrauer",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "The High Line": {
+    "slug": "the-high-line",
+    "images": [
+      "assets/poi/the-high-line-1.jpg",
+      "assets/poi/the-high-line-2.jpg",
+      "assets/poi/the-high-line-3.jpg"
+    ],
+    "desc": "A 1.45-mile park built on an old elevated rail line, running from the Meatpacking District to Hudson Yards. Great for a car-free walk through Chelsea.",
+    "desc_zh": "由废弃高架铁路改造的约2.3公里空中公园，从肉库区一直延伸到哈德逊城市广场，是穿越切尔西的绝佳步行路线。",
+    "neighborhood": "Chelsea",
+    "neighborhood_zh": "切尔西",
+    "address": "820 Washington St (Gansevoort St entrance), New York, NY 10014",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:High_Line_Park,_Section_1a.jpg",
+        "author": "Dansnguyen",
+        "license": "CC0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:The_High_Line,_New_York_(17643199203).jpg",
+        "author": "Bryan Ledgard",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Highline_NYC_4546199798_2fb244ec8b.jpg",
+        "author": "La Citta Vita",
+        "license": "CC BY-SA 2.0"
+      }
+    ]
+  },
+  "Empire State Building": {
+    "slug": "empire-state-building",
+    "images": [
+      "assets/poi/empire-state-building-1.jpg",
+      "assets/poi/empire-state-building-2.jpg",
+      "assets/poi/empire-state-building-3.jpg"
+    ],
+    "desc": "The 1931 Art Deco tower that defines the Midtown skyline. Its 86th-floor open-air deck is a classic first-week-in-NYC outing; the lights change color for events.",
+    "desc_zh": "1931年落成的装饰艺术风格大楼，曼哈顿中城天际线的标志。86层露天观景台是初到纽约必去之处，塔顶灯光会随节日变色。",
+    "neighborhood": "Midtown",
+    "neighborhood_zh": "中城",
+    "address": "20 W 34th St, New York, NY 10001",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:ESBandDowntown2015.jpg",
+        "author": "Anthony Quintano",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Looking_Up_at_Empire_State_Building.JPG",
+        "author": "BigMac",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:EmpireStateBuilding20205thAvenueEntrance.jpg",
+        "author": "DanielPenfield",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "Madison Square Garden": {
+    "slug": "madison-square-garden",
+    "images": [
+      "assets/poi/madison-square-garden-1.jpg",
+      "assets/poi/madison-square-garden-2.jpg",
+      "assets/poi/madison-square-garden-3.jpg"
+    ],
+    "desc": "The arena above Penn Station, home of the Knicks and Rangers and a stop on nearly every big concert tour. Easy to reach on almost any subway or commuter train.",
+    "desc_zh": "位于宾州车站上方的综合体育馆，尼克斯和游骑兵队主场，也是大型巡演的必经之地。几乎所有地铁和通勤火车都能直达。",
+    "neighborhood": "Midtown / Penn District",
+    "neighborhood_zh": "中城 / 宾州车站区",
+    "address": "4 Pennsylvania Plaza, New York, NY 10001",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Madison_Square_Garden_(MSG)_-_Full_(48124330357).jpg",
+        "author": "Ajay Suresh from New York, NY, USA",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:MadisonSquareGarden2024.jpg",
+        "author": "SebastianJFromTheBurg",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:MSG_(4051531795).jpg",
+        "author": "Ludovic Bertron from New York City, Usa",
+        "license": "CC BY 2.0"
+      }
+    ]
+  },
+  "The Vessel": {
+    "slug": "the-vessel",
+    "images": [
+      "assets/poi/the-vessel-1.jpg",
+      "assets/poi/the-vessel-2.jpg",
+      "assets/poi/the-vessel-3.jpg"
+    ],
+    "desc": "Thomas Heatherwick's honeycomb of 154 linked staircases at the center of Hudson Yards' public square, surrounded by shops, the Shed and the High Line's north end.",
+    "desc_zh": "托马斯·赫斯维克设计的蜂巢状建筑，由154段相连的楼梯组成，位于哈德逊城市广场中心，周围有购物中心、The Shed和高线公园北端。",
+    "neighborhood": "Hudson Yards",
+    "neighborhood_zh": "哈德逊城市广场",
+    "address": "20 Hudson Yards, New York, NY 10001",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:HudsonYards_05-06-19-1_(47003439824).jpg",
+        "author": "Ajay Suresh from New York, NY, USA",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Hudson_Yards_Plaza_March_2019_53.jpg",
+        "author": "Epicgenius",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:The_Vessel_(top-down_view),_Hudson_Yards,_New_York_City,_July_2019.jpg",
+        "author": "28bytes",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "Grand Central Terminal": {
+    "slug": "grand-central-terminal",
+    "images": [
+      "assets/poi/grand-central-terminal-1.jpg",
+      "assets/poi/grand-central-terminal-2.jpg",
+      "assets/poi/grand-central-terminal-3.jpg"
+    ],
+    "desc": "Beaux-Arts rail terminal famous for its celestial ceiling and main concourse. Metro-North trains and several subway lines meet here, plus a busy food hall.",
+    "desc_zh": "以星空穹顶和主大厅闻名的布杂艺术风格火车总站。大都会北方铁路和多条地铁线在此交汇，还有热闹的美食广场。",
+    "neighborhood": "Midtown East",
+    "neighborhood_zh": "中城东",
+    "address": "89 E 42nd St, New York, NY 10017",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Grand_Central_Terminal_Main_Concourse_2019-10-03_20-02.jpg",
+        "author": "Axel Tschentscher",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Image-Grand_central_Station_Outside_Night_2.jpg",
+        "author": "Fcb981 ; Eric Baetscher (attribution required)",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:GCT_OB_2.jpg",
+        "author": "Ɱ",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "Chrysler Building": {
+    "slug": "chrysler-building",
+    "images": [
+      "assets/poi/chrysler-building-1.jpg",
+      "assets/poi/chrysler-building-2.jpg",
+      "assets/poi/chrysler-building-3.jpg"
+    ],
+    "desc": "The 1930 Art Deco skyscraper with a stainless-steel crown and eagle gargoyles, a block from Grand Central. Its lobby murals are a hidden Midtown gem.",
+    "desc_zh": "1930年建成的装饰艺术摩天楼，以不锈钢尖顶和鹰形滴水兽闻名，距中央车站仅一个街区。大堂壁画是中城的隐藏宝藏。",
+    "neighborhood": "Midtown East",
+    "neighborhood_zh": "中城东",
+    "address": "405 Lexington Ave, New York, NY 10174",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Chrysler_Building_Nov_2021.jpg",
+        "author": "Rolf obermaier",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Chrysler_Building_spire,_Manhattan,_by_Carol_Highsmith_(LOC_highsm.04444).jpg",
+        "author": "Carol M. Highsmith",
+        "license": "Public domain"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Chrysler_Building_Lobby_2.jpg",
+        "author": "Tony Hisgett from Birmingham, UK",
+        "license": "CC BY 2.0"
+      }
+    ]
+  },
+  "Times Square": {
+    "slug": "times-square",
+    "images": [
+      "assets/poi/times-square-1.jpg",
+      "assets/poi/times-square-2.jpg",
+      "assets/poi/times-square-3.jpg"
+    ],
+    "desc": "The neon-lit crossroads of Broadway and Seventh Avenue, the center of the Theater District. Crowded day and night, with direct access to a dozen subway lines.",
+    "desc_zh": "百老汇与第七大道交汇的霓虹十字路口，剧院区的中心。昼夜人流不息，可直达十多条地铁线路。",
+    "neighborhood": "Midtown / Theater District",
+    "neighborhood_zh": "中城 / 剧院区",
+    "address": "Broadway & Seventh Ave (W 42nd–47th St), New York, NY 10036",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:New_york_times_square-terabass.jpg",
+        "author": "Terabass",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:1_times_square_night_2013.jpg",
+        "author": "chensiyuan",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Times_Square_-_49874280633.jpg",
+        "author": "TheTurducken",
+        "license": "CC BY 2.0"
+      }
+    ]
+  },
+  "Rockefeller Center": {
+    "slug": "rockefeller-center",
+    "images": [
+      "assets/poi/rockefeller-center-1.jpg",
+      "assets/poi/rockefeller-center-2.jpg",
+      "assets/poi/rockefeller-center-3.jpg"
+    ],
+    "desc": "A 1930s Art Deco complex of 19 buildings with the Top of the Rock deck, NBC studios, the winter ice rink and the famous Christmas tree.",
+    "desc_zh": "由19栋建筑组成的20世纪30年代装饰艺术建筑群，有巨石之顶观景台、NBC演播室、冬季溜冰场和著名的圣诞树。",
+    "neighborhood": "Midtown",
+    "neighborhood_zh": "中城",
+    "address": "45 Rockefeller Plaza, New York, NY 10111",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:ROCKFELLER_CENTER_NEW_YORK_(14606671466).jpg",
+        "author": "Eric Salard",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Rockefeller_Center_2_(New_York)_(44331718505).jpg",
+        "author": "VillageHero from Ulm, Germany",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:New_York_Christmas_tree_and_skating-rink.jpg",
+        "author": "Gabriel Rodríguez from Sevilla, Spain",
+        "license": "CC BY-SA 2.0"
+      }
+    ]
+  },
+  "MoMA": {
+    "slug": "moma",
+    "images": [
+      "assets/poi/moma-1.jpg",
+      "assets/poi/moma-2.jpg",
+      "assets/poi/moma-3.jpg"
+    ],
+    "desc": "The Museum of Modern Art holds Van Gogh, Picasso, Warhol and much more, plus a calm sculpture garden. Students with ID get discounted admission.",
+    "desc_zh": "现代艺术博物馆收藏梵高、毕加索、沃霍尔等大量名作，还有宁静的雕塑花园。学生凭证件可享优惠门票。",
+    "neighborhood": "Midtown",
+    "neighborhood_zh": "中城",
+    "address": "11 W 53rd St, New York, NY 10019",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Museum_of_Modern_Art_(MoMA)_(51395759113).jpg",
+        "author": "ajay_suresh",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:MoMa_NY_USA_1.jpg",
+        "author": "hibino",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:USA-The_Museum_of_Modern_Art.jpg",
+        "author": "Ingfbruno",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "Lincoln Center": {
+    "slug": "lincoln-center",
+    "images": [
+      "assets/poi/lincoln-center-1.jpg",
+      "assets/poi/lincoln-center-2.jpg",
+      "assets/poi/lincoln-center-3.jpg"
+    ],
+    "desc": "The Upper West Side campus for the Met Opera, New York Philharmonic, City Ballet and Juilliard. Look for discounted rush tickets and free summer events on the plaza.",
+    "desc_zh": "上西区的表演艺术中心，汇集大都会歌剧院、纽约爱乐、纽约城市芭蕾舞团和茱莉亚学院。可留意折扣当日票和夏季广场免费活动。",
+    "neighborhood": "Upper West Side",
+    "neighborhood_zh": "上西区",
+    "address": "10 Lincoln Center Plaza, New York, NY 10023",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Lincoln_Center_Overview_(48047495362).jpg",
+        "author": "Ajay Suresh from New York, NY, USA",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:David_Geffen_Hall_(48047408511).jpg",
+        "author": "Ajay Suresh from New York, NY, USA",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Metropolitan_Opera_auditorium.jpg",
+        "author": "Photo: Andreas Praefcke",
+        "license": "CC BY 3.0"
+      }
+    ]
+  },
+  "The Met": {
+    "slug": "the-met",
+    "images": [
+      "assets/poi/the-met-1.jpg",
+      "assets/poi/the-met-2.jpg",
+      "assets/poi/the-met-3.jpg"
+    ],
+    "desc": "America's largest art museum, spanning 5,000 years from the Temple of Dendur to modern art. New York State residents and NY/NJ/CT students can pay what they wish.",
+    "desc_zh": "美国最大的艺术博物馆，藏品跨越五千年，从丹铎神庙到现代艺术应有尽有。纽约州居民及纽约、新泽西、康州学生可自愿付费入场。",
+    "neighborhood": "Upper East Side",
+    "neighborhood_zh": "上东区",
+    "address": "1000 Fifth Ave, New York, NY 10028",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Metropolitan_Museum_of_Art_(The_Met)_-_Central_Park,_NYC.jpg",
+        "author": "Hugo Schneider",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:The_Temple_of_Dendur_MET_DP240337.jpg",
+        "author": "The Metropolitan Museum of Art (Open Access)",
+        "license": "CC0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:MET_-_The_Great_Hall_-_Metropolitan_Museum_of_Art,_New_York,_NY,_USA_-_2012.JPG",
+        "author": "WestportWiki",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "Central Park": {
+    "slug": "central-park",
+    "images": [
+      "assets/poi/central-park-1.jpg",
+      "assets/poi/central-park-2.jpg",
+      "assets/poi/central-park-3.jpg"
+    ],
+    "desc": "843 acres of lawns, lakes and trails between 59th and 110th Streets. Sheep Meadow, Bethesda Fountain and the reservoir loop are favorite spots to unwind or run.",
+    "desc_zh": "位于59街至110街之间、占地843英亩的城市绿肺，有草坪、湖泊和步道。绵羊草原、贝塞斯达喷泉和水库环线是放松和跑步的热门去处。",
+    "neighborhood": "Central Park / Upper Manhattan",
+    "neighborhood_zh": "中央公园 / 上曼哈顿",
+    "address": "Central Park (59th–110th St, Fifth Ave to Central Park West), New York, NY 10024",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_(15351915006).jpg",
+        "author": "Anthony Quintano from Hillsborough, NJ, United States",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Angel_of_the_Waters_Fountain_and_Bethesda_Terrace,_Central_Park,_NYC.jpg",
+        "author": "Ahodges7",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:3015-Central_Park-Sheep_Meadow.JPG",
+        "author": "Ingfbruno",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "New York Stock Exchange": {
+    "slug": "new-york-stock-exchange",
+    "images": [
+      "assets/poi/new-york-stock-exchange-1.jpg",
+      "assets/poi/new-york-stock-exchange-2.jpg",
+      "assets/poi/new-york-stock-exchange-3.jpg"
+    ],
+    "desc": "The world's largest stock exchange by market value. Its 1903 Wall Street building with a temple-like columned facade is the symbol of the Financial District.",
+    "desc_zh": "按市值计算全球最大的证券交易所。其1903年落成、带神殿式柱廊立面的华尔街大楼是金融区的象征。",
+    "neighborhood": "Financial District",
+    "neighborhood_zh": "金融区",
+    "address": "11 Wall St, New York, NY 10005",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:New_York_Stock_Exchange_-_panoramio_(2).jpg",
+        "author": "TomasEE",
+        "license": "CC BY 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Wall_Street_-_New_York_Stock_Exchange.jpg",
+        "author": "Carlos Delgado",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:NYSE_facade.jpg",
+        "author": "Ryan Schwark",
+        "license": "CC0"
+      }
+    ]
+  },
+  "Spotify": {
+    "slug": "spotify",
+    "images": [
+      "assets/poi/spotify-1.jpg",
+      "assets/poi/spotify-2.jpg",
+      "assets/poi/spotify-3.jpg"
+    ],
+    "desc": "Spotify, the music and podcast streaming giant, runs its US headquarters in 4 World Trade Center, a sleek Fumihiko Maki glass tower beside the 9/11 Memorial.",
+    "desc_zh": "音乐与播客流媒体巨头Spotify的美国总部位于世贸中心四号楼，这是一座由槙文彦设计、紧邻9/11纪念馆的简洁玻璃塔楼。",
+    "neighborhood": "Financial District",
+    "neighborhood_zh": "金融区",
+    "address": "150 Greenwich St (4 World Trade Center), New York, NY 10007",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:NYC_-_Four_World_Trade_Center_-_panoramio_(1).jpg",
+        "author": "giggel",
+        "license": "CC BY 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:4WTC-March_12,_2012.JPG",
+        "author": "Craigboy",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Church_St_WTC_02_-_4_World_Trade_Center.jpg",
+        "author": "Tdorante10",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "Goldman Sachs": {
+    "slug": "goldman-sachs",
+    "images": [
+      "assets/poi/goldman-sachs-1.jpg",
+      "assets/poi/goldman-sachs-2.jpg",
+      "assets/poi/goldman-sachs-3.jpg"
+    ],
+    "desc": "Global investment bank Goldman Sachs is headquartered at 200 West Street, a 44-story glass tower in Battery Park City overlooking the Hudson River.",
+    "desc_zh": "全球投资银行高盛的总部位于西街200号，这是一座俯瞰哈德逊河、位于炮台公园城的44层玻璃大楼。",
+    "neighborhood": "Battery Park City",
+    "neighborhood_zh": "炮台公园城",
+    "address": "200 West St, New York, NY 10282",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Goldman_Sachs_Tower_200_West_Street_Battery_Park_City.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:GoldmanSachsHeadquarters.JPG",
+        "author": "Quantumquark",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:200_West_Street_(24258p).jpg",
+        "author": "Rhododendrites",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "Citigroup": {
+    "slug": "citigroup",
+    "images": [
+      "assets/poi/citigroup-1.jpg",
+      "assets/poi/citigroup-2.jpg",
+      "assets/poi/citigroup-3.jpg"
+    ],
+    "desc": "Citigroup, one of the largest US banks, is headquartered at 388 Greenwich Street in Tribeca, a 1980s tower recently refreshed with a new glass base.",
+    "desc_zh": "美国最大银行之一花旗集团的总部位于翠贝卡格林威治街388号，这座20世纪80年代的大楼近年加建了全新玻璃裙楼。",
+    "neighborhood": "Tribeca",
+    "neighborhood_zh": "翠贝卡",
+    "address": "388 Greenwich St, New York, NY 10013",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Hudson_River_Park_td_(2019-02-05)_005_-_388_Greenwich_Street.jpg",
+        "author": "Tdorante10",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Hudson_River_Park_td_(2021-11-24)_053_-_Pier_26_Woodland_Forest,_388_Greenwich_Street.jpg",
+        "author": "Tdorante10",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Hudson_River_Park_td_(2021-11-24)_047_-_Pier_26_Woodland_Forest,_388_Greenwich_Street.jpg",
+        "author": "Tdorante10",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "Meta": {
+    "slug": "meta",
+    "images": [
+      "assets/poi/meta-1.jpg",
+      "assets/poi/meta-2.jpg",
+      "assets/poi/meta-3.jpg"
+    ],
+    "desc": "Meta, parent of Facebook, Instagram and WhatsApp, has a major NYC office at 770 Broadway, a historic former Wanamaker department store building near Astor Place.",
+    "desc_zh": "Facebook、Instagram和WhatsApp的母公司Meta在百老汇770号设有大型纽约办公室，该楼原为历史悠久的沃纳梅克百货大楼，靠近阿斯特广场。",
+    "neighborhood": "Greenwich Village / NoHo",
+    "neighborhood_zh": "格林威治村 / NoHo",
+    "address": "770 Broadway, New York, NY 10003",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:770_Broadway_August_2021.jpg",
+        "author": "Loominosity Z",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:AOL_770.jpg",
+        "author": "Gino DePinto",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:770_Broadway_(16389865568).jpg",
+        "author": "Billie Grace Ward from New York, USA",
+        "license": "CC BY 2.0"
+      }
+    ]
+  },
+  "Google": {
+    "slug": "google",
+    "images": [
+      "assets/poi/google-1.jpg",
+      "assets/poi/google-2.jpg",
+      "assets/poi/google-3.jpg"
+    ],
+    "desc": "Google's main NYC hub fills 111 Eighth Avenue, a full-block former Port Authority freight terminal in Chelsea, steps from Chelsea Market, which Google also owns.",
+    "desc_zh": "谷歌纽约的主要办公地位于第八大道111号，这座占据整个街区的建筑原为港务局货运站，紧邻同属谷歌的切尔西市场。",
+    "neighborhood": "Chelsea",
+    "neighborhood_zh": "切尔西",
+    "address": "111 Eighth Ave, New York, NY 10011",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:111_Eighth_Avenue.jpg",
+        "author": "Scott Roy Atwood",
+        "license": "Public domain"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:111_8th_Avenue.jpg",
+        "author": "Kidfly182",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:15th_St_9th_Av_td_(2022-02-09)_15_-_Google_Store_Chelsea_(111_Eighth_Avenue).jpg",
+        "author": "Tdorante10",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "EY": {
+    "slug": "ey",
+    "images": [
+      "assets/poi/ey-1.jpg",
+      "assets/poi/ey-2.jpg",
+      "assets/poi/ey-3.jpg"
+    ],
+    "desc": "Big Four accounting firm EY (Ernst & Young) is headquartered in One Manhattan West, a 67-story glass tower in the Manhattan West complex next to Penn Station.",
+    "desc_zh": "四大会计师事务所之一安永的总部位于One Manhattan West，这是一座位于宾州车站旁Manhattan West综合体内的67层玻璃大楼。",
+    "neighborhood": "Hudson Yards / Manhattan West",
+    "neighborhood_zh": "哈德逊城市广场 / 曼哈顿西",
+    "address": "One Manhattan West, New York, NY 10001",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:One_Manhattan_West_Completed.jpg",
+        "author": "Gpetrov",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:One_Manhattan_West.jpg",
+        "author": "Kidfly182",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Plaza_between_1_Manhattan_West_and_2_Manhattan_West.jpg",
+        "author": "Kenneth C. Zirkel",
+        "license": "CC BY 4.0"
+      }
+    ]
+  },
+  "KPMG": {
+    "slug": "kpmg",
+    "images": [
+      "assets/poi/kpmg-1.jpg",
+      "assets/poi/kpmg-2.jpg",
+      "assets/poi/kpmg-3.jpg"
+    ],
+    "desc": "Big Four accounting firm KPMG moved its US headquarters to Two Manhattan West, a curved glass office tower beside the Manhattan West plaza near Penn Station.",
+    "desc_zh": "四大会计师事务所之一毕马威将美国总部迁至Two Manhattan West，一座位于宾州车站附近、毗邻曼哈顿西广场的弧形玻璃办公楼。",
+    "neighborhood": "Hudson Yards / Manhattan West",
+    "neighborhood_zh": "哈德逊城市广场 / 曼哈顿西",
+    "address": "Two Manhattan West, New York, NY 10001",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:High_Line_td_(2025-02-14)_049_-_26th_Street_Viewing_Spur,_Manhattan_West.jpg",
+        "author": "Tdorante10",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:2_Manhattan_West.jpg",
+        "author": "Kidfly182",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Manhattan_West_2024.jpg",
+        "author": "Kidfly182",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "L'Oréal USA": {
+    "slug": "loreal-usa",
+    "images": [
+      "assets/poi/loreal-usa-1.jpg",
+      "assets/poi/loreal-usa-2.jpg",
+      "assets/poi/loreal-usa-3.jpg"
+    ],
+    "desc": "L'Oréal USA, the beauty giant's American arm, is based in 10 Hudson Yards, the first tower finished at Hudson Yards, which straddles the High Line.",
+    "desc_zh": "美妆巨头欧莱雅的美国公司总部位于哈德逊城市广场10号，这是该区首座落成的大楼，横跨在高线公园之上。",
+    "neighborhood": "Hudson Yards",
+    "neighborhood_zh": "哈德逊城市广场",
+    "address": "10 Hudson Yards, New York, NY 10001",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:10_Hudson_Yard_from_9_Av_&_30_St_2016_Dec_jeh.jpg",
+        "author": "Jim.henderson",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:10_Hudson_Yards_Completed.jpg",
+        "author": "Greaper37",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:At_New_York,_USA_2017_228.jpg",
+        "author": "Photograph by Mike Peel (www.mikepeel.net).",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "Amazon": {
+    "slug": "amazon",
+    "images": [
+      "assets/poi/amazon-1.jpg",
+      "assets/poi/amazon-2.jpg",
+      "assets/poi/amazon-3.jpg"
+    ],
+    "desc": "Amazon leases offices at 410 Tenth Avenue, the restored 1920s Master Printers Building near Hudson Yards, once a hub of New York's printing trade.",
+    "desc_zh": "亚马逊在第十大道410号租用办公空间，这座经修复的1920年代Master Printers大楼靠近哈德逊城市广场，曾是纽约印刷业的中心。",
+    "neighborhood": "Hudson Yards",
+    "neighborhood_zh": "哈德逊城市广场",
+    "address": "410 Tenth Ave, New York, NY 10001",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:410_10th_Av_Master_Printers_building_2025_jeh.jpg",
+        "author": "Jim.henderson",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:410_tenth_Av_historic_sign_jeh.jpg",
+        "author": "Jim.henderson",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:34th_St_10th_Av_td_(2018-08-16)_01.jpg",
+        "author": "Tdorante10",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "BlackRock": {
+    "slug": "blackrock",
+    "images": [
+      "assets/poi/blackrock-1.jpg",
+      "assets/poi/blackrock-2.jpg",
+      "assets/poi/blackrock-3.jpg"
+    ],
+    "desc": "BlackRock, the world's largest asset manager, is headquartered at 50 Hudson Yards, a 58-story Foster + Partners tower filling a full block.",
+    "desc_zh": "全球最大资产管理公司贝莱德的总部位于哈德逊城市广场50号，这座由福斯特建筑事务所设计的58层大楼占据整个街区。",
+    "neighborhood": "Hudson Yards",
+    "neighborhood_zh": "哈德逊城市广场",
+    "address": "50 Hudson Yards, New York, NY 10001",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:50_Hudson_Yards_(55379880087).jpg",
+        "author": "Ajay Suresh",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:50_Hudson_Yards_003.jpg",
+        "author": "Kidfly182",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:50_Hudson_Yards_002.jpg",
+        "author": "Kidfly182",
+        "license": "CC BY 4.0"
+      }
+    ]
+  },
+  "Pfizer": {
+    "slug": "pfizer",
+    "images": [
+      "assets/poi/pfizer-1.jpg",
+      "assets/poi/pfizer-2.jpg",
+      "assets/poi/pfizer-3.jpg"
+    ],
+    "desc": "Pharmaceutical leader Pfizer is headquartered in The Spiral, a BIG-designed tower whose stepped terraces wind up its glass facade along Hudson Boulevard.",
+    "desc_zh": "制药巨头辉瑞的总部位于The Spiral，这座由BIG设计的大楼外立面上，阶梯状绿化露台沿玻璃幕墙螺旋而上，坐落于哈德逊大道旁。",
+    "neighborhood": "Hudson Yards",
+    "neighborhood_zh": "哈德逊城市广场",
+    "address": "66 Hudson Blvd E, New York, NY 10001",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:The_Spiral_20210204_213344125.jpg",
+        "author": "CaptJayRuffins",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Midtown_Manhattan_2024_058.jpg",
+        "author": "Kidfly182",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:The_Spiral_005.jpg",
+        "author": "Kidfly182",
+        "license": "CC BY 4.0"
+      }
+    ]
+  },
+  "The New York Times": {
+    "slug": "the-new-york-times",
+    "images": [
+      "assets/poi/the-new-york-times-1.jpg",
+      "assets/poi/the-new-york-times-2.jpg",
+      "assets/poi/the-new-york-times-3.jpg"
+    ],
+    "desc": "The New York Times newspaper is headquartered in its Renzo Piano-designed tower on Eighth Avenue, wrapped in ceramic rods, across from Port Authority.",
+    "desc_zh": "《纽约时报》总部位于第八大道一座由伦佐·皮亚诺设计、外覆陶瓷杆的大楼内，正对港务局巴士总站。",
+    "neighborhood": "Midtown / Times Square",
+    "neighborhood_zh": "中城 / 时代广场",
+    "address": "620 Eighth Ave, New York, NY 10018",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:New_York_Times_Building_-_Bottom_Portion_(48193462432).jpg",
+        "author": "Ajay Suresh from New York, NY, USA",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:New_york_times_building.jpg",
+        "author": "Defears",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:The_New_York_Times-2023.jpg",
+        "author": "Alberto-g-rovi",
+        "license": "CC BY 3.0"
+      }
+    ]
+  },
+  "Microsoft": {
+    "slug": "microsoft",
+    "images": [
+      "assets/poi/microsoft-1.jpg",
+      "assets/poi/microsoft-2.jpg",
+      "assets/poi/microsoft-3.jpg"
+    ],
+    "desc": "Microsoft runs a large Manhattan office at 11 Times Square, a 40-story glass tower at 42nd Street and Eighth Avenue on the west edge of Times Square.",
+    "desc_zh": "微软在时代广场11号设有大型曼哈顿办公室，这座40层玻璃大楼位于42街与第八大道交汇处，处在时代广场西侧。",
+    "neighborhood": "Midtown / Times Square",
+    "neighborhood_zh": "中城 / 时代广场",
+    "address": "11 Times Square, New York, NY 10036",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:11_Times_Square_New_York_NY_2014_09_02_01.jpg",
+        "author": "Quercus montana",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:11_Times_Square_(51985985604).jpg",
+        "author": "Eden, Janine and Jim from New York City",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:42nd_St_8th_Av_td_(2018-05-18)_02_-_11_Times_Square.jpg",
+        "author": "Tdorante10",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "Morgan Stanley": {
+    "slug": "morgan-stanley",
+    "images": [
+      "assets/poi/morgan-stanley-1.jpg",
+      "assets/poi/morgan-stanley-2.jpg",
+      "assets/poi/morgan-stanley-3.jpg"
+    ],
+    "desc": "Investment bank Morgan Stanley is headquartered at 1585 Broadway in Times Square, recognizable by the bands of stock tickers wrapping its base.",
+    "desc_zh": "投资银行摩根士丹利的总部位于时代广场百老汇1585号，底部环绕的股票行情显示屏让它一眼可辨。",
+    "neighborhood": "Midtown / Times Square",
+    "neighborhood_zh": "中城 / 时代广场",
+    "address": "1585 Broadway, New York, NY 10036",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Morgan_Stanley_Times_Square.jpg",
+        "author": "PLBechly",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Times_Sq_Nov_2021_186.jpg",
+        "author": "Epicgenius",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Times_Sq_Nov_2021_162.jpg",
+        "author": "Epicgenius",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "Verizon": {
+    "slug": "verizon",
+    "images": [
+      "assets/poi/verizon-1.jpg",
+      "assets/poi/verizon-2.jpg",
+      "assets/poi/verizon-3.jpg"
+    ],
+    "desc": "Telecom giant Verizon is headquartered at 1095 Avenue of the Americas, a glass-clad tower overlooking Bryant Park and the New York Public Library.",
+    "desc_zh": "电信巨头威瑞森的总部位于美洲大道1095号，这座玻璃幕墙大楼俯瞰布莱恩特公园和纽约公共图书馆。",
+    "neighborhood": "Midtown / Bryant Park",
+    "neighborhood_zh": "中城 / 布莱恩特公园",
+    "address": "1095 Avenue of the Americas, New York, NY 10036",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:1095_Avenue_of_the_Americas_(54816369413).jpg",
+        "author": "ajay_suresh",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:1095_Avenue_of_the_Americas_and_Bank_of_America_Tower.jpg",
+        "author": "Americasroof (talk)",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:42nd_St_6th_Av_td_16_-_3_Bryant_Park.jpg",
+        "author": "Tdorante10",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "PwC": {
+    "slug": "pwc",
+    "images": [
+      "assets/poi/pwc-1.jpg",
+      "assets/poi/pwc-2.jpg",
+      "assets/poi/pwc-3.jpg"
+    ],
+    "desc": "Big Four firm PwC (PricewaterhouseCoopers) is headquartered at 300 Madison Avenue, a glass office tower at 42nd Street two blocks from Grand Central.",
+    "desc_zh": "四大会计师事务所之一普华永道的总部位于麦迪逊大道300号，这座玻璃办公楼位于42街，距中央车站两个街区。",
+    "neighborhood": "Midtown East",
+    "neighborhood_zh": "中城东",
+    "address": "300 Madison Ave, New York, NY 10017",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:300_Madison_Avenue_(8156031978).jpg",
+        "author": "Eden, Janine and Jim from New York City",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:NYC_-_300_Madison_Avenue_-_panoramio.jpg",
+        "author": "giggel",
+        "license": "CC BY 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:300_Madison_Avenue_by_Matthew_Bisanz.jpg",
+        "author": "MBisanz",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "JPMorgan Chase": {
+    "slug": "jpmorgan-chase",
+    "images": [
+      "assets/poi/jpmorgan-chase-1.jpg",
+      "assets/poi/jpmorgan-chase-2.jpg",
+      "assets/poi/jpmorgan-chase-3.jpg"
+    ],
+    "desc": "JPMorgan Chase, the largest US bank, opened its new 1,388-foot, Foster + Partners-designed headquarters at 270 Park Avenue in 2025, lifted on angled columns.",
+    "desc_zh": "美国最大银行摩根大通于2025年启用位于公园大道270号的新总部，这座由福斯特建筑事务所设计、高约423米的大楼由斜向巨柱托起。",
+    "neighborhood": "Midtown East",
+    "neighborhood_zh": "中城东",
+    "address": "270 Park Ave, New York, NY 10017",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:270_Park_Avenue_2025_002.jpg",
+        "author": "Kidfly182",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:270_Park_Avenue_8_may_2024.jpg",
+        "author": "MemeGod27",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:270_Park_Avenue_-_Entrance_on_Park_Avenue_(55283843584).jpg",
+        "author": "ajay_suresh",
+        "license": "CC BY 4.0"
+      }
+    ]
+  },
+  "Bloomberg": {
+    "slug": "bloomberg",
+    "images": [
+      "assets/poi/bloomberg-1.jpg",
+      "assets/poi/bloomberg-2.jpg",
+      "assets/poi/bloomberg-3.jpg"
+    ],
+    "desc": "Bloomberg L.P., the financial data and media company, is headquartered in Bloomberg Tower at 731 Lexington Avenue, with a curved glass courtyard off 59th Street.",
+    "desc_zh": "金融数据与媒体公司彭博的总部位于列克星敦大道731号的彭博大厦，从59街可进入其弧形玻璃庭院。",
+    "neighborhood": "Midtown East / Upper East Side",
+    "neighborhood_zh": "中城东 / 上东区",
+    "address": "731 Lexington Ave, New York, NY 10022",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Bloomberg_Tower_(55273671683).jpg",
+        "author": "ajay_suresh",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:731_Lexington_Avenue_(55272623112).jpg",
+        "author": "ajay_suresh",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Building_lights_in_New_York_City.jpg",
+        "author": "Henrique Pinto",
+        "license": "CC BY 2.0"
+      }
+    ]
+  },
+  "Apple Fifth Avenue": {
+    "slug": "apple-fifth-avenue",
+    "images": [
+      "assets/poi/apple-fifth-avenue-1.jpg",
+      "assets/poi/apple-fifth-avenue-2.jpg",
+      "assets/poi/apple-fifth-avenue-3.jpg"
+    ],
+    "desc": "Apple's flagship store sits beneath a 32-foot glass cube on the plaza of the GM Building, across from Central Park and the Plaza Hotel. Open 24 hours.",
+    "desc_zh": "苹果旗舰店位于通用汽车大楼广场上一座约10米高的玻璃立方体之下，对面就是中央公园和广场酒店，24小时营业。",
+    "neighborhood": "Midtown / Fifth Avenue",
+    "neighborhood_zh": "中城 / 第五大道",
+    "address": "767 Fifth Ave, New York, NY 10153",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Apple_Fifth_Avenue_(51396585920).jpg",
+        "author": "ajay_suresh",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Glass_Apple_Store_Cube_(2550125608).jpg",
+        "author": "Marcus Quigmire from Florida, USA",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Apple_Store_Fifth_Avenue,_showing_the_patented_glass-staircase_(7181853588).jpg",
+        "author": "Jorge Láscar from Australia",
+        "license": "CC BY 2.0"
+      }
+    ]
+  }
+}

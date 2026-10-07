@@ -1,0 +1,2558 @@
+[
+ {
+  "city": "LA",
+  "name": "Hollywood Sign",
+  "cat": "landmark",
+  "icon": "statue",
+  "lat": 34.1341,
+  "lng": -118.32165,
+  "slug": "la-hollywood-sign",
+  "images": [
+   "assets/poi/la-hollywood-sign-1.jpg",
+   "assets/poi/la-hollywood-sign-2.jpg",
+   "assets/poi/la-hollywood-sign-3.jpg"
+  ],
+  "desc": "The 45-foot letters on Mount Lee are LA's most famous view. Hiking trails in Griffith Park and Lake Hollywood Park offer the best photo spots.",
+  "desc_zh": "矗立在李山上的巨型字母是洛杉矶最具代表性的景观，格里菲斯公园步道和好莱坞湖公园是最佳拍照点。",
+  "neighborhood": "Hollywood Hills",
+  "neighborhood_zh": "好莱坞山",
+  "address": "Mt Lee Dr, Los Angeles, CA 90068",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Hollywood_Sign_(Zuschnitt).jpg",
+    "author": "Thomas Wolf, www.foto-tw.de",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Hollywood_Sign.jpg",
+    "author": "Thomas Wolf, www.foto-tw.de",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Hollywood_Sign,_Santa_Monica_Mountains2.jpg",
+    "author": "dconvertini",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Griffith Observatory",
+  "cat": "landmark",
+  "icon": "museum",
+  "lat": 34.11822,
+  "lng": -118.30029,
+  "slug": "la-griffith-observatory",
+  "images": [
+   "assets/poi/la-griffith-observatory-1.jpg",
+   "assets/poi/la-griffith-observatory-2.jpg",
+   "assets/poi/la-griffith-observatory-3.jpg"
+  ],
+  "desc": "Free-admission Art Deco observatory with public telescopes and sweeping views of the basin and the Hollywood Sign—a go-to sunset spot.",
+  "desc_zh": "免费参观的装饰艺术风格天文台，可用公共望远镜观星，俯瞰整个洛杉矶盆地和好莱坞标志，是看日落的热门地点。",
+  "neighborhood": "Griffith Park",
+  "neighborhood_zh": "格里菲斯公园",
+  "address": "2800 E Observatory Rd, Los Angeles, CA 90027",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Griffith_Observatory_2022-5.jpg",
+    "author": "dconvertini",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Griffith_Observatory_in_July_2022.JPG",
+    "author": "Benoît Prieur",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Griffith_Observatory_2022.jpg",
+    "author": "dconvertini",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Santa Monica Pier",
+  "cat": "landmark",
+  "icon": "venue",
+  "lat": 34.0089,
+  "lng": -118.4974,
+  "slug": "la-santa-monica-pier",
+  "images": [
+   "assets/poi/la-santa-monica-pier-1.jpg",
+   "assets/poi/la-santa-monica-pier-2.jpg",
+   "assets/poi/la-santa-monica-pier-3.jpg"
+  ],
+  "desc": "Century-old pier with Pacific Park's solar Ferris wheel, arcades and the symbolic end of Route 66, steps from Third Street Promenade.",
+  "desc_zh": "拥有百年历史的码头，有太平洋公园的太阳能摩天轮、游戏厅和66号公路终点标志，步行即达第三街步行街。",
+  "neighborhood": "Santa Monica",
+  "neighborhood_zh": "圣莫尼卡",
+  "address": "200 Santa Monica Pier, Santa Monica, CA 90401",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:DJI_20250315131503_0166_D.jpg",
+    "author": "Jav72",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Los_Angeles_(California,_USA),_Santa_Monica_Beach_--_2012_--_5301.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Santa_Monica_Beach_P1000521.jpg",
+    "author": "NewtonCourt",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Getty Center",
+  "cat": "landmark",
+  "icon": "museum",
+  "lat": 34.07702,
+  "lng": -118.47401,
+  "slug": "la-getty-center",
+  "images": [
+   "assets/poi/la-getty-center-1.jpg",
+   "assets/poi/la-getty-center-2.jpg",
+   "assets/poi/la-getty-center-3.jpg"
+  ],
+  "desc": "Hilltop art museum in Brentwood with free admission, Richard Meier architecture, gardens and views from downtown to the ocean.",
+  "desc_zh": "位于布伦特伍德山顶的免费艺术博物馆，理查德·迈耶设计的建筑、花园和从市中心到海边的全景视野都很出名。",
+  "neighborhood": "Brentwood",
+  "neighborhood_zh": "布伦特伍德",
+  "address": "1200 Getty Center Dr, Los Angeles, CA 90049",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pictures_of_the_Getty_Museum_in_Los_Angeles,_California_09.jpg",
+    "author": "Felipe Ignacio Carvajal Brown",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pictures_of_the_Getty_Museum_in_Los_Angeles,_California_05.jpg",
+    "author": "Felipe Ignacio Carvajal Brown",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:J._Paul_Getty_Trust_building,_Los_Angeles,_California,_US.jpg",
+    "author": "Clyde Charles Brown",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Walt Disney Concert Hall",
+  "cat": "landmark",
+  "icon": "venue",
+  "lat": 34.05543,
+  "lng": -118.24991,
+  "slug": "la-walt-disney-concert-hall",
+  "images": [
+   "assets/poi/la-walt-disney-concert-hall-1.jpg",
+   "assets/poi/la-walt-disney-concert-hall-2.jpg",
+   "assets/poi/la-walt-disney-concert-hall-3.jpg"
+  ],
+  "desc": "Frank Gehry's stainless-steel landmark and home of the LA Philharmonic, anchoring the Grand Avenue arts corridor on Bunker Hill.",
+  "desc_zh": "弗兰克·盖里设计的不锈钢地标，洛杉矶爱乐乐团的主场，是邦克山大道艺术走廊的核心。",
+  "neighborhood": "Downtown LA (Bunker Hill)",
+  "neighborhood_zh": "洛杉矶市中心（邦克山）",
+  "address": "111 S Grand Ave, Los Angeles, CA 90012",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Disney_Concert_Hall_by_Carol_Highsmith.jpg",
+    "author": "Carol M. Highsmith",
+    "license": "Public domain"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Grand_Avenue_from_Walt_Disney_Concert_Hall_(Los_Angeles)_in_July_2022.JPG",
+    "author": "Benoît Prieur",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Disney_Concert_Hall_(Unsplash).jpg",
+    "author": "Brandon Smith brndnsmth",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "The Broad",
+  "cat": "landmark",
+  "icon": "museum",
+  "lat": 34.05446,
+  "lng": -118.25059,
+  "slug": "la-the-broad",
+  "images": [
+   "assets/poi/la-the-broad-1.jpg",
+   "assets/poi/la-the-broad-2.jpg",
+   "assets/poi/la-the-broad-3.jpg"
+  ],
+  "desc": "Free contemporary art museum known for its honeycomb facade and Infinity Mirror Rooms, right next to Disney Concert Hall.",
+  "desc_zh": "以蜂窝状外立面和草间弥生“无限镜屋”闻名的免费当代艺术馆，紧邻迪士尼音乐厅。",
+  "neighborhood": "Downtown LA (Bunker Hill)",
+  "neighborhood_zh": "洛杉矶市中心（邦克山）",
+  "address": "221 S Grand Ave, Los Angeles, CA 90012",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Los_Angeles,_United_States_(Unsplash_j5K6ambkGNk).jpg",
+    "author": "Tu Tram Pham tutrampham",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:The_Broad,_Los_Angeles_in_July_2023.JPG",
+    "author": "Benoît Prieur",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Steve_driscoll_2016-06-28_(Unsplash).jpg",
+    "author": "Steve driscoll ssdriscoll",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Venice Beach Boardwalk",
+  "cat": "landmark",
+  "icon": "park",
+  "lat": 33.98948,
+  "lng": -118.47592,
+  "slug": "la-venice-beach-boardwalk",
+  "images": [
+   "assets/poi/la-venice-beach-boardwalk-1.jpg",
+   "assets/poi/la-venice-beach-boardwalk-2.jpg",
+   "assets/poi/la-venice-beach-boardwalk-3.jpg"
+  ],
+  "desc": "Ocean Front Walk's street performers, Muscle Beach and skate park define Venice's laid-back vibe, with Abbot Kinney a short walk inland.",
+  "desc_zh": "海滨步道上的街头艺人、肌肉海滩和滑板公园构成了威尼斯海滩的悠闲氛围，往内陆走几分钟就是Abbot Kinney大道。",
+  "neighborhood": "Venice",
+  "neighborhood_zh": "威尼斯海滩",
+  "address": "1800 Ocean Front Walk, Venice, CA 90291",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Ocean_Front_Walk,_Venice_LA.jpg",
+    "author": "DanielMichaelPerry",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Ocean_Front_Walk_Venice_Beach.jpg",
+    "author": "DanielMichaelPerry",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Ocean_Front_Walk_Venice_April_2020_1.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Rodeo Drive",
+  "cat": "landmark",
+  "icon": "square",
+  "lat": 34.0675,
+  "lng": -118.40095,
+  "slug": "la-rodeo-drive",
+  "images": [
+   "assets/poi/la-rodeo-drive-1.jpg",
+   "assets/poi/la-rodeo-drive-2.jpg",
+   "assets/poi/la-rodeo-drive-3.jpg"
+  ],
+  "desc": "Beverly Hills' luxury shopping street, lined with flagship boutiques between Wilshire and Santa Monica Boulevards.",
+  "desc_zh": "比佛利山庄的奢侈品购物街，威尔希尔大道与圣莫尼卡大道之间汇集各大品牌旗舰店。",
+  "neighborhood": "Beverly Hills",
+  "neighborhood_zh": "比佛利山庄",
+  "address": "Rodeo Dr & Wilshire Blvd, Beverly Hills, CA 90210",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Vista_de_rodeo_drive.JPG",
+    "author": "Adrián Cerón",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rodeo_Drive_July_2022.jpg",
+    "author": "Andrek02",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rodeo_Drive_3.jpg",
+    "author": "Misaochan",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Los Angeles Union Station",
+  "cat": "landmark",
+  "icon": "train",
+  "lat": 34.05586,
+  "lng": -118.23429,
+  "slug": "la-union-station",
+  "images": [
+   "assets/poi/la-union-station-1.jpg",
+   "assets/poi/la-union-station-2.jpg",
+   "assets/poi/la-union-station-3.jpg"
+  ],
+  "desc": "LA's 1939 Mission Revival rail hub, connecting Metro rail, Amtrak and the FlyAway bus to LAX—handy for car-free commuting.",
+  "desc_zh": "建于1939年的西班牙传教风格火车总站，连接地铁、美铁和直达LAX的FlyAway巴士，无车通勤很方便。",
+  "neighborhood": "Downtown LA",
+  "neighborhood_zh": "洛杉矶市中心",
+  "address": "800 N Alameda St, Los Angeles, CA 90012",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Union_Station_Los_Angeles,_California.jpg",
+    "author": "Codera23",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Union_Station_06.jpg",
+    "author": "Visitor7",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Union_Station_in_Los_Angeles_3.jpg",
+    "author": "Johnnydeezwax",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "LACMA & Urban Light",
+  "cat": "landmark",
+  "icon": "museum",
+  "lat": 34.06305,
+  "lng": -118.35921,
+  "slug": "la-lacma",
+  "images": [
+   "assets/poi/la-lacma-1.jpg",
+   "assets/poi/la-lacma-2.jpg",
+   "assets/poi/la-lacma-3.jpg"
+  ],
+  "desc": "The largest art museum in the western US; Chris Burden's Urban Light lamp posts out front on Wilshire are a favorite photo stop.",
+  "desc_zh": "美国西部最大的艺术博物馆，门前威尔希尔大道上克里斯·伯顿的《城市之光》路灯装置是热门打卡点。",
+  "neighborhood": "Miracle Mile",
+  "neighborhood_zh": "奇迹一英里",
+  "address": "5905 Wilshire Blvd, Los Angeles, CA 90036",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Giant_white_pillars_(Unsplash).jpg",
+    "author": "Chris Brignola cjbrignola",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:LACMA-Exterior-View-ROLM-ArchEyes-5.jpg",
+    "author": "ArchEyes Magazine",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:LACMA-Exterior-View-ROLM-ArchEyes-4_-_55107514064.jpg",
+    "author": "ArchEyes Magazine",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "The Walt Disney Company (Burbank HQ)",
+  "cat": "company",
+  "icon": "media",
+  "lat": 34.15779,
+  "lng": -118.32758,
+  "slug": "la-disney-burbank",
+  "images": [
+   "assets/poi/la-disney-burbank-1.jpg",
+   "assets/poi/la-disney-burbank-2.jpg",
+   "assets/poi/la-disney-burbank-3.jpg"
+  ],
+  "desc": "The Walt Disney Company's global headquarters on its historic Burbank studio lot, including the Team Disney building held up by the Seven Dwarfs.",
+  "desc_zh": "华特迪士尼公司全球总部所在的伯班克历史制片厂，园区内有以“七个小矮人”作立柱的Team Disney大楼。",
+  "neighborhood": "Burbank",
+  "neighborhood_zh": "伯班克",
+  "address": "500 S Buena Vista St, Burbank, CA 91521",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Walt_Disney_Studios_Alameda_Entrance.jpg",
+    "author": "Coolcaesar",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Disney_studios_burbank_entrance_gate_buena_vista.jpg",
+    "author": "Junkyardsparkle",
+    "license": "Public domain"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Disney_100_celebration.jpg",
+    "author": "Trey Madara",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Warner Bros. Studios Burbank",
+  "cat": "company",
+  "icon": "media",
+  "lat": 34.14887,
+  "lng": -118.33763,
+  "slug": "la-warner-bros",
+  "images": [
+   "assets/poi/la-warner-bros-1.jpg",
+   "assets/poi/la-warner-bros-2.jpg",
+   "assets/poi/la-warner-bros-3.jpg"
+  ],
+  "desc": "Warner Bros.' main studio lot, where many films and TV shows are made; offices, sound stages and the public Studio Tour Hollywood.",
+  "desc_zh": "华纳兄弟的主制片厂，大量电影和剧集在此拍摄，园区内有办公楼、摄影棚和对外开放的片场之旅。",
+  "neighborhood": "Burbank",
+  "neighborhood_zh": "伯班克",
+  "address": "4000 Warner Blvd, Burbank, CA 91522",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Warner_Bros_Burbank_(51080102911).jpg",
+    "author": "Tony Mariotti from Los Angeles, United States",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Warner_Bros._Studios_Water_Tower_2020.jpg",
+    "author": "Chris Yarzab",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Warner_Bros._Studios_(50769803496).jpg",
+    "author": "Chris Yarzab",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Paramount Pictures Studios",
+  "cat": "company",
+  "icon": "media",
+  "lat": 34.08365,
+  "lng": -118.3208,
+  "slug": "la-paramount",
+  "images": [
+   "assets/poi/la-paramount-1.jpg",
+   "assets/poi/la-paramount-2.jpg",
+   "assets/poi/la-paramount-3.jpg"
+  ],
+  "desc": "Paramount's historic lot on Melrose Avenue, the last major studio still operating in Hollywood itself, with offices and sound stages.",
+  "desc_zh": "派拉蒙位于梅尔罗斯大道的历史片场，是唯一仍在好莱坞本地运营的大型制片厂，内有办公区和摄影棚。",
+  "neighborhood": "Hollywood",
+  "neighborhood_zh": "好莱坞",
+  "address": "5555 Melrose Ave, Los Angeles, CA 90038",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Paramount_Studios,_Los_Angeles,_United_States_(Unsplash).jpg",
+    "author": "Christian Joudrey cjoudrey",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Roddenberry_Building_2016.jpg",
+    "author": "Antony-22",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Paramount_Studios,_now_known_as_Kaufman-Astoria_Studios._Corner_shot_from_35_the_Ave..JPG",
+    "author": "MrShah2012",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Sony Pictures Studios",
+  "cat": "company",
+  "icon": "media",
+  "lat": 34.01736,
+  "lng": -118.40215,
+  "slug": "la-sony-pictures",
+  "images": [
+   "assets/poi/la-sony-pictures-1.jpg",
+   "assets/poi/la-sony-pictures-2.jpg",
+   "assets/poi/la-sony-pictures-3.jpg"
+  ],
+  "desc": "Sony Pictures Entertainment's headquarters on the former MGM lot in Culver City, with studios, offices and a walking tour.",
+  "desc_zh": "索尼影视娱乐总部，位于卡尔弗城原米高梅片场，包括摄影棚、办公楼和片场导览。",
+  "neighborhood": "Culver City",
+  "neighborhood_zh": "卡尔弗城",
+  "address": "10202 W Washington Blvd, Culver City, CA 90232",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Sony_Pictures_Studios_Motor_Gate.jpg",
+    "author": "Coolcaesar",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Sonypicturesentertainmentoffices.jpg",
+    "author": "Coolcaesar at en.wikipedia",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Columbia_Pictures_Sign.jpg",
+    "author": "Busition",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Amazon MGM Studios (The Culver Studios)",
+  "cat": "company",
+  "icon": "media",
+  "lat": 34.02297,
+  "lng": -118.39096,
+  "slug": "la-amazon-culver",
+  "images": [
+   "assets/poi/la-amazon-culver-1.jpg",
+   "assets/poi/la-amazon-culver-2.jpg",
+   "assets/poi/la-amazon-culver-3.jpg"
+  ],
+  "desc": "Amazon MGM Studios' production campus at the historic Culver Studios, known for its colonial-style mansion facing Washington Blvd.",
+  "desc_zh": "亚马逊MGM影业的制作园区，位于历史悠久的卡尔弗制片厂，临华盛顿大道的殖民风格白色大宅是其标志。",
+  "neighborhood": "Culver City",
+  "neighborhood_zh": "卡尔弗城",
+  "address": "9336 W Washington Blvd, Culver City, CA 90232",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Culver_City_buildings_and_structures_2023_March_18_batch_04.jpg",
+    "author": "Jengod",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:CulverStudios.jpg",
+    "author": "Termer",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Commercial.on.set.jpg",
+    "author": "Rclick-wiki",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "SpaceX Headquarters",
+  "cat": "company",
+  "icon": "tech",
+  "lat": 33.92036,
+  "lng": -118.32803,
+  "slug": "la-spacex",
+  "images": [
+   "assets/poi/la-spacex-1.jpg",
+   "assets/poi/la-spacex-2.jpg",
+   "assets/poi/la-spacex-3.jpg"
+  ],
+  "desc": "SpaceX's Hawthorne rocket factory and longtime headquarters, where Falcon engines and Dragon capsules are built; a few minutes from LAX and El Segundo.",
+  "desc_zh": "SpaceX位于霍桑的火箭工厂和长期总部，猎鹰发动机和龙飞船在此制造，距LAX和埃尔塞贡多仅几分钟车程。",
+  "neighborhood": "Hawthorne (near El Segundo)",
+  "neighborhood_zh": "霍桑（近埃尔塞贡多）",
+  "address": "1 Rocket Rd, Hawthorne, CA 90250",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:The_SpaceX_Factory.jpg",
+    "author": "Steve Jurvetson",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Falcon_9_booster_B1019_and_SpaceX_HQ_(35943121656).jpg",
+    "author": "Juan Kulichevsky from Argentina",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Falcon_9_booster_B1019_(35943121786).jpg",
+    "author": "Juan Kulichevsky from Argentina",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "United States Capitol",
+  "cat": "landmark",
+  "icon": "statue",
+  "lat": 38.88981,
+  "lng": -77.00902,
+  "slug": "dc-us-capitol",
+  "images": [
+   "assets/poi/dc-us-capitol-1.jpg",
+   "assets/poi/dc-us-capitol-2.jpg",
+   "assets/poi/dc-us-capitol-3.jpg"
+  ],
+  "desc": "Seat of Congress atop Capitol Hill; free guided tours start at the underground Visitor Center, and the surrounding rowhouse blocks are popular rentals.",
+  "desc_zh": "美国国会所在地，免费导览从地下游客中心出发；周边联排别墅街区是热门租房区域。",
+  "neighborhood": "Capitol Hill",
+  "neighborhood_zh": "国会山",
+  "address": "First St SE, Washington, DC 20004",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Capitol_Washington_October_2016-3.jpg",
+    "author": "Alvesgaspar",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:12-07-13-washington-by-RalfR-10.jpg",
+    "author": "Ralf Roletschek",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:United_States_Capital_West_Front_Side_View.jpg",
+    "author": "Bearmann2005",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "Lincoln Memorial",
+  "cat": "landmark",
+  "icon": "statue",
+  "lat": 38.88926,
+  "lng": -77.05021,
+  "slug": "dc-lincoln-memorial",
+  "images": [
+   "assets/poi/dc-lincoln-memorial-1.jpg",
+   "assets/poi/dc-lincoln-memorial-2.jpg",
+   "assets/poi/dc-lincoln-memorial-3.jpg"
+  ],
+  "desc": "Neoclassical memorial at the west end of the National Mall overlooking the Reflecting Pool—beautiful at sunrise and open 24/7.",
+  "desc_zh": "位于国家广场西端的新古典主义纪念堂，俯瞰倒影池，全天开放，日出时尤其美。",
+  "neighborhood": "National Mall",
+  "neighborhood_zh": "国家广场",
+  "address": "2 Lincoln Memorial Cir NW, Washington, DC 20037",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Forest_Gump.jpg",
+    "author": "UnkieWei",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Capitol_Hill,_Washington,_DC,_USA_-_panoramio_(27).jpg",
+    "author": "Roman Eugeniusz",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Lincoln_Memorial_(2024).jpg",
+    "author": "AramilFeraxa",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "Washington Monument",
+  "cat": "landmark",
+  "icon": "tower",
+  "lat": 38.88948,
+  "lng": -77.03524,
+  "slug": "dc-washington-monument",
+  "images": [
+   "assets/poi/dc-washington-monument-1.jpg",
+   "assets/poi/dc-washington-monument-2.jpg",
+   "assets/poi/dc-washington-monument-3.jpg"
+  ],
+  "desc": "The 555-foot obelisk at the center of the Mall, with an elevator to an observation level; timed tickets are released online.",
+  "desc_zh": "国家广场中心高约169米的方尖碑，可乘电梯上观景层，需提前在网上预约限时门票。",
+  "neighborhood": "National Mall",
+  "neighborhood_zh": "国家广场",
+  "address": "2 15th St NW, Washington, DC 20024",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Obelisc_washington_DC.jpg",
+    "author": "Danilo Milhome",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:The_Washington_Monument_.jpg",
+    "author": "Juliaquinn12",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:National_Mall_-_Washington_Monument_(55256066551).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "The White House",
+  "cat": "landmark",
+  "icon": "statue",
+  "lat": 38.89764,
+  "lng": -77.03655,
+  "slug": "dc-white-house",
+  "images": [
+   "assets/poi/dc-white-house-1.jpg",
+   "assets/poi/dc-white-house-2.jpg",
+   "assets/poi/dc-white-house-3.jpg"
+  ],
+  "desc": "The President's home and office on Pennsylvania Avenue, best viewed from Lafayette Square to the north or the Ellipse to the south.",
+  "desc_zh": "位于宾夕法尼亚大道的总统官邸和办公地，北面的拉法叶广场和南面的椭圆草坪是最佳观赏位置。",
+  "neighborhood": "Downtown DC",
+  "neighborhood_zh": "华盛顿市中心",
+  "address": "1600 Pennsylvania Ave NW, Washington, DC 20500",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:The_White_House_June_2024.jpg",
+    "author": "DJTechYT",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:White_House_05.jpg",
+    "author": "Ad Meskens",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:WhiteHouseSouthFacadeHDR.jpg",
+    "author": "HiraV",
+    "license": "CC BY 3.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "Smithsonian National Museum of Natural History",
+  "cat": "landmark",
+  "icon": "museum",
+  "lat": 38.89124,
+  "lng": -77.02597,
+  "slug": "dc-smithsonian-nmnh",
+  "images": [
+   "assets/poi/dc-smithsonian-nmnh-1.jpg",
+   "assets/poi/dc-smithsonian-nmnh-2.jpg",
+   "assets/poi/dc-smithsonian-nmnh-3.jpg"
+  ],
+  "desc": "Free Smithsonian museum on the Mall famous for its rotunda elephant, dinosaur hall and the Hope Diamond.",
+  "desc_zh": "国家广场上的免费史密森尼博物馆，以圆厅大象、恐龙厅和“希望钻石”闻名。",
+  "neighborhood": "National Mall",
+  "neighborhood_zh": "国家广场",
+  "address": "10th St & Constitution Ave NW, Washington, DC 20560",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Washington,_Mus%C3%A9e_d%27Histoire_Natuelle_(30977150552).jpg",
+    "author": "Olivier Duquesne",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Natural_History_with_Dome_-_2026_(55256470365).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Diplodocus_skeleton_NMNH.jpg",
+    "author": "Ryan Schwark",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "Georgetown Waterfront Park",
+  "cat": "landmark",
+  "icon": "park",
+  "lat": 38.90273,
+  "lng": -77.06493,
+  "slug": "dc-georgetown-waterfront",
+  "images": [
+   "assets/poi/dc-georgetown-waterfront-1.jpg",
+   "assets/poi/dc-georgetown-waterfront-2.jpg",
+   "assets/poi/dc-georgetown-waterfront-3.jpg"
+  ],
+  "desc": "Riverside park along the Potomac with fountains, lawns and kayak rentals, next to the restaurants of Washington Harbour.",
+  "desc_zh": "沿波托马克河的滨水公园，有喷泉、草坪和皮划艇租赁，紧邻华盛顿港的餐厅区。",
+  "neighborhood": "Georgetown",
+  "neighborhood_zh": "乔治城",
+  "address": "3303 Water St NW, Washington, DC 20007",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Washington_Harbour.JPG",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:USA-Georgetown_Waterfront_Harbor.jpg",
+    "author": "Ingfbruno",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Key_Bridge_Georgetown_waterfront_Washington_DC_2023-10-28_07-53-55.jpg",
+    "author": "G. Edward Johnson",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "Washington Union Station",
+  "cat": "landmark",
+  "icon": "train",
+  "lat": 38.89837,
+  "lng": -77.00586,
+  "slug": "dc-union-station",
+  "images": [
+   "assets/poi/dc-union-station-1.jpg",
+   "assets/poi/dc-union-station-2.jpg",
+   "assets/poi/dc-union-station-3.jpg"
+  ],
+  "desc": "Beaux-Arts rail hub for Amtrak, MARC, VRE and the Metro Red Line, steps from the Capitol and the NoMa apartment district.",
+  "desc_zh": "布杂艺术风格的交通枢纽，汇集美铁、MARC、VRE通勤铁路和地铁红线，步行可达国会和NoMa公寓区。",
+  "neighborhood": "Capitol Hill / NoMa",
+  "neighborhood_zh": "国会山 / NoMa",
+  "address": "50 Massachusetts Ave NE, Washington, DC 20002",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Columbus_Circle_Washington_DC_2026-07-23_14-46-05_1.jpg",
+    "author": "G. Edward Johnson",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Front_of_Union_Station_Washington_DC_2026-07-23_14-47-31.jpg",
+    "author": "G. Edward Johnson",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Columbus_Circle_renovation_Union_Station_Washington_DC_2026-03-18_10-58-28.jpg",
+    "author": "G. Edward Johnson",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "The Wharf",
+  "cat": "landmark",
+  "icon": "square",
+  "lat": 38.87916,
+  "lng": -77.02634,
+  "slug": "dc-the-wharf",
+  "images": [
+   "assets/poi/dc-the-wharf-1.jpg",
+   "assets/poi/dc-the-wharf-2.jpg",
+   "assets/poi/dc-the-wharf-3.jpg"
+  ],
+  "desc": "Mile-long waterfront district on the Washington Channel with restaurants, music venues, piers and new apartments.",
+  "desc_zh": "沿华盛顿海峡约一英里长的滨水街区，餐厅、音乐场馆、码头和新建公寓林立。",
+  "neighborhood": "Southwest Waterfront",
+  "neighborhood_zh": "西南滨水区",
+  "address": "760 Maine Ave SW, Washington, DC 20024",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Wharf_Marina.jpg",
+    "author": "Sdkb",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:The_Wharf_2019.jpg",
+    "author": "Antony-22",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Wharf_fire_pit_in_January_2019.jpg",
+    "author": "Sdkb",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "Library of Congress",
+  "cat": "landmark",
+  "icon": "museum",
+  "lat": 38.88867,
+  "lng": -77.00464,
+  "slug": "dc-library-of-congress",
+  "images": [
+   "assets/poi/dc-library-of-congress-1.jpg",
+   "assets/poi/dc-library-of-congress-2.jpg",
+   "assets/poi/dc-library-of-congress-3.jpg"
+  ],
+  "desc": "The ornate Thomas Jefferson Building, the world's largest library, with its domed Main Reading Room; free to visit.",
+  "desc_zh": "华丽的托马斯·杰斐逊大楼是全球最大图书馆的主馆，圆顶主阅览室闻名，免费参观。",
+  "neighborhood": "Capitol Hill",
+  "neighborhood_zh": "国会山",
+  "address": "10 First St SE, Washington, DC 20540",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Library_of_Congress,_Washington2.jpg",
+    "author": "dconvertini",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Library_of_Congress_(98066p).jpg",
+    "author": "Rhododendrites",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Library_of_Congress,_Washington3.jpg",
+    "author": "dconvertini",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "Nationals Park",
+  "cat": "landmark",
+  "icon": "venue",
+  "lat": 38.87273,
+  "lng": -77.00748,
+  "slug": "dc-nationals-park",
+  "images": [
+   "assets/poi/dc-nationals-park-1.jpg",
+   "assets/poi/dc-nationals-park-2.jpg",
+   "assets/poi/dc-nationals-park-3.jpg"
+  ],
+  "desc": "Home of the Washington Nationals on the Anacostia riverfront, the centerpiece of the fast-growing Navy Yard neighborhood.",
+  "desc_zh": "华盛顿国民队主场，位于阿纳科斯蒂亚河畔，是快速发展的海军船坞街区的核心。",
+  "neighborhood": "Navy Yard",
+  "neighborhood_zh": "海军船坞",
+  "address": "1500 S Capitol St SE, Washington, DC 20003",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Nationals_Park_Baseball_Stadium_in_Washington_D.C..jpg",
+    "author": "Tony Webster",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Army_Day_with_the_Washington_Nationals_at_Nationals_Park,_Washington,_June_15,_2026_-_10.jpg",
+    "author": "3d U.S. Infantry Regiment (The Old Guard)",
+    "license": "Public domain"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Baltimore_Orioles_vs._Washington_Nationals_at_Nationals_Park,_August_8,_2020_(All-Pro_Reels_Photography)_(50203365122).jpg",
+    "author": "All-Pro Reels from District of Columbia, USA",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "Amazon HQ2 (Metropolitan Park)",
+  "cat": "company",
+  "icon": "tech",
+  "lat": 38.86141,
+  "lng": -77.05552,
+  "slug": "dc-amazon-hq2",
+  "images": [
+   "assets/poi/dc-amazon-hq2-1.jpg",
+   "assets/poi/dc-amazon-hq2-2.jpg",
+   "assets/poi/dc-amazon-hq2-3.jpg"
+  ],
+  "desc": "Amazon's second headquarters at Metropolitan Park in National Landing: two office towers plus a public park and retail, near Pentagon City Metro.",
+  "desc_zh": "亚马逊第二总部，位于国家登陆区的大都会公园，包括两栋办公楼、公共公园和商铺，靠近五角大楼城地铁站。",
+  "neighborhood": "National Landing (Crystal City)",
+  "neighborhood_zh": "国家登陆区（水晶城）",
+  "address": "525 14th St S, Arlington, VA 22202",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Amazon_HQ2_Phase_1_from_Metropolitan_Park.jpg",
+    "author": "Aapehill",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:525_14th_Street_South_-_Amazon_HQ2_-_Metropolitan_Park_-_Arlington_(53816680558).jpg",
+    "author": "Tony Webster",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Metropolitan_Park_-_3.jpg",
+    "author": "APK",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "World Bank Group",
+  "cat": "company",
+  "icon": "finance",
+  "lat": 38.89884,
+  "lng": -77.04257,
+  "slug": "dc-world-bank",
+  "images": [
+   "assets/poi/dc-world-bank-1.jpg",
+   "assets/poi/dc-world-bank-2.jpg",
+   "assets/poi/dc-world-bank-3.jpg"
+  ],
+  "desc": "Headquarters of the World Bank Group, the international development lender, a large employer of economists and analysts two blocks from the White House.",
+  "desc_zh": "国际发展贷款机构世界银行集团的总部，大量雇用经济学家和分析师，距白宫仅两个街区。",
+  "neighborhood": "Foggy Bottom",
+  "neighborhood_zh": "雾谷",
+  "address": "1818 H St NW, Washington, DC 20433",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:The_World_Bank_Group_(53844804648).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:World_Bank_building.JPG",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:World_Bank_building_at_Washington.jpg",
+    "author": "Shiny Things",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "International Monetary Fund",
+  "cat": "company",
+  "icon": "finance",
+  "lat": 38.89894,
+  "lng": -77.04421,
+  "slug": "dc-imf",
+  "images": [
+   "assets/poi/dc-imf-1.jpg",
+   "assets/poi/dc-imf-2.jpg",
+   "assets/poi/dc-imf-3.jpg"
+  ],
+  "desc": "Headquarters of the International Monetary Fund, which oversees global monetary cooperation; its HQ1 and HQ2 buildings face each other on 19th St.",
+  "desc_zh": "负责全球货币合作的国际货币基金组织总部，HQ1与HQ2两栋大楼在19街相对而立。",
+  "neighborhood": "Foggy Bottom",
+  "neighborhood_zh": "雾谷",
+  "address": "700 19th St NW, Washington, DC 20431",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:International_Monetary_Fund_(IMF)_Building_-_700_19th_St_NW_-_Washington_D.C..jpg",
+    "author": "Tony Webster",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:IMF_building_HR.jpg",
+    "author": "International Monetary Fund",
+    "license": "Public domain"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:International_Monetary_Fund_headquarters.jpg",
+    "author": "APK",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "The Washington Post",
+  "cat": "company",
+  "icon": "media",
+  "lat": 38.90288,
+  "lng": -77.03052,
+  "slug": "dc-washington-post",
+  "images": [
+   "assets/poi/dc-washington-post-1.jpg",
+   "assets/poi/dc-washington-post-2.jpg",
+   "assets/poi/dc-washington-post-3.jpg"
+  ],
+  "desc": "The Washington Post's newsroom and offices at One Franklin Square on K Street, overlooking Franklin Park.",
+  "desc_zh": "《华盛顿邮报》位于K街富兰克林广场一号的编辑部和办公室，俯瞰富兰克林公园。",
+  "neighborhood": "K Street / Downtown DC",
+  "neighborhood_zh": "K街 / 华盛顿市中心",
+  "address": "1301 K St NW, Washington, DC 20071",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:One_Franklin_Square_-_November_2023.jpg",
+    "author": "APK",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Franklin_Park_%26_One_Franklin_Square_-_Washington,_D.C..jpg",
+    "author": "APK is not a Womanizer",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:New_headquarters_building_of_The_Washington_Post.jpg",
+    "author": "Ser Amantio di Nicolao",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "NPR Headquarters",
+  "cat": "company",
+  "icon": "media",
+  "lat": 38.9043,
+  "lng": -77.0084,
+  "slug": "dc-npr",
+  "images": [
+   "assets/poi/dc-npr-1.jpg",
+   "assets/poi/dc-npr-2.jpg",
+   "assets/poi/dc-npr-3.jpg"
+  ],
+  "desc": "National Public Radio's headquarters and broadcast studios in NoMa, a short walk from Union Station.",
+  "desc_zh": "美国国家公共广播电台（NPR）总部及播音室，位于NoMa，步行可达联合车站。",
+  "neighborhood": "NoMa",
+  "neighborhood_zh": "NoMa（纽约大道北）",
+  "address": "1111 North Capitol St NE, Washington, DC 20002",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:National_Public_Radio_(NPR)_(55265817092).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:North_capitol_%26_L_street_NE.jpg",
+    "author": "Cornellrockey04",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:NPR_building_Washington_DC_March_2013.jpg",
+    "author": "Tedder",
+    "license": "CC BY 3.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Willis Tower",
+  "cat": "landmark",
+  "icon": "tower",
+  "lat": 41.87874,
+  "lng": -87.63596,
+  "slug": "chi-willis-tower",
+  "images": [
+   "assets/poi/chi-willis-tower-1.jpg",
+   "assets/poi/chi-willis-tower-2.jpg",
+   "assets/poi/chi-willis-tower-3.jpg"
+  ],
+  "desc": "Chicago's tallest building, with the glass-floored Skydeck ledges on the 103rd floor and United Airlines' HQ inside.",
+  "desc_zh": "芝加哥最高建筑，103层有玻璃地板的Skydeck观景台，美国联合航空总部也在楼内。",
+  "neighborhood": "The Loop",
+  "neighborhood_zh": "卢普区",
+  "address": "233 S Wacker Dr, Chicago, IL 60606",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Blue_Water_and_Chicago_skyline,_November_2020.jpg",
+    "author": "Joseph Gage",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_(24045769482).jpg",
+    "author": "erikccooper",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Sun_in_skyscraper_windows_(Unsplash).jpg",
+    "author": "Jack Young jackyoung",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Navy Pier",
+  "cat": "landmark",
+  "icon": "venue",
+  "lat": 41.8918,
+  "lng": -87.60414,
+  "slug": "chi-navy-pier",
+  "images": [
+   "assets/poi/chi-navy-pier-1.jpg",
+   "assets/poi/chi-navy-pier-2.jpg",
+   "assets/poi/chi-navy-pier-3.jpg"
+  ],
+  "desc": "Lakefront pier with the Centennial Wheel, boat tours and summer fireworks, at the edge of Streeterville.",
+  "desc_zh": "湖滨码头，有百年摩天轮、游船和夏季烟花，位于斯特里特维尔街区边缘。",
+  "neighborhood": "Streeterville",
+  "neighborhood_zh": "斯特里特维尔",
+  "address": "600 E Grand Ave, Chicago, IL 60611",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Navy_Pier_in_Chicago_from_Park_Drive.jpeg",
+    "author": "Dough4872",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Navy_Pier_from_360_Chicago_Observation_Deck_(49687064233).jpg",
+    "author": "Matt Kieffer from London, United Kingdom",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_(28468889681).jpg",
+    "author": "Roman Boed from The Netherlands",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Wrigley Field",
+  "cat": "landmark",
+  "icon": "venue",
+  "lat": 41.94818,
+  "lng": -87.65556,
+  "slug": "chi-wrigley-field",
+  "images": [
+   "assets/poi/chi-wrigley-field-1.jpg",
+   "assets/poi/chi-wrigley-field-2.jpg",
+   "assets/poi/chi-wrigley-field-3.jpg"
+  ],
+  "desc": "The Cubs' ivy-walled ballpark from 1914, surrounded by Wrigleyville's bars and rooftop seats; the Red Line stops at Addison.",
+  "desc_zh": "建于1914年、外野爬满常春藤的小熊队主场，周边是瑞格利村的酒吧和屋顶看台，红线地铁Addison站直达。",
+  "neighborhood": "Wrigleyville (Lakeview)",
+  "neighborhood_zh": "瑞格利村（湖景区）",
+  "address": "1060 W Addison St, Chicago, IL 60613",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Backside_of_Wrigley_Field_centerfield_scoreboard_ahead_of_Cincinnati_Reds_at_Chicago_Cubs_game_on_September_28,_2024_(54288655959).jpg",
+    "author": "Nairn McWilliams",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Wrigley_Field_S.jpg",
+    "author": "Sea Cow",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:20170915_27_Wrigley_Field_(48932988561).jpg",
+    "author": "David Wilson from Oak Park, Illinois, USA",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Art Institute of Chicago",
+  "cat": "landmark",
+  "icon": "museum",
+  "lat": 41.8796,
+  "lng": -87.62307,
+  "slug": "chi-art-institute",
+  "images": [
+   "assets/poi/chi-art-institute-1.jpg",
+   "assets/poi/chi-art-institute-2.jpg",
+   "assets/poi/chi-art-institute-3.jpg"
+  ],
+  "desc": "One of the top art museums in the US, guarded by bronze lions on Michigan Avenue; Illinois students get discounted admission.",
+  "desc_zh": "全美顶级艺术博物馆之一，密歇根大道门口有两座铜狮守护，伊利诺伊州学生可享门票优惠。",
+  "neighborhood": "The Loop",
+  "neighborhood_zh": "卢普区",
+  "address": "111 S Michigan Ave, Chicago, IL 60603",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Art_Institute_of_Chicago_Building,_Chicago,_Illinois_(11004251406).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:2014_Chicago_Art_Institute_02.jpg",
+    "author": "Nicholas Hartmann",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Art_Institute_of_Chicago_(49692750156).jpg",
+    "author": "Raed Mansour from Chicago, USA",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Millennium Park",
+  "cat": "landmark",
+  "icon": "park",
+  "lat": 41.88353,
+  "lng": -87.62189,
+  "slug": "chi-millennium-park",
+  "images": [
+   "assets/poi/chi-millennium-park-1.jpg",
+   "assets/poi/chi-millennium-park-2.jpg",
+   "assets/poi/chi-millennium-park-3.jpg"
+  ],
+  "desc": "Downtown's front yard, with Frank Gehry's Pritzker Pavilion hosting free summer concerts, plus Cloud Gate and Crown Fountain.",
+  "desc_zh": "市中心的“前院”，弗兰克·盖里设计的普利兹克音乐亭夏季有免费音乐会，还有云门和皇冠喷泉。",
+  "neighborhood": "The Loop",
+  "neighborhood_zh": "卢普区",
+  "address": "201 E Randolph St, Chicago, IL 60602",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:DSC2296_(27373805626).jpg",
+    "author": "Boris Kasimov from Toronto, Canada",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Grant_Park_%26_Chicago_Skyline_(51575572775).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_2019-03-07_(27)_(47270259772).jpg",
+    "author": "Carlos Felipe Pardo from Washington, United States",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Chicago Riverwalk",
+  "cat": "landmark",
+  "icon": "bridge",
+  "lat": 41.88723,
+  "lng": -87.62723,
+  "slug": "chi-riverwalk",
+  "images": [
+   "assets/poi/chi-riverwalk-1.jpg",
+   "assets/poi/chi-riverwalk-2.jpg",
+   "assets/poi/chi-riverwalk-3.jpg"
+  ],
+  "desc": "A walkway along the main branch of the Chicago River lined with cafés, kayak rentals and architecture boat tour docks.",
+  "desc_zh": "沿芝加哥河主干道的步道，咖啡馆、皮划艇租赁和建筑游船码头沿岸分布。",
+  "neighborhood": "The Loop",
+  "neighborhood_zh": "卢普区",
+  "address": "E Riverwalk S (Wacker Dr & State St), Chicago, IL 60601",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_Waterfront_(35071790643).jpg",
+    "author": "Mack Male from Edmonton, AB, Canada",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_(35976878990).jpg",
+    "author": "Cole Camplese from Hinsdale, USA",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Filming_of_Chicago_Fire_by_the_Chicago_River.jpg",
+    "author": "James Larrison",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Lincoln Park Zoo",
+  "cat": "landmark",
+  "icon": "park",
+  "lat": 41.92126,
+  "lng": -87.63377,
+  "slug": "chi-lincoln-park-zoo",
+  "images": [
+   "assets/poi/chi-lincoln-park-zoo-1.jpg",
+   "assets/poi/chi-lincoln-park-zoo-2.jpg",
+   "assets/poi/chi-lincoln-park-zoo-3.jpg"
+  ],
+  "desc": "One of the oldest zoos in the country and still free, set in lakefront Lincoln Park near popular rental blocks.",
+  "desc_zh": "全美历史最悠久的动物园之一，至今免费开放，位于湖畔林肯公园，周边是热门租房街区。",
+  "neighborhood": "Lincoln Park",
+  "neighborhood_zh": "林肯公园",
+  "address": "2001 N Clark St, Chicago, IL 60614",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Lincoln_Park_Zoo_Zebras.jpg",
+    "author": "Fabian.aichwald",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_(22591243404).jpg",
+    "author": "erikccooper",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Lincoln_Park_Zoo_Bubble_Pavillion.jpg",
+    "author": "Sea Cow",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Buckingham Fountain",
+  "cat": "landmark",
+  "icon": "statue",
+  "lat": 41.8758,
+  "lng": -87.61897,
+  "slug": "chi-buckingham-fountain",
+  "images": [
+   "assets/poi/chi-buckingham-fountain-1.jpg",
+   "assets/poi/chi-buckingham-fountain-2.jpg",
+   "assets/poi/chi-buckingham-fountain-3.jpg"
+  ],
+  "desc": "Grant Park's grand 1927 fountain, with hourly water shows from spring to fall and views of the Loop skyline.",
+  "desc_zh": "格兰特公园内建于1927年的大型喷泉，春季至秋季每小时有水景表演，可远眺卢普区天际线。",
+  "neighborhood": "Grant Park",
+  "neighborhood_zh": "格兰特公园",
+  "address": "301 S Columbus Dr, Chicago, IL 60605",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Buckingham_Fountain_36905627032.jpg",
+    "author": "chasepeeler",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Buckingham_Fountain_21453509498.jpg",
+    "author": "Alan Light",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago,_Illinois,_U.S._(2023)_-_518.jpg",
+    "author": "Another Believer",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Chicago Union Station",
+  "cat": "landmark",
+  "icon": "train",
+  "lat": 41.8787,
+  "lng": -87.64041,
+  "slug": "chi-union-station",
+  "images": [
+   "assets/poi/chi-union-station-1.jpg",
+   "assets/poi/chi-union-station-2.jpg",
+   "assets/poi/chi-union-station-3.jpg"
+  ],
+  "desc": "Chicago's main intercity rail station for Amtrak and Metra, famous for its Great Hall, on the river in the West Loop.",
+  "desc_zh": "芝加哥美铁和Metra通勤铁路的主要车站，以宏伟的大厅闻名，坐落在西卢普河畔。",
+  "neighborhood": "West Loop",
+  "neighborhood_zh": "西卢普",
+  "address": "225 S Canal St, Chicago, IL 60606",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Vista_desde_la_esquina_de_la_estaci%C3%B3n_Union_Station.jpg",
+    "author": "Joan Deutscharq",
+    "license": "CC0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_Union_Station_exterior,_July_2019.jpg",
+    "author": "Cards84664",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:ChicagoUnionStationAdamsStreetEntrance.jpg",
+    "author": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine",
+    "license": "CC0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "CME Group (Chicago Mercantile Exchange Center)",
+  "cat": "company",
+  "icon": "finance",
+  "lat": 41.88126,
+  "lng": -87.63753,
+  "slug": "chi-cme-group",
+  "images": [
+   "assets/poi/chi-cme-group-1.jpg",
+   "assets/poi/chi-cme-group-2.jpg",
+   "assets/poi/chi-cme-group-3.jpg"
+  ],
+  "desc": "Headquarters of CME Group, the world's largest derivatives exchange operator, in twin towers on Wacker Drive along the river.",
+  "desc_zh": "全球最大衍生品交易所运营商芝商所（CME集团）总部，位于瓦克大道河畔的双子塔。",
+  "neighborhood": "The Loop (West Loop edge)",
+  "neighborhood_zh": "卢普区（西卢普边缘）",
+  "address": "20 S Wacker Dr, Chicago, IL 60606",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_(ILL)_downtown,_S.Wacker_Dr._(4826255550).jpg",
+    "author": "(vincent desjardins) from Paris, France",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:200_South_Wacker_Drive_from_Willis_Tower,_Chicago,_Illinois_(9179392553).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_architecture_tour_-_bridges_opening_up_(46963767595).jpg",
+    "author": "Bex Walton from London, England",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Kraft Heinz (Aon Center)",
+  "cat": "company",
+  "icon": "consumer",
+  "lat": 41.88529,
+  "lng": -87.62155,
+  "slug": "chi-kraft-heinz",
+  "images": [
+   "assets/poi/chi-kraft-heinz-1.jpg",
+   "assets/poi/chi-kraft-heinz-2.jpg",
+   "assets/poi/chi-kraft-heinz-3.jpg"
+  ],
+  "desc": "The Aon Center, Chicago's third-tallest tower, houses the Chicago co-headquarters of food giant Kraft Heinz.",
+  "desc_zh": "芝加哥第三高楼怡安中心，食品巨头卡夫亨氏的芝加哥联合总部设在这里。",
+  "neighborhood": "The Loop (Lakeshore East)",
+  "neighborhood_zh": "卢普区（东湖岸）",
+  "address": "200 E Randolph St, Chicago, IL 60601",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Aon_Center,_Chicago,_Illinois,_US_(PPL3-Altered)_julesvernex2.jpg",
+    "author": "Jules Verne Times Two",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Ame05025_10.jpg",
+    "author": "Gorup de Besanez",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Aon_Center,_Chicago,_Illinois_(42514222645).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Cboe Global Markets (Old Post Office)",
+  "cat": "company",
+  "icon": "finance",
+  "lat": 41.87599,
+  "lng": -87.63876,
+  "slug": "chi-cboe",
+  "images": [
+   "assets/poi/chi-cboe-1.jpg",
+   "assets/poi/chi-cboe-2.jpg",
+   "assets/poi/chi-cboe-3.jpg"
+  ],
+  "desc": "The restored Old Post Office straddling the Eisenhower Expressway is now headquarters to exchange operator Cboe, alongside Walgreens and Uber offices.",
+  "desc_zh": "横跨艾森豪威尔高速公路的老邮政总局经翻修后，成为交易所运营商Cboe的总部，沃尔格林和Uber也在此办公。",
+  "neighborhood": "West Loop",
+  "neighborhood_zh": "西卢普",
+  "address": "433 W Van Buren St, Chicago, IL 60607",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Old_Post_Office_Chicago_2022.jpg",
+    "author": "Sea Cow",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago,_June_2015_-_180.jpg",
+    "author": "Another Believer",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago-20240927-094_(54286466171).jpg",
+    "author": "Nairn McWilliams",
+    "license": "CC BY-SA 2.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Independence Hall",
+  "cat": "landmark",
+  "icon": "statue",
+  "lat": 39.94889,
+  "lng": -75.15003,
+  "slug": "phl-independence-hall",
+  "images": [
+   "assets/poi/phl-independence-hall-1.jpg",
+   "assets/poi/phl-independence-hall-2.jpg",
+   "assets/poi/phl-independence-hall-3.jpg"
+  ],
+  "desc": "Where the Declaration of Independence and the Constitution were debated and signed; free timed tours from the Independence Visitor Center.",
+  "desc_zh": "《独立宣言》和《美国宪法》的辩论与签署地，可在独立游客中心领取免费限时导览票。",
+  "neighborhood": "Old City (Independence Mall)",
+  "neighborhood_zh": "老城区（独立广场）",
+  "address": "520 Chestnut St, Philadelphia, PA 19106",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Exterior_of_the_Independence_Hall,_Aug_2019.jpg",
+    "author": "Mys 721tx",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:2019.04.27-Independance_Hall_Philadelphia_Reference_no_66000683.jpg",
+    "author": "Lyla0724",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Independence_Hall_(55259521048).jpg",
+    "author": "Gage Skidmore from Surprise, AZ, United States of America",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Liberty Bell",
+  "cat": "landmark",
+  "icon": "statue",
+  "lat": 39.94995,
+  "lng": -75.15021,
+  "slug": "phl-liberty-bell",
+  "images": [
+   "assets/poi/phl-liberty-bell-1.jpg",
+   "assets/poi/phl-liberty-bell-2.jpg",
+   "assets/poi/phl-liberty-bell-3.jpg"
+  ],
+  "desc": "The cracked bell, an icon of American liberty, displayed for free in a glass pavilion facing Independence Hall.",
+  "desc_zh": "带裂痕的自由钟是美国自由的象征，免费陈列在正对独立厅的玻璃展馆中。",
+  "neighborhood": "Old City (Independence Mall)",
+  "neighborhood_zh": "老城区（独立广场）",
+  "address": "526 Market St, Philadelphia, PA 19106",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Liberty_Bell_(55259781330).jpg",
+    "author": "Gage Skidmore from Surprise, AZ, United States of America",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Liberty_Bell_(55259613199).jpg",
+    "author": "Gage Skidmore from Surprise, AZ, United States of America",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Liberty_Bell_(55259613094).jpg",
+    "author": "Gage Skidmore from Surprise, AZ, United States of America",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Philadelphia Museum of Art (Rocky Steps)",
+  "cat": "landmark",
+  "icon": "museum",
+  "lat": 39.96557,
+  "lng": -75.18152,
+  "slug": "phl-museum-of-art",
+  "images": [
+   "assets/poi/phl-museum-of-art-1.jpg",
+   "assets/poi/phl-museum-of-art-2.jpg",
+   "assets/poi/phl-museum-of-art-3.jpg"
+  ],
+  "desc": "Major art museum atop the steps Rocky ran up, at the end of the Benjamin Franklin Parkway beside the Schuylkill River.",
+  "desc_zh": "坐落在《洛奇》主角奔上的台阶顶端的大型艺术博物馆，位于富兰克林大道尽头、斯库基尔河畔。",
+  "neighborhood": "Fairmount / Art Museum",
+  "neighborhood_zh": "费尔芒特 / 艺术博物馆区",
+  "address": "2600 Benjamin Franklin Pkwy, Philadelphia, PA 19130",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Philadelphia_Museum_of_Art_(55259611529).jpg",
+    "author": "Gage Skidmore from Surprise, AZ, United States of America",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Philadelphia_Museum_of_Art_(55258481707).jpg",
+    "author": "Gage Skidmore from Surprise, AZ, United States of America",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Philadelphia_Museum_of_Art_(55259378176).jpg",
+    "author": "Gage Skidmore from Surprise, AZ, United States of America",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Reading Terminal Market",
+  "cat": "landmark",
+  "icon": "square",
+  "lat": 39.95314,
+  "lng": -75.15905,
+  "slug": "phl-reading-terminal-market",
+  "images": [
+   "assets/poi/phl-reading-terminal-market-1.jpg",
+   "assets/poi/phl-reading-terminal-market-2.jpg",
+   "assets/poi/phl-reading-terminal-market-3.jpg"
+  ],
+  "desc": "A historic indoor food market from 1893 with dozens of vendors—cheesesteaks, Amish baked goods and fresh produce—beside the Convention Center.",
+  "desc_zh": "始于1893年的室内美食市场，数十家摊位售卖芝士牛肉三明治、阿米什烘焙和新鲜农产品，紧邻会展中心。",
+  "neighborhood": "Market East",
+  "neighborhood_zh": "东市场街",
+  "address": "1136 Arch St, Philadelphia, PA 19107",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Reading_Terminal_Market_entrance_on_12th_Street_north_of_Filbert_Street.jpeg",
+    "author": "Dough4872",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Reading_Terminal_Market_-_Sign_(53586791708).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:150th_Anniversary_of_U_S_Department_of_Agriculture-Historical_imagery_(20120106-OC-AMW-0586).jpg",
+    "author": "USDAgov",
+    "license": "Public domain"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Philadelphia City Hall",
+  "cat": "landmark",
+  "icon": "tower",
+  "lat": 39.9524,
+  "lng": -75.16299,
+  "slug": "phl-city-hall",
+  "images": [
+   "assets/poi/phl-city-hall-1.jpg",
+   "assets/poi/phl-city-hall-2.jpg",
+   "assets/poi/phl-city-hall-3.jpg"
+  ],
+  "desc": "The largest municipal building in the US, topped by a William Penn statue; its tower observation deck is open to visitors.",
+  "desc_zh": "全美最大的市政建筑，塔顶矗立威廉·佩恩雕像，塔楼观景台对游客开放。",
+  "neighborhood": "Center City",
+  "neighborhood_zh": "中城",
+  "address": "1400 John F Kennedy Blvd, Philadelphia, PA 19107",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:City_Hall_and_Masonic_Temple,_Philadelphia.jpg",
+    "author": "Peetlesnumber1",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:City_Hall_Tower_0007.jpg",
+    "author": "Foolish Productions Photography",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:City_Hall_from_North_Broad_Street_0002.jpg",
+    "author": "Foolish Productions Photography",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Rittenhouse Square",
+  "cat": "landmark",
+  "icon": "park",
+  "lat": 39.94947,
+  "lng": -75.17189,
+  "slug": "phl-rittenhouse-square",
+  "images": [
+   "assets/poi/phl-rittenhouse-square-1.jpg",
+   "assets/poi/phl-rittenhouse-square-2.jpg",
+   "assets/poi/phl-rittenhouse-square-3.jpg"
+  ],
+  "desc": "Leafy square at the heart of Center City's most sought-after neighborhood, ringed by cafés, shops and high-rise apartments.",
+  "desc_zh": "中城最抢手街区中心的绿荫广场，周围环绕咖啡馆、商店和高层公寓。",
+  "neighborhood": "Rittenhouse",
+  "neighborhood_zh": "里滕豪斯",
+  "address": "W Rittenhouse Sq & Walnut St, Philadelphia, PA 19103",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rittenhouse_Square_-_Lion_with_a_Snake_(53585709357).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rittenhouse_Square_looking_northwest_from_southeast_corner.jpeg",
+    "author": "Dough4872",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rittenhouse_Square_looking_north_from_South_Rittenhouse_Square.jpeg",
+    "author": "Dough4872",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Elfreth's Alley",
+  "cat": "landmark",
+  "icon": "square",
+  "lat": 39.95277,
+  "lng": -75.14238,
+  "slug": "phl-elfreths-alley",
+  "images": [
+   "assets/poi/phl-elfreths-alley-1.jpg",
+   "assets/poi/phl-elfreths-alley-2.jpg",
+   "assets/poi/phl-elfreths-alley-3.jpg"
+  ],
+  "desc": "Often called the oldest continuously inhabited residential street in the US, a cobbled lane of 18th-century rowhouses in Old City.",
+  "desc_zh": "被誉为美国历史最悠久且一直有人居住的街道，老城区内铺满鹅卵石、两旁是18世纪联排房屋。",
+  "neighborhood": "Old City",
+  "neighborhood_zh": "老城区",
+  "address": "Elfreth's Alley, Philadelphia, PA 19106",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Elfreth%27s_Alley-2023_03.jpg",
+    "author": "Alberto-g-rovi",
+    "license": "CC BY 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Elfreth%27s_Alley_-_Facade_(53572702213).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Elfreth%27s_Alley,_Philadelphia.jpg",
+    "author": "Céline Harrand",
+    "license": "Public domain"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Boathouse Row",
+  "cat": "landmark",
+  "icon": "bridge",
+  "lat": 39.96941,
+  "lng": -75.18711,
+  "slug": "phl-boathouse-row",
+  "images": [
+   "assets/poi/phl-boathouse-row-1.jpg",
+   "assets/poi/phl-boathouse-row-2.jpg",
+   "assets/poi/phl-boathouse-row-3.jpg"
+  ],
+  "desc": "Historic rowing clubhouses on the Schuylkill River, outlined in lights at night; a popular jogging and biking stretch.",
+  "desc_zh": "斯库基尔河畔的历史赛艇俱乐部建筑群，夜晚轮廓灯亮起，是慢跑和骑行的热门路线。",
+  "neighborhood": "Fairmount Park",
+  "neighborhood_zh": "费尔芒特公园",
+  "address": "1 Boathouse Row, Philadelphia, PA 19130",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Boathouse_Row_(DSC03844).jpg",
+    "author": "Polibil",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Behind_Philly%27s_art_museum_(6685417909).jpg",
+    "author": "joiseyshowaa from Freehold, NJ, USA",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Boathouse_Row_-_panoramio.jpg",
+    "author": "michaelwm25",
+    "license": "CC BY 3.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "30th Street Station",
+  "cat": "landmark",
+  "icon": "train",
+  "lat": 39.95528,
+  "lng": -75.18214,
+  "slug": "phl-30th-street-station",
+  "images": [
+   "assets/poi/phl-30th-street-station-1.jpg",
+   "assets/poi/phl-30th-street-station-2.jpg",
+   "assets/poi/phl-30th-street-station-3.jpg"
+  ],
+  "desc": "Philadelphia's main Amtrak and SEPTA Regional Rail hub, a 1930s landmark at the edge of University City.",
+  "desc_zh": "费城美铁和SEPTA区域铁路的主要枢纽，20世纪30年代的地标建筑，位于大学城边缘。",
+  "neighborhood": "University City",
+  "neighborhood_zh": "大学城",
+  "address": "2955 Market St, Philadelphia, PA 19104",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:The_west_entrance_of_the_30th_Street_Station_serving_Amtrak,_SEPTA,_and_NJ_Transit_trains_in_Philadelphia,_Pennsylvania,_viewed_from_John_F._Kennedy_Boulevard_01.jpg",
+    "author": "Harrison Keely",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:William_H._Gray_III_30th_Street_Station_(53585709922).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:30th_Street_Station_east_entrance_from_PA_3_WB_2.jpeg",
+    "author": "Dough4872",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "LOVE Park",
+  "cat": "landmark",
+  "icon": "park",
+  "lat": 39.95415,
+  "lng": -75.16574,
+  "slug": "phl-love-park",
+  "images": [
+   "assets/poi/phl-love-park-1.jpg",
+   "assets/poi/phl-love-park-2.jpg",
+   "assets/poi/phl-love-park-3.jpg"
+  ],
+  "desc": "JFK Plaza, home of Robert Indiana's LOVE sculpture, framed by City Hall and the Parkway; holiday markets set up nearby.",
+  "desc_zh": "肯尼迪广场，罗伯特·印第安纳的LOVE雕塑所在地，正对市政厅和富兰克林大道，节日期间周边有集市。",
+  "neighborhood": "Center City",
+  "neighborhood_zh": "中城",
+  "address": "1599 John F Kennedy Blvd, Philadelphia, PA 19102",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Escultura_Love-2023_01.jpg",
+    "author": "Alberto-g-rovi",
+    "license": "CC BY 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Love_sculpture_in_LOVE_Park_in_Philadelphia_looking_northwest.jpeg",
+    "author": "Dough4872",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Philadelphia_City_Hall_from_LOVE_Park.jpg",
+    "author": "AbhiramJuvvadi",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Comcast Center (Comcast HQ)",
+  "cat": "company",
+  "icon": "media",
+  "lat": 39.95472,
+  "lng": -75.1685,
+  "slug": "phl-comcast",
+  "images": [
+   "assets/poi/phl-comcast-1.jpg",
+   "assets/poi/phl-comcast-2.jpg",
+   "assets/poi/phl-comcast-3.jpg"
+  ],
+  "desc": "Comcast's global headquarters, a 58-story glass tower on JFK Boulevard with a public lobby and concourse dining.",
+  "desc_zh": "康卡斯特全球总部，肯尼迪大道上58层的玻璃大楼，设有对外开放的大堂和地下美食街。",
+  "neighborhood": "Market Street West",
+  "neighborhood_zh": "西市场街",
+  "address": "1701 John F Kennedy Blvd, Philadelphia, PA 19103",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Center_City_East,_Philadelphia,_PA,_USA_-_panoramio_(17).jpg",
+    "author": "Андрей Бобровский",
+    "license": "CC BY 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Comcast_Tower_Philadelphia.jpg",
+    "author": "Seth Goldstein",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Philadelphia_downtown.JPG",
+    "author": "Gccwang",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Comcast Technology Center",
+  "cat": "company",
+  "icon": "tech",
+  "lat": 39.95498,
+  "lng": -75.1704,
+  "slug": "phl-comcast-tech-center",
+  "images": [
+   "assets/poi/phl-comcast-tech-center-1.jpg",
+   "assets/poi/phl-comcast-tech-center-2.jpg",
+   "assets/poi/phl-comcast-tech-center-3.jpg"
+  ],
+  "desc": "Philadelphia's tallest building, home to Comcast's technology and media teams with a Four Seasons hotel on top.",
+  "desc_zh": "费城最高建筑，康卡斯特技术与媒体团队的办公地，顶层是四季酒店。",
+  "neighborhood": "Market Street West",
+  "neighborhood_zh": "西市场街",
+  "address": "1800 Arch St, Philadelphia, PA 19103",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:2025-08-04_13_09_54_The_southeast_entrance_of_the_Comcast_Technology_Center_in_Philadelphia,_Pennsylvania.jpg",
+    "author": "Famartin",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:View_of_Center_City.jpg",
+    "author": "dconvertini",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:CTC_Tower_April_2018.jpg",
+    "author": "StuntPilot22",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Children's Hospital of Philadelphia",
+  "cat": "company",
+  "icon": "health",
+  "lat": 39.9477,
+  "lng": -75.19498,
+  "slug": "phl-chop",
+  "images": [
+   "assets/poi/phl-chop-1.jpg",
+   "assets/poi/phl-chop-2.jpg",
+   "assets/poi/phl-chop-3.jpg"
+  ],
+  "desc": "Children's Hospital of Philadelphia, a leading pediatric hospital and research center on the University City medical campus.",
+  "desc_zh": "费城儿童医院，全美领先的儿科医院和研究中心，位于大学城医疗园区。",
+  "neighborhood": "University City",
+  "neighborhood_zh": "大学城",
+  "address": "3401 Civic Center Blvd, Philadelphia, PA 19104",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Children%27s_Hospital_of_Philadelphia.jpg",
+    "author": "Jeffrey M. Vinocur",
+    "license": "CC BY 2.5"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:PennMed%26CHOPQuadSpring2013.jpg",
+    "author": "Ajaxean",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Seashore-House.JPG",
+    "author": "Austin Murphy",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Cigna (Two Liberty Place)",
+  "cat": "company",
+  "icon": "health",
+  "lat": 39.9517,
+  "lng": -75.16745,
+  "slug": "phl-cigna",
+  "images": [
+   "assets/poi/phl-cigna-1.jpg",
+   "assets/poi/phl-cigna-2.jpg",
+   "assets/poi/phl-cigna-3.jpg"
+  ],
+  "desc": "Two Liberty Place, the 58-story Center City tower that has long housed health insurer Cigna's main Philadelphia offices.",
+  "desc_zh": "中城58层的二号自由广场大楼，长期是医疗保险公司信诺（Cigna）在费城的主要办公地。",
+  "neighborhood": "Center City (Market Street West)",
+  "neighborhood_zh": "中城（西市场街）",
+  "address": "1601 Chestnut St, Philadelphia, PA 19192",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Brookfield_Place_New_York_August_2017_003.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Skyline_in_Philadelphia_-_IMG_6643.JPG",
+    "author": "Daderot",
+    "license": "Public domain"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:2025-08-04_12_46_43_View_south-southeast_from_the_Jean-Georges_SkyHigh_Restaurant_at_Comcast_Technology_Center_in_Philadelphia,_Pennsylvania.jpg",
+    "author": "Famartin",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Capitol Records Building (Capitol Music Group)",
+  "cat": "company",
+  "icon": "media",
+  "lat": 34.10311,
+  "lng": -118.32635,
+  "slug": "la-capitol-records",
+  "images": [
+   "assets/poi/la-capitol-records-1.jpg",
+   "assets/poi/la-capitol-records-2.jpg",
+   "assets/poi/la-capitol-records-3.jpg"
+  ],
+  "desc": "The round tower near Hollywood & Vine houses Capitol Music Group, part of Universal Music Group, with its famous recording studios.",
+  "desc_zh": "好莱坞与藤街口附近的圆形大楼，是环球音乐集团旗下国会音乐集团的办公地，并拥有著名的录音室。",
+  "neighborhood": "Hollywood",
+  "neighborhood_zh": "好莱坞",
+  "address": "1750 N Vine St, Los Angeles, CA 90028",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Capitol_Records_Building_LA_-_panoramio.jpg",
+    "author": "Gfox228",
+    "license": "CC BY 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:%D0%9B%D0%BE%D1%81-%D0%90%D0%BD%D0%B4%D0%B6%D0%B5%D0%BB%D0%B5%D1%81_-_panoramio_(11).jpg",
+    "author": "Андрей Бобровский",
+    "license": "CC BY 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Hollywood_Boulevard_near_Vine.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Cedars-Sinai Medical Center",
+  "cat": "company",
+  "icon": "health",
+  "lat": 34.07516,
+  "lng": -118.38109,
+  "slug": "la-cedars-sinai",
+  "images": [
+   "assets/poi/la-cedars-sinai-1.jpg",
+   "assets/poi/la-cedars-sinai-2.jpg",
+   "assets/poi/la-cedars-sinai-3.jpg"
+  ],
+  "desc": "Major nonprofit academic medical center and one of LA's largest employers, on the edge of Beverly Hills and West Hollywood.",
+  "desc_zh": "大型非营利学术医疗中心，洛杉矶最大的雇主之一，位于比佛利山庄与西好莱坞交界处。",
+  "neighborhood": "Beverly Grove (by Beverly Hills)",
+  "neighborhood_zh": "比佛利格罗夫（毗邻比佛利山庄）",
+  "address": "8700 Beverly Blvd, Los Angeles, CA 90048",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Scientology_building_east_hollywood_los_angeles.jpg",
+    "author": "Mfield, Matthew Field, http://www.photography.mattfield.com",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Fountain_Avenue_and_Scientology_building.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Max_Factor_family_tower.jpg",
+    "author": "NativeForeigner",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "National Geographic Headquarters",
+  "cat": "company",
+  "icon": "media",
+  "lat": 38.90496,
+  "lng": -77.03755,
+  "slug": "dc-national-geographic",
+  "images": [
+   "assets/poi/dc-national-geographic-1.jpg",
+   "assets/poi/dc-national-geographic-2.jpg",
+   "assets/poi/dc-national-geographic-3.jpg"
+  ],
+  "desc": "National Geographic's headquarters campus at 17th and M Streets, home to the Society and its public museum.",
+  "desc_zh": "国家地理位于17街与M街交口的总部园区，国家地理学会及其对外开放的博物馆都在这里。",
+  "neighborhood": "Downtown DC (Golden Triangle)",
+  "neighborhood_zh": "华盛顿市中心（金三角）",
+  "address": "1145 17th St NW, Washington, DC 20036",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:National_Geographic_Museum_Building.jpg",
+    "author": "Jllm06",
+    "license": "Public domain"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:NGS_Administration_Building.jpg",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:National_Geographic_Society_headquarters_2.jpg",
+    "author": "AgnosticPreachersKid",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "Inter-American Development Bank",
+  "cat": "company",
+  "icon": "finance",
+  "lat": 38.8994,
+  "lng": -77.03051,
+  "slug": "dc-idb",
+  "images": [
+   "assets/poi/dc-idb-1.jpg",
+   "assets/poi/dc-idb-2.jpg",
+   "assets/poi/dc-idb-3.jpg"
+  ],
+  "desc": "Headquarters of the Inter-American Development Bank, the main development lender for Latin America and the Caribbean, near Metro Center.",
+  "desc_zh": "美洲开发银行总部，拉美和加勒比地区最主要的发展贷款机构，靠近Metro Center地铁站。",
+  "neighborhood": "Downtown DC",
+  "neighborhood_zh": "华盛顿市中心",
+  "address": "1300 New York Ave NW, Washington, DC 20577",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Inter-American_Development_Bank_headquarters.jpg",
+    "author": "APK",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Inter-American_Development_Bank_headquarters_-_2.jpg",
+    "author": "APK",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:1300_NY_Ave_IDB_DCA_07_2018_9880.jpg",
+    "author": "Mariordo (Mario Roberto Durán Ortiz)",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Conagra Brands (Merchandise Mart)",
+  "cat": "company",
+  "icon": "consumer",
+  "lat": 41.88854,
+  "lng": -87.63538,
+  "slug": "chi-conagra-merchandise-mart",
+  "images": [
+   "assets/poi/chi-conagra-merchandise-mart-1.jpg",
+   "assets/poi/chi-conagra-merchandise-mart-2.jpg",
+   "assets/poi/chi-conagra-merchandise-mart-3.jpg"
+  ],
+  "desc": "The massive Art Deco Merchandise Mart houses Conagra Brands' headquarters plus tech offices and showrooms, with its own Brown/Purple Line stop.",
+  "desc_zh": "巨型装饰艺术风格建筑商品市场大楼，康尼格拉品牌总部及多家科技公司和展厅在此，设有棕线/紫线专属地铁站。",
+  "neighborhood": "River North",
+  "neighborhood_zh": "河北区",
+  "address": "222 W Merchandise Mart Plaza, Chicago, IL 60654",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_Waterfront_(35071795993).jpg",
+    "author": "Mack Male from Edmonton, AB, Canada",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_(22591161554).jpg",
+    "author": "erikccooper",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_in_2022_Top_of_the_Merchandise_Mart_(52048904106).jpg",
+    "author": "Chris Rycroft from Madison, Wisconsin, United States",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Accenture Tower",
+  "cat": "company",
+  "icon": "consulting",
+  "lat": 41.88234,
+  "lng": -87.64049,
+  "slug": "chi-accenture-tower",
+  "images": [
+   "assets/poi/chi-accenture-tower-1.jpg",
+   "assets/poi/chi-accenture-tower-2.jpg",
+   "assets/poi/chi-accenture-tower-3.jpg"
+  ],
+  "desc": "Glass tower above Ogilvie Transportation Center that hosts Accenture's Chicago offices—Metra trains run right underneath.",
+  "desc_zh": "位于奥格尔维交通中心上方的玻璃大楼，埃森哲芝加哥办公室所在地，Metra通勤火车就从楼下驶过。",
+  "neighborhood": "West Loop",
+  "neighborhood_zh": "西卢普",
+  "address": "500 W Madison St, Chicago, IL 60661",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Citigroup_Center_and_540_West_Madison,_Chicago_(14396815947).jpg",
+    "author": "Tony Webster from Portland, Oregon, United States",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Citigroup_Center_(14396680218).jpg",
+    "author": "Tony Webster from Portland, Oregon, United States",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Citigroup_Center,_Chicago_(14396644410).jpg",
+    "author": "Tony Webster from Portland, Oregon, United States",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Rush University Medical Center",
+  "cat": "company",
+  "icon": "health",
+  "lat": 41.87464,
+  "lng": -87.66913,
+  "slug": "chi-rush",
+  "images": [
+   "assets/poi/chi-rush-1.jpg",
+   "assets/poi/chi-rush-2.jpg",
+   "assets/poi/chi-rush-3.jpg"
+  ],
+  "desc": "Rush University Medical Center, a major academic hospital in the Illinois Medical District, known for its butterfly-shaped tower.",
+  "desc_zh": "拉什大学医学中心，伊利诺伊医疗区内的大型学术医院，以蝴蝶形大楼著称。",
+  "neighborhood": "Illinois Medical District",
+  "neighborhood_zh": "伊利诺伊医疗区",
+  "address": "1620 W Harrison St, Chicago, IL 60612",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:RUMC-Tower-01042012.jpg",
+    "author": "Srobak",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:RUMC_-_new_tower.jpg",
+    "author": "Nathan Hicks",
+    "license": "CC BY 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Rush_University_Medical_Center_(5983862024).jpg",
+    "author": "Paul Sableman",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Penn Medicine – Pennsylvania Hospital",
+  "cat": "company",
+  "icon": "health",
+  "lat": 39.94536,
+  "lng": -75.15565,
+  "slug": "phl-penn-medicine",
+  "images": [
+   "assets/poi/phl-penn-medicine-1.jpg",
+   "assets/poi/phl-penn-medicine-2.jpg",
+   "assets/poi/phl-penn-medicine-3.jpg"
+  ],
+  "desc": "Founded in 1751 as the nation's first hospital, Pennsylvania Hospital is part of Penn Medicine, one of the city's largest employers.",
+  "desc_zh": "宾夕法尼亚医院建于1751年，是美国第一家医院，现属费城最大雇主之一的宾大医疗体系。",
+  "neighborhood": "Washington Square West",
+  "neighborhood_zh": "华盛顿广场西",
+  "address": "800 Spruce St, Philadelphia, PA 19107",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pennsylvania_Hospital_(53590616710).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pennsylvania_Hospital,_Philadelphia.jpg",
+    "author": "Luca Borghi",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Pennsylvania_Hospital_Original2_2013.jpg",
+    "author": "Rytyho usa",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "city": "PHL",
+  "name": "Jefferson Health – Thomas Jefferson University",
+  "cat": "company",
+  "icon": "health",
+  "lat": 39.94928,
+  "lng": -75.15803,
+  "slug": "phl-jefferson",
+  "images": [
+   "assets/poi/phl-jefferson-1.jpg",
+   "assets/poi/phl-jefferson-2.jpg",
+   "assets/poi/phl-jefferson-3.jpg"
+  ],
+  "desc": "Center City campus of Thomas Jefferson University and its flagship Jefferson Health hospital, one of Philadelphia's largest employers.",
+  "desc_zh": "托马斯·杰斐逊大学及其旗下杰斐逊医疗旗舰医院的中城园区，是费城最大的雇主之一。",
+  "neighborhood": "Market East / Washington Square West",
+  "neighborhood_zh": "东市场街 / 华盛顿广场西",
+  "address": "111 S 11th St, Philadelphia, PA 19107",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Jefferson_University_Scott_Memorial_LIbrary.jpg",
+    "author": "Beyond My Ken",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Phila_U_2021_(15)_jeh.jpg",
+    "author": "Jim.henderson",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Phila_U_2021_(14)_uncut_jeh.jpg",
+    "author": "Jim.henderson",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "city": "LA",
+  "name": "Fox Studio Lot (Fox Corporation)",
+  "cat": "company",
+  "icon": "media",
+  "lat": 34.05201,
+  "lng": -118.41251,
+  "slug": "la-fox",
+  "images": [
+   "assets/poi/la-fox-1.jpg",
+   "assets/poi/la-fox-2.jpg",
+   "assets/poi/la-fox-3.jpg"
+  ],
+  "desc": "Fox Corporation's historic studio lot in Century City, home to Fox offices and Disney's 20th Century Studios productions.",
+  "desc_zh": "福克斯公司位于世纪城的历史片场，福克斯办公室及迪士尼旗下20世纪影业的制作团队都在这里。",
+  "neighborhood": "Century City",
+  "neighborhood_zh": "世纪城",
+  "address": "10201 W Pico Blvd, Los Angeles, CA 90064",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Foxstudiosentrance.jpg",
+    "author": "Coolcaesar",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Fox_Studios_(15238969174).jpg",
+    "author": "Tony Hisgett from Birmingham, UK",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Foxgives_2013_-_panoramio_(2).jpg",
+    "author": "Clotee Pridgen Alloc…",
+    "license": "CC BY-SA 3.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "The Magnificent Mile",
+  "cat": "landmark",
+  "icon": "square",
+  "lat": 41.89452,
+  "lng": -87.62423,
+  "slug": "chi-magnificent-mile",
+  "images": [
+   "assets/poi/chi-magnificent-mile-1.jpg",
+   "assets/poi/chi-magnificent-mile-2.jpg",
+   "assets/poi/chi-magnificent-mile-3.jpg"
+  ],
+  "desc": "Chicago's main shopping stretch of North Michigan Avenue, running from the river past the historic Water Tower to Oak Street, next to Streeterville.",
+  "desc_zh": "芝加哥最主要的购物街——北密歇根大道，从芝加哥河延伸经历史水塔至橡树街，毗邻斯特里特维尔。",
+  "neighborhood": "Streeterville / Magnificent Mile",
+  "neighborhood_zh": "斯特里特维尔 / 华丽一英里",
+  "address": "N Michigan Ave (Chicago River to Oak St), Chicago, IL 60611",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Michigan_Avenue_Magnificent_Mile_from_Wacker_Drive,_Streeterville,_Chicago,_IL_(52862376362).jpg",
+    "author": "Warren LeMay from Covington, KY, United States",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Michigan_Avenue_Magnificent_Mile_from_Wacker_Drive,_Streeterville,_Chicago,_IL_(52862376397).jpg",
+    "author": "Warren LeMay from Covington, KY, United States",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago_River_toward_Michigan_Avenue_at_blue_hour.jpg",
+    "author": "NorbertNagel",
+    "license": "CC BY-SA 4.0"
+   }
+  ]
+ },
+ {
+  "city": "DC",
+  "name": "George Washington University Hospital",
+  "cat": "company",
+  "icon": "health",
+  "lat": 38.90138,
+  "lng": -77.05062,
+  "slug": "dc-gwu-hospital",
+  "images": [
+   "assets/poi/dc-gwu-hospital-1.jpg",
+   "assets/poi/dc-gwu-hospital-2.jpg",
+   "assets/poi/dc-gwu-hospital-3.jpg"
+  ],
+  "desc": "George Washington University's teaching hospital in Foggy Bottom, right next to the Foggy Bottom–GWU Metro station.",
+  "desc_zh": "乔治·华盛顿大学的教学医院，位于雾谷，紧邻Foggy Bottom–GWU地铁站。",
+  "neighborhood": "Foggy Bottom",
+  "neighborhood_zh": "雾谷",
+  "address": "900 23rd St NW, Washington, DC 20037",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:George_Washington_University_Hospital_(GWUH)_-_2026_(55266724621).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:George_Washington_University_Hospital_-_2012.JPG",
+    "author": "Marcus Qwertyus",
+    "license": "CC BY-SA 3.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:George_Washington_University_Hospital_(GWUH)_(53843650527).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "Federal Reserve Bank of Chicago",
+  "cat": "company",
+  "icon": "finance",
+  "lat": 41.87843,
+  "lng": -87.63303,
+  "slug": "chi-fed-reserve",
+  "images": [
+   "assets/poi/chi-fed-reserve-1.jpg",
+   "assets/poi/chi-fed-reserve-2.jpg",
+   "assets/poi/chi-fed-reserve-3.jpg"
+  ],
+  "desc": "One of the 12 regional Federal Reserve Banks, in a classical tower on LaSalle Street; its lobby hosts a free Money Museum.",
+  "desc_zh": "美国12家地区联邦储备银行之一，位于拉萨尔街的古典风格大楼内，大厅设有免费参观的货币博物馆。",
+  "neighborhood": "LaSalle Street Corridor",
+  "neighborhood_zh": "拉萨尔街金融走廊",
+  "address": "230 S LaSalle St, Chicago, IL 60604",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Federal_Reserve_Bank_of_Chicago_(51574643886).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Federal_Reserve_Bank_Chicago_165_West_Quincy_Street.jpg",
+    "author": "Beyond My Ken",
+    "license": "CC BY-SA 4.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Chicago,_USA_(12507951635).jpg",
+    "author": "Francisco Antunes from Manchester, United Kingdom",
+    "license": "CC BY 2.0"
+   }
+  ]
+ },
+ {
+  "city": "CHI",
+  "name": "United Airlines HQ (Willis Tower)",
+  "cat": "company",
+  "icon": "consumer",
+  "lat": 41.87874,
+  "lng": -87.63596,
+  "slug": "chi-united",
+  "images": [
+   "assets/poi/chi-united-1.jpg",
+   "assets/poi/chi-united-2.jpg",
+   "assets/poi/chi-united-3.jpg"
+  ],
+  "desc": "United Airlines' global headquarters fills many floors of Willis Tower, a short walk from Union Station and the West Loop.",
+  "desc_zh": "美国联合航空全球总部占据威利斯大厦的多个楼层，步行即可到达联合车站和西卢普。",
+  "neighborhood": "The Loop",
+  "neighborhood_zh": "卢普区",
+  "address": "233 S Wacker Dr, Chicago, IL 60606",
+  "credits": [
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Willis_Tower_and_311_South_Wacker_-_Architecture_River_Cruise_(35510789322).jpg",
+    "author": "piet theisohn from Leverkusen, Germany",
+    "license": "CC BY 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Willis_Tower,_Chicago,_Illinois_(9179399743).jpg",
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "license": "CC BY-SA 2.0"
+   },
+   {
+    "file": "https://commons.wikimedia.org/wiki/File:Willis_Tower_(48056796163).jpg",
+    "author": "Laurent de Walick from The Hague, The Netherlands",
+    "license": "CC BY 2.0"
+   }
+  ]
+ }
+]
