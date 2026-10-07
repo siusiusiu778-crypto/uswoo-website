@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<script src="./i18n-zh.js?v=1"></script>
+<script src="./i18n-zh-cities.js?v=1"></script>
+<script src="./i18n.js?v=1" defer></script>
 </head>
 <body>
 <x-dc>
@@ -97,9 +100,9 @@
   @media (max-width:560px){ .guide-grid{ grid-template-columns:1fr; } }
 
   .cg-lead{ padding-bottom:0; }
-  .cg-lead .section-head.centered{ max-width:760px; }
+  .cg-lead .section-head.centered{ max-width:none; width:fit-content; }
   .cg-lead .section-head.centered h2{ font-size:clamp(1.9rem, 3.8vw, 2.7rem); }
-  .cg-lead .section-head.centered p.lede{ max-width:56ch; line-height:1.75; }
+  .cg-lead .section-head.centered p.lede{ max-width:none; width:0; min-width:100%; line-height:1.75; text-align:left; }
   .cg-lead-media{ margin-top:48px; border-radius:32px; overflow:hidden; aspect-ratio:2.8/1; }
   .cg-lead-media img{ width:100%; height:100%; object-fit:cover; display:block; }
   @media (max-width:700px){ .cg-lead-media{ border-radius:20px; aspect-ratio:4/3; margin-top:32px; } }
@@ -142,6 +145,45 @@
   .cg-legend-item svg{ width:16px; height:16px; stroke:var(--ink-soft); }
   @media (max-width:900px){ .cg-top{ grid-template-columns:1fr; } .cg-intro{ border-right:none; border-bottom:1px solid var(--line); padding:40px 0; } .cg-mappanel{ padding:40px 0; } }
 
+
+  .cg-areas{ padding:clamp(56px,7vw,96px) 0; background:var(--paper); border-top:1px solid var(--line); }
+  .cg-areas-head{ text-align:center; max-width:720px; margin:0 auto; }
+  .cg-areas-head .eyebrow{ justify-content:center; }
+  .cg-areas-head h2{ font-family:'Poppins', 'Inter', sans-serif; font-weight:600; font-size:clamp(1.9rem,3.8vw,2.7rem); margin-top:14px; line-height:1.12; }
+  .cg-areas-head p{ margin-top:18px; color:var(--ink-soft); font-size:1.02rem; line-height:1.75; text-align:left; }
+  .cg-area-grid{ margin-top:48px; display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .cg-area{ border-radius:28px; padding:12px; display:flex; flex-direction:column; background:var(--paper); border:1px solid var(--line); color:var(--ink); text-align:left; }
+  .cg-area .art{ border-radius:20px; overflow:hidden; aspect-ratio:5/3; background:var(--paper-raised); }
+  .cg-area .art img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .cg-area .body{ flex:1; display:flex; flex-direction:column; align-items:flex-start; padding:22px 14px 14px; }
+  .cg-area h3{ font-family:'Poppins', 'Inter', sans-serif; font-weight:600; font-size:clamp(1.25rem,1.8vw,1.5rem); line-height:1.15; display:flex; align-items:center; gap:10px; }
+  .cg-area h3 .em{ font-size:1.3em; line-height:1; }
+  .cg-area p{ margin-top:12px; font-size:0.94rem; line-height:1.7; color:var(--ink-soft); text-wrap:pretty; }
+  .cg-area .tags{ margin-top:auto; padding-top:20px; display:flex; flex-wrap:wrap; gap:6px; }
+  .cg-area .tags span{ font-size:0.68rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; background:var(--paper-raised); border:1px solid var(--line); border-radius:999px; padding:4px 10px; white-space:nowrap; }
+  .cg-area{ transition:opacity 0.25s ease, border-color 0.2s ease; }
+  .cg-area-note .btn{ margin-top:22px; background:var(--pink); color:#fff; padding:13px 24px; font-size:0.86rem; }
+  .cg-area-note.wide{ grid-column:1 / -1; flex-direction:row; align-items:stretch; }
+  .cg-area-note.wide .art{ flex:0 0 38%; aspect-ratio:auto; min-height:220px; }
+  .cg-area-note.wide .body{ justify-content:center; padding:24px 32px; }
+  @media (max-width:900px){ .cg-area-note.wide{ flex-direction:column; } .cg-area-note.wide .art{ flex:none; aspect-ratio:5/3; } }
+
+  /* Neighborhood cards: photo wipes open top-to-bottom while the text sharpens in from a soft blur (emoji, title, copy and tags arrive together). Only active once JS flags the page (.cg-motion). */
+  .cg-motion .cg-area{ border-color:transparent; transition:border-color 0.8s ease; transition-delay:calc(var(--i,0) * 120ms); }
+  .cg-motion .cg-area.in{ border-color:var(--line); }
+  .cg-motion .cg-area.cg-area-note.in{ border-color:var(--line); }
+  .cg-motion .cg-area .art{ clip-path:inset(0 0 100% 0 round 20px); transition:clip-path 1.1s cubic-bezier(0.65,0,0.2,1); transition-delay:calc(var(--i,0) * 120ms); }
+  .cg-motion .cg-area.in .art{ clip-path:inset(0 0 0 0 round 20px); }
+  .cg-motion .cg-area .body{ opacity:0; filter:blur(8px); transition:opacity 0.9s ease, filter 0.9s ease; transition-delay:calc(var(--i,0) * 120ms + 350ms); }
+  .cg-motion .cg-area.in .body{ opacity:1; filter:none; }
+  @media (prefers-reduced-motion: reduce){ .cg-motion .cg-area, .cg-motion .cg-area .art, .cg-motion .cg-area .body{ opacity:1 !important; filter:none !important; clip-path:none !important; transition:none !important; } }
+  .cg-area-pills{ margin-top:28px; display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+  .cg-area-pill{ font:inherit; font-size:0.86rem; font-weight:600; padding:10px 18px; border-radius:999px; border:1px solid var(--line); background:var(--paper); color:var(--ink-soft); cursor:pointer; transition:background 0.15s ease, color 0.15s ease, border-color 0.15s ease; }
+  .cg-area-pill:hover{ border-color:var(--black); color:var(--ink); }
+  .cg-area-pill.active{ background:var(--black); border-color:var(--black); color:#fff; }
+  @media (max-width:900px){ .cg-area-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:600px){ .cg-area-grid{ grid-template-columns:1fr; } }
+
   .cg-switch{ display:flex; align-items:center; gap:20px; flex-wrap:wrap; background:var(--paper-raised); border:1px solid var(--line); border-radius:2px; padding:24px 28px; }
   .cg-switch-icon{ width:48px; height:48px; border-radius:50%; background:#fff; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; flex:none; }
   .cg-switch-icon svg{ width:20px; height:20px; stroke:var(--ink); }
@@ -158,6 +200,7 @@
       <a href="./USWOO Services.dc.html">Services</a>
       <a href="./USWOO City Guides.dc.html" class="active">City Guides</a>
       <a href="./USWOO Press & Stories.dc.html">Press &amp; Stories</a>
+      <a href="./USWOO Partners.dc.html">Partners</a>
       <a href="./USWOO About Us.dc.html">About Us</a>
     </nav>
     <a class="nav-cta" href="./USWOO Home.dc.html#cta">Contact</a>
@@ -170,8 +213,8 @@
     <div class="wrap">
       <div class="section-head centered">
         <h2>Know the city before you move in.</h2>
-        <p class="lede">Every neighborhood has its own rhythm — schools, business districts, transit lines and the walk to your favorite coffee shop.<br>
-        We map it all out, so you can choose a place that actually fits your life, not just an address on a lease.<br>
+        <p class="lede">Every neighborhood has its own rhythm — schools, business districts, transit lines and the walk to your favorite coffee shop.
+        We map it all out, so you can choose a place that actually fits your life, not just an address on a lease.
         Explore by school, by commute, or just by vibe.</p>
       </div>
       <div class="cg-lead-media">
@@ -205,7 +248,7 @@
         <div class="cg-mappanel">
           <div class="cg-tabs">
             <sc-for list="{{ cities }}" as="c" hint-placeholder-count="6">
-              <button class="cg-tab {{ c.activeClass }}" onClick="{{ c.onClick }}">{{ c.name }}</button>
+              <button class="cg-tab {{ c.activeClass }}" onClick="{{ c.onClick }}">{{ c.label }}</button>
             </sc-for>
           </div>
           <div class="cg-map">
@@ -222,6 +265,8 @@
       </div>
     </div>
   </section>
+
+  <div onClick="{{ onAreaClick }}" dangerouslySetInnerHTML="{{ areaGuideHtml }}"></div>
 
   <section class="band-paper" id="cta" style="padding-top:0;">
     <div class="wrap">
@@ -288,7 +333,116 @@ const FILTERS = [
   { id: 'business', title: 'Business District', desc: 'Work hubs & commercial areas' },
   { id: 'commute', title: 'Commute', desc: 'Transit & commute time' },
 ];
-const CITIES = ['New York & New Jersey', 'Los Angeles', 'Washington, D.C.', 'Chicago', 'Pennsylvania'];
+const CITY_EMOJI = { 'New York & New Jersey': '🗽', 'Los Angeles': '🌴', 'Washington, D.C.': '🏛️', 'Chicago': '🌆', 'Philadelphia': '🔔' };
+
+const AREA_GUIDES = {
+  'Washington, D.C.': {
+    intro: 'In the D.C. metro area, choosing where to live often comes down to school, work, and commute. With universities, government agencies, international organizations, research centers, and major employers spread across D.C., Maryland, and Northern Virginia, the right neighborhood can make everyday life much easier.',
+    areas: [
+      { emoji: '🏛️', name: 'Central & Northwest D.C.', tags: ['GWU', 'Georgetown', 'AU'], text: 'A natural fit for students at GWU, Georgetown, American University, and Johns Hopkins SAIS, as well as professionals working around Downtown, the State Department, World Bank, IMF, consulting firms, think tanks, and international organizations. Areas like Foggy Bottom, Dupont Circle, Georgetown, and Tenleytown offer strong access to both campus and central D.C.' },
+      { emoji: '🏙️', name: 'Capitol Hill, NoMa & Navy Yard', tags: ['Georgetown Law', 'Capitol Hill', 'NoMa'], text: 'A practical choice for Georgetown Law students and professionals working around Capitol Hill, federal agencies, law firms, government affairs, and Downtown D.C. NoMa and Navy Yard also offer newer apartment options and convenient access to major employment areas.' },
+      { emoji: '🐢', name: 'College Park & Prince George\u2019s County', tags: ['UMD', 'Metro', 'Shared housing'], text: 'The main housing market for University of Maryland students, especially around College Park, Greenbelt, and Hyattsville. The area is well connected to campus by walking, shuttle, and Metro, and is especially popular with students looking for shared housing and more budget friendly options.' },
+      { emoji: '🧬', name: 'Bethesda & Montgomery County', tags: ['NIH', 'Biotech', 'Red Line'], text: 'A strong option for professionals working around NIH, healthcare, research, biotech, and the I-270 life sciences corridor, as well as renters who want easy Red Line access into D.C. Bethesda, North Bethesda, and Rockville offer a mix of newer apartments, residential neighborhoods, and access to major employment centers.' },
+      { emoji: '🚇', name: 'Arlington & Northern Virginia', tags: ['Amazon HQ2', 'Pentagon', 'Tysons'], text: 'Popular with professionals working at Amazon HQ2, the Pentagon, consulting firms, defense companies, and major tech employers, as well as people commuting into D.C. Areas like Rosslyn, Clarendon, Pentagon City, National Landing, Tysons, and Reston offer a mix of Metro access, newer apartments, and proximity to Northern Virginia\u2019s major employment hubs.' },
+    ],
+    closing: 'Once you know which area fits your school, office, and daily routine, we can help with apartment search, leasing, moving, furniture, room dividers, Wi Fi, electricity, renters insurance, and other move in essentials.',
+  },
+  'Philadelphia': {
+    intro: 'In Philadelphia, choosing where to live often comes down to school, work, and commute. With major universities, hospitals, life sciences companies, law firms, and corporate offices concentrated across a few key areas, the right neighborhood can make everyday life much easier.',
+    areas: [
+      { emoji: '🎓', name: 'University City & West Philadelphia', tags: ['UPenn', 'Drexel', 'Life sciences'], text: 'A natural choice for students at UPenn and Drexel, as well as professionals working in healthcare, research, life sciences, and university related roles. University City brings together major campuses, hospitals, labs, and newer apartment developments, making it one of Philadelphia\u2019s strongest student and professional rental markets.' },
+      { emoji: '🏙️', name: 'Center City, Rittenhouse & Logan Square', tags: ['Finance', 'Law', 'Hospitality'], text: 'A strong option for professionals working in finance, law, consulting, healthcare, corporate offices, and hospitality. It also works well for students and young professionals who want a more central lifestyle with easy access to offices, restaurants, public transit, and both University City and other parts of Downtown.' },
+      { emoji: '🦉', name: 'North Philadelphia & Temple Area', tags: ['Temple', 'Student housing', 'Center City'], text: 'The main housing market for Temple University students, with a mix of student housing and residential options around campus. The area also offers convenient access to Center City for internships, healthcare, education, and other downtown jobs.' },
+      { emoji: '🏡', name: 'Graduate Hospital & Fitler Square', tags: ['Penn Medicine', 'Grad students', 'Residential'], text: 'Popular with graduate students, medical professionals, and young professionals who want to stay between University City and Center City. These neighborhoods offer a more residential feel while keeping UPenn, Drexel, Penn Medicine, and Downtown offices within relatively easy reach.' },
+      { emoji: '⚓', name: 'South Philadelphia & Navy Yard', tags: ['Navy Yard', 'Life sciences', 'Research'], text: 'A practical choice for professionals working around the Navy Yard, life sciences, healthcare, research, advanced manufacturing, and corporate offices. South Philadelphia also offers more residential neighborhood options while staying connected to Center City and major employment areas.' },
+    ],
+    closing: 'Once you know which area fits your school, office, and daily routine, we can help with apartment search, leasing, moving, furniture, room dividers, Wi Fi, electricity, renters insurance, and other move in essentials.',
+  },
+  'Chicago': {
+    intro: 'In Chicago, choosing where to live often comes down to school, work, and commute. With universities, hospitals, trading firms, consulting offices, and corporate employers spread across the city, the right neighborhood can make everyday life much easier.',
+    areas: [
+      { emoji: '🚋', name: 'The Loop & South Loop', tags: ['SAIC', 'DePaul Loop', 'Columbia'], text: 'A strong option for students at SAIC, DePaul\u2019s Loop Campus, Columbia College Chicago, and Roosevelt University, as well as professionals working in finance, consulting, law, and corporate offices Downtown. The area offers broad CTA access, a large rental inventory, and easy connections to both campus and work.' },
+      { emoji: '🌊', name: 'Streeterville, River North & Lakeshore East', tags: ['Northwestern', 'Healthcare', 'High-rise'], text: 'Popular with students at Northwestern\u2019s Chicago campus and UChicago programs based Downtown, as well as professionals working in healthcare, law, consulting, tech, and corporate roles. Streeterville is especially convenient for Northwestern Medicine and nearby hospitals, while River North and Lakeshore East offer strong access to Downtown offices and premium high rise living.' },
+      { emoji: '🍽️', name: 'West Loop, Fulton Market & Near West Side', tags: ['UIC', 'Rush', 'Trading'], text: 'A natural fit for UIC students and professionals in trading, finance, consulting, tech, and corporate offices. The area is close to UIC and Rush while also being one of Chicago\u2019s strongest employment and dining hubs, making it popular with both graduates and young professionals.' },
+      { emoji: '🎓', name: 'Hyde Park, Bronzeville & Chinatown', tags: ['UChicago', 'IIT', 'Red & Green Line'], text: 'The main housing area for University of Chicago and IIT students, especially for those who want to stay closer to campus. Hyde Park offers direct access to UChicago, while Bronzeville and Chinatown provide more budget friendly options, Red and Green Line access, and convenient access to Asian groceries and dining.' },
+      { emoji: '🌳', name: 'Lincoln Park, Evanston & North Side', tags: ['DePaul LP', 'Evanston', 'CTA'], text: 'A practical choice for DePaul Lincoln Park students and Northwestern students based in Evanston. Lincoln Park offers a more residential neighborhood feel with easy CTA access Downtown, while Evanston functions as its own college town and is best suited for students and professionals tied directly to Northwestern\u2019s main campus.' },
+    ],
+    closing: 'Once you know which area fits your school, office, and daily routine, we can help with apartment search, leasing, moving, furniture, room dividers, Wi Fi, electricity, renters insurance, and other move in essentials.',
+  },
+  'Los Angeles': {
+    intro: 'In Los Angeles, choosing where to live is often about balancing school, work, and commute. With campuses, offices, studios, and creative hubs spread across the region, living in the right area can make everyday life much easier.',
+    areas: [
+      { emoji: '🎓', name: 'Westwood & West LA', tags: ['UCLA', 'Century City', 'Brentwood'], text: 'A natural choice for UCLA students and professionals working around Century City, Westwood, Brentwood, and the Westside. It is especially convenient for people in healthcare, finance, law, consulting, and other corporate roles based nearby.' },
+      { emoji: '🏖️', name: 'Santa Monica, Culver City & Palms', tags: ['SMC', 'WLAC', 'Culver City'], text: 'A strong option for SMC and WLAC students, as well as professionals in tech, media, advertising, entertainment, and production. This area keeps you close to Santa Monica, Culver City studios, and major Westside employers while offering a wider mix of apartments and neighborhood styles.' },
+      { emoji: '🏙️', name: 'USC, Downtown LA & Koreatown', tags: ['USC', 'DTLA', 'Koreatown'], text: 'For USC students and professionals working in Downtown LA, these areas offer convenient access to campus, offices, hospitals, law firms, finance, hospitality, and public transit. Koreatown also provides more housing and dining options while staying relatively central.' },
+      { emoji: '🌹', name: 'Pasadena & San Gabriel Valley', tags: ['Caltech', 'ArtCenter', 'PCC'], text: 'A practical choice for students at Caltech, ArtCenter, PCC, and Cal State LA, depending on campus and commute. The area also works well for professionals in research, engineering, healthcare, education, and design, with Pasadena and the San Gabriel Valley offering a more residential alternative to central LA.' },
+      { emoji: '🎬', name: 'Hollywood & Central LA', tags: ['Film & TV', 'Music', 'WeHo'], text: 'Well suited for students at The Los Angeles Film School and professionals working in film, television, music, design, and entertainment. Living here can also provide easier access to West Hollywood, Burbank, and other major creative and production hubs.' },
+      { emoji: '🌇', name: 'Irvine & Orange County', tags: ['UCI', 'Tech', 'Biotech'], text: 'For UCI students and professionals working across Orange County, living in Irvine or nearby areas usually makes the most sense. The region is especially convenient for jobs in tech, healthcare, biotech, finance, and corporate offices, while avoiding a long daily commute from Los Angeles.' },
+    ],
+    closing: 'Once you know which area fits your school, office, and daily routine, we can help with apartment search, leasing, moving, furniture, room dividers, Wi Fi, electricity, renters insurance, and other move in essentials.',
+  },
+  'New York & New Jersey': {
+    intro: 'In New York, the best neighborhood often depends on where you need to be every day. Whether you are heading to campus, Midtown, Downtown, or across the Hudson, commute time can make a big difference in where you choose to live.',
+    areas: [
+      { emoji: '🏙️', name: 'Manhattan', tags: ['NYU', 'SVA', 'Parsons', 'FiDi'], text: 'Best for students and professionals who want to stay close to school or work. Areas around Downtown are convenient for NYU, SVA, and offices in FiDi, while Midtown works well for Parsons, Fordham Lincoln Center, and many corporate offices. The tradeoff is usually higher rent and less space.' },
+      { emoji: '🚇', name: 'Long Island City', tags: ['New builds', 'Subway', 'Near Midtown'], text: 'Popular with students at Parsons, NYU, and SVA, as well as professionals working in Midtown Manhattan. LIC is known for newer apartment buildings, skyline views, and quick subway access into Manhattan, making it a convenient choice for people who want modern living without being right in the middle of the city.' },
+      { emoji: '🌉', name: 'Brooklyn', tags: ['Downtown BK', 'Williamsburg', 'Pratt'], text: 'A strong option for students at Pratt, NYU, NYU Stern, and Parsons, especially if you live around Downtown Brooklyn, Williamsburg, or nearby neighborhoods with easy subway access. Brooklyn offers a more residential feel, more neighborhood variety, and a good balance between campus access and everyday lifestyle.' },
+      { emoji: '🎓', name: 'Upper Manhattan', tags: ['Columbia', 'Morningside', 'UWS'], text: 'A natural fit for students at Columbia and anyone who spends most of their time around Morningside Heights, the Upper West Side, or northern Manhattan. Living closer to campus can significantly reduce commute time and often gives you more space compared with Downtown.' },
+      { emoji: '🚆', name: 'Jersey City & Hoboken', tags: ['PATH', 'Pace', 'Wall Street'], text: 'A popular choice for students at NYU, NYU Stern, and Pace, as well as professionals working around Wall Street and Downtown Manhattan. PATH access makes commuting into Manhattan relatively easy, while many buildings offer newer amenities, larger layouts, and more space for the price.' },
+    ],
+    closing: 'Once you know which area fits your routine, we can help with the rest—from apartment search and leasing to moving, furniture, room dividers, Wi Fi, electricity, renters insurance, and move in setup.',
+  },
+};
+const AREA_ART = {
+  'University City & West Philadelphia': './assets/phl-university-city.jpg',
+  'Center City, Rittenhouse & Logan Square': './assets/phl-center-city.jpg',
+  'North Philadelphia & Temple Area': './assets/phl-temple.jpg',
+  'Graduate Hospital & Fitler Square': './assets/phl-fitler.jpg',
+  'South Philadelphia & Navy Yard': './assets/phl-south-philly.jpg',
+  'Philadelphia:note': './assets/phl-closing.jpg',
+  'The Loop & South Loop': './assets/chi-loop.jpg',
+  'Streeterville, River North & Lakeshore East': './assets/chi-streeterville.jpg',
+  'West Loop, Fulton Market & Near West Side': './assets/chi-west-loop.jpg',
+  'Hyde Park, Bronzeville & Chinatown': './assets/chi-hyde-park.jpg',
+  'Lincoln Park, Evanston & North Side': './assets/chi-lincoln-park.jpg',
+  'Chicago:note': './assets/chi-closing.jpg',
+  'Central & Northwest D.C.': './assets/dc-central.jpg',
+  'Capitol Hill, NoMa & Navy Yard': './assets/dc-capitol.jpg',
+  'College Park & Prince George\u2019s County': './assets/dc-college-park.jpg',
+  'Bethesda & Montgomery County': './assets/dc-bethesda.jpg',
+  'Arlington & Northern Virginia': './assets/dc-arlington.jpg',
+  'Washington, D.C.:note': './assets/dc-closing.jpg',
+  'Westwood & West LA': './assets/la-westwood.jpg',
+  'Santa Monica, Culver City & Palms': './assets/la-santa-monica.jpg',
+  'USC, Downtown LA & Koreatown': './assets/la-dtla.jpg',
+  'Pasadena & San Gabriel Valley': './assets/la-pasadena.jpg',
+  'Hollywood & Central LA': './assets/la-hollywood.jpg',
+  'Irvine & Orange County': './assets/la-irvine.jpg',
+  'Manhattan': './assets/nynj-manhattan.jpg',
+  'Long Island City': './assets/nynj-lic.jpg',
+  'Brooklyn': './assets/nynj-brooklyn.jpg',
+  'Upper Manhattan': './assets/nynj-upper-manhattan.jpg',
+  'Jersey City & Hoboken': './assets/nynj-jersey-city.jpg',
+  'note': './assets/nynj-closing.jpg',
+  'Los Angeles:note': './assets/la-closing.jpg',
+};
+function buildAreaGuideHtml(city) {
+  const g = AREA_GUIDES[city];
+  const pills = CITIES.map((n) =>
+    '<button class="cg-area-pill' + (city === n ? ' active' : '') + '" data-city="' + n + '">' + (CITY_EMOJI[n] || '') + ' ' + n + '</button>').join('');
+  const head = '<div class="cg-areas-head"><p class="eyebrow"><span class="idx">02</span>NEIGHBORHOODS</p><h2>' + (CITY_EMOJI[city] || '') + ' ' + city + '</h2>' +
+    (g ? '<p>' + g.intro + '</p>' : '<p style="text-align:center">Neighborhood guide coming soon.</p>') + '</div><div class="cg-area-pills">' + pills + '</div>';
+  if (!g) return { __html: '<section class="cg-areas" id="areas"><div class="wrap">' + head + '</div></section>' };
+  const cards = g.areas.map((a) =>
+    '<article class="cg-area"><div class="art"><img src="' + AREA_ART[a.name] + '" alt="' + a.name + '"></div><div class="body">' +
+    '<h3><span class="em">' + a.emoji + '</span>' + a.name + '</h3><p>' + a.text + '</p>' +
+    '<div class="tags">' + a.tags.map((t) => '<span>' + t + '</span>').join('') + '</div></div></article>').join('');
+  const wide = g.areas.length % 3 === 0 ? ' wide' : '';
+  const note = '<article class="cg-area cg-area-note' + wide + '"><div class="art"><img src="' + (AREA_ART[city + ':note'] || AREA_ART.note) + '" alt=""></div><div class="body"><h3><span class="em">✨</span>Found your area?</h3><p>' + g.closing +
+    '</p><a class="btn" href="./USWOO Home.dc.html#cta">Talk to USWOO</a></div></article>';
+  return { __html: '<section class="cg-areas" id="areas"><div class="wrap">' + head + '<div class="cg-area-grid">' + cards + note + '</div></div></section>' };
+}
+const CITIES = ['New York & New Jersey', 'Los Angeles', 'Washington, D.C.', 'Chicago', 'Philadelphia'];
 const NY_SCHOOLS = [
   { name: 'Parsons School of Design', lat: 40.7336, lng: -73.9903, hub: 'Union Square / Greenwich Village', communities: ['Greenwich Village', 'Union Square', 'East Village', 'NoHo', 'SoHo', 'Chelsea', 'Flatiron'] },
   { name: 'Pratt Institute', lat: 40.6912, lng: -73.9636, hub: 'Clinton Hill, Brooklyn', communities: ['Clinton Hill', 'Fort Greene', 'Downtown Brooklyn', 'Prospect Heights', 'Bed-Stuy', 'Williamsburg'] },
@@ -595,7 +749,7 @@ const CITY_DATA = {
     bounds: [[41.65, -87.95], [42.08, -87.55]],
     schools: CHI_SCHOOLS, markers: CHI_MARKERS,
   },
-  'Pennsylvania': {
+  'Philadelphia': {
     center: { lat: 39.965, lng: -75.19 }, zoom: 12, minZoom: 10,
     bounds: [[39.83, -75.45], [40.12, -75.0]],
     schools: PHL_SCHOOLS, markers: PHL_MARKERS,
@@ -610,7 +764,33 @@ class Component extends DCLogic {
   markerLayer = null;
 
   componentDidMount() {
+    this.initCardMotion();
     this.pollInit(0);
+  }
+
+  initCardMotion() {
+    if (!('IntersectionObserver' in window) || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+    const scan = () => {
+      document.querySelectorAll('.cg-area:not([data-obs])').forEach((el) => {
+        el.setAttribute('data-obs', '1');
+        el.style.setProperty('--i', String(Array.prototype.indexOf.call(el.parentNode.children, el) % 3));
+        io.observe(el);
+      });
+    };
+    scan();
+    document.documentElement.classList.add('cg-motion');
+    this.cardMo = new MutationObserver(scan);
+    this.cardMo.observe(document.body, { childList: true, subtree: true });
+  }
+
+  switchCity(name) {
+    this.setState({ activeCity: name }, () => {
+      if (this.leafletMap) { this.leafletMap.remove(); this.leafletMap = null; this.markerLayer = null; }
+      this.pollInit(0);
+    });
   }
 
   pollInit(attempt) {
@@ -721,12 +901,12 @@ class Component extends DCLogic {
       clearFilters: () => this.setState({ activeFilters: [] }, () => this.paintMarkers()),
       cities: CITIES.map((name) => ({
         name,
+        label: (CITY_EMOJI[name] || '') + ' ' + name,
         activeClass: this.state.activeCity === name ? 'active' : '',
-        onClick: () => this.setState({ activeCity: name }, () => {
-          if (this.leafletMap) { this.leafletMap.remove(); this.leafletMap = null; this.markerLayer = null; }
-          this.pollInit(0);
-        }),
+        onClick: () => this.switchCity(name),
       })),
+      areaGuideHtml: buildAreaGuideHtml(this.state.activeCity),
+      onAreaClick: (e) => { const b = e.target.closest && e.target.closest('[data-city]'); if (b) this.switchCity(b.getAttribute('data-city')); },
       preventDefault: (e) => e.preventDefault(),
     };
   }

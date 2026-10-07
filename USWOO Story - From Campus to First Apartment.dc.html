@@ -135,31 +135,26 @@
   .moment-item .link-arrow{ margin-top:10px; font-size:0.82rem; }
   @media (max-width:860px){ .moments-row{ grid-template-columns:1fr; } }
 
-  /* Motion — gentle scroll reveals + hover polish. The hidden state is only
-     applied once the script has run (html.motion), so nothing stays invisible
-     if JS is unavailable. */
-  .press-feature-media image-slot, .press-side-media image-slot, .media-card-media image-slot{ transition:transform 0.7s cubic-bezier(.2,.7,.2,1); }
-  .press-feature:hover .press-feature-media image-slot{ transform:scale(1.04); }
-  .press-side-item:hover .press-side-media image-slot{ transform:scale(1.1); }
-  .media-card:hover .media-card-media image-slot{ transform:scale(1.05); }
-  .press-feature-body h3, .press-side-item h4, .media-card-body h3{ transition:color 0.2s ease; }
-  .press-feature:hover h3, .press-side-item:hover h4, .media-card:hover h3{ color:var(--pink); }
-  .press-side-item{ transition:padding-left 0.3s ease; }
-  .press-side-item:hover{ padding-left:8px; }
-  .media-card{ transition:transform 0.35s cubic-bezier(.2,.7,.2,1), box-shadow 0.35s ease; }
-  .media-card:hover{ transform:translateY(-6px); box-shadow:0 18px 36px -18px rgba(20,20,20,0.28); }
-  .moment-item{ transition:transform 0.3s ease; }
-  .moment-item:hover{ transform:translateY(-3px); }
-  .link-arrow{ transition:color 0.15s ease, border-color 0.15s ease, gap 0.2s ease; }
-  .moment-item:hover .link-arrow{ gap:12px; color:var(--pink); border-color:var(--pink); }
-  html.motion .rv{ opacity:0; transform:translateY(28px); transition:opacity 0.8s cubic-bezier(.2,.7,.2,1), transform 0.8s cubic-bezier(.2,.7,.2,1); }
-  html.motion .rv.in{ opacity:1; transform:none; }
-  html.motion .media-card.rv.in{ transition:opacity 0.8s cubic-bezier(.2,.7,.2,1), transform 0.35s cubic-bezier(.2,.7,.2,1), box-shadow 0.35s ease; }
-  @media (prefers-reduced-motion:reduce){
-    html.motion .rv{ opacity:1; transform:none; transition:none; }
-    .media-card:hover, .moment-item:hover{ transform:none; }
-    *{ transition-duration:0.001ms !important; }
-  }
+  /* Story article */
+  .story-article{ padding:clamp(40px, 6vw, 72px) 0 clamp(56px, 8vw, 96px); }
+  .story-narrow{ max-width:760px; margin:0 auto; padding:0 clamp(16px, 2.4vw, 32px); }
+  .story-back{ display:inline-flex; align-items:center; gap:8px; font-size:0.86rem; font-weight:600; color:var(--ink-soft); text-decoration:none; margin-bottom:28px; }
+  .story-back:hover{ color:var(--ink); }
+  .story-article h1{ font-size:clamp(2rem, 4.6vw, 3.1rem); margin-top:14px; text-wrap:balance; }
+  .story-dek{ margin-top:18px; font-size:1.15rem; color:var(--ink-soft); }
+  .story-meta{ margin-top:20px; display:flex; align-items:center; gap:8px; font-size:0.84rem; color:var(--ink-faint); }
+  .story-meta .dot{ width:3px; height:3px; border-radius:50%; background:var(--ink-faint); }
+  .story-hero{ max-width:1100px; margin:40px auto 0; padding:0 clamp(16px, 2.4vw, 32px); }
+  .story-hero-media{ aspect-ratio:16/9; border-radius:18px; overflow:hidden; }
+  .story-hero-media image-slot{ border-radius:18px; }
+  .story-body{ margin-top:44px; }
+  .story-body p{ font-size:1.06rem; line-height:1.75; color:#2a2826; margin:0 0 22px; }
+  .story-body h2{ font-size:1.5rem; margin:44px 0 16px; }
+  .story-body blockquote{ margin:36px 0; padding:4px 0 4px 24px; border-left:3px solid var(--pink); font-family:'Poppins', sans-serif; font-weight:500; font-size:1.3rem; line-height:1.4; color:var(--ink); }
+  .story-note{ margin-top:40px; padding-top:20px; border-top:1px solid var(--line); font-size:0.82rem; color:var(--ink-faint); }
+  .more-stories{ background:var(--paper-raised); border-top:1px solid var(--line); }
+  .more-stories .story-grid{ grid-template-columns:repeat(2, 1fr); }
+  @media (max-width:860px){ .more-stories .story-grid{ grid-template-columns:1fr; } }
 </style><script src="./image-slot.js?v=2"></script></helmet>
 <header class="nav" id="siteNav">
   <div class="nav-inner">
@@ -176,88 +171,54 @@
 </header>
 
 <main id="top">
-
-  <section class="band-paper" id="featured-press">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow"><span class="idx">01</span> Featured Press</p>
-        <h2>In the news.</h2>
-      </div>
-
-      <div class="press-grid">
-        <a class="press-feature" href="./USWOO City Guides.dc.html">
-          <div class="press-feature-media">
-            <image-slot id="press-feature-img" shape="rounded" radius="14" placeholder="National expansion" src="./assets/la-closing.jpg" style="width:100%;height:100%"></image-slot>
-          </div>
-          <div class="press-feature-body">
-            <div class="press-feature-meta"><span class="src">USWOO Announcement</span><span>·</span><span>Oct 5, 2026</span></div>
-            <h3>USWOO Goes National: New Los Angeles Office and Rental Services Expanding to Chicago, D.C. and Philadelphia</h3>
-          </div>
-        </a>
-
-        <div>
-          <p class="press-latest-head">Latest Press</p>
-          <div class="press-side-list">
-            <a class="press-side-item" href="./USWOO%20News%20-%20Real%20Estate%20Summit%20at%20NYU%20Stern.dc.html">
-              <div class="press-side-text">
-                <h4>USWOO Sponsors NYU Stern Real Estate Club’s “Powering the Future” Real Estate Summit</h4>
-                <div class="press-side-tags"><span class="src">USWOO Announcement</span><span>·</span><span>Mar 6, 2026</span></div>
-              </div>
-              <div class="press-side-media"><image-slot id="press-side-summit" shape="rounded" radius="10" placeholder="Real Estate Summit" src="./assets/press-stern-summit-sign.jpg" style="width:100%;height:100%"></image-slot></div>
-            </a>
-            <a class="press-side-item" href="https://qns.com/2026/03/licp-lion-dance-lunar-new-year/" target="_blank" rel="noopener">
-              <div class="press-side-text">
-                <h4>LICP Hosts Massive Ceremonial Lion Dance to Cap Off Lunar New Year Celebrations</h4>
-                <div class="press-side-tags"><span class="src">QNS</span><span>·</span><span>Mar 2, 2026</span></div>
-              </div>
-              <div class="press-side-media"><image-slot id="press-side-1" shape="rounded" radius="10" placeholder="Lion dance" src="./assets/press-qns-lion-dance.jpg" credit="Image via QNS" credit-href="https://qns.com/2026/03/licp-lion-dance-lunar-new-year/" style="width:100%;height:100%"></image-slot></div>
-            </a>
-            <a class="press-side-item" href="https://commercialobserver.com/2024/02/uswoo-realty-warby-parker-wells-fargo-leases-8-court-square/" target="_blank" rel="noopener">
-              <div class="press-side-text">
-                <h4>Uswoo Realty, Warby Parker, Wells Fargo Ink Deals at LIC Residential Tower</h4>
-                <div class="press-side-tags"><span class="src">Commercial Observer</span><span>·</span><span>Feb 22, 2024</span></div>
-              </div>
-              <div class="press-side-media"><image-slot id="press-side-co" shape="rounded" radius="10" placeholder="8 Court Square" src="./assets/press-co-8-court-square.jpg" credit="Image via Commercial Observer" credit-href="https://commercialobserver.com/2024/02/uswoo-realty-warby-parker-wells-fargo-leases-8-court-square/" style="width:100%;height:100%"></image-slot></div>
-            </a>
-          </div>
-        </div>
+  <article class="story-article">
+    <div class="story-narrow">
+      <a class="story-back" href="./USWOO%20Press%20%26%20Stories.dc.html#renter-stories">← Back to Renter Stories</a>
+      <p class="eyebrow"><span class="idx">02</span> Renter Stories</p>
+      <h1>From campus to first apartment</h1>
+      <p class="story-dek">How one renter found the right neighborhood near NYU and settled in with ease.</p>
+      <div class="story-meta"><span>Jun 12, 2025</span><span class="dot"></span><span>5 min read</span></div>
+    </div>
+    <div class="story-hero">
+      <div class="story-hero-media">
+        <image-slot id="story-hero-img" shape="rounded" radius="18" placeholder="NYU campus" src="./assets/story-nyu-campus.jpg" style="width:100%;height:100%"></image-slot>
       </div>
     </div>
-  </section>
+    <div class="story-narrow story-body">
+      <p>Mei arrived in New York three weeks before orientation with two suitcases, an admission letter and a long list of questions. Which neighborhood is actually safe at night? How far is too far from campus? And what does a lease even look like in the United States?</p>
+      <p>She started where most new students do: scrolling listings late at night, twelve time zones from the people she could ask. Every apartment looked fine in the photos. None of them came with answers.</p>
+      <h2>Starting with the commute, not the listing</h2>
+      <p>Her USWOO advisor began with a different question: what does a normal Tuesday look like? Classes in Greenwich Village, a part-time job twice a week, groceries on the way home. That ruled out two neighborhoods she had been about to apply in and pointed her toward three she had never considered.</p>
+      <p>Rather than send a dozen links, the advisor narrowed the search to a handful of buildings and explained the trade-offs of each in plain language: the walk to the subway, the laundry situation, what the building fee covered.</p>
+      <blockquote>“I stopped feeling like I was guessing. Someone was walking me through it step by step.”</blockquote>
+      <h2>A lease she actually understood</h2>
+      <p>Before signing, Mei and her advisor went through the lease line by line: the deposit, the guarantor requirement, the move-in date and what happens if a roommate leaves early. It took one extra call, and it meant she signed knowing what she had agreed to.</p>
+      <h2>Settling in</h2>
+      <p>Furniture, Wi-Fi and renter's insurance were set up before she even picked up her keys, so the first night in the apartment was spent unpacking, not on hold with a utility company. A month later, she was giving directions to the new students on her floor.</p>
+      <p class="story-note">Renter names have been changed to protect privacy.</p>
+    </div>
+  </article>
 
-  <section class="band-raised" id="renter-stories">
+  <section class="more-stories" id="more-stories">
     <div class="wrap">
-      <div class="section-head-row">
-        <div class="section-head">
-          <p class="eyebrow"><span class="idx">02</span> Renter Stories</p>
-          <h2>Real moves. Real stories.</h2>
-        </div>
+      <div class="section-head">
+        <p class="eyebrow">Keep reading</p>
+        <h2>More renter stories.</h2>
       </div>
-
       <div class="story-grid">
-        <a class="media-card story-card" href="./USWOO%20Story%20-%20From%20Campus%20to%20First%20Apartment.dc.html">
-          <div class="media-card-media">
-            <image-slot id="story-img-1" shape="rounded" radius="8" placeholder="NYU campus" src="./assets/story-nyu-campus.jpg" style="width:100%;height:100%"></image-slot>
-          </div>
-          <div class="media-card-body">
-            <h3>From campus to first apartment</h3>
-            <p>How one renter found the right neighborhood near NYU and settled in with ease.</p>
-            <div class="story-card-meta"><span>Jun 12, 2025</span><span class="dot"></span><span>5 min read</span></div>
-          </div>
-        </a>
         <a class="media-card story-card" href="./USWOO%20Story%20-%20Moving%20Cities%20Made%20Easier.dc.html">
           <div class="media-card-media">
-            <image-slot id="story-img-2" shape="rounded" radius="8" placeholder="Moving boxes" src="./assets/story-moving-day-boxes.jpg" style="width:100%;height:100%"></image-slot>
+            <image-slot id="more-img-1" shape="rounded" radius="8" placeholder="Moving boxes" src="./assets/story-moving-day-boxes.jpg" style="width:100%;height:100%"></image-slot>
           </div>
           <div class="media-card-body">
             <h3>Moving cities made easier</h3>
-            <p>From apartment search to furniture, Wi-Fi and move-in — all in one place.</p>
+            <p>From apartment search to furniture, Wi-Fi and move-in, all in one place.</p>
             <div class="story-card-meta"><span>May 28, 2025</span><span class="dot"></span><span>4 min read</span></div>
           </div>
         </a>
         <a class="media-card story-card" href="./USWOO%20Story%20-%20Finding%20a%20Better%20Fit.dc.html">
           <div class="media-card-media">
-            <image-slot id="story-img-3" shape="rounded" radius="8" placeholder="NYC luxury apartment" src="./assets/story-nyc-luxury-living-room.jpg" style="width:100%;height:100%"></image-slot>
+            <image-slot id="more-img-2" shape="rounded" radius="8" placeholder="NYC luxury apartment" src="./assets/story-nyc-luxury-living-room.jpg" style="width:100%;height:100%"></image-slot>
           </div>
           <div class="media-card-body">
             <h3>Finding a better fit</h3>
@@ -265,36 +226,6 @@
             <div class="story-card-meta"><span>Apr 30, 2025</span><span class="dot"></span><span>6 min read</span></div>
           </div>
         </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="band-paper" id="brand-moments">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow"><span class="idx">03</span> Brand Moments</p>
-        <h2>Growing one city, one partnership and one renter story at a time.</h2>
-      </div>
-
-      <div class="moments-row">
-        <div class="moment-item icon-grid">
-          <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-          <h4>New City Launches</h4>
-          <p>Expanding our footprint across key U.S. cities.</p>
-          <span class="link-arrow">See Where We Are →</span>
-        </div>
-        <div class="moment-item icon-grid">
-          <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.2 13.8a5 5 0 0 0 7.1 0l2.3-2.3a5 5 0 0 0-7.1-7.1l-1.3 1.3"/><path d="M13.8 10.2a5 5 0 0 0-7.1 0l-2.3 2.3a5 5 0 0 0 7.1 7.1l1.3-1.3"/></svg></span>
-          <h4>New Partnerships</h4>
-          <p>Stronger collaborations that create more value.</p>
-          <span class="link-arrow">See Our Partners →</span>
-        </div>
-        <div class="moment-item icon-grid">
-          <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.4 7.4 21l4.6-2.7 4.6 2.7-1.2-7.6"/></svg></span>
-          <h4>Industry Recognition</h4>
-          <p>Honored to be acknowledged by leading organizations.</p>
-          <span class="link-arrow">About USWOO →</span>
-        </div>
       </div>
     </div>
   </section>
@@ -340,37 +271,6 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
-  componentDidMount() {
-    if (!('IntersectionObserver' in window)) return;
-    const groups = [
-      ['#featured-press .section-head'],
-      ['#featured-press .press-feature'],
-      ['#featured-press .press-latest-head', '#featured-press .press-side-item'],
-      ['#renter-stories .section-head'],
-      ['#renter-stories .story-card'],
-      ['#brand-moments .section-head'],
-      ['#brand-moments .moment-item'],
-    ];
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (!e.isIntersecting) return;
-        e.target.classList.add('in');
-        const t = e.target; setTimeout(() => { t.style.transitionDelay = ''; }, 1400);
-        io.unobserve(e.target);
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    document.documentElement.classList.add('motion');
-    groups.forEach((sels) => {
-      let i = 0;
-      sels.forEach((sel) => document.querySelectorAll(sel).forEach((el) => {
-        el.classList.add('rv');
-        el.style.transitionDelay = (i * 0.09) + 's';
-        i++;
-        io.observe(el);
-      }));
-    });
-    this._motionIo = io;
-  }
   renderVals() {
     return {
       preventDefault: (e) => e.preventDefault(),
