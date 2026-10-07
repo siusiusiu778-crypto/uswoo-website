@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<script src="./i18n-zh.js?v=1"></script>
+<script src="./i18n-zh-cities.js?v=1"></script>
+<script src="./i18n.js?v=1" defer></script>
 </head>
 <body>
 <x-dc>
@@ -11,7 +14,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;500;600;700&display=swap');
   :root{
     --paper: #FFFFFF; --paper-raised: #F6F5F3; --ink: #141414; --ink-soft: #656260; --ink-faint: #9C9894;
-    --line: #E7E4E0; --black: #0F0F0F; --pink: #B8860B; --pink-tint: #F6E9C9; --focus: #B8860B;
+    --line: #E7E4E0; --black: #0F0F0F; --pink: #FC8D94; --pink-tint: #FEDFE1; --focus: #FC8D94;
     --hero-ink: #FFFFFF; --hero-ink-soft: #E7E3DE;
   }
   *{ box-sizing:border-box; }
@@ -71,7 +74,7 @@
   @media (max-width: 560px){ .footer-top{ flex-direction:column; } }
 
   /* 01 Hero — looping city footage, the nav rides over it */
-  .about-hero{ position:relative; overflow:hidden; color:var(--hero-ink); margin-top:-73px; min-height:clamp(460px, 74vh, 760px); display:flex; align-items:flex-end; padding:0; }
+  .about-hero{ position:relative; overflow:hidden; color:var(--hero-ink); margin-top:-73px; height:100vh; height:100svh; min-height:560px; display:flex; align-items:flex-end; padding:0; }
   .about-hero-bg{ position:absolute; inset:0; z-index:0; overflow:hidden; }
   .hero-slides{ display:flex; width:200%; height:100%; transform:translateX(0); transition:transform 1.15s cubic-bezier(0.65,0,0.2,1); will-change:transform; }
   .hero-slide{ position:relative; width:50%; height:100%; flex:none; }
@@ -97,6 +100,7 @@
 
   /* 03 Mission — three columns, photo-led */
   .mission-head{ max-width:640px; margin:0 auto; text-align:center; }
+  .mission-head .eyebrow{ justify-content:center; }
   .mission-head h2.eyebrow{ font-family:'Inter', sans-serif; justify-content:center; }
   .mission-grid{ margin-top:clamp(44px, 6vw, 72px); display:grid; grid-template-columns:repeat(3, 1fr); gap:clamp(28px, 3.4vw, 48px); align-items:start; }
   .mission-item{ display:flex; flex-direction:column; }
@@ -121,6 +125,11 @@
   .icon-head{ display:flex; align-items:center; gap:10px; }
   .press-icon{ display:flex; flex:none; color:var(--ink); }
   .press-icon svg{ width:20px; height:20px; }
+  .story-essentials .story-essential-item.icon-grid{ display:flex; flex-direction:column; align-items:flex-start; }
+  .story-essentials .press-icon{ width:48px; height:48px; align-items:center; justify-content:center; border-radius:14px; background:color-mix(in srgb, var(--pink) 12%, #fff); color:var(--pink); }
+  .story-essentials .press-icon svg{ width:24px; height:24px; }
+  .story-essentials .story-essential-item.icon-grid > .press-icon{ align-self:flex-start; }
+  .story-essentials .story-essential-item h4{ margin:16px 0 0; }
   .story-essential-item h4{ font-family:'Poppins', sans-serif; font-weight:600; font-size:0.98rem; }
   .story-essential-item p{ margin-top:6px; color:var(--ink-soft); font-size:0.86rem; }
   @media (max-width:860px){ .story-essentials{ grid-template-columns:1fr 1fr; } }
@@ -148,6 +157,67 @@
   .cta-essentials .story-essential-item{ max-width:220px; text-align:center; }
   .cta-essentials .icon-head{ justify-content:center; }
   .cta-band .btn-row{ margin-top:34px; justify-content:center; }
+
+  /* Scroll motion — each section gets its own gesture. Content stays visible
+     unless JS flags the page (.js-motion), and reduced-motion opts out. */
+  .js-motion [data-rv]{ opacity:0; transition:opacity 0.8s ease, transform 0.9s cubic-bezier(0.2,0.7,0.2,1), clip-path 1.1s cubic-bezier(0.65,0,0.2,1); transition-delay:calc(var(--i,0) * 110ms); }
+  .js-motion [data-rv].in{ opacity:1; transform:none; clip-path:none; }
+  .js-motion [data-rv="up"]{ transform:translateY(26px); }
+  .js-motion [data-rv="left"]{ transform:translateX(-22px); }
+  .js-motion [data-rv="pop"]{ transform:scale(0.4); transition-timing-function:cubic-bezier(0.34,1.6,0.5,1); }
+  /* hero: slow push-in on the footage, eyebrow + cue fade up on load */
+  .js-motion .about-hero-bg{ animation:bgin 1.4s ease-out both; }
+  @keyframes bgin{ from{ filter:blur(14px) brightness(0.7); } to{ filter:none; } }
+  .js-motion .about-hero .eyebrow, .js-motion .about-hero .scroll-cue{ animation:heroin 1s 0.35s cubic-bezier(0.2,0.7,0.2,1) both; }
+  @keyframes heroin{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:none; } }
+  /* slogan: rule draws out from centre, headline rises word by word */
+  .js-motion .slogan-rule{ transform:scaleX(0); transition:transform 0.9s cubic-bezier(0.65,0,0.2,1); }
+  .js-motion .slogan-inner.in .slogan-rule{ transform:scaleX(1); }
+  .slogan-inner h1 .w{ display:inline-block; overflow:hidden; vertical-align:top; padding-bottom:0.12em; margin-bottom:-0.12em; }
+  .slogan-inner h1 .w > span{ display:inline-block; }
+  .js-motion .slogan-inner h1 .w > span{ transform:translateY(110%); transition:transform 0.9s cubic-bezier(0.2,0.7,0.2,1); transition-delay:calc(0.25s + var(--i,0) * 90ms); }
+  .js-motion .slogan-inner.in h1 .w > span{ transform:none; }
+  .js-motion .slogan-inner p{ opacity:0; transform:translateY(16px); transition:opacity 0.9s 0.85s ease, transform 0.9s 0.85s cubic-bezier(0.2,0.7,0.2,1); }
+  .js-motion .slogan-inner.in p{ opacity:1; transform:none; }
+  /* hero card: opens from a centre line, then its contents settle in */
+  .js-motion .hero-card{ clip-path:inset(50% 0 50% 0); transition:clip-path 1s 0.3s cubic-bezier(0.65,0,0.2,1); }
+  .js-motion .hero-card.in{ clip-path:inset(0 0 0 0); }
+  .js-motion .hero-card .slogan-rule{ transform:none; }
+  .js-motion .hero-card h1 .w > span{ transform:none; transition:none; }
+  .js-motion .hero-card h1, .js-motion .hero-card p, .js-motion .hero-card .slogan-rule{ opacity:0; transform:translateY(12px); transition:opacity 0.8s ease, transform 0.9s cubic-bezier(0.2,0.7,0.2,1); }
+  .js-motion .hero-card.in .slogan-rule{ opacity:1; transform:none; transition-delay:1.0s; }
+  .js-motion .hero-card.in h1{ opacity:1; transform:none; transition-delay:1.15s; }
+  .js-motion .hero-card.in p{ opacity:1; transform:none; transition-delay:1.3s; }
+  /* mission: cards rise in turn, photos unveil bottom-to-top and settle */
+  .js-motion .mission-media{ clip-path:inset(100% 0 0 0 round 14px); transition:clip-path 1.1s cubic-bezier(0.65,0,0.2,1); transition-delay:calc(var(--i,0) * 160ms + 150ms); }
+  .js-motion .mission-media image-slot{ transform:scale(1.18); transition:transform 1.6s cubic-bezier(0.2,0.7,0.2,1); transition-delay:calc(var(--i,0) * 160ms + 150ms); }
+  .js-motion .mission-item.in .mission-media{ clip-path:inset(0 0 0 0 round 14px); }
+  .js-motion .mission-item.in .mission-media image-slot{ transform:none; }
+  .js-motion .mission-item .m-num, .js-motion .mission-item h3, .js-motion .mission-item p{ opacity:0; transform:translateY(14px); transition:opacity 0.7s ease, transform 0.8s cubic-bezier(0.2,0.7,0.2,1); transition-delay:calc(var(--i,0) * 160ms + 500ms); }
+  .js-motion .mission-item.in .m-num, .js-motion .mission-item.in h3, .js-motion .mission-item.in p{ opacity:1; transform:none; }
+  .js-motion .mission-item.in h3{ transition-delay:calc(var(--i,0) * 160ms + 600ms); } .js-motion .mission-item.in p{ transition-delay:calc(var(--i,0) * 160ms + 700ms); }
+  /* story: wide photo wipes in left-to-right, essentials slide in from the left */
+  .js-motion .story-media-wide{ clip-path:inset(0 100% 0 0); transition:clip-path 1.3s cubic-bezier(0.65,0,0.2,1); }
+  .js-motion .story-media-wide image-slot{ transform:scale(1.12); transition:transform 1.8s cubic-bezier(0.2,0.7,0.2,1); }
+  .js-motion .story-wrap.in .story-media-wide{ clip-path:inset(0 0 0 0); }
+  .js-motion .story-wrap.in .story-media-wide image-slot{ transform:none; }
+  /* timeline: line draws across, dots pop in order, photos fade up */
+  .js-motion .timeline-track::before{ transform:scaleX(0); transform-origin:left; transition:transform 1.6s cubic-bezier(0.65,0,0.2,1); }
+  .js-motion .timeline-track.in::before{ transform:scaleX(1); }
+  .js-motion .timeline-dot{ transform:scale(0); transition:transform 0.5s cubic-bezier(0.34,1.8,0.5,1); transition-delay:calc(var(--i,0) * 380ms + 250ms); }
+  .js-motion .timeline-track.in .timeline-dot{ transform:scale(1); }
+  .js-motion .timeline-item{ opacity:0; transform:translateY(24px); transition:opacity 0.8s ease, transform 0.9s cubic-bezier(0.2,0.7,0.2,1); transition-delay:calc(var(--i,0) * 380ms + 300ms); }
+  .js-motion .timeline-track.in .timeline-item{ opacity:1; transform:none; }
+  /* careers: icons pop, buttons arrive last */
+  @media (prefers-reduced-motion: reduce){
+    .js-motion [data-rv], .js-motion .slogan-rule, .js-motion .slogan-inner h1 .w > span, .js-motion .slogan-inner p, .js-motion .hero-card h1, .js-motion .hero-card p, .js-motion .hero-card .slogan-rule, .js-motion .mission-media, .js-motion .mission-media image-slot, .js-motion .mission-item .m-num, .js-motion .mission-item h3, .js-motion .mission-item p, .js-motion .story-media-wide, .js-motion .story-media-wide image-slot, .js-motion .timeline-track::before, .js-motion .timeline-dot, .js-motion .timeline-item{ opacity:1 !important; transform:none !important; clip-path:none !important; transition:none !important; }
+    .js-motion .about-hero-bg, .js-motion .about-hero .eyebrow, .js-motion .about-hero .scroll-cue{ animation:none; }
+  }
+
+  .hero-card{ position:absolute; z-index:2; left:50%; top:58%; transform:translate(-50%,-50%); width:min(680px, calc(100% - 40px)); background:#fff; padding:clamp(32px, 4.4vw, 56px) clamp(24px, 4.4vw, 56px); box-shadow:0 24px 60px rgba(0,0,0,0.22); color:var(--ink); max-width:none; margin:0; }
+  .hero-card h1{ font-size:clamp(1.8rem, 3.8vw, 2.9rem); margin-top:clamp(18px, 2.4vw, 26px); }
+  .hero-card p{ font-size:clamp(0.96rem, 1.2vw, 1.06rem); margin-top:clamp(14px, 1.8vw, 20px); }
+  @media (max-width:640px){ .hero-card{ top:54%; } }
 </style><script src="./image-slot.js?v=2"></script></helmet>
 <header class="nav" id="siteNav" ref="{{ navRef }}">
   <div class="nav-inner">
@@ -156,6 +226,7 @@
       <a href="./USWOO Services.dc.html">Services</a>
       <a href="./USWOO City Guides.dc.html">City Guides</a>
       <a href="./USWOO Press &amp; Stories.dc.html">Press &amp; Stories</a>
+      <a href="./USWOO Partners.dc.html">Partners</a>
       <a href="./USWOO About Us.dc.html" class="active">About Us</a>
     </nav>
     <a class="nav-cta" href="./USWOO Home.dc.html#cta">Contact</a>
@@ -172,47 +243,42 @@
       </div>
     </div>
     <div class="about-hero-scrim" aria-hidden="true"></div>
+    <div class="slogan-inner hero-card">
+      <span class="slogan-rule" aria-hidden="true"></span>
+      <h1 aria-label="Find Your Place. Feel at Home." data-zh='<span class="w" style="--i:0"><span>找到属于你</span></span><span class="w" style="--i:2"><span>的地方，</span></span><span class="w" style="--i:4"><span>住出家</span></span><span class="w" style="--i:6"><span>的感觉。</span></span>'><span class="w" style="--i:0"><span>Find</span></span> <span class="w" style="--i:1"><span>Your</span></span> <span class="w" style="--i:2"><span>Place.</span></span> <span class="w" style="--i:3"><span>Feel</span></span> <span class="w" style="--i:4"><span>at</span></span> <span class="w" style="--i:5"><span>Home.</span></span></h1>
+      <p>USWOO helps international students and young professionals feel at home in a new city, with thoughtful support that goes beyond finding a place to live.</p>
+    </div>
     <div class="wrap">
       <p class="eyebrow">About USWOO</p>
       <a class="scroll-cue" href="#mission"><span class="line" aria-hidden="true"></span>Scroll</a>
     </div>
   </section>
 
-  <section class="slogan-band band-paper">
-    <div class="wrap">
-      <div class="slogan-inner">
-        <span class="slogan-rule" aria-hidden="true"></span>
-        <h1>Find Your Place. Feel at Home.</h1>
-        <p>USWOO helps international students and young professionals feel at home in a new city, with thoughtful support that goes beyond finding a place to live.</p>
-      </div>
-    </div>
-  </section>
-
   <section class="band-raised" id="mission">
     <div class="wrap">
-      <div class="mission-head">
+      <div class="mission-head" data-rv="up">
         <p class="eyebrow"><span class="idx">01</span> Our Mission</p>
         <h2>What we care about most.</h2>
         <p class="lede">Whether it's your first apartment tour or your third year in the city, this is what USWOO shows up for.</p>
       </div>
 
       <div class="mission-grid">
-        <article class="mission-item">
-          <div class="mission-media"><image-slot id="mission-img-1" shape="rounded" radius="14" placeholder="Friends talking it through" src="https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Toa Heftiba" credit-href="https://unsplash.com/@heftiba" style="width:100%;height:100%"></image-slot></div>
+        <article class="mission-item" data-io style="--i:0">
+          <div class="mission-media"><image-slot id="mission-img-1" shape="rounded" radius="14" placeholder="Friends talking it through" src="./assets/mission-sofa-book.jpg" style="width:100%;height:100%"></image-slot></div>
           <span class="m-num">01</span>
           <h3>We Know What It’s Like</h3>
           <p>Moving to a new country comes with a lot of unknowns. Finding a home is only one part of it. We understand the questions, the small worries, and all the details that come with starting over somewhere new.</p>
         </article>
 
-        <article class="mission-item">
-          <div class="mission-media"><image-slot id="mission-img-2" shape="rounded" radius="14" placeholder="Carrying boxes into a new home" src="https://images.unsplash.com/photo-1758523670969-dd1b1254062d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Vitaly Garlev" credit-href="https://unsplash.com/@silverkblack" style="width:100%;height:100%"></image-slot></div>
+        <article class="mission-item" data-io style="--i:1">
+          <div class="mission-media"><image-slot id="mission-img-2" shape="rounded" radius="14" placeholder="Carrying boxes into a new home" src="./assets/mission-sunlit-kitchen.jpg" style="width:100%;height:100%"></image-slot></div>
           <span class="m-num">02</span>
           <h3>We Take Care of the Details</h3>
           <p>From finding the right apartment to getting settled into everyday life, we’re here to make things feel easier and less overwhelming. Because when you’re far from home, the little things matter.</p>
         </article>
 
-        <article class="mission-item">
-          <div class="mission-media"><image-slot id="mission-img-3" shape="rounded" radius="14" placeholder="People together" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Priscilla Du Preez" credit-href="https://unsplash.com/@priscilladupreez" style="width:100%;height:100%"></image-slot></div>
+        <article class="mission-item" data-io style="--i:2">
+          <div class="mission-media"><image-slot id="mission-img-3" shape="rounded" radius="14" placeholder="People together" src="https://images.unsplash.com/photo-1782061816846-80b827da8117?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="knowacki" credit-href="https://unsplash.com/@knowacki" style="width:100%;height:100%"></image-slot></div>
           <span class="m-num">03</span>
           <h3>We’re Here Beyond Move In</h3>
           <p>Our support doesn’t end when you get the keys. As you settle in, meet people, and build your life here, we want USWOO to be a familiar place you can come back to.</p>
@@ -223,31 +289,31 @@
 
   <section class="band-raised" id="our-story">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head" data-rv="up">
         <p class="eyebrow"><span class="idx">02</span> Our Story</p>
         <h2>We started with renters. Then built around everything they needed.</h2>
         <p class="lede">What began as leasing support has grown into a broader rental experience — connecting renters with homes, services and local partners before, during and after move-in.</p>
       </div>
 
-      <div class="story-media-wide"><image-slot id="story-wide-img" shape="rect" placeholder="Team collaborating" src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=1600&q=80" credit="Redd Francisco" credit-href="https://unsplash.com/@reddfrancisco" style="width:100%;height:100%"></image-slot></div>
+      <div class="story-wrap" data-io><div class="story-media-wide"><image-slot id="story-wide-img" shape="rect" placeholder="Team collaborating" src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=1600&q=80" credit="Redd Francisco" credit-href="https://unsplash.com/@reddfrancisco" style="width:100%;height:100%"></image-slot></div></div>
 
       <div class="story-essentials">
-        <div class="story-essential-item icon-grid">
+        <div class="story-essential-item icon-grid" data-rv="left" style="--i:0">
           <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 10.2 12 3.6l8.5 6.6V20a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1Z"/><path d="M9.5 21v-6h5v6"/></svg></span>
           <h4>Find the right home</h4>
           <p>Leasing support across multiple cities.</p>
         </div>
-        <div class="story-essential-item icon-grid">
+        <div class="story-essential-item icon-grid" data-rv="left" style="--i:1">
           <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M3 18.5v-4.5a2 2 0 0 1 4 0V16h10v-2a2 2 0 0 1 4 0v4.5"/></svg></span>
           <h4>Move in with ease</h4>
           <p>Furniture, Wi-Fi, and essentials.</p>
         </div>
-        <div class="story-essential-item icon-grid">
+        <div class="story-essential-item icon-grid" data-rv="left" style="--i:2">
           <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="m5.6 5.6 3.9 3.9"/><path d="m14.5 14.5 3.9 3.9"/><path d="m18.4 5.6-3.9 3.9"/><path d="m9.5 14.5-3.9 3.9"/></svg></span>
           <h4>Settle in with support</h4>
           <p>Local services and community.</p>
         </div>
-        <div class="story-essential-item icon-grid">
+        <div class="story-essential-item icon-grid" data-rv="left" style="--i:3">
           <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.6 8.4-2.1 5.1-5.1 2.1 2.1-5.1Z"/></svg></span>
           <h4>Stay connected</h4>
           <p>Resources that make city life easier.</p>
@@ -258,36 +324,36 @@
 
   <section class="band-paper" id="how-we-got-here">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head" data-rv="up">
         <p class="eyebrow"><span class="idx">03</span> How We Got Here</p>
         <h2>How we got here.</h2>
       </div>
 
-      <div class="timeline-track">
-        <div class="timeline-item">
+      <div class="timeline-track" data-io>
+        <div class="timeline-item" style="--i:0">
           <span class="timeline-num">01</span>
-          <span class="timeline-dot"></span>
+          <span class="timeline-dot" style="--i:0"></span>
           <div class="timeline-media"><image-slot id="timeline-img-1" shape="rect" placeholder="NYC skyline" src="https://images.unsplash.com/photo-1643297698131-8d4c7f15ddd6?auto=format&fit=crop&w=500&q=80" credit="Harrison Mitchell" credit-href="https://unsplash.com/@harrisonmitchell" style="width:100%;height:100%"></image-slot></div>
           <h4>Founded</h4>
           <p>Started by helping international renters navigate the New York rental market.</p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item" style="--i:1">
           <span class="timeline-num">02</span>
-          <span class="timeline-dot"></span>
+          <span class="timeline-dot" style="--i:1"></span>
           <div class="timeline-media"><image-slot id="timeline-img-2" shape="rect" placeholder="Growth" src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?auto=format&fit=crop&w=500&q=80" credit="Isaac Smith" credit-href="https://unsplash.com/@isaacmsmith" style="width:100%;height:100%"></image-slot></div>
           <h4>6,000+ Leases</h4>
           <p>Expanded our renter network and leasing partnerships.</p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item" style="--i:2">
           <span class="timeline-num">03</span>
-          <span class="timeline-dot"></span>
+          <span class="timeline-dot" style="--i:2"></span>
           <div class="timeline-media"><image-slot id="timeline-img-3" shape="rect" placeholder="New Jersey skyline" src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=500&q=80" credit="Jonathan Roger" credit-href="https://unsplash.com/@jonathanroger" style="width:100%;height:100%"></image-slot></div>
           <h4>Beyond New York</h4>
           <p>Grew into New Jersey and additional U.S. cities.</p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item" style="--i:3">
           <span class="timeline-num">04</span>
-          <span class="timeline-dot"></span>
+          <span class="timeline-dot" style="--i:3"></span>
           <div class="timeline-media"><image-slot id="timeline-img-4" shape="rect" placeholder="Modern apartment" src="https://images.unsplash.com/photo-1624204386084-dd8c05e32226?auto=format&fit=crop&w=500&q=80" credit="Tobias Wilden" credit-href="https://unsplash.com/@tobiasw" style="width:100%;height:100%"></image-slot></div>
           <h4>USWOO Today</h4>
           <p>Built a broader city-based rental and lifestyle service network.</p>
@@ -298,26 +364,26 @@
 
   <section class="cta-band band-paper" id="grow-with-uswoo">
     <div class="wrap">
-      <p class="eyebrow"><span class="idx">04</span> Careers</p>
-      <h2>Grow with USWOO.</h2>
-      <p class="sub">We're building a team for people who understand cities, renters and what great service actually feels like.</p>
+      <p data-rv="up" class="eyebrow"><span class="idx">04</span> Careers</p>
+      <h2 data-rv="up" style="--i:1">Grow with USWOO.</h2>
+      <p data-rv="up" style="--i:2" class="sub">We're building a team for people who understand cities, renters and what great service actually feels like.</p>
 
       <div class="cta-essentials">
-        <div class="story-essential-item">
+        <div class="story-essential-item" data-rv="up" style="--i:3">
           <div class="icon-head">
             <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.5 20v-1.5a4 4 0 0 0-4-4h-5a4 4 0 0 0-4 4V20"/><circle cx="9" cy="7.5" r="3.5"/><path d="M21.5 20v-1.5a4 4 0 0 0-3-3.87"/><path d="M16 4.13a4 4 0 0 1 0 7.75"/></svg></span>
             <h4>Meaningful work</h4>
           </div>
           <p>Make an impact on renters' lives every day.</p>
         </div>
-        <div class="story-essential-item">
+        <div class="story-essential-item" data-rv="up" style="--i:4">
           <div class="icon-head">
             <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 16.5 5.5-5.5 3.5 3.5L21 5.5"/><path d="M15 5.5h6v6"/></svg></span>
             <h4>Learn &amp; grow</h4>
           </div>
           <p>Hands-on experience in real estate, lifestyle and more.</p>
         </div>
-        <div class="story-essential-item">
+        <div class="story-essential-item" data-rv="up" style="--i:5">
           <div class="icon-head">
             <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.1 5.8a4.6 4.6 0 0 0-6.5 0l-.6.6-.6-.6a4.6 4.6 0 1 0-6.5 6.5l7.1 7.1 7.1-7.1a4.6 4.6 0 0 0 0-6.5Z"/></svg></span>
             <h4>Great team culture</h4>
@@ -326,7 +392,7 @@
         </div>
       </div>
 
-      <div class="btn-row">
+      <div class="btn-row" data-rv="up" style="--i:6">
         <a class="btn btn-primary" href="#grow-with-uswoo">View Open Roles →</a>
         <a class="btn btn-outline" href="#grow-with-uswoo">Join Our Team →</a>
       </div>
@@ -389,6 +455,21 @@ class Component extends DCLogic {
         }, 4800);
       }
     }
+    // Scroll motion: flag the page, then reveal each [data-rv]/[data-io] once
+    // it scrolls into view. Without JS or IntersectionObserver nothing is hidden.
+    const root = document.documentElement;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce && 'IntersectionObserver' in window) {
+      root.classList.add('js-motion');
+      this._rv = new IntersectionObserver((entries) => {
+        entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('in'); this._rv.unobserve(en.target); } });
+      }, { threshold: 0.18, rootMargin: '0px 0px -6% 0px' });
+      document.querySelectorAll('[data-rv], [data-io]').forEach((el) => this._rv.observe(el));
+      // The hero card is on screen at load; its clip-path starts empty, which
+      // would keep an observer from ever seeing it, so open it directly.
+      const card = document.querySelector('.hero-card');
+      if (card) requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add('in')));
+    }
     // The nav is transparent while the footage is behind it, opaque after.
     if (this.navRef && this.heroRef && 'IntersectionObserver' in window) {
       this._io = new IntersectionObserver((entries) => {
@@ -403,6 +484,7 @@ class Component extends DCLogic {
 
   componentWillUnmount() {
     if (this._io) this._io.disconnect();
+    if (this._rv) this._rv.disconnect();
     if (this._heroSlideTimer) clearInterval(this._heroSlideTimer);
   }
 

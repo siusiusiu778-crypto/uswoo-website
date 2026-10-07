@@ -13,6 +13,7 @@ Static export of the USWOO Claude Design project, ready to deploy on Vercel.
   The audio track was silent and unused (the element is `muted`), so it is dropped.
 - `assets/uswoo-hero-city.webp` — the skyline matted out of that footage (transparent above the roofline). It is laid back over the video so the giant `USWOO` wordmark in the hero can sit between the sky and the buildings. It is registered to the footage by `.hero-frame`, which reproduces the video's `object-fit:cover` box, so both layers stay aligned at any viewport size. Regenerate it if the hero footage ever changes.
 - `assets/uswoo-hero.jpg`, `assets/uswoo-hero-nyc.jpg` — earlier hero stills, no longer referenced.
+- `i18n.js`, `i18n-zh.js`, `i18n-zh-cities.js` — the EN / 中文 switch in the top-right of the nav. `i18n.js` is the engine (finds English text on the rendered page and swaps it, remembers the choice in localStorage, `?lang=zh` forces Chinese); the two `i18n-zh*.js` files are the dictionaries (English text → Chinese). To add or fix a translation, edit the dictionary entry whose key is the English text; anything without an entry just stays English. For headings whose text is split by inline tags, put the Chinese HTML in a `data-zh="…"` attribute on that element.
 - `vercel.json` — routes `/` to the Home page and adds friendly aliases (`/services`, `/partners`, `/city-guides`, `/home`); the original `.dc.html` links between pages keep working unchanged.
 
 No build step — this is plain static HTML/JS. Vercel will deploy it as-is.

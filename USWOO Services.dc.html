@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<script src="./i18n-zh.js?v=1"></script>
+<script src="./i18n-zh-cities.js?v=1"></script>
+<script src="./i18n.js?v=1" defer></script>
 </head>
 <body>
 <x-dc>
@@ -11,7 +14,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;500;600;700&display=swap');
   :root{
     --paper: #FFFFFF; --paper-raised: #F6F5F3; --ink: #141414; --ink-soft: #656260; --ink-faint: #9C9894;
-    --line: #E7E4E0; --black: #0F0F0F; --pink: #B8860B; --pink-tint: #F6E9C9; --focus: #B8860B;
+    --line: #E7E4E0; --black: #0F0F0F; --pink: #FC8D94; --pink-tint: #FEDFE1; --focus: #FC8D94;
     --hero-ink: #FFFFFF; --hero-ink-soft: #E7E3DE;
   }
   *{ box-sizing:border-box; }
@@ -99,7 +102,7 @@
   @media (max-width:860px){ .svc-hero-grid{ grid-template-columns:1fr; } .svc-hero-thumb{ width:100%; max-width:320px; } }
 
   .split-hero{ padding:0; }
-  .split-hero-grid{ display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); align-items:stretch; height:clamp(440px,52vw,620px); }
+  .split-hero-grid{ display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); align-items:stretch; height:calc(100vh - 73px); height:calc(100svh - 73px); min-height:520px; }
   .split-hero-text{ padding:clamp(48px,7vw,72px) clamp(20px,4vw,48px) clamp(48px,7vw,72px) clamp(88px,11vw,140px); display:flex; flex-direction:column; justify-content:center; max-width:560px; min-width:0; height:100%; box-sizing:border-box; }
   .split-hero-text .eyebrow{ margin-bottom:14px; }
   .split-hero-text h1{ font-size:clamp(2rem, 3.6vw, 2.7rem); color:var(--ink); max-width:14ch; }
@@ -143,6 +146,48 @@
   .wechat-cta span{ display:block; font-size:0.95rem; color:var(--ink-soft); margin-top:2px; }
   .testimonial-media{ min-height:416px; border-radius:0 16px 16px 0; overflow:hidden; border:1px solid var(--line); }
   @media (max-width:860px){ .testimonial-block{ grid-template-columns:1fr; } .testimonial-card{ border-radius:0 0 16px 16px; border-right:1px solid var(--line); border-top:none; } .testimonial-media{ min-height:260px; order:-1; border-radius:16px 16px 0 0; border-bottom:none; } }
+
+  /* Scroll motion — one gesture per layout. Content stays visible unless JS
+     flags the page (.js-motion); reduced-motion opts out. */
+  .js-motion [data-rv]{ opacity:0; transform:translateY(24px); transition:opacity 0.8s ease, transform 0.9s cubic-bezier(0.2,0.7,0.2,1); transition-delay:calc(var(--i,0) * 110ms); }
+  .js-motion [data-rv].in{ opacity:1; transform:none; }
+  /* hero (split): copy rises line by line, photo is unveiled from the right */
+  .js-motion .split-hero-text > *{ opacity:0; transform:translateY(22px); transition:opacity 0.8s ease, transform 0.9s cubic-bezier(0.2,0.7,0.2,1); }
+  .js-motion .split-hero.in .split-hero-text > *{ opacity:1; transform:none; }
+  .js-motion .split-hero.in .split-hero-text > :nth-child(1){ transition-delay:0.15s; } .js-motion .split-hero.in .split-hero-text > :nth-child(2){ transition-delay:0.3s; }
+  .js-motion .split-hero.in .split-hero-text > :nth-child(3){ transition-delay:0.45s; } .js-motion .split-hero.in .split-hero-text > :nth-child(4){ transition-delay:0.6s; }
+  .js-motion .split-hero-media{ clip-path:inset(0 0 0 100%); transition:clip-path 1.3s 0.1s cubic-bezier(0.65,0,0.2,1); }
+  .js-motion .split-hero-media image-slot{ display:block; transform:scale(1.15); transition:transform 1.8s 0.1s cubic-bezier(0.2,0.7,0.2,1); }
+  .js-motion .split-hero.in .split-hero-media{ clip-path:inset(0 0 0 0); }
+  .js-motion .split-hero.in .split-hero-media image-slot{ transform:none; }
+  /* process: four steps in a row — each photo drops a curtain, cards step in left to right */
+  .js-motion .process-card{ opacity:0; transform:translateY(34px); transition:opacity 0.8s ease, transform 0.9s cubic-bezier(0.2,0.7,0.2,1); transition-delay:calc(var(--i,0) * 170ms); }
+  .js-motion .process-card-media{ clip-path:inset(0 0 100% 0); transition:clip-path 1s cubic-bezier(0.65,0,0.2,1); transition-delay:calc(var(--i,0) * 170ms + 200ms); }
+  .js-motion .process-card-text{ opacity:0; transform:translateY(10px); transition:opacity 0.7s ease, transform 0.8s ease; transition-delay:calc(var(--i,0) * 170ms + 650ms); }
+  .js-motion .process-cards.in .process-card{ opacity:1; transform:none; }
+  .js-motion .process-cards.in .process-card-media{ clip-path:inset(0 0 0 0); }
+  .js-motion .process-cards.in .process-card-text{ opacity:1; transform:none; }
+  /* essentials: icons pop in a wave across the grid, labels follow */
+  .js-motion .essential-icon-upload{ transform:scale(0.3); opacity:0; transition:transform 0.6s cubic-bezier(0.34,1.7,0.5,1), opacity 0.4s ease; transition-delay:calc(var(--i,0) * 70ms); }
+  .js-motion .essential-card-dark h3, .js-motion .essential-card-dark p{ opacity:0; transform:translateY(8px); transition:opacity 0.6s ease, transform 0.7s ease; transition-delay:calc(var(--i,0) * 70ms + 180ms); }
+  .js-motion .essentials-grid-dark.in .essential-icon-upload{ transform:none; opacity:1; }
+  .js-motion .essentials-grid-dark.in .essential-card-dark h3, .js-motion .essentials-grid-dark.in .essential-card-dark p{ opacity:1; transform:none; }
+  /* closing quote: card slides in from the left, photo wipes in from the right */
+  .js-motion .testimonial-card{ opacity:0; transform:translateX(-36px); transition:opacity 0.9s ease, transform 1s cubic-bezier(0.2,0.7,0.2,1); }
+  .js-motion .testimonial-media{ clip-path:inset(0 0 0 100%); transition:clip-path 1.2s 0.15s cubic-bezier(0.65,0,0.2,1); }
+  .js-motion .testimonial-block.in .testimonial-card{ opacity:1; transform:none; }
+  .js-motion .testimonial-block.in .testimonial-media{ clip-path:inset(0 0 0 0); }
+  .js-motion .quote-mark, .js-motion .quote-text, .js-motion .wechat-cta{ opacity:0; transform:translateY(12px); transition:opacity 0.8s ease, transform 0.9s cubic-bezier(0.2,0.7,0.2,1); }
+  .js-motion .testimonial-block.in .quote-mark{ opacity:1; transform:none; transition-delay:0.4s; }
+  .js-motion .testimonial-block.in .quote-text:nth-of-type(1){ opacity:1; transform:none; transition-delay:0.6s; }
+  .js-motion .testimonial-block.in .quote-text:nth-of-type(2){ opacity:1; transform:none; transition-delay:0.85s; }
+  .js-motion .testimonial-block.in .wechat-cta{ opacity:1; transform:none; transition-delay:1.1s; }
+  @media (max-width:860px){ .js-motion .split-hero-media, .js-motion .testimonial-media{ clip-path:inset(0 0 100% 0); } .js-motion .split-hero.in .split-hero-media, .js-motion .testimonial-block.in .testimonial-media{ clip-path:inset(0); } }
+  @media (prefers-reduced-motion: reduce){
+    .js-motion *{ transition:none !important; animation:none !important; }
+    .js-motion [data-rv], .js-motion .split-hero-text > *, .js-motion .process-card, .js-motion .process-card-text, .js-motion .essential-icon-upload, .js-motion .essential-card-dark h3, .js-motion .essential-card-dark p, .js-motion .testimonial-card, .js-motion .quote-mark, .js-motion .quote-text, .js-motion .wechat-cta, .js-motion image-slot{ opacity:1 !important; transform:none !important; }
+    .js-motion .split-hero-media, .js-motion .process-card-media, .js-motion .testimonial-media{ clip-path:none !important; }
+  }
 </style><script src="./image-slot.js?v=2"></script></helmet>
 <header class="nav scrolled" id="siteNav">
   <div class="nav-inner">
@@ -151,6 +196,7 @@
       <a href="./USWOO Services.dc.html" class="active">Services</a>
       <a href="./USWOO City Guides.dc.html">City Guides</a>
       <a href="./USWOO Press & Stories.dc.html">Press &amp; Stories</a>
+      <a href="./USWOO Partners.dc.html">Partners</a>
       <a href="./USWOO About Us.dc.html">About Us</a>
     </nav>
     <a class="nav-cta" href="./USWOO Home.dc.html#cta">Contact</a>
@@ -177,34 +223,34 @@
 
   <section class="band-paper" id="our-process" style="padding-top:clamp(101px,16.2vw,180px);">
     <div class="wrap">
-      <div class="section-head centered">
+      <div class="section-head centered" data-rv>
         <p class="eyebrow"><span class="idx">02</span>OUR PROCESS</p>
         <h2>One rental journey, supported from start to finish.</h2>
       </div>
 
-      <div class="process-cards">
-        <div class="process-card">
+      <div class="process-cards" data-io>
+        <div class="process-card" style="--i:0">
           <div class="process-card-media"><image-slot id="process-img-1" shape="rect" placeholder="Drop a photo" style="width:100%;height:100%"></image-slot></div>
           <div class="process-card-text">
             <h3>Find &amp; Lease</h3>
             <p class="process-card-desc">Home Search · Tours · Applications · Lease Support</p>
           </div>
         </div>
-        <div class="process-card">
+        <div class="process-card" style="--i:1">
           <div class="process-card-media"><image-slot id="process-img-2" shape="rect" placeholder="Drop a photo" style="width:100%;height:100%"></image-slot></div>
           <div class="process-card-text">
             <h3>Prepare &amp; Set Up</h3>
             <p class="process-card-desc">Move-in Planning · Building Guidance · Pre-move Support</p>
           </div>
         </div>
-        <div class="process-card">
+        <div class="process-card" style="--i:2">
           <div class="process-card-media"><image-slot id="process-img-3" shape="rect" placeholder="Drop a photo" style="width:100%;height:100%"></image-slot></div>
           <div class="process-card-text">
             <h3>Move In &amp; Settle</h3>
             <p class="process-card-desc">Move-in Coordination · Local Guidance · Everyday Support</p>
           </div>
         </div>
-        <div class="process-card">
+        <div class="process-card" style="--i:3">
           <div class="process-card-media"><image-slot id="process-img-4" shape="rect" placeholder="Drop a photo" style="width:100%;height:100%"></image-slot></div>
           <div class="process-card-text">
             <h3>Renew or Relocate</h3>
@@ -217,49 +263,49 @@
 
   <section class="band-raised" id="move-in-essentials">
     <div class="wrap">
-      <div class="section-head centered">
+      <div class="section-head centered" data-rv>
         <p class="eyebrow"><span class="idx">03</span> BEYOND THE LEASE</p>
         <h2>Thoughtful support for everyday life.</h2>
         <p class="lede" style="margin-top:16px;">Through Hi NY, USWOO takes care of the details that make settling into a new city feel easier, from move in essentials to the small everyday needs that are easy to overlook. Our support is personal, practical, and designed to make life feel a little more effortless.</p>
       </div>
 
-      <div class="essentials-grid-dark">
-      <div class="essential-card-dark">
+      <div class="essentials-grid-dark" data-io>
+      <div class="essential-card-dark" style="--i:0">
         <div class="essential-icon-upload"><image-slot id="essential-img-1" shape="rect" placeholder="Icon" style="width:100%;height:100%"></image-slot></div>
         <h3>Moving &amp; Luggage</h3>
         <p>Local moves and luggage shipping, handled.</p>
       </div>
-      <div class="essential-card-dark">
+      <div class="essential-card-dark" style="--i:1">
         <div class="essential-icon-upload"><image-slot id="essential-img-2" shape="rect" placeholder="Icon" style="width:100%;height:100%"></image-slot></div>
         <h3>Room Dividers</h3>
         <p>Smarter partitions for shared space.</p>
       </div>
-      <div class="essential-card-dark">
+      <div class="essential-card-dark" style="--i:2">
         <div class="essential-icon-upload"><image-slot id="essential-img-3" shape="rect" placeholder="Icon" style="width:100%;height:100%"></image-slot></div>
         <h3>Furniture</h3>
         <p>Rental and setup, no starting from scratch.</p>
       </div>
-      <div class="essential-card-dark">
+      <div class="essential-card-dark" style="--i:3">
         <div class="essential-icon-upload"><image-slot id="essential-img-4" shape="rect" placeholder="Icon" style="width:100%;height:100%"></image-slot></div>
         <h3>Wi-Fi &amp; Utilities</h3>
         <p>Internet, power and the essentials online.</p>
       </div>
-      <div class="essential-card-dark">
+      <div class="essential-card-dark" style="--i:1">
         <div class="essential-icon-upload"><image-slot id="essential-img-5" shape="rect" placeholder="Icon" style="width:100%;height:100%"></image-slot></div>
         <h3>Mobile Plans</h3>
         <p>A U.S. number and a plan that fits.</p>
       </div>
-      <div class="essential-card-dark">
+      <div class="essential-card-dark" style="--i:2">
         <div class="essential-icon-upload"><image-slot id="essential-img-6" shape="rect" placeholder="Icon" style="width:100%;height:100%"></image-slot></div>
         <h3>Renter's Insurance</h3>
         <p>Coverage that meets building requirements.</p>
       </div>
-      <div class="essential-card-dark">
+      <div class="essential-card-dark" style="--i:3">
         <div class="essential-icon-upload"><image-slot id="essential-img-7" shape="rect" placeholder="Icon" style="width:100%;height:100%"></image-slot></div>
         <h3>Move-in Checklist</h3>
         <p>The small details, before and after.</p>
       </div>
-      <div class="essential-card-dark">
+      <div class="essential-card-dark" style="--i:4">
         <div class="essential-icon-upload"><image-slot id="essential-img-8" shape="rect" placeholder="Icon" style="width:100%;height:100%"></image-slot></div>
         <h3>Community &amp; Connections</h3>
         <p>Events, networking and local community.</p>
@@ -270,7 +316,7 @@
 
   <section class="band-paper" id="cta">
     <div class="wrap">
-      <div class="testimonial-block">
+      <div class="testimonial-block" data-io>
         <div class="testimonial-card">
           <div class="quote-mark">&ldquo;</div>
           <p class="quote-text">A new city feels different when you don&rsquo;t have to figure it all out alone.</p>
@@ -330,6 +376,25 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
+  componentDidMount() {
+    // Scroll motion: flag the page, reveal each [data-rv]/[data-io] once in view.
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || !('IntersectionObserver' in window)) return;
+    document.documentElement.classList.add('js-motion');
+    this._rv = new IntersectionObserver((entries) => {
+      entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('in'); this._rv.unobserve(en.target); } });
+    }, { threshold: 0.18, rootMargin: '0px 0px -6% 0px' });
+    document.querySelectorAll('[data-rv], [data-io]').forEach((el) => this._rv.observe(el));
+    // The hero is on screen at load and its photo starts clipped to nothing,
+    // so open it directly rather than waiting on an observer.
+    const hero = document.querySelector('.split-hero');
+    if (hero) requestAnimationFrame(() => requestAnimationFrame(() => hero.classList.add('in')));
+  }
+
+  componentWillUnmount() {
+    if (this._rv) this._rv.disconnect();
+  }
+
   renderVals() {
     return {
       preventDefault: (e) => e.preventDefault(),
