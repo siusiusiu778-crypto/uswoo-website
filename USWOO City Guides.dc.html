@@ -1181,6 +1181,9 @@ class Component extends DCLogic {
     // Icons win over the area underneath them; business areas sit above neighborhoods.
     // Area cards stay pinned to the area's label point so they don't chase the cursor.
     const onMove = (e) => {
+      // DOM markers (schools, fallback pins) bubble their mouse events up to the map; they show their own card.
+      const t = e.originalEvent && e.originalEvent.target;
+      if (t && t.closest && t.closest('.maplibregl-marker')) { unhover(); shownKey = null; map.getCanvas().style.cursor = ''; return; }
       const poi = map.getLayer('cg-poi-icon') && map.queryRenderedFeatures(e.point, { layers: ['cg-poi-icon'] })[0];
       const trLayers = ['cg-tr-station', 'cg-tr-line'].filter((id) => map.getLayer(id) && map.getLayoutProperty(id, 'visibility') !== 'none');
       const tr = !poi && trLayers.length && map.queryRenderedFeatures([[e.point.x - 4, e.point.y - 4], [e.point.x + 4, e.point.y + 4]], { layers: trLayers })
