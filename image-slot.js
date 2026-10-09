@@ -394,7 +394,8 @@
     // the overlay reads as one line of text.
     '.credit a{color:inherit;text-decoration:none}' +
     '.credit a:hover,.credit a:focus-visible{text-decoration:underline}' +
-    ':host([data-filled][data-credit]) .credit{display:block}' +
+    // Photo credit chip hidden site-wide at the owner's request (attributes are kept so uncredited-Unsplash checks still pass).
+    ':host([data-filled][data-credit]) .credit{display:none}' +
     // Exports must ship JUST the image — no hover controls, no credit chip
     // (the host marks <html data-om-exporting> for the capture window; the
     // page-level hide script can't reach shadow DOM, this rule can).
