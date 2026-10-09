@@ -86,6 +86,8 @@
   .footer-links a{ text-decoration:none; font-size:0.9rem; color:rgba(255,255,255,0.82); transition:color 0.15s ease; }
   .footer-links a:hover{ color:var(--pink); }
   .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
+  .footer-legal{ text-align:left; max-width:760px; margin:0 auto; padding:24px 0 0; font-size:0.66rem; line-height:1.6; color:rgba(255,255,255,0.45); }
+  .footer-legal + .footer-legal{ padding-top:6px; }
   .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
   .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
   @media (max-width: 560px){ .footer-top{ flex-direction:column; } }
@@ -256,12 +258,13 @@
   @media (max-width:600px){ .cg-area-note.cg-note-mobile-hide{ display:none; } .cg-area-note .body{ align-items:stretch; } .cg-area-note .btn{ align-self:center; } }
 
   .cg-switch{ display:flex; align-items:center; gap:20px; flex-wrap:wrap; background:var(--paper-raised); border:1px solid var(--line); border-radius:2px; padding:24px 28px; }
+  @media (max-width:600px){ .cg-switch{ display:none; } }
   .cg-switch-icon{ width:48px; height:48px; border-radius:50%; background:#fff; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; flex:none; }
   .cg-switch-icon svg{ width:20px; height:20px; stroke:var(--ink); }
   .cg-switch-text{ flex:1; min-width:200px; }
   .cg-switch-text strong{ display:block; font-size:1rem; }
   .cg-switch-text span{ display:block; font-size:0.88rem; color:var(--ink-soft); margin-top:2px; }
-</style><script src="./image-slot.js?v=2"></script>
+</style><script src="./image-slot.js?v=3"></script>
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script></helmet>
 <header class="nav scrolled" id="siteNav">
@@ -305,11 +308,11 @@
 
           <button type="button" class="cg-filter-open" data-cg-open>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>
-            Filters
+            Choose City &amp; Explore
           </button>
           <div class="cg-sheet-backdrop" data-cg-close></div>
-          <div class="cg-sheet" role="dialog" aria-label="Filters">
-          <div class="cg-sheet-head"><button type="button" class="cg-sheet-x" data-cg-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button><span>Filters</span></div>
+          <div class="cg-sheet" role="dialog" aria-label="Explore Your Way">
+          <div class="cg-sheet-head"><button type="button" class="cg-sheet-x" data-cg-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button><span>Explore Your Way</span></div>
           <div class="cg-sheet-body">
           <div class="cg-sheet-cities">
             <p class="cg-filters-label">City</p>
@@ -388,24 +391,16 @@
       <div class="footer-col">
         <div class="ft-label">Follow</div>
         <ul class="footer-links">
-          <li><a href="#top">Instagram &rarr;</a></li>
-          <li><a href="#top">LinkedIn &rarr;</a></li>
-          <li><a href="#top">TikTok &rarr;</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <div class="ft-label">USWOO</div>
-        <p class="footer-copy">&copy; 2026 USWOO<br>New York City</p>
-      </div>
-      <div class="footer-col">
-        <div class="ft-label">Legal</div>
-        <ul class="footer-links">
-          <li><a href="#top">Terms &amp; Conditions &rarr;</a></li>
-          <li><a href="#top">Privacy Policy &rarr;</a></li>
-          <li><a href="#top">Cookies Policy &rarr;</a></li>
+          <li><a href="https://www.instagram.com/uswoo_realty/" target="_blank" rel="noopener noreferrer">Instagram &rarr;</a></li>
+          <li><a href="https://www.linkedin.com/company/uswoo-realty-llc/home/" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a></li>
+          <li><a href="https://www.tiktok.com/@uswoo_realty" target="_blank" rel="noopener noreferrer">TikTok &rarr;</a></li>
         </ul>
       </div>
     </div>
+    <p class="footer-legal">Boston USWOO Realty LLC is a licensed real estate broker in Massachusetts, with its New York branch, USWOO REALTY LLC, independently licensed in New York State.</p>
+    <p class="footer-legal">All information is deemed reliable but not guaranteed and is subject to change without notice. Listings are subject to prior sale, rental, or withdrawal.</p>
+    <p class="footer-legal">Both entities and their affiliates support Fair Housing and Equal Opportunity and comply with applicable anti-discrimination laws.</p>
+    <p class="footer-legal">Copyright ©2026 Boston USWOO Realty LLC. All Rights Reserved.</p>
     <div class="footer-word">
       <div class="wm">USWOO</div>
     </div>
@@ -524,7 +519,7 @@ function buildAreaGuideHtml(city) {
     '<button class="cg-area-pill' + (city === n ? ' active' : '') + '" data-city="' + n + '">' + (CITY_EMOJI[n] || '') + ' ' + n + '</button>').join('');
   const head = '<div class="cg-areas-head"><p class="eyebrow"><span class="idx">02</span>NEIGHBORHOODS</p><h2>' + (CITY_EMOJI[city] || '') + ' ' + city + '</h2>' +
     (g ? '<p>' + g.intro + '</p>' : '<p style="text-align:center">Neighborhood guide coming soon.</p>') + '</div><div class="cg-area-pills">' + pills + '</div>' +
-    '<button type="button" class="cg-filter-open" data-cg-open data-cg-only="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>Filters</button>';
+    '<button type="button" class="cg-filter-open" data-cg-open data-cg-only="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>Pick Another City</button>';
   if (!g) return { __html: '<section class="cg-areas" id="areas"><div class="wrap">' + head + '</div></section>' };
   const cards = g.areas.map((a) =>
     '<article class="cg-area"><div class="art"><img src="' + AREA_ART[a.name] + '" alt="' + a.name + '"></div><div class="body">' +
@@ -1057,7 +1052,10 @@ function geoBounds(features) {
 const fetchJson = (url) => fetch(url).then((r) => { if (!r.ok) throw new Error(url); return r.json(); });
 
 class Component extends DCLogic {
-  state = { activeFilters: ['neighborhood'], activeCity: 'New York & New Jersey' };
+  state = { activeFilters: ['neighborhood'], activeCity: (() => {
+    try { const c = new URLSearchParams(location.search).get('city'); if (c && CITIES.indexOf(c) !== -1) return c; } catch (e) {}
+    return 'New York & New Jersey';
+  })() };
   mapWrapperRef = { current: null };
   leafletMap = null;
   markerLayer = null;
@@ -1079,6 +1077,14 @@ class Component extends DCLogic {
     };
     document.addEventListener('click', this.onSheetClick);
     this.initCardMotion();
+    // Arriving from a home-page city card: land on the city map panel (layout shifts as images load, so re-align a few times).
+    try {
+      if (location.hash === '#explore' && new URLSearchParams(location.search).get('city')) {
+        const go = () => { const el = document.getElementById('explore'); if (el) window.scrollTo(0, el.getBoundingClientRect().top + window.pageYOffset - 8); };
+        [0, 300, 900, 1800].forEach((t) => setTimeout(go, t));
+        window.addEventListener('load', go, { once: true });
+      }
+    } catch (e) {}
     loadBrandStyle().then((st) => { this.mapStyle = st; }).catch(() => {});
     fetchJson('./assets/neighborhoods.geojson').then((d) => { this.nbData = d; }).catch(() => { this.nbData = null; });
     fetchJson('./assets/poi/poi.json').then((d) => { this.poiInfo = d; }).catch(() => {});

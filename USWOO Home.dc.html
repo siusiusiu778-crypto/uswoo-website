@@ -361,6 +361,18 @@
   #help.in-view .flow-step:nth-child(2){ transition-delay:0.45s; }
   #help.in-view .flow-step:nth-child(3){ transition-delay:0.7s; }
 
+  /* Phones: each card reveals on its own as it scrolls into view. */
+  @media (max-width:760px){
+    .m-reveal .flow-step{ transform:translateY(28px); transition:opacity 0.8s ease, transform 0.8s ease; transition-delay:0s; }
+    .m-reveal .flow-step.m-in{ opacity:1; transform:none; }
+    .m-reveal #locations .section-head.m-in, .m-reveal #locations .location-card.m-in{ opacity:1; transform:none; transition-delay:0s; }
+    .m-reveal #locations .location-card.m-in image-slot{ filter:blur(0); transform:scale(1); }
+    .m-reveal #locations .location-card.m-in:nth-child(1){ transition-delay:0.10s; }
+    .m-reveal #locations .location-card.m-in:nth-child(2){ transition-delay:0.20s; }
+    .m-reveal #locations .location-card.m-in:nth-child(3){ transition-delay:0.30s; }
+    .m-reveal #locations .location-card.m-in:nth-child(4){ transition-delay:0.40s; }
+    .m-reveal #locations .location-card.m-in:nth-child(5){ transition-delay:0.50s; }
+  }
   .locations-pin-wrap{ margin-top:40px; }
   .locations-row{ display:flex; gap:14px; height:clamp(380px, 42vw, 560px); width:100%; }
   .location-card{
@@ -496,6 +508,8 @@
   .footer-links a{ text-decoration:none; font-size:0.9rem; color:rgba(255,255,255,0.82); transition:color 0.15s ease; }
   .footer-links a:hover{ color:var(--pink); }
   .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
+  .footer-legal{ text-align:left; max-width:760px; margin:0 auto; padding:24px 0 0; font-size:0.66rem; line-height:1.6; color:rgba(255,255,255,0.45); }
+  .footer-legal + .footer-legal{ padding-top:6px; }
   .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
   .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
 
@@ -515,7 +529,7 @@
   #about .stat-grid2 .stat-item:nth-child(2){ background:rgba(252,141,148,0.3); }
   #about .stat-grid2 .stat-item:nth-child(3){ background:rgba(255,255,255,0.4); }
   #about .stat-grid2 .stat-item:nth-child(4){ background:rgba(254,223,225,0.55); }
-</style><script src="./image-slot.js?v=2"></script></helmet>
+</style><script src="./image-slot.js?v=3"></script></helmet>
 <header class="nav" id="siteNav" ref="{{ navRef }}">
   <div class="nav-inner">
     <a class="wordmark" href="./USWOO Home.dc.html">USWOO</a>
@@ -608,31 +622,31 @@
     <div class="wrap">
     <div class="locations-pin-wrap" ref="{{ locPinWrapRef }}">
       <div class="locations-row" ref="{{ locationsRowRef }}">
-        <a class="location-card" href="./USWOO City Guides.dc.html#explore">
+        <a class="location-card" href="./USWOO City Guides.dc.html?city=New%20York%20%26%20New%20Jersey#explore">
           <div class="location-media"><image-slot id="loc-nyc" shape="rounded" radius="14" placeholder="New York photo" src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Patrick Tomasso" credit-href="https://unsplash.com/@impatrickt" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
           <div class="location-label"><span class="loc-icon" aria-hidden="true">🗽</span><span>New York &amp; New Jersey</span></div>
           <div class="location-code">NYC</div>
         </a>
-        <a class="location-card" href="./USWOO City Guides.dc.html#explore">
+        <a class="location-card" href="./USWOO City Guides.dc.html?city=Chicago#explore">
           <div class="location-media"><image-slot id="loc-chicago" shape="rounded" radius="14" placeholder="Chicago photo" src="./assets/loc-chicago.jpg" credit="Barry Butler Photography" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
           <div class="location-label"><span class="loc-icon" aria-hidden="true">🌆</span><span>Chicago</span></div>
           <div class="location-code">CHI</div>
         </a>
-        <a class="location-card" href="./USWOO City Guides.dc.html#explore">
+        <a class="location-card" href="./USWOO City Guides.dc.html?city=Los%20Angeles#explore">
           <div class="location-media"><image-slot id="loc-la" shape="rounded" radius="14" placeholder="Los Angeles photo" src="./assets/loc-la.jpg" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
           <div class="location-label"><span class="loc-icon" aria-hidden="true">🌴</span><span>Los Angeles</span></div>
           <div class="location-code">LA</div>
         </a>
-        <a class="location-card" href="./USWOO City Guides.dc.html#explore">
+        <a class="location-card" href="./USWOO City Guides.dc.html?city=Washington%2C%20D.C.#explore">
           <div class="location-media"><image-slot id="loc-dc" shape="rounded" radius="14" placeholder="Washington D.C. photo" src="./assets/loc-dc.jpg" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
           <div class="location-label"><span class="loc-icon" aria-hidden="true">🏛️</span><span>Washington, D.C.</span></div>
           <div class="location-code">DC</div>
         </a>
-        <a class="location-card" href="./USWOO City Guides.dc.html#explore">
+        <a class="location-card" href="./USWOO City Guides.dc.html?city=Philadelphia#explore">
           <div class="location-media"><image-slot id="loc-pa" shape="rounded" radius="14" placeholder="Philadelphia photo" src="https://images.unsplash.com/photo-1543372993-5fc1fc83caac?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Pretty Pink" credit-href="https://unsplash.com/@infinitexplorer" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
           <div class="location-label"><span class="loc-icon" aria-hidden="true">🔔</span><span>Philadelphia</span></div>
@@ -708,24 +722,16 @@
       <div class="footer-col">
         <div class="ft-label">Follow</div>
         <ul class="footer-links">
-          <li><a href="#top">Instagram →</a></li>
-          <li><a href="#top">LinkedIn →</a></li>
-          <li><a href="#top">TikTok →</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <div class="ft-label">USWOO</div>
-        <p class="footer-copy">© 2026 USWOO<br>New York City</p>
-      </div>
-      <div class="footer-col">
-        <div class="ft-label">Legal</div>
-        <ul class="footer-links">
-          <li><a href="#top">Terms &amp; Conditions →</a></li>
-          <li><a href="#top">Privacy Policy →</a></li>
-          <li><a href="#top">Cookies Policy →</a></li>
+          <li><a href="https://www.instagram.com/uswoo_realty/" target="_blank" rel="noopener noreferrer">Instagram →</a></li>
+          <li><a href="https://www.linkedin.com/company/uswoo-realty-llc/home/" target="_blank" rel="noopener noreferrer">LinkedIn →</a></li>
+          <li><a href="https://www.tiktok.com/@uswoo_realty" target="_blank" rel="noopener noreferrer">TikTok →</a></li>
         </ul>
       </div>
     </div>
+    <p class="footer-legal">Boston USWOO Realty LLC is a licensed real estate broker in Massachusetts, with its New York branch, USWOO REALTY LLC, independently licensed in New York State.</p>
+    <p class="footer-legal">All information is deemed reliable but not guaranteed and is subject to change without notice. Listings are subject to prior sale, rental, or withdrawal.</p>
+    <p class="footer-legal">Both entities and their affiliates support Fair Housing and Equal Opportunity and comply with applicable anti-discrimination laws.</p>
+    <p class="footer-legal">Copyright ©2026 Boston USWOO Realty LLC. All Rights Reserved.</p>
     <div class="footer-word">
       <div class="wm">USWOO</div>
     </div>
@@ -755,6 +761,20 @@ class Component extends DCLogic {
     // "How We Help": the three cards slide in from the right, staggered,
     // the first time the section scrolls into view.
     const helpSection = document.getElementById('help');
+    // Phones: reveal each card as it scrolls in, instead of the whole section at once.
+    const phoneReveal = !!(window.matchMedia && window.matchMedia('(max-width:760px)').matches) && 'IntersectionObserver' in window;
+    const revealEach = (els) => {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('m-in'); io.unobserve(en.target); } });
+      }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
+      els.forEach((el) => io.observe(el));
+    };
+    if (phoneReveal) {
+      document.documentElement.classList.add('m-reveal');
+      if (helpSection) revealEach(Array.from(helpSection.querySelectorAll('.flow-step')));
+      const locSec = document.getElementById('locations');
+      if (locSec) revealEach(Array.from(locSec.querySelectorAll('.section-head, .location-card')));
+    } else
     if (helpSection && 'IntersectionObserver' in window) {
       this._helpIo = new IntersectionObserver((entries, obs) => {
         entries.forEach((entry) => {
@@ -774,7 +794,7 @@ class Component extends DCLogic {
     // percentage-of-section threshold would rarely, if ever, fire.
     const locationsSection = document.getElementById('locations');
     const locationsRowEl = document.querySelector('.locations-row');
-    if (locationsSection && locationsRowEl && 'IntersectionObserver' in window) {
+    if (!phoneReveal && locationsSection && locationsRowEl && 'IntersectionObserver' in window) {
       this._locIo = new IntersectionObserver((entries, obs) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {

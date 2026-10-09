@@ -80,6 +80,8 @@
   .footer-links a{ text-decoration:none; font-size:0.9rem; color:rgba(255,255,255,0.82); transition:color 0.15s ease; }
   .footer-links a:hover{ color:var(--pink); }
   .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
+  .footer-legal{ text-align:left; max-width:760px; margin:0 auto; padding:24px 0 0; font-size:0.66rem; line-height:1.6; color:rgba(255,255,255,0.45); }
+  .footer-legal + .footer-legal{ padding-top:6px; }
   .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
   .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
   @media (max-width: 560px){ .footer-top{ flex-direction:column; } }
@@ -279,7 +281,7 @@
     .partners-hero-bg image-slot{ animation:none; }
     .why-card:hover, .bento-card:hover, .stat-block:hover{ transform:none; }
   }
-</style><script src="./image-slot.js?v=2"></script></helmet>
+</style><script src="./image-slot.js?v=3"></script></helmet>
 <header class="nav scrolled" id="siteNav" ref="{{ navRef }}">
   <div class="nav-inner">
     <a class="wordmark" href="./USWOO Home.dc.html">USWOO</a>
@@ -435,7 +437,6 @@
             <span class="pill">Demand that comes to you</span>
             <p class="desc">A significant share of renter demand comes through non-paid channels, so every lead arrives already interested in your building.</p>
           </div>
-          <div class="photo"><img src="./assets/uswoo-hero-city.webp" alt=""></div>
         </div>
       </div>
     </div>
@@ -467,24 +468,16 @@
       <div class="footer-col">
         <div class="ft-label">Follow</div>
         <ul class="footer-links">
-          <li><a href="#top">Instagram →</a></li>
-          <li><a href="#top">LinkedIn →</a></li>
-          <li><a href="#top">TikTok →</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <div class="ft-label">USWOO</div>
-        <p class="footer-copy">© 2026 USWOO<br>New York City</p>
-      </div>
-      <div class="footer-col">
-        <div class="ft-label">Legal</div>
-        <ul class="footer-links">
-          <li><a href="#top">Terms &amp; Conditions →</a></li>
-          <li><a href="#top">Privacy Policy →</a></li>
-          <li><a href="#top">Cookies Policy →</a></li>
+          <li><a href="https://www.instagram.com/uswoo_realty/" target="_blank" rel="noopener noreferrer">Instagram →</a></li>
+          <li><a href="https://www.linkedin.com/company/uswoo-realty-llc/home/" target="_blank" rel="noopener noreferrer">LinkedIn →</a></li>
+          <li><a href="https://www.tiktok.com/@uswoo_realty" target="_blank" rel="noopener noreferrer">TikTok →</a></li>
         </ul>
       </div>
     </div>
+    <p class="footer-legal">Boston USWOO Realty LLC is a licensed real estate broker in Massachusetts, with its New York branch, USWOO REALTY LLC, independently licensed in New York State.</p>
+    <p class="footer-legal">All information is deemed reliable but not guaranteed and is subject to change without notice. Listings are subject to prior sale, rental, or withdrawal.</p>
+    <p class="footer-legal">Both entities and their affiliates support Fair Housing and Equal Opportunity and comply with applicable anti-discrimination laws.</p>
+    <p class="footer-legal">Copyright ©2026 Boston USWOO Realty LLC. All Rights Reserved.</p>
     <div class="footer-word">
       <div class="wm">USWOO</div>
     </div>

@@ -2,6 +2,12 @@
  * Keys are the English text exactly as it appears on the page (whitespace and
  * curly/straight quotes don't matter). Anything missing stays in English. */
 window.USWOO_ZH = {
+  "Choose City & Explore": "选择城市与探索方式", "Pick Another City": "切换城市", "Explore Your Way": "按你的方式探索",
+  "Copyright ©2026 Boston USWOO Realty LLC. All Rights Reserved.": "版权所有 ©2026 Boston USWOO Realty LLC。保留所有权利。",
+  /* ---------- footer legal ---------- */
+  "Boston USWOO Realty LLC is a licensed real estate broker in Massachusetts, with its New York branch, USWOO REALTY LLC, independently licensed in New York State.": "Boston USWOO Realty LLC 是在马萨诸塞州持牌的房地产经纪公司，其纽约分支机构 USWOO REALTY LLC 在纽约州独立持有经纪牌照。",
+  "All information is deemed reliable but not guaranteed and is subject to change without notice. Listings are subject to prior sale, rental, or withdrawal.": "所有信息均被认为可靠，但不作保证，且可能随时变更，恕不另行通知。房源可能已被预先出售、出租或撤出市场。",
+  "Both entities and their affiliates support Fair Housing and Equal Opportunity and comply with applicable anti-discrimination laws.": "两家公司及其关联公司均支持公平住房与平等机会，并遵守适用的反歧视法律。",
   /* ---------- contact page ---------- */
   "Visit & Reach Us": "到访与联系", "Send a Message": "给我们留言", "Full Name": "姓名", "How can we help?": "有什么可以帮您？",
   "Sending opens your email app with this message ready to go.": "点击发送将打开您的邮件应用，并自动填好内容。",
