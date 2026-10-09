@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
-<script src="./i18n-zh.js?v=1"></script>
-<script src="./i18n-zh-cities.js?v=1"></script>
+<script src="./i18n-zh.js?v=2"></script>
+<script src="./i18n-zh-cities.js?v=3"></script>
 <script src="./i18n.js?v=1" defer></script>
+<script src="./back-to-top.js?v=3" defer></script><script src="./mobile-nav.js?v=2" defer></script>
 </head>
 <body>
 <x-dc>
@@ -121,6 +122,7 @@
   .offer-row{ margin-top:clamp(56px, 8vw, 100px); padding-top:clamp(34px, 4.2vw, 54px); border-top:1px solid var(--line); display:grid; grid-template-columns:repeat(3, 1fr); gap:clamp(28px, 3.4vw, 56px); }
   .offer-item .offer-num{ font-size:0.72rem; font-weight:700; letter-spacing:0.14em; color:var(--pink); }
   .offer-item h3{ margin-top:12px; font-size:1.06rem; }
+  .offer-toggle{ display:none; }
   .offer-item p{ margin-top:10px; color:var(--ink-soft); font-size:0.92rem; line-height:1.7; }
   @media (max-width:860px){
     .editorial{ grid-template-columns:1fr; gap:26px; }
@@ -234,6 +236,44 @@
   .editorial-media:hover image-slot, .bento-card:hover img{ transform:scale(1.04); }
   .partners-hero-bg image-slot{ animation:hero-drift 14s ease-out forwards; }
   @keyframes hero-drift{ from{ transform:scale(1.08); } to{ transform:scale(1); } }
+  @media (max-width:560px){
+    /* phone: drop the left photo, calmer copy hierarchy, accordion offers */
+    .editorial-media-l{ display:none; }
+    .editorial-copy{ text-align:center; padding:0 16px; }
+    .editorial-hey{ font-family:'Inter', sans-serif; font-style:normal; font-size:1.05rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--pink); }
+    .editorial-copy h2{ margin-top:10px; font-size:1.9rem; }
+    .editorial-copy .lede{ margin:14px 0 0; max-width:none; }
+    .offer-row{ max-width:none; margin-top:36px; padding-top:28px; gap:12px; }
+    .offer-item{ background:#fff; border-radius:20px; padding:18px 18px 18px 20px; }
+    .offer-head{ display:grid; grid-template-columns:1fr auto; align-items:center; column-gap:14px; cursor:pointer; }
+    .offer-head .offer-num{ grid-column:1; }
+    .offer-head h3{ grid-column:1; margin-top:6px; }
+    .offer-toggle{ display:block; grid-column:2; grid-row:1 / span 2; position:relative; width:36px; height:36px; border-radius:50%; background:var(--black); }
+    .offer-toggle::before, .offer-toggle::after{ content:''; position:absolute; left:50%; top:50%; width:14px; height:2px; background:#fff; border-radius:1px; transform:translate(-50%,-50%); transition:transform .25s ease, opacity .25s ease; }
+    .offer-toggle::after{ transform:translate(-50%,-50%) rotate(90deg); }
+    .offer-item.open .offer-toggle::after{ transform:translate(-50%,-50%) rotate(0deg); opacity:0; }
+    .offer-item p{ display:none; margin-top:12px; }
+    .offer-item.open p{ display:block; }
+  }
+  @media (max-width:480px){
+    /* phone: shorter hero with a 30% stronger scrim; compact 03 cards */
+    .partners-hero-photo{ height:calc((100vh - 73px) * 0.36); height:calc((100svh - 73px) * 0.36); min-height:256px; }
+    .partners-hero-scrim{ background:linear-gradient(180deg, rgba(6,6,6,0.806) 0%, rgba(6,6,6,0.195) 38%, rgba(6,6,6,0.715) 100%); }
+    .why-bento{ gap:12px; }
+    .why-card{ display:grid; grid-template-columns:32px 1fr; column-gap:10px; align-items:center; padding:18px 14px; align-content:center; row-gap:4px; }
+    .why-card .press-icon{ width:32px; height:32px; }
+    .why-card .press-icon{ grid-column:1; grid-row:1 / span 2; }
+    .why-card h4{ grid-column:2; margin:0; font-size:1.05rem; line-height:1.25; align-self:end; }
+    .why-card p{ grid-column:2; margin:0; font-size:1rem; line-height:1.45; flex:none; align-self:start; }
+    /* phone: no slogan in the hero, lighter intro label, tighter top gap, 04 cards ~20% shorter */
+    .hero-slogan{ display:none; }
+    #what-we-do{ padding-top:20px; }
+    .editorial-hey{ color:var(--ink-faint); margin-top:0; }
+    .perf-bento .bento-a .photo{ height:135px; min-height:0; }
+    .perf-bento .bento-b{ min-height:192px; }
+    .perf-bento .bento-c{ gap:8px; padding:12px 18px; }
+    .perf-bento .bento-d .photo{ height:122px; }
+  }
   @media (prefers-reduced-motion: reduce){
     .rv{ opacity:1; translate:none; scale:1; rotate:none; filter:none; clip-path:none; transition:none; }
     .partners-hero-bg image-slot{ animation:none; }
@@ -250,7 +290,7 @@
       <a href="./USWOO Partners.dc.html" class="active">Partners</a>
       <a href="./USWOO About Us.dc.html">About Us</a>
     </nav>
-    <a class="nav-cta" href="#cta">Contact</a>
+    <a class="nav-cta" href="./USWOO Contact.dc.html">Contact</a>
   </div>
 </header>
 
@@ -278,19 +318,28 @@
       </div>
 
       <div class="offer-row">
-        <div class="offer-item">
-          <span class="offer-num">01</span>
-          <h3>Reach the right audience</h3>
+        <div class="offer-item open">
+          <div class="offer-head" data-offer-toggle role="button" tabindex="0" aria-expanded="true">
+            <span class="offer-num">01</span>
+            <h3>Reach the right audience</h3>
+            <span class="offer-toggle" aria-hidden="true"></span>
+          </div>
           <p>Connect with international and Asian renters through trusted channels, local communities, and targeted content.</p>
         </div>
         <div class="offer-item">
-          <span class="offer-num">02</span>
-          <h3>Make leasing easier</h3>
+          <div class="offer-head" data-offer-toggle role="button" tabindex="0" aria-expanded="false">
+            <span class="offer-num">02</span>
+            <h3>Make leasing easier</h3>
+            <span class="offer-toggle" aria-hidden="true"></span>
+          </div>
           <p>Support tours, follow-ups, applications, and the moments in between that keep renters moving forward.</p>
         </div>
         <div class="offer-item">
-          <span class="offer-num">03</span>
-          <h3>Build lasting demand</h3>
+          <div class="offer-head" data-offer-toggle role="button" tabindex="0" aria-expanded="false">
+            <span class="offer-num">03</span>
+            <h3>Build lasting demand</h3>
+            <span class="offer-toggle" aria-hidden="true"></span>
+          </div>
           <p>Create stronger visibility and more consistent renter interest through thoughtful, market-aware campaigns.</p>
         </div>
       </div>
@@ -322,7 +371,7 @@
             <h2>We understand the renter behind the lead.</h2>
             <p class="lede">International renters often make housing decisions differently. Timing, communication, cultural context, and trust all play a role. Our team understands those details and helps turn that understanding into a smoother leasing experience for both renters and properties.</p>
           </div>
-          <a class="btn btn-outline on-paper" href="#cta">Talk to Our Team</a>
+          <a class="btn btn-outline on-paper" href="./USWOO Contact.dc.html">Talk to Our Team</a>
         </div>
 
         <div class="why-bento">
@@ -398,7 +447,7 @@
       <h2>Let's find what works for your property.</h2>
       <p class="lede">Every building has a different renter, market, and leasing story. We'd love to learn more about yours and see where USWOO can help.</p>
       <div class="btn-row">
-        <a class="btn btn-pink" href="#cta">Start a Conversation</a>
+        <a class="btn btn-pink" href="./USWOO Contact.dc.html">Start a Conversation</a>
       </div>
     </div>
   </section>
@@ -445,6 +494,19 @@
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   componentDidMount() {
+    // Offers accordion (phone layout only; CSS keeps all three open on larger screens).
+    const toggleOffer = (e) => {
+      const head = e.target.closest && e.target.closest('[data-offer-toggle]');
+      if (!head) return;
+      if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
+      if (e.type === 'keydown') e.preventDefault();
+      const item = head.parentNode;
+      const open = !item.classList.contains('open');
+      item.classList.toggle('open', open);
+      head.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    document.addEventListener('click', toggleOffer);
+    document.addEventListener('keydown', toggleOffer);
     // Scroll-reveal: elements fade/slide in once as they enter the viewport.
     const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduce || !('IntersectionObserver' in window)) return;
@@ -459,7 +521,9 @@ class Component extends DCLogic {
       ['.cta-band .eyebrow', 'rv-rise', 0], ['.cta-band h2', 'rv-track', 0.15], ['.cta-band .lede', 'rv-rise', 0.4], ['.cta-band .btn-row', 'rv-pop', 0.6]
     ];
     const targets = [];
+    const phone = window.innerWidth <= 560; // phone: 03 Why USWOO and 04 Performance have no entrance motion or count-up
     groups.forEach(([sel, kind, base]) => {
+      if (phone && (sel.indexOf('.perf') === 0 || sel.indexOf('.why-') === 0)) return;
       document.querySelectorAll(sel).forEach((el, i) => {
         el.classList.add('rv');
         el.classList.add(kind === 'tilt' ? (i % 2 ? 'rv-tilt-r' : 'rv-tilt-l') : kind);
@@ -489,7 +553,7 @@ class Component extends DCLogic {
         if (e.isIntersecting) {
           e.target.classList.add('in'); this._rv.unobserve(e.target);
           const num = e.target.querySelector && e.target.querySelector('.num');
-          if (num && e.target.closest('.perf-bento')) setTimeout(() => countUp(num), 250);
+          if (!phone && num && e.target.closest('.perf-bento')) setTimeout(() => countUp(num), 250);
         }
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });

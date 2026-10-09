@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
-<script src="./i18n-zh.js?v=1"></script>
-<script src="./i18n-zh-cities.js?v=1"></script>
+<script src="./i18n-zh.js?v=2"></script>
+<script src="./i18n-zh-cities.js?v=3"></script>
 <script src="./i18n.js?v=1" defer></script>
+<script src="./back-to-top.js?v=3" defer></script><script src="./mobile-nav.js?v=2" defer></script>
 </head>
 <body>
 <x-dc>
@@ -127,6 +128,20 @@
   .carousel-dots .dot-btn{ width:8px; height:8px; border-radius:50%; background:var(--line); border:none; padding:0; cursor:pointer; }
   .carousel-dots .dot-btn.active{ background:var(--ink); width:22px; border-radius:5px; }
   @media (max-width:860px){ .story-grid{ grid-template-columns:1fr; } }
+  .story-more{ display:none; }
+  @media (max-width:640px){
+    /* Mobile: horizontal list card — image left, text + "Learn more" right */
+    .story-grid{ gap:0; margin-top:24px; }
+    .story-card{ flex-direction:row; align-items:stretch; gap:16px; padding:18px 0; background:none; border:0; border-radius:0; border-bottom:1px solid var(--line); }
+    .story-card:first-child{ padding-top:0; }
+    .story-card .media-card-media{ flex:0 0 42%; aspect-ratio:auto; min-height:170px; border-radius:0; }
+    .story-card .media-card-media image-slot{ border-radius:0; }
+    .story-card .media-card-body{ flex:1; min-width:0; padding:0; display:flex; flex-direction:column; }
+    .story-card .media-card-body h3{ font-size:1.12rem; }
+    .story-card .media-card-body p{ font-size:0.86rem; margin-top:10px; }
+    .story-card-meta{ display:none; }
+    .story-more{ display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:14px; font-size:0.88rem; font-weight:500; color:var(--ink); }
+  }
 
   /* Brand moments */
   .moments-row{ margin-top:36px; display:grid; grid-template-columns:repeat(3, 1fr); gap:32px; }
@@ -171,7 +186,7 @@
       <a href="./USWOO Partners.dc.html">Partners</a>
       <a href="./USWOO About Us.dc.html">About Us</a>
     </nav>
-    <a class="nav-cta" href="./USWOO Home.dc.html#cta">Contact</a>
+    <a class="nav-cta" href="./USWOO Contact.dc.html">Contact</a>
   </div>
 </header>
 
@@ -243,6 +258,7 @@
             <h3>From campus to first apartment</h3>
             <p>How one renter found the right neighborhood near NYU and settled in with ease.</p>
             <div class="story-card-meta"><span>Jun 12, 2025</span><span class="dot"></span><span>5 min read</span></div>
+            <span class="story-more">Learn more →</span>
           </div>
         </a>
         <a class="media-card story-card" href="./USWOO%20Story%20-%20Moving%20Cities%20Made%20Easier.dc.html">
@@ -253,6 +269,7 @@
             <h3>Moving cities made easier</h3>
             <p>From apartment search to furniture, Wi-Fi and move-in — all in one place.</p>
             <div class="story-card-meta"><span>May 28, 2025</span><span class="dot"></span><span>4 min read</span></div>
+            <span class="story-more">Learn more →</span>
           </div>
         </a>
         <a class="media-card story-card" href="./USWOO%20Story%20-%20Finding%20a%20Better%20Fit.dc.html">
@@ -263,6 +280,7 @@
             <h3>Finding a better fit</h3>
             <p>A renter's journey from renewal decision to finding a new home that feels right.</p>
             <div class="story-card-meta"><span>Apr 30, 2025</span><span class="dot"></span><span>6 min read</span></div>
+            <span class="story-more">Learn more →</span>
           </div>
         </a>
       </div>
@@ -281,19 +299,19 @@
           <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
           <h4>New City Launches</h4>
           <p>Expanding our footprint across key U.S. cities.</p>
-          <span class="link-arrow">See Where We Are →</span>
+          <a class="link-arrow" href="./USWOO City Guides.dc.html">See Where We Are →</a>
         </div>
         <div class="moment-item icon-grid">
           <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.2 13.8a5 5 0 0 0 7.1 0l2.3-2.3a5 5 0 0 0-7.1-7.1l-1.3 1.3"/><path d="M13.8 10.2a5 5 0 0 0-7.1 0l-2.3 2.3a5 5 0 0 0 7.1 7.1l1.3-1.3"/></svg></span>
           <h4>New Partnerships</h4>
           <p>Stronger collaborations that create more value.</p>
-          <span class="link-arrow">See Our Partners →</span>
+          <a class="link-arrow" href="./USWOO Partners.dc.html">See Our Partners →</a>
         </div>
         <div class="moment-item icon-grid">
           <span class="press-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.4 7.4 21l4.6-2.7 4.6 2.7-1.2-7.6"/></svg></span>
           <h4>Industry Recognition</h4>
           <p>Honored to be acknowledged by leading organizations.</p>
-          <span class="link-arrow">About USWOO →</span>
+          <a class="link-arrow" href="./USWOO About Us.dc.html">About USWOO →</a>
         </div>
       </div>
     </div>

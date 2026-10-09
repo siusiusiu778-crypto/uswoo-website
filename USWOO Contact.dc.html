@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<script src="./i18n-zh.js?v=2"></script>
+<script src="./i18n-zh-cities.js?v=3"></script>
+<script src="./i18n.js?v=1" defer></script>
+<script src="./back-to-top.js?v=3" defer></script><script src="./mobile-nav.js?v=2" defer></script>
+</head>
+<body>
+<x-dc>
+<helmet><style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;500;600;700&display=swap');
+  :root{
+    --paper: #FFFFFF; --paper-raised: #F6F5F3; --ink: #141414; --ink-soft: #656260; --ink-faint: #9C9894;
+    --line: #E7E4E0; --black: #0F0F0F; --pink: #FC8D94; --pink-tint: #FEDFE1; --focus: #FC8D94;
+    --hero-ink: #FFFFFF; --hero-ink-soft: #E7E3DE;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:'Inter', -apple-system, 'Segoe UI', sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3{ font-family:'Poppins', 'Inter', sans-serif; font-weight:600; text-wrap:balance; margin:0; line-height:1.12; }
+  a{ color:inherit; }
+  img,svg{ max-width:100%; display:block; } button{ font:inherit; }
+  .wrap{ max-width:1560px; margin:0 auto; padding:0 clamp(16px, 2.4vw, 32px); }
+  .eyebrow{ font-size:0.78rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); display:flex; align-items:baseline; gap:0.6em; }
+  .eyebrow .idx{ color:var(--pink); font-weight:700; }
+  .on-hero .eyebrow{ color:var(--hero-ink-soft); } .on-hero .eyebrow .idx{ color:var(--pink); }
+  header.nav{ position:sticky; top:0; z-index:40; background:transparent; border-bottom:1px solid transparent; transition:background 0.3s ease, border-color 0.3s ease; }
+  header.nav.scrolled{ background:color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+  .nav-inner{ max-width:1180px; margin:0 auto; padding:18px clamp(20px, 5vw, 56px); display:flex; align-items:center; justify-content:space-between; gap:24px; }
+  .wordmark{ font-family:'Poppins', sans-serif; font-weight:700; font-size:1.3rem; letter-spacing:0.01em; color:var(--hero-ink); text-decoration:none; white-space:nowrap; transition:color 0.3s ease; }
+  .scrolled .wordmark{ color:var(--ink); }
+  nav.links{ display:flex; gap:clamp(12px, 1.8vw, 22px); align-items:center; overflow-x:auto; scrollbar-width:none; }
+  nav.links::-webkit-scrollbar{ display:none; }
+  nav.links a{ color:var(--hero-ink-soft); text-decoration:none; font-size:0.86rem; font-weight:500; white-space:nowrap; padding:4px 2px; border-bottom:1px solid transparent; transition:color 0.3s ease, border-color 0.15s ease; }
+  .scrolled nav.links a{ color:var(--ink-soft); }
+  nav.links a:hover, nav.links a:focus-visible{ color:var(--hero-ink); border-bottom-color:var(--pink); }
+  .scrolled nav.links a:hover, .scrolled nav.links a:focus-visible{ color:var(--ink); }
+  nav.links a.active{ color:var(--hero-ink); border-bottom-color:var(--pink); }
+  .scrolled nav.links a.active{ color:var(--ink); }
+  .nav-cta{ background:var(--black); color:#fff !important; font-size:0.85rem; font-weight:600; padding:10px 18px; border-radius:2px; text-decoration:none !important; border-bottom:none !important; white-space:nowrap; }
+  .nav-cta:hover{ opacity:0.85; }
+  .btn{ display:inline-flex; align-items:center; gap:10px; font-size:0.9rem; font-weight:600; padding:14px 26px; border-radius:2px; text-decoration:none; cursor:pointer; border:1px solid transparent; transition:transform 0.15s ease, opacity 0.15s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease; }
+  .btn:hover{ transform:translateY(-1px); }
+  .btn-primary{ background:var(--black); color:#fff; } .btn-primary:hover{ opacity:0.88; }
+  .btn-outline{ background:transparent; color:var(--hero-ink); border-color:color-mix(in srgb, var(--hero-ink) 45%, transparent); }
+  .btn-outline:hover{ border-color:var(--hero-ink); }
+  .btn-outline.on-paper{ color:var(--ink); border-color:var(--line); }
+  .btn-outline.on-paper:hover{ border-color:var(--ink-soft); }
+  .btn-pink{ background:var(--pink); color:#fff; } .btn-pink:hover{ opacity:0.9; }
+  .btn-row{ display:flex; gap:14px; flex-wrap:wrap; }
+  :focus-visible{ outline:2px solid var(--focus); outline-offset:3px; }
+  section{ padding:clamp(56px, 9vw, 100px) 0; }
+  .band-paper{ background:var(--paper); }
+  .band-raised{ background:var(--paper-raised); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .section-head{ max-width:640px; }
+  .section-head h2{ font-size:clamp(1.8rem, 3.6vw, 2.6rem); margin-top:12px; }
+  .section-head p.lede{ margin-top:16px; max-width:56ch; color:var(--ink-soft); font-size:1.02rem; }
+  .section-head.centered{ max-width:640px; margin:0 auto; text-align:center; }
+  .section-head.centered .eyebrow{ justify-content:center; }
+  .section-head.centered p.lede{ margin-left:auto; margin-right:auto; }
+  .cta-band .wrap{ text-align:center; display:flex; flex-direction:column; align-items:center; }
+  .cta-band .eyebrow{ justify-content:center; }
+  .cta-band h2{ margin-top:14px; font-size:clamp(2rem, 4.2vw, 3.2rem); }
+  .cta-band .lede{ margin-top:16px; max-width:48ch; margin-left:auto; margin-right:auto; }
+  .cta-band .btn-row{ margin-top:34px; justify-content:center; }
+  footer{ background:var(--black); color:#fff; padding-top:48px; }
+  .footer-top{ display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.14); }
+  .footer-col{ min-width:200px; }
+  .footer-col .ft-label{ font-size:0.72rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px; }
+  .newsletter-form{ display:flex; align-items:flex-end; gap:10px; border-bottom:1px solid rgba(255,255,255,0.4); padding-bottom:8px; max-width:280px; }
+  .newsletter-form input{ flex:1; background:transparent; border:none; color:#fff; font-family:'Inter', sans-serif; font-size:0.92rem; padding:4px 0; }
+  .newsletter-form input::placeholder{ color:rgba(255,255,255,0.5); }
+  .newsletter-form input:focus{ outline:none; }
+  .newsletter-form button{ background:none; border:none; color:var(--pink); font-size:1.1rem; cursor:pointer; padding:0 2px 4px; }
+  .footer-links{ list-style:none; margin:0; padding:0; display:grid; gap:8px; }
+  .footer-links a{ text-decoration:none; font-size:0.9rem; color:rgba(255,255,255,0.82); transition:color 0.15s ease; }
+  .footer-links a:hover{ color:var(--pink); }
+  .footer-copy{ font-size:0.86rem; color:rgba(255,255,255,0.6); line-height:1.7; }
+  .footer-word{ text-align:center; padding:28px 0 20px; overflow:hidden; }
+  .footer-word .wm{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(3.2rem, 14vw, 11rem); letter-spacing:-0.02em; line-height:1; color:#fff; white-space:nowrap; }
+  @media (max-width: 560px){ .footer-top{ flex-direction:column; } }
+
+
+  /* Contact */
+  .contact{ padding:0; display:grid; grid-template-columns:minmax(0, 0.84fr) minmax(0, 1.16fr); height:calc(100vh - 73px); height:calc(100svh - 73px); min-height:600px; background:var(--paper); }
+  .contact-photo{ position:relative; min-height:420px; background:var(--line); }
+  .contact-photo img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .contact-photo::after{ content:""; position:absolute; left:0; right:0; bottom:0; height:6px; background:var(--pink); }
+  .contact-pane{ padding:clamp(24px, 3vw, 40px) clamp(24px, 5vw, 80px); width:100%; max-width:760px; margin:0 auto; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; box-sizing:border-box; }
+  .contact-top{ display:flex; flex-direction:column; align-items:center; gap:18px; }
+  .contact-top h1{ font-size:clamp(3rem, 6.4vw, 5rem); letter-spacing:-0.01em; }
+  .contact-top h1 .pink{ color:var(--pink); }
+  .contact-top p{ margin:0; color:var(--ink-soft); font-size:0.92rem; line-height:1.75; max-width:46ch; }
+  .contact-reach{ margin-top:clamp(48px, 6vw, 72px); padding-top:clamp(32px, 4vw, 48px); border-top:1px solid var(--line); width:100%; }
+  .reach-row{ margin-top:28px; display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-start; gap:32px clamp(32px, 5vw, 64px); }
+  .contact-reach h2{ font-size:1.25rem; padding-bottom:14px; border-bottom:2px solid var(--pink); display:inline-block; }
+    .info-item .lbl{ font-size:0.7rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--pink); }
+  .info-item a, .info-item p{ display:block; margin:5px 0 0; font-size:0.95rem; line-height:1.55; color:var(--ink); text-decoration:none; }
+  .info-item a:hover{ color:var(--pink); }
+  .info-qr{ display:flex; flex-direction:column; align-items:center; gap:10px; margin-top:8px; }
+  .info-qr img{ width:104px; height:104px; border:1px solid var(--line); border-radius:6px; object-fit:contain; background:#fff; }
+  .info-qr span{ font-size:0.85rem; color:var(--ink-soft); }
+  form.contact-form{ margin-top:clamp(32px, 4vw, 48px); width:100%; max-width:460px; display:grid; gap:22px; text-align:left; }
+  .field{ display:flex; flex-direction:column; gap:2px; min-width:0; }
+  .field label{ font-size:0.7rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-soft); }
+  .field input, .field textarea{ font:inherit; font-size:0.95rem; color:var(--ink); background:transparent; border:0; border-bottom:1px solid var(--ink-faint); border-radius:0; padding:8px 0; width:100%; transition:border-color 0.15s ease; }
+  .field input::placeholder, .field textarea::placeholder{ color:var(--ink-faint); }
+  .field textarea{ min-height:96px; resize:vertical; line-height:1.55; }
+  .field input:focus, .field textarea:focus{ outline:none; border-bottom-color:var(--pink); box-shadow:0 1px 0 0 var(--pink); }
+  .submit-row{ justify-content:center; display:flex; align-items:center; gap:14px; margin-top:6px; }
+  .submit-circle{ width:52px; height:52px; border-radius:50%; border:0; background:var(--pink); color:#fff; font-size:1.25rem; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:transform 0.15s ease, opacity 0.15s ease; }
+  .submit-circle:hover{ transform:translateX(3px); opacity:0.92; }
+  .submit-label{ font-size:0.76rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--pink); }
+  .form-note{ text-align:center; margin:0; font-size:0.78rem; color:var(--ink-faint); }
+  .form-msg{ text-align:center; margin:0; font-size:0.88rem; color:var(--ink-soft); display:none; }
+  .form-msg.show{ display:block; }
+  .form-msg a{ color:var(--pink); font-weight:600; }
+  @media (max-width:900px){ .contact{ grid-template-columns:1fr; height:auto; min-height:0; } .contact-pane{ padding:48px 24px 56px; } .contact-photo{ min-height:0; aspect-ratio:16/10; } }
+</style></helmet>
+<header class="nav scrolled" id="siteNav">
+  <div class="nav-inner">
+    <a class="wordmark" href="./USWOO Home.dc.html">USWOO</a>
+    <nav class="links">
+      <a href="./USWOO Services.dc.html">Services</a>
+      <a href="./USWOO City Guides.dc.html">City Guides</a>
+      <a href="./USWOO Press & Stories.dc.html">Press &amp; Stories</a>
+      <a href="./USWOO Partners.dc.html">Partners</a>
+      <a href="./USWOO About Us.dc.html">About Us</a>
+    </nav>
+    <a class="nav-cta" href="./USWOO Contact.dc.html">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="contact">
+    <div class="contact-photo"><img src="./assets/contact-nyc-street.jpg" alt=""></div>
+    <div class="contact-pane">
+      <div class="contact-top">
+        <h1>Contact <span class="pink">us</span></h1>
+        <p>Questions about renting, partnering with USWOO, or press? Send us a note and our team will get back to you within two business days.</p>
+      </div>
+      <form class="contact-form" id="contactForm" onSubmit="{{ submit }}">
+        <div class="field"><label for="cf-name">Full Name</label><input id="cf-name" name="name" type="text" placeholder="Your name" required autocomplete="name"></div>
+        <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" placeholder="Your email" required autocomplete="email"></div>
+        <div class="field"><label for="cf-message">Message</label><textarea id="cf-message" name="message" placeholder="How can we help?" required></textarea></div>
+        <div class="submit-row">
+          <button class="btn btn-pink" type="submit" style="border:0">Send Message <span aria-hidden="true">→</span></button>
+        </div>
+        <p class="form-note">Sending opens your email app with this message ready to go.</p>
+        <p class="form-msg" id="formMsg">Your email app should have opened. If not, write to <a href="mailto:info@uswoo.com">info@uswoo.com</a>.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="ft-label">Stay in the Loop</div>
+        <form class="newsletter-form" onSubmit="{{ preventDefault }}">
+          <input type="email" placeholder="Email address" aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">Follow</div>
+        <ul class="footer-links">
+          <li><a href="#top">Instagram →</a></li>
+          <li><a href="#top">LinkedIn →</a></li>
+          <li><a href="#top">TikTok →</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">USWOO</div>
+        <p class="footer-copy">© 2026 USWOO<br>New York City</p>
+      </div>
+      <div class="footer-col">
+        <div class="ft-label">Legal</div>
+        <ul class="footer-links">
+          <li><a href="#top">Terms &amp; Conditions →</a></li>
+          <li><a href="#top">Privacy Policy →</a></li>
+          <li><a href="#top">Cookies Policy →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-word">
+      <div class="wm">USWOO</div>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const TO = 'info@uswoo.com';
+    return {
+      submit: (e) => {
+        e.preventDefault();
+        const f = e.target, v = (n) => (f.elements[n].value || '').trim();
+        const body = 'Name: ' + v('name') + '\nEmail: ' + v('email') + '\n\n' + v('message');
+        window.location.href = 'mailto:' + TO + '?subject=' + encodeURIComponent('Website inquiry from ' + v('name')) + '&body=' + encodeURIComponent(body);
+        document.getElementById('formMsg').classList.add('show');
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

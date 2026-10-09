@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
-<script src="./i18n-zh.js?v=1"></script>
-<script src="./i18n-zh-cities.js?v=1"></script>
+<script src="./i18n-zh.js?v=2"></script>
+<script src="./i18n-zh-cities.js?v=3"></script>
 <script src="./i18n.js?v=1" defer></script>
+<script src="./back-to-top.js?v=3" defer></script><script src="./mobile-nav.js?v=2" defer></script>
 </head>
 <body>
 <x-dc>
@@ -193,6 +194,8 @@
     display:flex;
     align-items:flex-end;
   }
+  /* Phones: cap the hero at an iPhone portrait screen height (390x844) even in taller panes/browsers. */
+  @media (max-width:760px){ .hero{ height:min(100svh, 844px); } }
   .hero-bg{ position:absolute; inset:0; z-index:0; container-type:size; }
 
   /* .hero-frame reproduces, as a real box, the rectangle the video used to
@@ -235,7 +238,7 @@
     fill:#FFFFFF;
     fill-opacity:0.93;
   }
-  .hero-type g{ transform-box:view-box; transform-origin:580px 278px; }
+  .hero-type g{ transform-box:view-box; transform-origin:640px 278px; }
 
   /* The letters lift out from behind the cut-out skyline one after another.
      150 viewBox units puts a glyph's cap below the roofline at the start, so
@@ -376,6 +379,8 @@
     transition:color 0.5s ease;
   }
   .location-card.active .location-label{ color:#fff; }
+  .location-label{ display:flex; align-items:center; gap:7px; }
+  .location-label .loc-icon{ flex:none; font-size:1.05rem; line-height:1; letter-spacing:0; }
   .location-code{
     position:absolute; left:18px; bottom:6px; font-family:'Poppins', sans-serif; font-style:normal;
     font-weight:300; font-size:clamp(2.4rem, 7vw, 4.8rem); line-height:1; color:rgba(255,255,255,0.55);
@@ -389,9 +394,27 @@
     .location-card .location-label{ color:#fff; }
     .location-card .location-code{ color:#fff; }
   }
-  @media (max-width:520px){
-    .locations-row{ height:auto; }
-    .location-card{ flex:1 1 100%; height:220px; }
+  @media (max-width:560px){
+    .locations-pin-wrap{ margin-top:28px; }
+    .locations-row{ flex-direction:column; flex-wrap:nowrap; height:auto; gap:12px; }
+    .location-card{ flex:none; width:100%; height:60px; border-radius:999px; background:var(--black); }
+    .location-card:nth-child(even){ background:var(--paper-raised); border:1px solid var(--line); }
+    .location-media, .location-dark-overlay, .location-code{ display:none; }
+    .location-card .location-label{
+      top:50%; left:26px; transform:translateY(-50%);
+      font-size:0.8rem; font-weight:600; letter-spacing:0.08em; color:#fff;
+    }
+    .location-card:nth-child(even) .location-label{ color:var(--ink); }
+    .location-card::after{
+      content:""; position:absolute; right:8px; top:50%; width:44px; height:44px; margin-top:-22px;
+      background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Ccircle cx='22' cy='22' r='22' fill='%23fff'/%3E%3Cpath d='M14 22h15M23 16l6 6-6 6' fill='none' stroke='%230F0F0F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100% 100% no-repeat;
+    }
+    .location-card:nth-child(even)::after{ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Ccircle cx='22' cy='22' r='22' fill='%230F0F0F'/%3E%3Cpath d='M14 22h15M23 16l6 6-6 6' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+  }
+
+  @media (max-width:560px){
+    /* hero word: lift it up so it sits behind the Empire State spire */
+    .hero-type g{ translate:0 -66px; }
   }
   #locations .section-head{
     opacity:0; transform:translateY(24px);
@@ -418,16 +441,41 @@
   .about-copy .section-head{ max-width:100%; text-align:left; margin:0; }
   .about-copy .section-head .eyebrow{ justify-content:flex-start; }
   .about-copy .btn{ margin-top:28px; }
-  .stat-grid2{ display:grid; grid-template-columns:1fr 1fr; gap:36px 32px; }
+  .stat-grid2{ display:grid; grid-template-columns:1fr 1fr; grid-template-rows:auto auto auto; gap:14px; padding:16px; border-radius:30px; position:relative; overflow:hidden; isolation:isolate;
+    background:
+      radial-gradient(circle at 12% 8%, #FFF3F4 0, transparent 38%),
+      radial-gradient(circle at 88% 30%, #FC8D94 0, transparent 42%),
+      radial-gradient(circle at 25% 95%, #F7A9AF 0, transparent 45%),
+      linear-gradient(160deg, #FEDFE1 0%, #FCB4BA 100%); }
+  .stat-item{ background:rgba(255,255,255,0.3); -webkit-backdrop-filter:blur(22px) saturate(1.4); backdrop-filter:blur(22px) saturate(1.4);
+    border:1px solid rgba(255,255,255,0.55); box-shadow:0 8px 24px rgba(200,90,100,0.12), inset 0 1px 0 rgba(255,255,255,0.5);
+    border-radius:24px; padding:22px 22px 24px; display:flex; flex-direction:column; align-items:flex-start; min-width:0; }
+  .stat-item:nth-child(1){ grid-column:1 / -1; padding:26px 26px 28px; background:rgba(255,255,255,0.38); }
+  .stat-item:nth-child(2){ grid-row:2 / 4; grid-column:1; justify-content:space-between; background:rgba(252,141,148,0.38); }
+  .stat-item:nth-child(3){ grid-column:2; grid-row:2; background:rgba(255,255,255,0.26); }
+  .stat-item:nth-child(4){ grid-column:2; grid-row:3; background:rgba(252,141,148,0.24); }
+  .stat-item .pill{ order:-1; }
+  .stat-item .num{ margin-top:14px; }
+  .stat-item:nth-child(1) .num, .stat-item:nth-child(2) .num{ font-size:clamp(2.6rem, 5vw, 4rem); line-height:1; }
+  .stat-grid2 .stat-item .pill{ background:rgba(255,255,255,0.6); }
+  .stat-grid2 .stat-item .desc{ color:var(--ink); }
   .stat-item .num{ font-family:'Poppins', sans-serif; font-size:clamp(2rem, 3.2vw, 2.6rem); font-weight:700; letter-spacing:-0.01em; }
   .stat-item .num .accent{ color:var(--pink); }
   .stat-item .pill{
     display:inline-block; margin-top:10px; font-size:0.68rem; font-weight:700; letter-spacing:0.06em;
     text-transform:uppercase; color:var(--pink); background:var(--pink-tint); padding:4px 10px; border-radius:20px;
   }
-  .stat-item .desc{ margin-top:10px; font-size:0.88rem; color:var(--ink-soft); max-width:26ch; }
+  .stat-item .desc{ margin-top:8px; font-size:0.88rem; color:var(--ink-soft); max-width:26ch; }
+  .stat-item:nth-child(2) .desc{ margin-top:auto; padding-top:16px; }
   @media (max-width:860px){ .about-split{ grid-template-columns:1fr; } }
-  @media (max-width:520px){ .stat-grid2{ grid-template-columns:1fr; } }
+  @media (max-width:520px){
+    .stat-grid2{ gap:10px; padding:10px; border-radius:24px; }
+    .stat-item, .stat-item:nth-child(1){ padding:16px 16px 18px; border-radius:18px; }
+    .stat-item .num{ font-size:1.7rem; line-height:1.1; white-space:nowrap; }
+    .stat-item .pill{ margin-top:0; font-size:0.62rem; }
+    .stat-item:nth-child(1) .num, .stat-item:nth-child(2) .num{ font-size:2.2rem; }
+    .stat-item .desc{ margin-top:10px; font-size:0.8rem; line-height:1.45; max-width:none; }
+  }
 
   .cta-band .wrap{ text-align:center; display:flex; flex-direction:column; align-items:center; }
   .cta-band .eyebrow{ justify-content:center; }
@@ -459,6 +507,14 @@
     .footer-top{ flex-direction:column; }
   }
 
+
+  /* 04 stats: frosted cards on the section's original background */
+  #about .stat-grid2{ background:none; overflow:visible; padding:0; border-radius:0; }
+  #about .stat-grid2 .stat-item{ background:rgba(255,255,255,0.42); box-shadow:0 8px 28px rgba(252,141,148,0.2), inset 0 1px 0 rgba(255,255,255,0.7); }
+  #about .stat-grid2 .stat-item:nth-child(1){ background:rgba(255,255,255,0.55); }
+  #about .stat-grid2 .stat-item:nth-child(2){ background:rgba(252,141,148,0.3); }
+  #about .stat-grid2 .stat-item:nth-child(3){ background:rgba(255,255,255,0.4); }
+  #about .stat-grid2 .stat-item:nth-child(4){ background:rgba(254,223,225,0.55); }
 </style><script src="./image-slot.js?v=2"></script></helmet>
 <header class="nav" id="siteNav" ref="{{ navRef }}">
   <div class="nav-inner">
@@ -470,7 +526,7 @@
       <a href="./USWOO Partners.dc.html">Partners</a>
       <a href="./USWOO About Us.dc.html">About Us</a>
     </nav>
-    <a class="nav-cta" href="#cta">Contact</a>
+    <a class="nav-cta" href="./USWOO Contact.dc.html">Contact</a>
   </div>
 </header>
 
@@ -484,11 +540,11 @@
         </video>
         <svg class="hero-type" viewBox="0 0 1280 720" preserveAspectRatio="none" focusable="false">
           <g>
-            <text x="125.39" y="296">U</text>
-            <text x="303.30" y="296">S</text>
-            <text x="457.92" y="296">W</text>
-            <text x="708.53" y="296">O</text>
-            <text x="923.57" y="296">O</text>
+            <text x="139.8" y="296">U</text>
+            <text x="317.7" y="296">S</text>
+            <text x="472.3" y="296">W</text>
+            <text x="722.9" y="296">O</text>
+            <text x="938.0" y="296">O</text>
           </g>
         </svg>
         <img class="hero-city" src="./assets/uswoo-hero-city.webp" alt="" decoding="async">
@@ -555,31 +611,31 @@
         <a class="location-card" href="./USWOO City Guides.dc.html#explore">
           <div class="location-media"><image-slot id="loc-nyc" shape="rounded" radius="14" placeholder="New York photo" src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Patrick Tomasso" credit-href="https://unsplash.com/@impatrickt" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
-          <div class="location-label">New York</div>
+          <div class="location-label"><span class="loc-icon" aria-hidden="true">🗽</span><span>New York &amp; New Jersey</span></div>
           <div class="location-code">NYC</div>
         </a>
         <a class="location-card" href="./USWOO City Guides.dc.html#explore">
           <div class="location-media"><image-slot id="loc-chicago" shape="rounded" radius="14" placeholder="Chicago photo" src="./assets/loc-chicago.jpg" credit="Barry Butler Photography" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
-          <div class="location-label">Chicago</div>
+          <div class="location-label"><span class="loc-icon" aria-hidden="true">🌆</span><span>Chicago</span></div>
           <div class="location-code">CHI</div>
         </a>
         <a class="location-card" href="./USWOO City Guides.dc.html#explore">
           <div class="location-media"><image-slot id="loc-la" shape="rounded" radius="14" placeholder="Los Angeles photo" src="./assets/loc-la.jpg" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
-          <div class="location-label">Los Angeles</div>
+          <div class="location-label"><span class="loc-icon" aria-hidden="true">🌴</span><span>Los Angeles</span></div>
           <div class="location-code">LA</div>
         </a>
         <a class="location-card" href="./USWOO City Guides.dc.html#explore">
           <div class="location-media"><image-slot id="loc-dc" shape="rounded" radius="14" placeholder="Washington D.C. photo" src="./assets/loc-dc.jpg" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
-          <div class="location-label">Washington, D.C.</div>
+          <div class="location-label"><span class="loc-icon" aria-hidden="true">🏛️</span><span>Washington, D.C.</span></div>
           <div class="location-code">DC</div>
         </a>
         <a class="location-card" href="./USWOO City Guides.dc.html#explore">
           <div class="location-media"><image-slot id="loc-pa" shape="rounded" radius="14" placeholder="Philadelphia photo" src="https://images.unsplash.com/photo-1543372993-5fc1fc83caac?auto=format&amp;fit=crop&amp;w=900&amp;q=80" credit="Pretty Pink" credit-href="https://unsplash.com/@infinitexplorer" style="width:100%;height:100%"></image-slot></div>
           <div class="location-dark-overlay"></div>
-          <div class="location-label">Philadelphia</div>
+          <div class="location-label"><span class="loc-icon" aria-hidden="true">🔔</span><span>Philadelphia</span></div>
           <div class="location-code">PHL</div>
         </a>
       </div>
@@ -631,8 +687,8 @@
       <h2>Your City Starts Here.</h2>
       <p class="lede">Looking for a home, exploring a neighborhood, or figuring out where to start? We're here to help.</p>
       <div class="btn-row">
-        <a class="btn btn-pink" href="#cta">Find a Home</a>
-        <a class="btn btn-outline on-paper" href="#cta">Talk to USWOO</a>
+        <a class="btn btn-pink" href="./USWOO Contact.dc.html">Find a Home</a>
+        <a class="btn btn-outline on-paper" href="./USWOO Contact.dc.html">Talk to USWOO</a>
       </div>
     </div>
   </section>
@@ -794,7 +850,12 @@ class Component extends DCLogic {
     // run while the page is still held on the "Our Locations" reveal.
     const statEls = Array.from(document.querySelectorAll('#about [data-count]'));
     const statGrid = document.querySelector('.stat-grid2');
-    if (statEls.length && statGrid) {
+    if (statEls.length && statGrid && window.innerWidth <= 560) {
+      // Phone layout: no count-up, show the final numbers straight away.
+      statEls.forEach((el) => {
+        el.textContent = (parseInt(el.getAttribute('data-count'), 10) || 0).toLocaleString('en-US');
+      });
+    } else if (statEls.length && statGrid) {
       let started = false;
       const countUp = () => {
         statEls.forEach((el) => {

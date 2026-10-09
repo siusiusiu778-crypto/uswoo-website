@@ -6,6 +6,7 @@
     { "source": "/city-guides", "destination": "/USWOO City Guides.dc.html" },
     { "source": "/press", "destination": "/USWOO Press & Stories.dc.html" },
     { "source": "/about", "destination": "/USWOO About Us.dc.html" },
-    { "source": "/partners", "destination": "/USWOO Partners.dc.html" }
+    { "source": "/partners", "destination": "/USWOO Partners.dc.html" },
+    { "source": "/contact", "destination": "/USWOO Contact.dc.html" }
   ]
 }
