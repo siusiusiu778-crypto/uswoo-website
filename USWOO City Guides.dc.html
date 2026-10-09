@@ -139,12 +139,34 @@
   }
   .cg-map{ margin-top:24px; aspect-ratio:16/10; background:var(--paper-raised); border:1px solid var(--line); overflow:hidden; position:relative; }
   .cg-leaflet{ position:absolute; inset:0; }
-  .cg-leaflet .leaflet-control-attribution{ font-size:0.62rem; background:rgba(255,255,255,0.8); }
+  .cg-leaflet .maplibregl-ctrl-attrib{ font-size:0.62rem; background:rgba(255,255,255,0.8); }
+  .cg-leaflet .maplibregl-ctrl-group{ border-radius:2px; box-shadow:0 1px 4px rgba(0,0,0,0.15); }
   .cg-marker{ width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; border:2px solid #fff; box-shadow:0 1px 4px rgba(0,0,0,0.35); font-size:12px; color:#fff; }
-  .leaflet-div-icon{ background:none; border:none; }
-  .leaflet-tooltip.cg-tooltip{ background:var(--paper); border:1px solid var(--line); border-radius:2px; box-shadow:0 6px 20px rgba(0,0,0,0.18); padding:0; opacity:1; font-family:'Inter', sans-serif; }
-  .leaflet-tooltip.cg-tooltip::before{ display:none; }
+  .cg-pin{ cursor:pointer; }
+  .cg-marker.cg-logo{ width:32px; height:32px; background:#fff; padding:3px; overflow:hidden; flex:none; box-shadow:0 1px 5px rgba(0,0,0,0.3); }
+  .cg-marker.cg-logo img{ width:100%; height:100%; object-fit:contain; border-radius:50%; display:block; }
+  /* Map hover cards float above the page (fixed), so they are never clipped by the map frame. */
+  .cg-floattip{ position:fixed; left:0; top:0; z-index:1000; pointer-events:none; background:var(--paper); border:1px solid var(--line); border-radius:2px; box-shadow:0 10px 32px rgba(0,0,0,0.2); font-family:'Inter', sans-serif; overflow:hidden; opacity:0; transition:opacity 0.12s ease; }
+  .cg-floattip.on{ opacity:1; }
   .cg-hovercard{ padding:12px 14px; max-width:240px; }
+  .cg-poicard{ width:300px; }
+  .cg-poicard .pc-photos{ display:grid; grid-template-columns:2fr 1fr; grid-template-rows:1fr 1fr; gap:3px; height:150px; background:var(--paper-raised); }
+  .cg-poicard .pc-photos img{ width:100%; height:100%; object-fit:cover; display:block; background:var(--line); }
+  .cg-poicard .pc-photos img:first-child{ grid-row:1 / 3; }
+  .cg-poicard .pc-photos.n1{ grid-template-columns:1fr; grid-template-rows:1fr; }
+  .cg-poicard .pc-photos.n2{ grid-template-rows:1fr; grid-template-columns:1fr 1fr; }
+  .cg-poicard .pc-photos.n2 img:first-child{ grid-row:auto; }
+  .cg-poicard .pc-body{ padding:14px 16px 14px; }
+  .cg-poicard .pc-cat{ display:flex; align-items:center; gap:6px; font-size:0.68rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; }
+  .cg-poicard .pc-cat i{ width:8px; height:8px; border-radius:50%; display:block; }
+  .cg-poicard .pc-title{ margin-top:6px; font-family:'Poppins', sans-serif; font-weight:600; font-size:1.05rem; line-height:1.25; color:var(--ink); }
+  .cg-poicard .pc-desc{ margin-top:6px; font-size:0.8rem; line-height:1.55; color:var(--ink-soft); }
+  .cg-poicard .pc-meta{ margin-top:12px; padding-top:10px; border-top:1px solid var(--line); display:grid; gap:6px; }
+  .cg-poicard .pc-row{ display:flex; gap:8px; align-items:flex-start; font-size:0.78rem; line-height:1.4; color:var(--ink); }
+  .cg-poicard .pc-row svg{ width:14px; height:14px; flex:none; margin-top:1px; stroke:var(--ink-faint); fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+  .cg-poicard .pc-lines{ margin-top:10px; display:flex; flex-wrap:wrap; gap:5px; }
+  .cg-poicard .pc-lines b{ min-width:22px; height:22px; padding:0 6px; border-radius:11px; display:inline-flex; align-items:center; justify-content:center; font-size:0.72rem; font-weight:700; }
+  .cg-poicard .pc-credit{ margin-top:10px; font-size:0.6rem; line-height:1.4; color:var(--ink-faint); }
   .cg-hovercard .hc-title{ font-family:'Poppins', sans-serif; font-weight:600; font-size:0.92rem; color:var(--ink); }
   .cg-hovercard .hc-sub{ margin-top:3px; font-size:0.78rem; font-weight:600; color:var(--pink); text-transform:uppercase; letter-spacing:0.04em; }
   .cg-hovercard .hc-desc{ margin-top:6px; font-size:0.82rem; color:var(--ink-soft); line-height:1.5; }
@@ -240,8 +262,8 @@
   .cg-switch-text strong{ display:block; font-size:1rem; }
   .cg-switch-text span{ display:block; font-size:0.88rem; color:var(--ink-soft); margin-top:2px; }
 </style><script src="./image-slot.js?v=2"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script></helmet>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script></helmet>
 <header class="nav scrolled" id="siteNav">
   <div class="nav-inner">
     <a class="wordmark" href="./USWOO Home.dc.html">USWOO</a>
@@ -327,6 +349,8 @@
             <div class="cg-legend-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 10 12 4 2 10l10 6 10-6z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>School</div>
             <div class="cg-legend-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Business District</div>
             <div class="cg-legend-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><text x="12" y="16" font-size="10" text-anchor="middle" fill="currentColor" stroke="none">M</text></svg>Transit</div>
+            <div class="cg-legend-item"><svg viewBox="0 0 24 24" style="stroke:none"><circle cx="12" cy="12" r="8" fill="#2F8F83"/></svg>Landmark</div>
+            <div class="cg-legend-item"><svg viewBox="0 0 24 24" style="stroke:#4A5FC1"><circle cx="12" cy="12" r="7.5" fill="#fff" stroke-width="2.6"/></svg>Major Employer</div>
             <div class="cg-legend-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>USWOO Rentals</div>
           </div>
         </div>
@@ -755,7 +779,6 @@ const PHL_SCHOOLS = [
   { name: 'Temple University', lat: 39.9812, lng: -75.1554, hub: 'North Philadelphia', communities: ['North Central Philly', 'Fairmount', 'Francisville', 'Fishtown'] },
   { name: 'Thomas Jefferson University', lat: 39.9489, lng: -75.157, hub: 'Center City', communities: ['Washington Square West', 'Midtown Village', 'Society Hill', 'Old City'] },
   { name: "Saint Joseph's University", lat: 39.9938, lng: -75.2385, hub: 'City Ave / Wynnefield', communities: ['Wynnefield', 'Bala Cynwyd', 'Manayunk', 'East Falls'] },
-  { name: 'University of the Arts', lat: 39.9469, lng: -75.1633, hub: 'Avenue of the Arts / Center City', communities: ['Rittenhouse', 'Washington Square West', 'Graduate Hospital'] },
 ];
 const PHL_MARKERS = {
   business: [
@@ -826,11 +849,225 @@ const CITY_DATA = {
 };
 const MAP_INNER_HTML = { __html: '<div id="cg-leaflet-container" style="position:absolute;inset:0;"></div>' };
 
+/* Basemap: MapLibre GL (BSD) + OpenFreeMap vector tiles (free, no key, commercial use OK).
+   We load OpenFreeMap's "positron" style and recolor it to the USWOO palette below. */
+const MAP_STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
+const MAP_PALETTE = {
+  land: '#F6F5F3', residential: '#F1EFEC', park: '#E6EBDF', wood: '#DFE5D8',
+  water: '#DFE5E8', waterway: '#D3DBDF', waterLabel: '#7D8D96',
+  building: '#ECE9E5', buildingLine: '#E2DED9',
+  road: '#FFFFFF', roadCasing: '#E7E4E0', minor: '#FFFFFF', path: '#EFECE8',
+  motorway: '#FFFFFF', motorwayCasing: '#DCD7D1', rail: '#DAD6D1',
+  label: '#656260', labelStrong: '#141414', halo: '#FFFFFF', boundary: '#C9C4BE',
+};
+function brandStyle(style) {
+  const P = MAP_PALETTE;
+  const paint = {
+    background: { 'background-color': P.land },
+    park: { 'fill-color': P.park },
+    water: { 'fill-color': P.water },
+    landuse_residential: { 'fill-color': P.residential },
+    landcover_wood: { 'fill-color': P.wood },
+    waterway: { 'line-color': P.waterway },
+    building: { 'fill-color': P.building, 'fill-outline-color': P.buildingLine },
+    road_area_pier: { 'fill-color': P.land },
+    road_pier: { 'line-color': P.land },
+    highway_path: { 'line-color': P.path },
+    highway_minor: { 'line-color': P.minor },
+    highway_major_casing: { 'line-color': P.roadCasing },
+    highway_major_inner: { 'line-color': P.road },
+    highway_major_subtle: { 'line-color': P.roadCasing },
+    highway_motorway_casing: { 'line-color': P.motorwayCasing },
+    highway_motorway_inner: { 'line-color': P.motorway },
+    highway_motorway_subtle: { 'line-color': P.motorwayCasing },
+    highway_motorway_bridge_casing: { 'line-color': P.motorwayCasing },
+    highway_motorway_bridge_inner: { 'line-color': P.motorway },
+    tunnel_motorway_casing: { 'line-color': P.roadCasing },
+    tunnel_motorway_inner: { 'line-color': P.road },
+    railway_transit: { 'line-color': P.rail }, railway_service: { 'line-color': P.rail }, railway: { 'line-color': P.rail },
+    boundary_2: { 'line-color': P.boundary }, boundary_3: { 'line-color': P.boundary },
+    water_name_point_label: { 'text-color': P.waterLabel }, water_name_line_label: { 'text-color': P.waterLabel },
+    waterway_line_label: { 'text-color': P.waterLabel },
+  };
+  style.layers.forEach((l) => {
+    if (l.id === 'ne2_shaded' || l.source === 'ne2_shaded') l.layout = Object.assign({}, l.layout, { visibility: 'none' });
+    if (paint[l.id]) l.paint = Object.assign({}, l.paint, paint[l.id]);
+    if (l.type === 'symbol' && !paint[l.id] && l.paint && 'text-color' in l.paint) {
+      const strong = /^label_(city|town|state|country)/.test(l.id);
+      l.paint = Object.assign({}, l.paint, { 'text-color': strong ? P.labelStrong : P.label, 'text-halo-color': P.halo, 'text-halo-width': 1.2, 'text-halo-blur': 0.4 });
+    }
+  });
+  return style;
+}
+// Small always-on context dots for the NY map: landmarks + well-known employers (geocoded via OSM Nominatim).
+const NY_POIS = [
+  { cat: 'landmark', name: 'Statue of Liberty', icon: 'statue', lat: 40.68925, lng: -74.0445 },
+  { cat: 'landmark', name: 'One World Trade Center', icon: 'tower', lat: 40.713, lng: -74.01319 },
+  { cat: 'landmark', name: 'Brooklyn Bridge', icon: 'bridge', lat: 40.70575, lng: -73.99628 },
+  { cat: 'landmark', name: 'Washington Square Park', icon: 'park', lat: 40.7309, lng: -73.9976 },
+  { cat: 'landmark', name: 'Flatiron Building', icon: 'tower', lat: 40.74106, lng: -73.98964 },
+  { cat: 'landmark', name: 'The High Line', icon: 'park', lat: 40.74233, lng: -74.00768 },
+  { cat: 'landmark', name: 'Empire State Building', icon: 'tower', lat: 40.74844, lng: -73.98566 },
+  { cat: 'landmark', name: 'Madison Square Garden', icon: 'venue', lat: 40.75051, lng: -73.99352 },
+  { cat: 'landmark', name: 'The Vessel', icon: 'tower', lat: 40.75378, lng: -74.00218 },
+  { cat: 'landmark', name: 'Grand Central Terminal', icon: 'train', lat: 40.75269, lng: -73.97725 },
+  { cat: 'landmark', name: 'Chrysler Building', icon: 'tower', lat: 40.75191, lng: -73.97553 },
+  { cat: 'landmark', name: 'Times Square', icon: 'square', lat: 40.75701, lng: -73.98597 },
+  { cat: 'landmark', name: 'Rockefeller Center', icon: 'square', lat: 40.75912, lng: -73.97956 },
+  { cat: 'landmark', name: 'MoMA', icon: 'museum', lat: 40.76161, lng: -73.9775 },
+  { cat: 'landmark', name: 'Lincoln Center', icon: 'venue', lat: 40.77252, lng: -73.98422 },
+  { cat: 'landmark', name: 'The Met', icon: 'museum', lat: 40.77944, lng: -73.96338 },
+  { cat: 'landmark', name: 'Central Park', icon: 'park', lat: 40.78277, lng: -73.96536 },
+  { cat: 'company', name: 'New York Stock Exchange', icon: 'finance', lat: 40.70714, lng: -74.01086 },
+  { cat: 'company', name: 'Spotify', icon: 'tech', lat: 40.71029, lng: -74.01198 },
+  { cat: 'company', name: 'Goldman Sachs', icon: 'finance', lat: 40.71472, lng: -74.01443 },
+  { cat: 'company', name: 'Citigroup', icon: 'finance', lat: 40.72065, lng: -74.01117 },
+  { cat: 'company', name: 'Meta', icon: 'tech', lat: 40.73088, lng: -73.99164 },
+  { cat: 'company', name: 'Google', icon: 'tech', lat: 40.74172, lng: -74.00416 },
+  { cat: 'company', name: 'EY', icon: 'consulting', lat: 40.75272, lng: -73.99769 },
+  { cat: 'company', name: 'KPMG', icon: 'consulting', lat: 40.75204, lng: -73.9981 },
+  { cat: 'company', name: "L'Oréal USA", icon: 'consumer', lat: 40.75269, lng: -74.00155 },
+  { cat: 'company', name: 'Amazon', icon: 'tech', lat: 40.75399, lng: -73.99933 },
+  { cat: 'company', name: 'BlackRock', icon: 'finance', lat: 40.75452, lng: -74.00012 },
+  { cat: 'company', name: 'Pfizer', icon: 'health', lat: 40.75525, lng: -73.99958 },
+  { cat: 'company', name: 'The New York Times', icon: 'media', lat: 40.75589, lng: -73.98967 },
+  { cat: 'company', name: 'Microsoft', icon: 'tech', lat: 40.7566, lng: -73.98966 },
+  { cat: 'company', name: 'Morgan Stanley', icon: 'finance', lat: 40.75998, lng: -73.98552 },
+  { cat: 'company', name: 'Verizon', icon: 'tech', lat: 40.75465, lng: -73.98481 },
+  { cat: 'company', name: 'PwC', icon: 'consulting', lat: 40.75268, lng: -73.98008 },
+  { cat: 'company', name: 'JPMorgan Chase', icon: 'finance', lat: 40.75598, lng: -73.97597 },
+  { cat: 'company', name: 'Bloomberg', icon: 'media', lat: 40.76187, lng: -73.96826 },
+  { cat: 'company', name: 'Apple Fifth Avenue', icon: 'tech', lat: 40.76354, lng: -73.97225 },
+];
+const CITY_KEY = { 'New York & New Jersey': 'NY', 'Los Angeles': 'LA', 'Washington, D.C.': 'DC', 'Chicago': 'CHI', 'Philadelphia': 'PHL' };
+const CITY_POIS = { NY: NY_POIS };
+const AREA_KINDS = {
+  neighborhood: { id: 'nb', title: 'Neighborhood', color: '#C9536B', ink: '#9E3A50' },
+  business: { id: 'bd', title: 'Business District', color: '#C98A14', ink: '#8A5A00', dash: [3, 1.6] },
+};
+const POI_COLOR = { landmark: '#2F8F83', company: '#4A5FC1' };
+const POI_SECTOR = { finance: 'Finance', tech: 'Tech', media: 'Media', consulting: 'Consulting', health: 'Healthcare', consumer: 'Consumer' };
+// 24×24 stroke glyphs (drawn white on the category colour)
+const POI_GLYPH = {
+  statue: '<path d="M12 2.5v3.5M10.2 4.2l1.8 1.8 1.8-1.8M9.5 22h5M10 22l.8-10.5h2.4L14 22M10.8 11.5 9 8.5M13.2 11.5 12 7"/><path d="M8 22h8"/>',
+  tower: '<path d="M8 22V7l4-4 4 4v15M5 22h14M10.5 10h3M10.5 14h3M10.5 18h3"/>',
+  bridge: '<path d="M2 17h20M4 17v4M20 17v4M4 17c3.5-8 12.5-8 16 0M8 12.6V17M12 11.2V17M16 12.6V17"/>',
+  park: '<path d="M12 22v-5M12 3 6 13h3.5L6.5 17h11L14.5 13H18z"/>',
+  museum: '<path d="M3 21h18M5 18h14M12 3l9 5H3zM6 10.5V18M10 10.5V18M14 10.5V18M18 10.5V18"/>',
+  venue: '<path d="M12 3.5l2.6 5.3 5.9.9-4.25 4.15 1 5.85L12 16.9l-5.25 2.8 1-5.85L3.5 9.7l5.9-.9z"/>',
+  train: '<rect x="6" y="3" width="12" height="13" rx="3"/><path d="M6 10h12M9.5 13h.01M14.5 13h.01M9 16l-2.5 4.5M15 16l2.5 4.5"/>',
+  square: '<rect x="3.5" y="4" width="17" height="11" rx="1.5"/><path d="M12 15v6M8 21h8M7 8.5h5M7 11.5h10"/>',
+  finance: '<path d="M3 17.5l6-6 4 4 8-8M15 7.5h6v6"/>',
+  tech: '<rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19.5h20"/>',
+  media: '<rect x="3.5" y="4.5" width="17" height="15" rx="1.5"/><path d="M7 8.5h10M7 12h4M7 15.5h4M13.5 12H17v3.5h-3.5z"/>',
+  consulting: '<rect x="3" y="7.5" width="18" height="12.5" rx="2"/><path d="M9 7.5V5.5a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 5.5v2M3 13h18"/>',
+  health: '<rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 8v8M8 12h8"/>',
+  consumer: '<path d="M5.5 8h13l-1 13h-11zM9 10V6.5a3 3 0 0 1 6 0V10"/>',
+};
+const escHtml = (t) => String(t == null ? '' : t).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const ROW_ICON = {
+  pin: '<path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/>',
+  home: '<path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9.5 21v-6h5v6"/>',
+  people: '<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4.8a3.2 3.2 0 0 1 0 6.4M18 14.3c1.8.8 3 2.6 3 4.7"/>',
+};
+// Shared hover card: up to 3 photos, then category tag(s), name, blurb and icon rows (zh text swaps in via data-zh).
+function placeCardHtml(o) {
+  const zh = (en, z) => (z ? ' data-zh="' + escHtml(z) + '"' : '') + '>' + escHtml(en);
+  const photos = (o.images || []).slice(0, 3);
+  const credit = (o.credits || []).map((c) => c.author).filter(Boolean);
+  const rows = (o.rows || []).filter((r) => r.text);
+  return '<div class="cg-poicard">' +
+    (photos.length ? '<div class="pc-photos n' + photos.length + '">' + photos.map((src) => '<img src="./' + escHtml(src) + '" alt="">').join('') + '</div>' : '') +
+    '<div class="pc-body">' +
+      '<div class="pc-cat" style="color:' + o.color + '"><i style="background:' + o.color + '"></i>' + o.tags.map((t) => '<span>' + escHtml(t) + '</span>').join('<span>·</span>') + '</div>' +
+      '<div class="pc-title">' + escHtml(o.name) + '</div>' +
+      (o.desc ? '<p class="pc-desc"' + zh(o.desc, o.desc_zh) + '</p>' : '') +
+      (o.extraHtml || '') +
+      (rows.length ? '<div class="pc-meta">' + rows.map((r) => '<div class="pc-row"><svg viewBox="0 0 24 24">' + ROW_ICON[r.icon] + '</svg><span' +
+        (r.skip ? ' data-i18n-skip>' + escHtml(r.text) : zh(r.text, r.zh)) + '</span></div>').join('') + '</div>' : '') +
+      (credit.length ? '<div class="pc-credit" data-i18n-skip>Photos: ' + escHtml(credit.join(', ')) + ' · Wikimedia Commons</div>' : '') +
+    '</div></div>';
+}
+// Landmark / employer card.
+function poiCardHtml(props, info) {
+  info = info || {};
+  const sector = POI_SECTOR[props.icon];
+  return placeCardHtml({
+    color: POI_COLOR[props.cat], tags: [props.cat === 'landmark' ? 'Landmark' : 'Major Employer'].concat(sector ? [sector] : []),
+    name: props.name, desc: info.desc, desc_zh: info.desc_zh, images: info.images, credits: info.credits,
+    rows: [{ icon: 'pin', text: info.neighborhood, zh: info.neighborhood_zh }, { icon: 'home', text: info.address, skip: true }],
+  });
+}
+// ~radius-metre circle polygon, used when an area has no real boundary.
+function circlePolygon(lng, lat, radius) {
+  const pts = [], R = 6378137, n = 48;
+  for (let i = 0; i <= n; i++) {
+    const a = (i / n) * 2 * Math.PI;
+    pts.push([+(lng + (radius * Math.sin(a)) / (R * Math.cos((lat * Math.PI) / 180)) * (180 / Math.PI)).toFixed(5),
+      +(lat + (radius * Math.cos(a)) / R * (180 / Math.PI)).toFixed(5)]);
+  }
+  return { type: 'Polygon', coordinates: [pts] };
+}
+// Employer badge: the company's logo on a white disc ringed in the employer colour (rasterised at 2×).
+function logoBadgeImage(src) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => {
+      const c = document.createElement('canvas'); c.width = c.height = 60;
+      const g = c.getContext('2d');
+      g.beginPath(); g.arc(30, 30, 27, 0, 2 * Math.PI); g.fillStyle = '#fff'; g.fill();
+      g.lineWidth = 3.5; g.strokeStyle = POI_COLOR.company; g.stroke();
+      g.save(); g.beginPath(); g.arc(30, 30, 23, 0, 2 * Math.PI); g.clip();
+      const k = Math.min(34 / img.width, 34 / img.height), w = img.width * k, h = img.height * k;
+      g.drawImage(img, 30 - w / 2, 30 - h / 2, w, h); g.restore();
+      resolve(g.getImageData(0, 0, 60, 60));
+    };
+    img.onerror = () => resolve(null);
+    img.src = src;
+  });
+}
+const poiImageId = (cat, icon) => 'cg-poi-' + cat + '-' + icon;
+// Rasterise a badge (category-coloured disc, white ring, white glyph) for map.addImage at 2× for crisp edges.
+function poiBadgeImage(cat, icon) {
+  const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 28 28">' +
+    '<circle cx="14" cy="14" r="12.5" fill="' + POI_COLOR[cat] + '" stroke="#fff" stroke-width="2"/>' +
+    '<g transform="translate(6.8 6.8) scale(0.6)" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">' + POI_GLYPH[icon] + '</g></svg>';
+  return new Promise((resolve) => {
+    const img = new Image(56, 56);
+    img.onload = () => resolve(img);
+    img.onerror = () => resolve(null);
+    img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  });
+}
+
+let brandStylePromise = null;
+function loadBrandStyle() {
+  if (!brandStylePromise) {
+    brandStylePromise = fetch(MAP_STYLE_URL).then((r) => r.json()).then(brandStyle)
+      .catch((e) => { brandStylePromise = null; throw e; });
+  }
+  return brandStylePromise;
+}
+// [[w, s], [e, n]] around any GeoJSON geometries, or null when there are none.
+function geoBounds(features) {
+  const bb = [Infinity, Infinity, -Infinity, -Infinity];
+  features.forEach((f) => JSON.stringify(f.geometry.coordinates).replace(/\[(-?[\d.]+),(-?[\d.]+)\]/g, (m, x, y) => { bb[0] = Math.min(bb[0], +x); bb[1] = Math.min(bb[1], +y); bb[2] = Math.max(bb[2], +x); bb[3] = Math.max(bb[3], +y); return m; }));
+  return bb[0] === Infinity ? null : [[bb[0], bb[1]], [bb[2], bb[3]]];
+}
+const fetchJson = (url) => fetch(url).then((r) => { if (!r.ok) throw new Error(url); return r.json(); });
+
 class Component extends DCLogic {
   state = { activeFilters: ['neighborhood'], activeCity: 'New York & New Jersey' };
   mapWrapperRef = { current: null };
   leafletMap = null;
   markerLayer = null;
+  mapStyle = null;
+  nbData = undefined;     // neighborhood boundaries (assets/neighborhoods.geojson); null if unavailable → pins
+  schoolLogos = undefined; // school name → logo path (assets/school-logos/index.json)
+  poiInfo = null;          // NY landmark / employer card content (assets/poi/poi.json)
+  companyLogos = undefined; // employer name → logo path (assets/company-logos/index.json)
+  poiExtra = null;         // other cities' landmarks / employers incl. coordinates (assets/poi/poi-extra.json)
+  bdData = undefined;      // business-district boundaries (assets/business-districts.geojson)
 
   componentDidMount() {
     this.onSheetClick = (e) => {
@@ -842,6 +1079,16 @@ class Component extends DCLogic {
     };
     document.addEventListener('click', this.onSheetClick);
     this.initCardMotion();
+    loadBrandStyle().then((st) => { this.mapStyle = st; }).catch(() => {});
+    fetchJson('./assets/neighborhoods.geojson').then((d) => { this.nbData = d; }).catch(() => { this.nbData = null; });
+    fetchJson('./assets/poi/poi.json').then((d) => { this.poiInfo = d; }).catch(() => {});
+    this.placeInfo = { areas: {}, schools: {} };
+    fetchJson('./assets/places/areas.json').then((d) => { d.forEach((a) => { this.placeInfo.areas[a.kind + '|' + a.city + '|' + a.name] = a; }); }).catch(() => {});
+    fetchJson('./assets/places/schools.json').then((d) => { d.forEach((a) => { this.placeInfo.schools[a.city + '|' + a.name] = a; }); }).catch(() => {});
+    fetchJson('./assets/poi/poi-extra.json').then((d) => { this.poiExtra = d; }).catch(() => {});
+    fetchJson('./assets/business-districts.geojson').then((d) => { this.bdData = d; }).catch(() => { this.bdData = null; });
+    fetchJson('./assets/company-logos/index.json').then((d) => { this.companyLogos = d; }).catch(() => { this.companyLogos = null; });
+    fetchJson('./assets/school-logos/index.json').then((d) => { this.schoolLogos = d; }).catch(() => { this.schoolLogos = null; });
     this.pollInit(0);
   }
 
@@ -863,53 +1110,318 @@ class Component extends DCLogic {
     this.cardMo.observe(document.body, { childList: true, subtree: true });
   }
 
+  removeMap() {
+    (this.markerLayer || []).forEach((m) => { try { m.remove(); } catch (e) {} });
+    this.hideTip();
+    try { if (this.leafletMap) this.leafletMap.remove(); } catch (e) {}
+    this.leafletMap = null;
+    this.markerLayer = null;
+    this.mapLoaded = false;
+  }
+
   switchCity(name) {
     this.setState({ activeCity: name }, () => {
-      if (this.leafletMap) { this.leafletMap.remove(); this.leafletMap = null; this.markerLayer = null; }
+      this.removeMap();
       this.pollInit(0);
     });
   }
 
   pollInit(attempt) {
     const container = this.mapWrapperRef.current && this.mapWrapperRef.current.querySelector('#cg-leaflet-container');
-    const ready = window.L && container && container.offsetWidth > 0 && container.offsetHeight > 0;
+    const dataReady = this.nbData !== undefined && this.bdData !== undefined && this.schoolLogos !== undefined && this.companyLogos !== undefined;
+    const ready = window.maplibregl && this.mapStyle && (dataReady || attempt > 40) && container && container.offsetWidth > 0 && container.offsetHeight > 0;
     if (ready) { this.initMap(); return; }
-    if (attempt < 60) setTimeout(() => this.pollInit(attempt + 1), 100);
+    if (attempt < 100) setTimeout(() => this.pollInit(attempt + 1), 100);
   }
 
   initMap() {
     const container = this.mapWrapperRef.current && this.mapWrapperRef.current.querySelector('#cg-leaflet-container');
-    if (!window.L || !container || this.leafletMap) return;
+    if (!window.maplibregl || !this.mapStyle || !container || this.leafletMap) return;
     const cd = CITY_DATA[this.state.activeCity] || CITY_DATA['New York & New Jersey'];
+    const ml = window.maplibregl;
+    // Frame the city on its neighborhoods (the hand-set centres in CITY_DATA can sit off to one side).
+    const key = CITY_KEY[this.state.activeCity] || 'NY';
+    const nbBounds = geoBounds(((this.nbData && this.nbData.features) || []).filter((f) => f.properties.city === key));
     try {
-    this.leafletMap = window.L.map(container, {
-      center: [cd.center.lat, cd.center.lng],
-      zoom: cd.zoom,
-      minZoom: cd.minZoom,
+    // MapLibre uses 512px tiles, so its zoom is one level below Leaflet's for the same view.
+    this.leafletMap = new ml.Map({
+      container,
+      style: this.mapStyle,
+      center: [cd.center.lng, cd.center.lat],
+      zoom: cd.zoom - 1,
+      minZoom: cd.minZoom - 1,
       maxZoom: 16,
-      maxBounds: cd.bounds,
-      maxBoundsViscosity: 0.8,
-      scrollWheelZoom: false,
+      // MapLibre clamps the whole viewport (not just the centre) to maxBounds, so pad the city box or the view gets shoved off-centre.
+      maxBounds: (() => { const [[s0, w0], [n0, e0]] = cd.bounds, py = (n0 - s0) * 1.2, px = (e0 - w0) * 1.5; return [[w0 - px, s0 - py], [e0 + px, n0 + py]]; })(),
+      scrollZoom: false,
+      dragRotate: false,
+      pitchWithRotate: false,
+      attributionControl: { compact: true },
     });
-    // Phone: muted light-gray basemap (Esri). Desktop keeps the original tile layer.
-    const isPhone = window.matchMedia && window.matchMedia('(max-width:700px)').matches;
-    (isPhone
-      ? window.L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-          attribution: 'Tiles &copy; Esri',
-          maxZoom: 19,
-          maxNativeZoom: 16,
-        })
-      : window.L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap, &copy; CARTO',
-          maxZoom: 19,
-        })
-    ).addTo(this.leafletMap);
-    this.markerLayer = window.L.layerGroup().addTo(this.leafletMap);
+    if (nbBounds) this.leafletMap.fitBounds(nbBounds, { padding: 36, duration: 0, maxZoom: 13 });
+    this.leafletMap.touchZoomRotate.disableRotation();
+    this.leafletMap.addControl(new ml.NavigationControl({ showCompass: false }), 'top-left');
+    const map = this.leafletMap;
+    map.on('move', () => this.positionTip());
+    map.on('load', () => {
+      if (map !== this.leafletMap) return;
+      this.addOverlayLayers();
+      this.mapLoaded = true;
+      this.paintMarkers();
+    });
+    this.markerLayer = [];
     this.paintMarkers();
-    setTimeout(() => { try { this.leafletMap.invalidateSize(); } catch (e) {} }, 50);
-    setTimeout(() => { try { this.leafletMap.invalidateSize(); } catch (e) {} }, 400);
-    setTimeout(() => { try { this.leafletMap.invalidateSize(); } catch (e) {} }, 1000);
+    setTimeout(() => { try { this.leafletMap.resize(); } catch (e) {} }, 50);
+    setTimeout(() => { try { this.leafletMap.resize(); } catch (e) {} }, 400);
+    setTimeout(() => { try { this.leafletMap.resize(); } catch (e) {} }, 1000);
     } catch (e) {}
+  }
+
+  // Map-native layers: neighborhood + business-district boundaries (fill, outline, name) and the landmark / employer icons.
+  // Neighborhood view pairs with landmarks, business-district view with employers.
+  addOverlayLayers() {
+    const map = this.leafletMap;
+    const key = CITY_KEY[this.state.activeCity] || 'NY';
+    const cd = CITY_DATA[this.state.activeCity] || CITY_DATA['New York & New Jersey'];
+    const descOf = {};
+    // Neighborhood entries mostly carry no blurb; reuse the business-district one of the same name when there is one.
+    (cd.markers.business || []).concat(cd.markers.neighborhood || []).forEach((pt) => { if (pt.desc || !descOf[pt.name]) descOf[pt.name] = pt; });
+    const clogos = this.companyLogos || {};
+    const pois = this.cityPois(key).map((p) => {
+      const logo = p.cat === 'company' && clogos[p.name];
+      return {
+        type: 'Feature', geometry: { type: 'Point', coordinates: [p.lng, p.lat] },
+        properties: { name: p.name, cat: p.cat, icon: p.icon, logo: logo || '', img: logo ? 'cg-logo-' + logo : poiImageId(p.cat, p.icon), rank: p.cat === 'landmark' ? 0 : 1 },
+      };
+    });
+    const firstLabel = (map.getStyle().layers.find((l) => l.type === 'symbol') || {}).id;
+    // Big areas first so smaller ones sit on top and stay hoverable.
+    const area = (f) => { const b = geoBounds([f]); return b ? (b[1][0] - b[0][0]) * (b[1][1] - b[0][1]) : 0; };
+    this.areaShapes = {};
+    Object.keys(AREA_KINDS).forEach((kind) => {
+      const K = AREA_KINDS[kind];
+      const data = kind === 'business' ? this.bdData : this.nbData;
+      const feats = ((data && data.features) || []).filter((f) => f.properties.city === key);
+      // No real boundary for an area → draw a ~600 m radius around its point instead.
+      const known = new Set(feats.map((f) => f.properties.name));
+      (cd.markers[kind] || []).filter((pt) => !known.has(pt.name)).forEach((pt) => feats.push({
+        type: 'Feature', properties: { city: key, name: pt.name, approx: true }, geometry: circlePolygon(pt.lng, pt.lat, 600),
+      }));
+      const shaped = new Set(feats.map((f) => f.properties.name));
+      this.areaShapes[kind] = shaped;
+      const sorted = feats.slice().sort((a, b) => area(b) - area(a)).map((f, i) => ({ type: 'Feature', id: i, properties: f.properties, geometry: f.geometry }));
+      const labelPts = (cd.markers[kind] || []).filter((pt) => shaped.has(pt.name)).map((pt) => ({
+        type: 'Feature', properties: { name: pt.name }, geometry: { type: 'Point', coordinates: [pt.lng, pt.lat] },
+      }));
+      const src = 'cg-' + K.id;
+      map.addSource(src, { type: 'geojson', data: { type: 'FeatureCollection', features: sorted } });
+      map.addSource(src + '-label', { type: 'geojson', data: { type: 'FeatureCollection', features: labelPts } });
+      const hover = (a, b) => ['case', ['boolean', ['feature-state', 'hover'], false], a, b];
+      map.addLayer({ id: src + '-fill', type: 'fill', source: src, paint: { 'fill-color': K.color, 'fill-opacity': hover(0.3, 0.1) } }, firstLabel);
+      map.addLayer({ id: src + '-line', type: 'line', source: src, paint: Object.assign(
+        { 'line-color': K.color, 'line-opacity': 0.9, 'line-width': hover(2.6, 1.4) }, K.dash ? { 'line-dasharray': K.dash } : {}) }, firstLabel);
+      map.addLayer({ id: src + '-name', type: 'symbol', source: src + '-label', layout: {
+        'text-field': ['get', 'name'], 'text-font': ['Noto Sans Bold'], 'text-size': ['interpolate', ['linear'], ['zoom'], 9, 9.5, 13, 12.5],
+        'text-transform': 'uppercase', 'text-letter-spacing': 0.06, 'text-max-width': 8,
+      }, paint: { 'text-color': K.ink, 'text-halo-color': 'rgba(255,255,255,0.92)', 'text-halo-width': 1.4 } });
+    });
+    // Rail lines + stations for the Commute view (loaded per city on demand).
+    this.loadTransit(key).then((tr) => { if (tr && map === this.leafletMap) this.addTransitLayers(map, tr, firstLabel); });
+    map.addSource('cg-poi', { type: 'geojson', data: { type: 'FeatureCollection', features: pois } });
+    // Icon badges are rasterised async; add the layer once they're registered. Overlapping badges hide (landmarks win).
+    const kinds = {};
+    pois.forEach((f) => { kinds[f.properties.img] = f.properties; });
+    // logo badges read better a touch larger than glyph badges
+    const logoSize = (v) => ['case', ['!=', ['get', 'logo'], ''], +(v * 1.2).toFixed(3), v];
+    Promise.all(Object.keys(kinds).map((id) => (kinds[id].logo ? logoBadgeImage('./' + kinds[id].logo) : poiBadgeImage(kinds[id].cat, kinds[id].icon)).then((img) => {
+      if (img && map === this.leafletMap && !map.hasImage(id)) map.addImage(id, img, { pixelRatio: 2 });
+    }))).then(() => {
+      if (map !== this.leafletMap || map.getLayer('cg-poi-icon')) return;
+      map.addLayer({ id: 'cg-poi-icon', type: 'symbol', source: 'cg-poi', filter: this.poiFilter(), layout: {
+        'icon-image': ['get', 'img'], 'icon-size': ['interpolate', ['linear'], ['zoom'], 9, logoSize(0.62), 12, logoSize(0.85), 15, logoSize(1.05)],
+        'icon-allow-overlap': false, 'icon-padding': 1, 'symbol-sort-key': ['get', 'rank'],
+        'text-field': ['step', ['zoom'], '', 12.4, ['get', 'name']], 'text-font': ['Noto Sans Regular'], 'text-size': 10.5,
+        'text-anchor': 'top', 'text-offset': [0, 1.25], 'text-max-width': 7, 'text-optional': true,
+      }, paint: { 'text-color': '#3B3936', 'text-halo-color': '#FFFFFF', 'text-halo-width': 1.3 } });
+    });
+
+    let hovered = null; // { source, id }
+    let shownKey = null;
+    const unhover = () => { if (hovered) map.setFeatureState(hovered, { hover: false }); hovered = null; };
+    const clearHover = () => {
+      unhover();
+      this.hideTip(); shownKey = null;
+      map.getCanvas().style.cursor = '';
+    };
+    const fillLayers = () => Object.keys(AREA_KINDS).map((k) => 'cg-' + AREA_KINDS[k].id + '-fill')
+      .filter((id) => map.getLayoutProperty(id, 'visibility') !== 'none');
+    // Icons win over the area underneath them; business areas sit above neighborhoods.
+    // Area cards stay pinned to the area's label point so they don't chase the cursor.
+    const onMove = (e) => {
+      // DOM markers (schools, fallback pins) bubble their mouse events up to the map; they show their own card.
+      const t = e.originalEvent && e.originalEvent.target;
+      if (t && t.closest && t.closest('.maplibregl-marker')) { unhover(); shownKey = null; map.getCanvas().style.cursor = ''; return; }
+      const poi = map.getLayer('cg-poi-icon') && map.queryRenderedFeatures(e.point, { layers: ['cg-poi-icon'] })[0];
+      const trLayers = ['cg-tr-station', 'cg-tr-line'].filter((id) => map.getLayer(id) && map.getLayoutProperty(id, 'visibility') !== 'none');
+      const tr = !poi && trLayers.length && map.queryRenderedFeatures([[e.point.x - 4, e.point.y - 4], [e.point.x + 4, e.point.y + 4]], { layers: trLayers })
+        .sort((a, b) => (a.layer.id === 'cg-tr-station' ? 0 : 1) - (b.layer.id === 'cg-tr-station' ? 0 : 1))[0];
+      const layers = fillLayers();
+      const zone = !poi && !tr && layers.length && map.queryRenderedFeatures(e.point, { layers })[0];
+      if (!poi && !tr && !zone) { clearHover(); return; }
+      if (tr) {
+        unhover();
+        map.getCanvas().style.cursor = 'pointer';
+        const pr = tr.properties, k = 'tr|' + tr.layer.id + '|' + pr.system + '|' + (pr.name || '') + '|' + (pr.ref || '');
+        if (shownKey !== k) {
+          shownKey = k;
+          const at = tr.geometry.type === 'Point' ? tr.geometry.coordinates : [e.lngLat.lng, e.lngLat.lat];
+          this.showTip(this.transitCardHtml(pr, tr.layer.id === 'cg-tr-station'), at, 10);
+        }
+        return;
+      }
+      map.getCanvas().style.cursor = 'pointer';
+      if (poi) {
+        unhover();
+        if (shownKey !== 'poi|' + poi.properties.name) {
+          shownKey = 'poi|' + poi.properties.name;
+          this.showTip(poiCardHtml(poi.properties, this.poiDetails(poi.properties.name)), poi.geometry.coordinates, 16);
+        }
+        return;
+      }
+      const kind = zone.source === 'cg-bd' ? 'business' : 'neighborhood';
+      if (!hovered || hovered.source !== zone.source || hovered.id !== zone.id) {
+        unhover();
+        hovered = { source: zone.source, id: zone.id };
+        map.setFeatureState(hovered, { hover: true });
+      }
+      const k = kind + '|' + zone.properties.name;
+      if (shownKey !== k) {
+        shownKey = k;
+        const pt = (cd.markers[kind] || []).find((m) => m.name === zone.properties.name);
+        this.showTip(this.areaCardHtml(kind, zone.properties.name, descOf[zone.properties.name]), pt ? [pt.lng, pt.lat] : [e.lngLat.lng, e.lngLat.lat], 10);
+      }
+    };
+    map.on('mousemove', onMove);
+    map.on('click', onMove); // touch: tap to inspect
+    map.getCanvas().addEventListener('mouseleave', clearHover);
+  }
+
+  // Floating hover card: a fixed-position element on <body>, anchored to a map point and kept on screen.
+  showTip(html, lngLat, gap) {
+    if (!this.tipEl) {
+      this.tipEl = document.createElement('div');
+      this.tipEl.className = 'cg-floattip';
+      document.body.appendChild(this.tipEl);
+      window.addEventListener('scroll', () => this.positionTip(), { passive: true });
+      window.addEventListener('resize', () => this.positionTip());
+    }
+    this.tipEl.innerHTML = html;
+    this.tipAnchor = { lngLat, gap: gap || 12 };
+    this.positionTip();
+    this.tipEl.classList.add('on');
+  }
+
+  hideTip() {
+    if (this.tipEl) this.tipEl.classList.remove('on');
+    this.tipAnchor = null;
+  }
+
+  positionTip() {
+    const el = this.tipEl, a = this.tipAnchor, map = this.leafletMap;
+    if (!el || !a || !map) return;
+    const r = map.getContainer().getBoundingClientRect();
+    const p = map.project(a.lngLat);
+    const x = r.left + p.x, y = r.top + p.y;
+    const w = el.offsetWidth, h = el.offsetHeight, m = 10;
+    const vw = window.innerWidth, vh = window.innerHeight;
+    // prefer above the point, flip below when there's no room
+    let top = y - a.gap - h;
+    if (top < m) top = Math.min(y + a.gap, vh - h - m);
+    const left = Math.max(m, Math.min(x - w / 2, vw - w - m));
+    el.style.transform = 'translate(' + Math.round(left) + 'px,' + Math.round(Math.max(m, top)) + 'px)';
+  }
+
+  areaCardHtml(kind, name, marker) {
+    const K = AREA_KINDS[kind], key = CITY_KEY[this.state.activeCity] || 'NY';
+    const info = ((this.placeInfo && this.placeInfo.areas) || {})[kind + '|' + key + '|' + name] || {};
+    return placeCardHtml({
+      color: K.color, tags: [K.title], name, images: info.images, credits: info.credits,
+      desc: info.desc || (marker && marker.desc), desc_zh: info.desc_zh,
+      rows: [{ icon: 'pin', text: info.region, zh: info.region_zh }],
+    });
+  }
+
+  schoolCardHtml(s) {
+    const key = CITY_KEY[this.state.activeCity] || 'NY';
+    const info = ((this.placeInfo && this.placeInfo.schools) || {})[key + '|' + s.name] || {};
+    return placeCardHtml({
+      color: MARKER_COLOR.school, tags: ['School'], name: s.name, images: info.images, credits: info.credits,
+      desc: info.desc, desc_zh: info.desc_zh,
+      rows: [
+        { icon: 'pin', text: info.neighborhood || s.hub, zh: info.neighborhood_zh },
+        { icon: 'home', text: info.address, skip: true },
+        { icon: 'people', text: 'Popular areas: ' + s.communities.join(', '), zh: '热门社区：' + s.communities.join('、') },
+      ],
+    });
+  }
+
+  loadTransit(key) {
+    this.transitCache = this.transitCache || {};
+    if (!this.transitCache[key]) {
+      this.transitCache[key] = fetchJson('./assets/transit/' + key + '.geojson').catch(() => { delete this.transitCache[key]; return null; });
+    }
+    return this.transitCache[key];
+  }
+
+  addTransitLayers(map, tr, beforeId) {
+    if (map.getSource('cg-tr')) return;
+    this.lineStyle = {};
+    tr.features.forEach((f) => { if (f.properties.kind === 'line') this.lineStyle[f.properties.system + '|' + f.properties.ref] = f.properties; });
+    const vis = this.activeFilterList().indexOf('commute') !== -1 ? 'visible' : 'none';
+    map.addSource('cg-tr', { type: 'geojson', data: tr });
+    const isLine = ['==', ['get', 'kind'], 'line'], isStation = ['==', ['get', 'kind'], 'station'];
+    map.addLayer({ id: 'cg-tr-casing', type: 'line', source: 'cg-tr', filter: isLine, layout: { visibility: vis, 'line-join': 'round', 'line-cap': 'round' },
+      paint: { 'line-color': '#FFFFFF', 'line-width': ['interpolate', ['linear'], ['zoom'], 9, 2.6, 12, 4.6, 15, 8] } }, beforeId);
+    map.addLayer({ id: 'cg-tr-line', type: 'line', source: 'cg-tr', filter: isLine, layout: { visibility: vis, 'line-join': 'round', 'line-cap': 'round' },
+      paint: { 'line-color': ['get', 'color'], 'line-width': ['interpolate', ['linear'], ['zoom'], 9, 1.4, 12, 2.8, 15, 5] } }, beforeId);
+    map.addLayer({ id: 'cg-tr-station', type: 'circle', source: 'cg-tr', filter: isStation, minzoom: 10.5, layout: { visibility: vis },
+      paint: { 'circle-color': '#FFFFFF', 'circle-stroke-color': '#141414', 'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 10.5, 0.8, 14, 1.6],
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 10.5, 1.6, 13, 3.2, 15, 5] } });
+    map.addLayer({ id: 'cg-tr-name', type: 'symbol', source: 'cg-tr', filter: isStation, minzoom: 13, layout: { visibility: vis,
+      'text-field': ['get', 'name'], 'text-font': ['Noto Sans Regular'], 'text-size': 10, 'text-anchor': 'left', 'text-offset': [0.7, 0], 'text-optional': true },
+      paint: { 'text-color': '#3B3936', 'text-halo-color': '#FFFFFF', 'text-halo-width': 1.3 } });
+  }
+
+  transitCardHtml(pr, isStation) {
+    const refs = isStation ? String(pr.refs || '').split(',').filter(Boolean) : [pr.ref];
+    const badges = '<div class="pc-lines" data-i18n-skip>' + refs.map((r) => {
+      const st = (this.lineStyle || {})[pr.system + '|' + r] || {};
+      return '<b style="background:' + escHtml(st.color || '#656260') + ';color:' + escHtml(st.text_color || '#FFFFFF') + '" title="' + escHtml(st.name || r) + '">' + escHtml(r) + '</b>';
+    }).join('') + '</div>';
+    return placeCardHtml({
+      color: MARKER_COLOR.commute, tags: [isStation ? 'Station' : 'Transit Line', pr.system],
+      name: isStation ? pr.name : (pr.name || pr.ref), extraHtml: badges,
+    });
+  }
+
+  activeFilterList() {
+    return (this.state.activeFilters && this.state.activeFilters.length) ? this.state.activeFilters : ['neighborhood'];
+  }
+
+  // Landmarks ride with the neighborhood view, employers with the business-district view.
+  poiFilter() {
+    const f = this.activeFilterList(), cats = [];
+    if (f.indexOf('neighborhood') !== -1) cats.push('landmark');
+    if (f.indexOf('business') !== -1) cats.push('company');
+    return ['in', ['get', 'cat'], ['literal', cats]];
+  }
+
+  cityPois(key) {
+    return (CITY_POIS[key] || []).concat((this.poiExtra || []).filter((p) => p.city === key));
+  }
+
+  poiDetails(name) {
+    return (this.poiInfo && this.poiInfo[name]) || (this.poiExtra || []).find((p) => p.name === name) || null;
   }
 
   paintMarkers() {
@@ -922,51 +1434,59 @@ class Component extends DCLogic {
       }
     } catch (e) { dead = true; }
     if (dead) {
-      try { if (this.leafletMap) this.leafletMap.remove(); } catch (e) {}
-      this.leafletMap = null;
-      this.markerLayer = null;
+      this.removeMap();
       this.initMap();
       return;
     }
     if (!this.markerLayer) return;
-    this.markerLayer.clearLayers();
+    this.markerLayer.forEach((m) => m.remove());
+    this.markerLayer = [];
+    const ml = window.maplibregl;
+    const map = this.leafletMap;
     const cd = CITY_DATA[this.state.activeCity] || CITY_DATA['New York & New Jersey'];
     const SCHOOLS = cd.schools, MAP_MARKERS = cd.markers;
-    const activeFilters = (this.state.activeFilters && this.state.activeFilters.length) ? this.state.activeFilters : ['neighborhood'];
-    const labeledIcon = (cat, name) => window.L.divIcon({
-      className: '',
-      html: '<div style="display:flex;align-items:center;gap:6px;white-space:nowrap;overflow:visible;">' +
-        '<div class="cg-marker" style="background:' + MARKER_COLOR[cat] + ';flex:none;">' + CATEGORY_ICON_SVG[cat] + '</div>' +
-        '<span style="background:#fff;padding:3px 8px;border-radius:3px;font-size:11.5px;font-weight:600;color:#141414;box-shadow:0 1px 4px rgba(0,0,0,0.25);">' + name + '</span></div>',
-      iconSize: [220, 26],
-      iconAnchor: [13, 13],
-    });
-    const plainIcon = (cat) => window.L.divIcon({
-      className: '',
-      html: '<div class="cg-marker" style="background:' + MARKER_COLOR[cat] + '">' + CATEGORY_ICON_SVG[cat] + '</div>',
-      iconSize: [26, 26],
-    });
-    const hovercard = (title, sub, desc) => '<div class="cg-hovercard"><div class="hc-title">' + title + '</div>' +
-      (sub ? '<div class="hc-sub">' + sub + '</div>' : '') + (desc ? '<div class="hc-desc">' + desc + '</div>' : '') + '</div>';
-    const tipOpts = { className: 'cg-tooltip', direction: 'top', offset: [0, -8], opacity: 1 };
+    const activeFilters = this.activeFilterList();
+    if (this.mapLoaded) {
+      Object.keys(AREA_KINDS).forEach((kind) => {
+        const vis = activeFilters.indexOf(kind) !== -1 ? 'visible' : 'none';
+        ['-fill', '-line', '-name'].forEach((suf) => map.setLayoutProperty('cg-' + AREA_KINDS[kind].id + suf, 'visibility', vis));
+      });
+      if (map.getLayer('cg-poi-icon')) map.setFilter('cg-poi-icon', this.poiFilter());
+      const showTr = activeFilters.indexOf('commute') !== -1 ? 'visible' : 'none';
+      ['cg-tr-casing', 'cg-tr-line', 'cg-tr-station', 'cg-tr-name'].forEach((id) => { if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', showTr); });
+      this.hideTip();
+    }
+    const el = (html) => { const d = document.createElement('div'); d.className = 'cg-pin'; d.innerHTML = html; return d; };
+    const logos = this.schoolLogos || {};
+    const badge = (cat, name) => (cat === 'school' && logos[name])
+      ? '<div class="cg-marker cg-logo"><img src="./' + logos[name] + '" alt=""></div>'
+      : '<div class="cg-marker" style="background:' + MARKER_COLOR[cat] + ';flex:none;">' + CATEGORY_ICON_SVG[cat] + '</div>';
+    const labeledIcon = (cat, name) => el(
+      '<div style="display:flex;align-items:center;gap:6px;white-space:nowrap;overflow:visible;">' + badge(cat, name) +
+        '<span style="background:#fff;padding:3px 8px;border-radius:3px;font-size:11.5px;font-weight:600;color:#141414;box-shadow:0 1px 4px rgba(0,0,0,0.25);">' + name + '</span></div>');
+    const plainIcon = (cat) => el('<div class="cg-marker" style="background:' + MARKER_COLOR[cat] + '">' + CATEGORY_ICON_SVG[cat] + '</div>');
+    // labeled pins: badge centre sits on the point, label trails to the right
+    const add = (lat, lng, node, html, labelOffset) => {
+      const marker = new ml.Marker(labelOffset ? { element: node, anchor: 'left', offset: [-labelOffset, 0] } : { element: node })
+        .setLngLat([lng, lat]).addTo(map);
+      const show = () => this.showTip(typeof html === 'function' ? html() : html, [lng, lat], 18);
+      const hide = () => this.hideTip();
+      node.addEventListener('mouseenter', show);
+      node.addEventListener('mouseleave', hide);
+      node.addEventListener('click', (e) => { e.stopPropagation(); this.tipEl && this.tipEl.classList.contains('on') ? hide() : show(); });
+      this.markerLayer.push(marker);
+    };
     activeFilters.forEach((filter) => {
       if (filter === 'school') {
-        SCHOOLS.forEach((s) => {
-          window.L.marker([s.lat, s.lng], { icon: labeledIcon('school', s.name) })
-            .bindTooltip(hovercard(s.name, s.hub, 'Community: ' + s.communities.join(', ')), tipOpts)
-            .addTo(this.markerLayer);
-        });
+        SCHOOLS.forEach((s) => add(s.lat, s.lng, labeledIcon('school', s.name), () => this.schoolCardHtml(s), logos[s.name] ? 16 : 13));
       } else if (filter === 'business' || filter === 'neighborhood') {
-        (MAP_MARKERS[filter] || []).forEach((pt) => {
-          window.L.marker([pt.lat, pt.lng], { icon: plainIcon(filter) })
-            .bindTooltip(hovercard(pt.name, filter === 'business' ? 'Business District' : 'Neighborhood', pt.desc), tipOpts)
-            .addTo(this.markerLayer);
-        });
-      } else if (filter === 'commute') {
-        (MAP_MARKERS.commute || []).forEach((pt) => {
-          window.L.marker([pt.lat, pt.lng], { icon: plainIcon('commute') }).bindTooltip(hovercard(pt.name, 'Transit'), tipOpts).addTo(this.markerLayer);
-        });
+        // Areas are drawn as boundaries; only fall back to a pin when we have no shape for one.
+        if (!this.mapLoaded) return;
+        const shaped = (this.areaShapes && this.areaShapes[filter]) || new Set();
+        (MAP_MARKERS[filter] || []).filter((pt) => !shaped.has(pt.name))
+          .forEach((pt) => add(pt.lat, pt.lng, plainIcon(filter), () => this.areaCardHtml(filter, pt.name, pt)));
       }
+      // Commute is drawn as the rail network (cg-tr-* layers); no hub pins.
     });
   }
 

@@ -1,0 +1,1335 @@
+[
+  {
+    "city": "NY",
+    "name": "Parsons School of Design",
+    "images": [
+      "assets/places/school-parsons-1.jpg",
+      "assets/places/school-parsons-2.jpg",
+      "assets/places/school-parsons-3.jpg"
+    ],
+    "desc": "Top-ranked design school of The New School, famous for fashion. Its Fifth Ave campus sits in lively Greenwich Village near Union Square; rents are high but transit is superb.",
+    "desc_zh": "新学院旗下的顶尖设计学院，以时装设计闻名。校区位于第五大道、紧邻联合广场的格林威治村，街区热闹，租金偏高但交通极为便利。",
+    "neighborhood": "Greenwich Village, Manhattan",
+    "neighborhood_zh": "曼哈顿格林威治村",
+    "address": "66 Fifth Avenue, New York, NY 10011",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:New_School_University_Center.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:The_New_School_-_University_Center_Roof.jpg",
+        "author": "Nylandmarks",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Parsons_David_Schwartz_Fashion_Education_Center_560_Seventh_Avenue.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "NY",
+    "name": "Pratt Institute",
+    "images": [
+      "assets/places/school-pratt-1.jpg",
+      "assets/places/school-pratt-2.jpg",
+      "assets/places/school-pratt-3.jpg"
+    ],
+    "desc": "Renowned for architecture, industrial and interior design. Its gated, tree-lined campus sits amid Clinton Hill's brownstones, with cafés and the G train nearby.",
+    "desc_zh": "以建筑、工业设计和室内设计著称。校园绿树成荫、自带围墙，周边是克林顿山的褐石公寓区，咖啡馆众多，步行可达G线地铁。",
+    "neighborhood": "Clinton Hill, Brooklyn",
+    "neighborhood_zh": "布鲁克林克林顿山",
+    "address": "200 Willoughby Avenue, Brooklyn, NY 11205",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Prattdekalbjeh.JPG",
+        "author": "Jim.henderson",
+        "license": "Public domain"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Pratt_Institute_main_building.JPG",
+        "author": "Jonathan Bowen",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Higgins_Institute_Pratt_jeh.jpg",
+        "author": "Jim.henderson",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "NY",
+    "name": "SVA",
+    "images": [
+      "assets/places/school-sva-1.jpg",
+      "assets/places/school-sva-2.jpg",
+      "assets/places/school-sva-3.jpg"
+    ],
+    "desc": "School of Visual Arts, known for illustration, film and animation. Its buildings line East 23rd St near Gramercy Park, a walkable, central area with many studios and walk-ups.",
+    "desc_zh": "纽约视觉艺术学院，以插画、电影和动画专业见长。教学楼分布在东23街一带，靠近格拉梅西公园，地段居中、适合步行，周边多为小户型和无电梯公寓。",
+    "neighborhood": "Gramercy / Kips Bay, Manhattan",
+    "neighborhood_zh": "曼哈顿格拉梅西 / 基普斯湾",
+    "address": "209 East 23rd Street, New York, NY 10010",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:SVA-23rdStreet.jpg",
+        "author": "Veeayepeeessveeaye",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:SVA_East_23rd.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:SVA_214_East_21st.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  {
+    "city": "NY",
+    "name": "FIT",
+    "images": [
+      "assets/places/school-fit-1.jpg",
+      "assets/places/school-fit-2.jpg",
+      "assets/places/school-fit-3.jpg"
+    ],
+    "desc": "SUNY's Fashion Institute of Technology, a launchpad for fashion and merchandising careers. The campus on W 27th St is steps from Penn Station, Chelsea galleries and the High Line.",
+    "desc_zh": "纽约州立大学时装技术学院，时尚与零售管理人才的摇篮。校区位于西27街，步行可到宾州车站、切尔西画廊区和高线公园。",
+    "neighborhood": "Chelsea, Manhattan",
+    "neighborhood_zh": "曼哈顿切尔西",
+    "address": "227 West 27th Street, New York, NY 10001",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:FIT_Marvin_Feldman_Center_from_east.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:FIT_Pomerantz_and_Goodman_Centers.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:FIT_27th_Street_campus.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "NY",
+    "name": "Columbia University",
+    "images": [
+      "assets/places/school-columbia-1.jpg",
+      "assets/places/school-columbia-2.jpg",
+      "assets/places/school-columbia-3.jpg"
+    ],
+    "desc": "Ivy League university with the iconic Low Library and College Walk. Morningside Heights is a leafy, student-heavy area on the 1 train, with prewar apartments and Riverside Park nearby.",
+    "desc_zh": "常春藤名校，标志性的洛氏图书馆和College Walk广为人知。晨边高地绿树成荫、学生集中，乘1号线进出方便，多战前公寓，紧邻河滨公园。",
+    "neighborhood": "Morningside Heights, Manhattan",
+    "neighborhood_zh": "曼哈顿晨边高地",
+    "address": "2960 Broadway, New York, NY 10027",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Columbia_University_New_York_November_2016_002.jpg",
+        "author": "King of Hearts",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Outside_Columbia_University_Library_(5892425145).jpg",
+        "author": "Alex Proimos from Sydney, Australia",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Columbia_University_-_Low_Library.jpg",
+        "author": "Bitterteayen",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "NY",
+    "name": "NYU",
+    "images": [
+      "assets/places/school-nyu-1.jpg",
+      "assets/places/school-nyu-2.jpg",
+      "assets/places/school-nyu-3.jpg"
+    ],
+    "desc": "A global research university woven into the streets around Washington Square Park. The Village is vibrant and walkable with endless food options, though rents are among NYC's highest.",
+    "desc_zh": "全球知名的研究型大学，校舍融入华盛顿广场公园周边的街巷。格林威治村热闹宜步行、美食众多，但租金在纽约名列前茅。",
+    "neighborhood": "Greenwich Village, Manhattan",
+    "neighborhood_zh": "曼哈顿格林威治村",
+    "address": "70 Washington Square South, New York, NY 10012",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:NYC_-_Washington_Square_Park_-_Arch.jpg",
+        "author": "Jean-Christophe BENOIST",
+        "license": "CC BY 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Bobst,_Kimmel.jpg",
+        "author": "EgyetemInfó at Hungarian Wikipedia",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:NYU_(2011)_02.JPG",
+        "author": "Nandaro",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  {
+    "city": "NY",
+    "name": "Fordham — Lincoln Center",
+    "images": [
+      "assets/places/school-fordham-lincoln-center-1.jpg",
+      "assets/places/school-fordham-lincoln-center-2.jpg",
+      "assets/places/school-fordham-lincoln-center-3.jpg"
+    ],
+    "desc": "Fordham's Manhattan campus, home to its law, business and arts programs. Next to Lincoln Center and Central Park, the area is polished and safe, with easy access via Columbus Circle.",
+    "desc_zh": "福特汉姆大学的曼哈顿校区，设有法学院、商学院及文理项目。毗邻林肯中心和中央公园，环境精致安全，经哥伦布圆环出行便利。",
+    "neighborhood": "Lincoln Square, Upper West Side, Manhattan",
+    "neighborhood_zh": "曼哈顿上西区林肯广场",
+    "address": "113 West 60th Street, New York, NY 10023",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Fordham_University_Lincoln_Center.JPG",
+        "author": "Jonathan71",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Lowenstein.jpg",
+        "author": "David Shankbone",
+        "license": "CC BY 2.5"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Fordham_LC_06_-_Robert_Moses_Plaza.jpg",
+        "author": "Tdorante10",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "NY",
+    "name": "Fordham — Rose Hill",
+    "images": [
+      "assets/places/school-fordham-rose-hill-1.jpg",
+      "assets/places/school-fordham-rose-hill-2.jpg",
+      "assets/places/school-fordham-rose-hill-3.jpg"
+    ],
+    "desc": "Fordham's historic Jesuit main campus with Gothic halls and broad lawns. Beside the Bronx Zoo and Arthur Avenue's Little Italy; rents are far lower than Manhattan, with Metro-North nearby.",
+    "desc_zh": "福特汉姆大学历史悠久的耶稣会主校区，哥特式建筑与大草坪相映。紧邻布朗克斯动物园和亚瑟大道小意大利，租金远低于曼哈顿，附近有Metro-North车站。",
+    "neighborhood": "Belmont / Fordham, The Bronx",
+    "neighborhood_zh": "布朗克斯贝尔蒙特 / 福特汉姆",
+    "address": "441 East Fordham Road, Bronx, NY 10458",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Fordham_University_Keating_Hall.JPG",
+        "author": "Chriscobar",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Keating_Hall_with_Cunniffe_Fountain,_Fordham.jpg",
+        "author": "Indefatigable2",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Queen%27s_Court_and_University_Church_at_Fordham.jpg",
+        "author": "Indefatigable2",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "USC",
+    "images": [
+      "assets/places/school-usc-1.jpg",
+      "assets/places/school-usc-2.jpg",
+      "assets/places/school-usc-3.jpg"
+    ],
+    "desc": "Private research university known for film, business and engineering, with red-brick Romanesque halls. Most students rent in University Park and near the Expo Line; DTLA is minutes away.",
+    "desc_zh": "以电影、商科和工程著称的私立研究型大学，红砖罗马式建筑是标志。学生多在大学公园区及Expo地铁线沿线租房，距洛杉矶市中心仅数分钟车程。",
+    "neighborhood": "University Park, South Los Angeles",
+    "neighborhood_zh": "南洛杉矶大学公园区",
+    "address": "3551 Trousdale Parkway, Los Angeles, CA 90089",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Doheny.jpg",
+        "author": "Padsquad19 at English Wikipedia",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:University_of_Southern_California_2_2019-05-05.jpg",
+        "author": "FASTILY",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Harris_Hall,_University_of_Southern_California.jpg",
+        "author": "EEJCC",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "UCLA",
+    "images": [
+      "assets/places/school-ucla-1.jpg",
+      "assets/places/school-ucla-2.jpg",
+      "assets/places/school-ucla-3.jpg"
+    ],
+    "desc": "Top public university famous for Royce Hall and a sprawling, green campus. Westwood Village next door is walkable with student apartments, though rents are high for LA.",
+    "desc_zh": "顶尖公立大学，以罗伊斯厅和宽阔的绿色校园闻名。紧邻的韦斯特伍德村步行友好、学生公寓集中，但租金在洛杉矶属于较高水平。",
+    "neighborhood": "Westwood, Los Angeles",
+    "neighborhood_zh": "洛杉矶韦斯特伍德",
+    "address": "405 Hilgard Avenue, Los Angeles, CA 90095",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Royce_Hall_post_rain.jpg",
+        "author": "Alton",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Janss_Steps,_Royce_Hall_in_background,_UCLA.jpg",
+        "author": "b r e n t",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:2019_UCLA_Haines_Hall_1.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "Loyola Marymount University",
+    "images": [
+      "assets/places/school-lmu-1.jpg",
+      "assets/places/school-lmu-2.jpg",
+      "assets/places/school-lmu-3.jpg"
+    ],
+    "desc": "Jesuit university on a bluff overlooking Playa Vista and the Pacific. Westchester is a quiet, suburban area near LAX and the beach; most students drive or rent close to campus.",
+    "desc_zh": "坐落在可俯瞰Playa Vista与太平洋的山崖上的耶稣会大学。韦斯特切斯特安静、偏郊区，靠近洛杉矶机场和海滩，学生多开车或在校园附近租房。",
+    "neighborhood": "Westchester, Los Angeles",
+    "neighborhood_zh": "洛杉矶韦斯特切斯特",
+    "address": "1 LMU Drive, Los Angeles, CA 90045",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Loyola_Marymount_SunkenGardens_SacredHeartChapel.jpg",
+        "author": "Mishigaki at English Wikipedia",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:William_H._Hannon_Library.jpg",
+        "author": "Johnxlibris",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:LMU_Fire_Road,_Playa_Vista_Riparian_Corridor.jpg",
+        "author": "Jengod",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "Occidental College",
+    "images": [
+      "assets/places/school-occidental-1.jpg",
+      "assets/places/school-occidental-2.jpg",
+      "assets/places/school-occidental-3.jpg"
+    ],
+    "desc": "Small liberal arts college with a Mediterranean-style hillside campus. Eagle Rock is a relaxed neighborhood with indie cafés on Colorado Blvd and cheaper rents than the Westside.",
+    "desc_zh": "小型文理学院，校园依山而建，呈地中海风格。鹰岩街区氛围悠闲，Colorado大道上独立咖啡馆林立，租金低于洛杉矶西区。",
+    "neighborhood": "Eagle Rock, Los Angeles",
+    "neighborhood_zh": "洛杉矶鹰岩",
+    "address": "1600 Campus Road, Los Angeles, CA 90041",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:OxyThorne_cropped.jpg",
+        "author": "User:Crewfan94",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Johnson_Student_Center_and_Freeman_College_Union.jpg",
+        "author": "Geographer",
+        "license": "CC BY 1.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Johnson_hall.jpg",
+        "author": "Geographer",
+        "license": "CC BY 1.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "UC Irvine (UCI)",
+    "images": [
+      "assets/places/school-uci-1.jpg",
+      "assets/places/school-uci-2.jpg",
+      "assets/places/school-uci-3.jpg"
+    ],
+    "desc": "UC campus known for engineering, biology and computer science, built in rings around Aldrich Park. Irvine is safe, planned and car-oriented, with large student apartment complexes nearby.",
+    "desc_zh": "加州大学分校，以工程、生物和计算机见长，校园环绕奥尔德里奇公园呈环形布局。尔湾规划完善、治安良好，出行以开车为主，周边有大型学生公寓社区。",
+    "neighborhood": "University Park, Irvine",
+    "neighborhood_zh": "尔湾大学公园区",
+    "address": "311 West Peltason Drive, Irvine, CA 92697",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:UC_Irvine,_Main_Circle_-_University_Center_View.JPG",
+        "author": "Mikejuinwind123",
+        "license": "CC BY-SA 2.5"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:UC_Irvine,_Engineering_Gateway.JPG",
+        "author": "Mikejuinwind123",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:UC_Irvine,_School_of_Engineering.JPG",
+        "author": "Mikejuinwind123",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "Cal State LA",
+    "images": [
+      "assets/places/school-cal-state-la-1.jpg",
+      "assets/places/school-cal-state-la-2.jpg",
+      "assets/places/school-cal-state-la-3.jpg"
+    ],
+    "desc": "Public CSU campus known for engineering, criminal justice and affordability. It sits on a hill by the I-10 with its own Metrolink and busway stop; nearby Alhambra offers cheaper rents.",
+    "desc_zh": "加州州立大学洛杉矶分校，以工程、刑事司法专业和学费亲民著称。校园位于10号高速旁的山丘上，自带Metrolink和快速公交站，附近的阿罕布拉租金较低。",
+    "neighborhood": "University Hills, East Los Angeles",
+    "neighborhood_zh": "东洛杉矶大学山",
+    "address": "5151 State University Drive, Los Angeles, CA 90032",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Cal_State_University,_Los_Angeles.jpg",
+        "author": "Justefrain",
+        "license": "CC BY 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:CSULAStudentUnionBLDG.jpg",
+        "author": "Justefrain",
+        "license": "CC BY 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:BiologicalSciences.jpg",
+        "author": "AJL2030",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "Caltech",
+    "images": [
+      "assets/places/school-caltech-1.jpg",
+      "assets/places/school-caltech-2.jpg",
+      "assets/places/school-caltech-3.jpg"
+    ],
+    "desc": "World-class science and engineering institute with Spanish-style arcades and a small, intimate campus. Surrounding Pasadena is quiet and residential; Old Pasadena is a short drive.",
+    "desc_zh": "世界顶级理工学院，校园小巧精致，西班牙风格拱廊别具特色。周边帕萨迪纳住宅区安静宜居，开车不久即可到老城区。",
+    "neighborhood": "Southeast Pasadena",
+    "neighborhood_zh": "帕萨迪纳东南部",
+    "address": "1200 East California Boulevard, Pasadena, CA 91125",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Fountain_at_Caltech.jpg",
+        "author": "Claire from Arlington, TN, USA",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Robert_A._Millikan_Memorial_Library_at_Caltech.jpg",
+        "author": "Canon.vs.nikon",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Parsons-Gates_Hall_Caltech_2017b.jpg",
+        "author": "Antony-22",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "ArtCenter College of Design",
+    "images": [
+      "assets/places/school-artcenter-1.jpg",
+      "assets/places/school-artcenter-2.jpg",
+      "assets/places/school-artcenter-3.jpg"
+    ],
+    "desc": "Elite design school known for transportation and product design. The hillside campus is a Craig Ellwood bridge over a ravine; the South Campus is near the Metro A Line in Pasadena.",
+    "desc_zh": "以交通工具设计和产品设计闻名的顶尖设计学院。山坡校区是横跨峡谷的Craig Ellwood桥式建筑，南校区位于帕萨迪纳、靠近地铁A线。",
+    "neighborhood": "Linda Vista / South Campus, Pasadena",
+    "neighborhood_zh": "帕萨迪纳琳达维斯塔 / 南校区",
+    "address": "1700 Lida Street, Pasadena, CA 91103",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:ArtCenter_College_of_Design,_South_Campus_building_1.jpg",
+        "author": "Jchobanana",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:ArtCenter_College_of_Design,_South_Campus_in_January_2017.jpg",
+        "author": "Jchobanana",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Craig_ellwood,_art_center_college_of_design,_pasadena,_california,_1970-1976._(5099590766).jpg",
+        "author": "seier+seier",
+        "license": "CC BY 2.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "LA Film School",
+    "images": [
+      "assets/places/school-la-film-school-1.jpg",
+      "assets/places/school-la-film-school-2.jpg",
+      "assets/places/school-la-film-school-3.jpg"
+    ],
+    "desc": "Career-focused school for film, audio and animation on Sunset Blvd. Central Hollywood is busy and nightlife-heavy, with Metro B Line access and many apartment buildings.",
+    "desc_zh": "位于日落大道、以就业为导向的电影、音频与动画学校。好莱坞中心区热闹、夜生活丰富，可乘地铁B线，周边公寓楼众多。",
+    "neighborhood": "Hollywood, Los Angeles",
+    "neighborhood_zh": "洛杉矶好莱坞",
+    "address": "6363 Sunset Boulevard, Los Angeles, CA 90028",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:LAFilmSchool02.jpg",
+        "author": "Minnaert",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Film_School,_Los_Angeles,_California,_US.jpg",
+        "author": "Clyde Charles Brown",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:La_Filmschool_(84226057).jpeg",
+        "author": "Oliver Propst",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "Santa Monica College (SMC)",
+    "images": [
+      "assets/places/school-smc-1.jpg",
+      "assets/places/school-smc-2.jpg",
+      "assets/places/school-smc-3.jpg"
+    ],
+    "desc": "California's top transfer college to UCLA and the UCs, popular with international students. Santa Monica is beachside, bikeable and safe, though rents are steep; many share apartments.",
+    "desc_zh": "加州转学至UCLA及各UC分校成绩最好的社区学院，深受国际生欢迎。圣莫尼卡临海、适合骑行且治安好，但租金较高，学生多合租。",
+    "neighborhood": "Santa Monica",
+    "neighborhood_zh": "圣莫尼卡",
+    "address": "1900 Pico Boulevard, Santa Monica, CA 90405",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Santa_MonicaCollege_Boardwalk2.jpg",
+        "author": "Michael Oh",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Smcboardwalkandhss.jpg",
+        "author": "Mrgates",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Smctheaterartsbuilding.JPG",
+        "author": "Mrgates",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "Pasadena City College (PCC)",
+    "images": [
+      "assets/places/school-pcc-1.jpg",
+      "assets/places/school-pcc-2.jpg",
+      "assets/places/school-pcc-3.jpg"
+    ],
+    "desc": "Large community college with strong transfer rates and a reflecting-pool quad. It sits on Colorado Blvd near the Metro A Line; Pasadena is safe with moderate rents for LA.",
+    "desc_zh": "大型社区学院，转学率高，校园倒影池广场颇具特色。位于Colorado大道、靠近地铁A线；帕萨迪纳治安良好，租金在洛杉矶属中等。",
+    "neighborhood": "East Pasadena, Pasadena",
+    "neighborhood_zh": "帕萨迪纳东部",
+    "address": "1570 East Colorado Boulevard, Pasadena, CA 91106",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Pasadena_City_College_(_PCC_)_(3973627505).jpg",
+        "author": "Prayitno",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Pasadena_City_College_(3926883130).jpg",
+        "author": "Prayitno",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Pasadena_City_College_building.jpg",
+        "author": "Downtowngal",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "West LA College (WLAC)",
+    "images": [
+      "assets/places/school-wlac-1.jpg",
+      "assets/places/school-wlac-2.jpg",
+      "assets/places/school-wlac-3.jpg"
+    ],
+    "desc": "Hilltop community college with modern buildings and views across the Westside. Nearby Culver City offers a lively downtown, tech jobs and the Metro E Line, with rents below Santa Monica.",
+    "desc_zh": "位于山顶的社区学院，现代建筑可眺望洛杉矶西区。邻近的卡尔弗城市中心热闹，科技公司聚集，可乘地铁E线，租金低于圣莫尼卡。",
+    "neighborhood": "Culver City / Ladera Heights",
+    "neighborhood_zh": "卡尔弗城 / 拉德拉高地",
+    "address": "9000 Overland Avenue, Culver City, CA 90230",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:WestLACollege_DSC_0024_(15816299555).jpg",
+        "author": "Tracie Hall from Orange County, us",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:WestLACollege_DSC_0015_(15814394811).jpg",
+        "author": "Tracie Hall from Orange County, us",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:WestLACollege_DSC_0017_(15630477419).jpg",
+        "author": "Tracie Hall from Orange County, us",
+        "license": "CC BY-SA 2.0"
+      }
+    ]
+  },
+  {
+    "city": "LA",
+    "name": "Otis College of Art and Design",
+    "images": [
+      "assets/places/school-otis-1.jpg",
+      "assets/places/school-otis-2.jpg",
+      "assets/places/school-otis-3.jpg"
+    ],
+    "desc": "LA's oldest art school, known for fashion, toy and product design, housed in a former IBM tower. Westchester is quiet and close to LAX and the beach; a car helps for getting around.",
+    "desc_zh": "洛杉矶历史最悠久的艺术学院，以时装、玩具和产品设计见长，主楼由原IBM大楼改建。韦斯特切斯特安静，靠近机场和海滩，出行最好有车。",
+    "neighborhood": "Westchester, Los Angeles",
+    "neighborhood_zh": "洛杉矶韦斯特切斯特",
+    "address": "9045 Lincoln Boulevard, Los Angeles, CA 90045",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Otiscollege.jpg",
+        "author": "Marc Meredith",
+        "license": "CC BY-SA 2.5"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Ben_Maltz_Gallery.jpg",
+        "author": "DocFreeman24",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Westchester,_Los_Angeles,_CA,_USA_-_panoramio.jpg",
+        "author": "Eric Friedebach",
+        "license": "CC BY 3.0"
+      }
+    ]
+  },
+  {
+    "city": "DC",
+    "name": "Georgetown University",
+    "images": [
+      "assets/places/school-georgetown-1.jpg",
+      "assets/places/school-georgetown-2.jpg",
+      "assets/places/school-georgetown-3.jpg"
+    ],
+    "desc": "Jesuit university famed for international affairs and law, crowned by Gothic Healy Hall. Georgetown has historic row houses and riverfront shops but no Metro stop; shuttles fill the gap.",
+    "desc_zh": "以国际关系和法学闻名的耶稣会大学，哥特式的希利楼是其标志。乔治城遍布历史排屋和滨河商店，但没有地铁站，需靠校车接驳。",
+    "neighborhood": "Georgetown, Washington, DC",
+    "neighborhood_zh": "华盛顿特区乔治城",
+    "address": "3700 O Street NW, Washington, DC 20057",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Georgetown_University_entrance.JPG",
+        "author": "Flapane",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Healy_Hall_Georgetown.jpg",
+        "author": "Nate Lee",
+        "license": "Public domain"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Georgetown_University,_Georgetown,_Washington,_DC_(46554828552).jpg",
+        "author": "Warren LeMay",
+        "license": "CC0"
+      }
+    ]
+  },
+  {
+    "city": "DC",
+    "name": "George Washington University (GWU)",
+    "images": [
+      "assets/places/school-gwu-1.jpg",
+      "assets/places/school-gwu-2.jpg",
+      "assets/places/school-gwu-3.jpg"
+    ],
+    "desc": "Urban campus blocks from the White House, strong in policy, international affairs and media. Foggy Bottom is central and walkable with its own Metro stop, though rents run high.",
+    "desc_zh": "距白宫仅几个街区的城市校园，公共政策、国际事务与传媒专业实力强。雾谷地段居中、步行便利，有专属地铁站，但租金偏高。",
+    "neighborhood": "Foggy Bottom, Washington, DC",
+    "neighborhood_zh": "华盛顿特区雾谷",
+    "address": "2121 I Street NW, Washington, DC 20052",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:University_Yard,_George_Washington_University,_2012.JPG",
+        "author": "Another Believer",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:President%27s_Office,_George_Washington_University.jpg",
+        "author": "Difference engine",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:School_of_Media_and_Public_Affairs_(SMPA)_-_George_Washington_University_(53844978550).jpg",
+        "author": "ajay_suresh",
+        "license": "CC BY 2.0"
+      }
+    ]
+  },
+  {
+    "city": "DC",
+    "name": "American University",
+    "images": [
+      "assets/places/school-american-1.jpg",
+      "assets/places/school-american-2.jpg",
+      "assets/places/school-american-3.jpg"
+    ],
+    "desc": "Known for international service, public affairs and its arboretum-like campus. Surrounding Spring Valley and Tenleytown are quiet and upscale; a free shuttle links to the Red Line.",
+    "desc_zh": "以国际服务和公共事务专业著称，校园如植物园般葱郁。周边春谷和坦利敦安静高档，免费校车连接地铁红线。",
+    "neighborhood": "Spring Valley, Northwest DC",
+    "neighborhood_zh": "华盛顿特区西北春谷",
+    "address": "4400 Massachusetts Avenue NW, Washington, DC 20016",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Hurst_Hall_American_University.JPG",
+        "author": "Cdover90",
+        "license": "Public domain"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:School_of_Public_Affairs,_Ward-Circle_Building,_American_University.jpg",
+        "author": "Cdover90",
+        "license": "Public domain"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Exterior_view,_Katzen_Art_Museum.jpg",
+        "author": "Ser Amantio di Nicolao",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  {
+    "city": "DC",
+    "name": "Howard University",
+    "images": [
+      "assets/places/school-howard-1.jpg",
+      "assets/places/school-howard-2.jpg",
+      "assets/places/school-howard-3.jpg"
+    ],
+    "desc": "Leading historically Black university, with Founders Library anchoring The Yard. Nearby Shaw and U Street offer rowhouse rentals, nightlife and two Metro lines.",
+    "desc_zh": "顶尖的历史性黑人大学，创始人图书馆矗立于中心草坪The Yard。邻近的肖区和U街有大量排屋出租，夜生活丰富，并有两条地铁线。",
+    "neighborhood": "LeDroit Park / Shaw, Washington, DC",
+    "neighborhood_zh": "华盛顿特区勒德罗伊特公园 / 肖区",
+    "address": "2400 Sixth Street NW, Washington, DC 20059",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Howard_University_Founders_Library.jpg",
+        "author": "Josh from Washington, D.C., USA",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Howard_University_courtyard.jpg",
+        "author": "AgnosticPreachersKid",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Howard_Prayer_Tower.jpg",
+        "author": "Raecoli",
+        "license": "Public domain"
+      }
+    ]
+  },
+  {
+    "city": "DC",
+    "name": "Catholic University of America",
+    "images": [
+      "assets/places/school-catholic-university-1.jpg",
+      "assets/places/school-catholic-university-2.jpg",
+      "assets/places/school-catholic-university-3.jpg"
+    ],
+    "desc": "The U.S. Catholic bishops' national university, next to the vast Basilica of the National Shrine. Brookland is a calm, leafy area with an arts walk and its own Red Line station.",
+    "desc_zh": "美国天主教主教团创办的全国性大学，毗邻宏伟的国家圣母无染原罪始胎朝圣地大教堂。布鲁克兰安静多树，有艺术长廊和地铁红线站。",
+    "neighborhood": "Brookland, Northeast DC",
+    "neighborhood_zh": "华盛顿特区东北布鲁克兰",
+    "address": "620 Michigan Avenue NE, Washington, DC 20064",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:McMahon_Hall,_Catholic_University_of_America,_Washington,_DC.jpg",
+        "author": "w_lemay",
+        "license": "CC0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:CUA_campus_1.JPG",
+        "author": "Banderas",
+        "license": "CC0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Gibbons_Hall_CUA.jpg",
+        "author": "Farragutful",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "DC",
+    "name": "Gallaudet University",
+    "images": [
+      "assets/places/school-gallaudet-1.jpg",
+      "assets/places/school-gallaudet-2.jpg",
+      "assets/places/school-gallaudet-3.jpg"
+    ],
+    "desc": "The world's leading university for deaf and hard-of-hearing students, with Victorian Gothic halls. It borders fast-growing NoMa and Union Market, with new apartments and the Red Line.",
+    "desc_zh": "全球领先的聋人及听障学生大学，校内多维多利亚哥特式建筑。紧邻快速发展的NoMa与联合市场，新公寓林立，可乘地铁红线。",
+    "neighborhood": "Near Northeast / NoMa, Washington, DC",
+    "neighborhood_zh": "华盛顿特区东北近郊 / NoMa",
+    "address": "800 Florida Avenue NE, Washington, DC 20002",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Gallaudet_University_Chapel_Hall.jpg",
+        "author": "Sdkb",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:College_Hall,_Gallaudet_University.jpg",
+        "author": "AgnosticPreachersKid",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:President%27s_House,_Gallaudet_University.jpg",
+        "author": "AgnosticPreachersKid",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  {
+    "city": "DC",
+    "name": "George Mason University",
+    "images": [
+      "assets/places/school-george-mason-1.jpg",
+      "assets/places/school-george-mason-2.jpg",
+      "assets/places/school-george-mason-3.jpg"
+    ],
+    "desc": "Virginia's largest public university, known for economics, law and cybersecurity. The Fairfax campus is suburban and car-friendly; apartments are plentiful and buses reach the Orange Line.",
+    "desc_zh": "弗吉尼亚州规模最大的公立大学，经济学、法学和网络安全专业知名。费尔法克斯校区属郊区、开车方便，公寓选择多，有巴士连接地铁橙线。",
+    "neighborhood": "Fairfax, Virginia",
+    "neighborhood_zh": "弗吉尼亚州费尔法克斯",
+    "address": "4400 University Drive, Fairfax, VA 22030",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Mason_Statue.JPG",
+        "author": "Lucien Dalarun",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:GMU_Fairfax_Campus.JPG",
+        "author": "Lucien Dalarun",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:George_Mason_Performing_Arts.JPG",
+        "author": "Laxmatt",
+        "license": "Public domain"
+      }
+    ]
+  },
+  {
+    "city": "DC",
+    "name": "University of Maryland",
+    "images": [
+      "assets/places/school-umd-1.jpg",
+      "assets/places/school-umd-2.jpg",
+      "assets/places/school-umd-3.jpg"
+    ],
+    "desc": "Maryland's flagship, strong in computer science, engineering and business, with Georgian red-brick halls. College Park is a classic college town with new apartments and a Green Line stop.",
+    "desc_zh": "马里兰州旗舰公立大学，计算机、工程和商科实力强，校园以乔治亚式红砖建筑为主。大学公园市是典型大学城，新公寓多，有地铁绿线站。",
+    "neighborhood": "College Park, Maryland",
+    "neighborhood_zh": "马里兰州大学公园市",
+    "address": "7901 Regents Drive, College Park, MD 20742",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:UMD_Riggs_Alumni_fountain.JPG",
+        "author": "Bgervais",
+        "license": "CC BY 3.0 us"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:UMD_South_VCommons.JPG",
+        "author": "Bgervais",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:University_of_Maryland,_College_Park._(5062733121).jpg",
+        "author": "carmichaellibrary",
+        "license": "CC BY 2.0"
+      }
+    ]
+  },
+  {
+    "city": "CHI",
+    "name": "University of Chicago",
+    "images": [
+      "assets/places/school-uchicago-1.jpg",
+      "assets/places/school-uchicago-2.jpg",
+      "assets/places/school-uchicago-3.jpg"
+    ],
+    "desc": "Elite research university known for economics and its Gothic quadrangles. Hyde Park is a self-contained lakeside neighborhood with affordable vintage apartments and Metra trains downtown.",
+    "desc_zh": "以经济学和哥特式方院闻名的顶尖研究型大学。海德公园是自成一体的湖滨社区，老式公寓租金实惠，乘Metra可直达市中心。",
+    "neighborhood": "Hyde Park, Chicago",
+    "neighborhood_zh": "芝加哥海德公园",
+    "address": "5801 South Ellis Avenue, Chicago, IL 60637",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Harper_Memorial_Library,_University_of_Chicago,_59th_Street,_Hyde_Park,_Chicago,_IL_(54514976407).jpg",
+        "author": "Warren LeMay",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:University_of_Chicago_July_2013_19_(Main_Quadrangles).jpg",
+        "author": "Michael Barera",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:University_of_Chicago_July_2013_18_(Main_Quadrangles).jpg",
+        "author": "Michael Barera",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "CHI",
+    "name": "Northwestern University",
+    "images": [
+      "assets/places/school-northwestern-1.jpg",
+      "assets/places/school-northwestern-2.jpg",
+      "assets/places/school-northwestern-3.jpg"
+    ],
+    "desc": "Top private university on Lake Michigan, known for journalism, engineering and business. Evanston is a safe, walkable suburb with its own downtown and Purple Line and Metra to Chicago.",
+    "desc_zh": "坐落于密歇根湖畔的顶尖私立大学，新闻、工程和商科享有盛名。埃文斯顿是安全宜步行的近郊城市，有自己的市中心，可乘紫线地铁和Metra进芝加哥。",
+    "neighborhood": "Evanston, Illinois",
+    "neighborhood_zh": "伊利诺伊州埃文斯顿",
+    "address": "633 Clark Street, Evanston, IL 60208",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Northwestern_University_Campus_(14128334512).jpg",
+        "author": "Eric Fredericks",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Northwestern_University_Library,_Evanston,_IL.JPG",
+        "author": "Daderot",
+        "license": "Public domain"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Northwestern_University_Campus_(13944692268).jpg",
+        "author": "Eric Fredericks",
+        "license": "CC BY-SA 2.0"
+      }
+    ]
+  },
+  {
+    "city": "CHI",
+    "name": "DePaul University",
+    "images": [
+      "assets/places/school-depaul-1.jpg",
+      "assets/places/school-depaul-2.jpg",
+      "assets/places/school-depaul-3.jpg"
+    ],
+    "desc": "The largest Catholic university in the U.S., with a leafy Lincoln Park campus. The area is lively and young, full of bars and brownstones, with the Fullerton L stop at the campus edge.",
+    "desc_zh": "全美规模最大的天主教大学，林肯公园校区绿意盎然。周边年轻热闹，酒吧与褐石楼林立，校园边就是Fullerton高架站。",
+    "neighborhood": "Lincoln Park, Chicago",
+    "neighborhood_zh": "芝加哥林肯公园",
+    "address": "2320 North Kenmore Avenue, Chicago, IL 60614",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:On_the_Lincoln_Park_Campus_of_DePaul_University_in_Chicago.JPG",
+        "author": "Just",
+        "license": "CC0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:McCormick_Houses_on_DePaul_Campus.jpg",
+        "author": "Richie D.",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Depaul_lincoln_park.jpg",
+        "author": "User:Kmf164, taken on March 12, 2006.",
+        "license": "CC BY-SA 2.5"
+      }
+    ]
+  },
+  {
+    "city": "CHI",
+    "name": "University of Illinois Chicago (UIC)",
+    "images": [
+      "assets/places/school-uic-1.jpg",
+      "assets/places/school-uic-2.jpg",
+      "assets/places/school-uic-3.jpg"
+    ],
+    "desc": "Chicago's largest university, strong in medicine, engineering and computer science. Next to Little Italy and Greektown, with Blue Line stops and quick access to the Loop.",
+    "desc_zh": "芝加哥规模最大的大学，医学、工程和计算机专业实力强。紧邻小意大利和希腊城，有蓝线地铁站，前往Loop十分便捷。",
+    "neighborhood": "Near West Side, Chicago",
+    "neighborhood_zh": "芝加哥近西区",
+    "address": "1200 West Harrison Street, Chicago, IL 60607",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Uic_east_campus_spring.JPG",
+        "author": "Hied5",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:University_of_Illinois_at_Chicago_-1.jpg",
+        "author": "artistmac",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Campus_of_the_University_of_Illionis_at_Chicago_(UIC),_Chicago,_IL_(14944125278).jpg",
+        "author": "Teresa Grau Ros from Barcelona",
+        "license": "CC BY-SA 2.0"
+      }
+    ]
+  },
+  {
+    "city": "CHI",
+    "name": "Loyola University Chicago",
+    "images": [
+      "assets/places/school-loyola-chicago-1.jpg",
+      "assets/places/school-loyola-chicago-2.jpg",
+      "assets/places/school-loyola-chicago-3.jpg"
+    ],
+    "desc": "Jesuit university with a lakefront campus crowned by the Madonna della Strada Chapel. Rogers Park is diverse and affordable with beaches and the Red Line at Loyola station.",
+    "desc_zh": "耶稣会大学，湖滨校区以Madonna della Strada礼拜堂为地标。罗杰斯公园多元且租金实惠，有沙滩，红线Loyola站就在校旁。",
+    "neighborhood": "Rogers Park, Chicago",
+    "neighborhood_zh": "芝加哥罗杰斯公园",
+    "address": "1032 West Sheridan Road, Chicago, IL 60660",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Lakeside_Loyola_University_-_panoramio.jpg",
+        "author": "Bohao Zhao",
+        "license": "CC BY 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Dumbach_Hall,_Loyola_University,_Neil_Hartigan_Parkway,_Rogers_Park,_Chicago,_IL.jpg",
+        "author": "w_lemay",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Cuneo_Hall,_Loyola_University,_Neil_Hartigan_Parkway,_Rogers_Park,_Chicago,_IL.jpg",
+        "author": "w_lemay",
+        "license": "CC BY-SA 2.0"
+      }
+    ]
+  },
+  {
+    "city": "CHI",
+    "name": "School of the Art Institute of Chicago (SAIC)",
+    "images": [
+      "assets/places/school-saic-1.jpg",
+      "assets/places/school-saic-2.jpg",
+      "assets/places/school-saic-3.jpg"
+    ],
+    "desc": "One of the top art schools in the U.S., linked to the Art Institute museum. Its buildings span the Loop by Millennium Park; students live in downtown high-rises or ride the L in.",
+    "desc_zh": "全美顶尖艺术学院之一，与芝加哥艺术博物馆一体。校舍分布在千禧公园旁的Loop区，学生多住市中心高楼公寓或乘高架通勤。",
+    "neighborhood": "The Loop, Chicago",
+    "neighborhood_zh": "芝加哥卢普区",
+    "address": "36 South Wabash Avenue, Chicago, IL 60603",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Art_Institute_of_Chicago_(7415244162).jpg",
+        "author": "Teemu008 from Palatine, Illinois",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:280_South_Columbus_School_Building_03.JPG",
+        "author": "Dazani355",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Carson,_Pirie,_Scott_and_Company_Building_(7364438406).jpg",
+        "author": "Teemu008 from Palatine, Illinois",
+        "license": "CC BY-SA 2.0"
+      }
+    ]
+  },
+  {
+    "city": "CHI",
+    "name": "Columbia College Chicago",
+    "images": [
+      "assets/places/school-columbia-college-chicago-1.jpg",
+      "assets/places/school-columbia-college-chicago-2.jpg",
+      "assets/places/school-columbia-college-chicago-3.jpg"
+    ],
+    "desc": "Arts and media college known for film, music and design, spread across South Loop buildings on Michigan Ave. The area has modern rentals, Grant Park and several L lines.",
+    "desc_zh": "以电影、音乐和设计见长的艺术传媒学院，教学楼分布在密歇根大道沿线的南卢普区。周边新式公寓多，紧邻格兰特公园，有多条高架线路。",
+    "neighborhood": "South Loop, Chicago",
+    "neighborhood_zh": "芝加哥南卢普",
+    "address": "600 South Michigan Avenue, Chicago, IL 60605",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Columbia_College_Dance_Center_1306_South_Michigan_Avenue.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Columbia_College_Ludington_Building_1104_South_Wabash_Avenue.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Columbia_College_Music_Center_1014_South_Michigan_Avenue_from_south.jpg",
+        "author": "Beyond My Ken",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "CHI",
+    "name": "Illinois Institute of Technology (IIT)",
+    "images": [
+      "assets/places/school-iit-1.jpg",
+      "assets/places/school-iit-2.jpg",
+      "assets/places/school-iit-3.jpg"
+    ],
+    "desc": "Tech university famous for Mies van der Rohe's modernist campus, incl. Crown Hall. Bronzeville offers low rents, with Green and Red Line stops; many students also live in Chinatown.",
+    "desc_zh": "以密斯·凡·德·罗设计的现代主义校园（包括皇冠楼）闻名的理工大学。布朗兹维尔租金较低，有绿线和红线车站，不少学生也住在附近的唐人街。",
+    "neighborhood": "Bronzeville, Chicago",
+    "neighborhood_zh": "芝加哥布朗兹维尔",
+    "address": "10 West 35th Street, Chicago, IL 60616",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:IIT_SR_Crown_Building.jpg",
+        "author": "puroticorico",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:IIT_Main_Building_013a.jpg",
+        "author": "Thomas Knapp",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Iit_Tube_(41774392).jpeg",
+        "author": "Rex Babiera",
+        "license": "CC BY 3.0"
+      }
+    ]
+  },
+  {
+    "city": "PHL",
+    "name": "University of Pennsylvania (UPenn)",
+    "images": [
+      "assets/places/school-upenn-1.jpg",
+      "assets/places/school-upenn-2.jpg",
+      "assets/places/school-upenn-3.jpg"
+    ],
+    "desc": "Ivy League university known for Wharton and its Locust Walk spine. University City is walkable and student-packed, with trolleys and the Market-Frankford Line to Center City.",
+    "desc_zh": "常春藤名校，以沃顿商学院和贯穿校园的Locust Walk著称。大学城步行便利、学生聚集，有电车和市场-法兰克福线直达市中心。",
+    "neighborhood": "University City, West Philadelphia",
+    "neighborhood_zh": "西费城大学城",
+    "address": "3451 Walnut Street, Philadelphia, PA 19104",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:College_Hall_(University_of_Pennsylvania)_-_IMG_6599.JPG",
+        "author": "Daderot",
+        "license": "Public domain"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:University_of_Pennsylvania,_36th_Street_on_campus.jpg",
+        "author": "Unknown",
+        "license": "Public domain"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Benjamin_Franklin_statue_in_front_of_College_Hall.JPG",
+        "author": "MatthewMarcucci",
+        "license": "Public domain"
+      }
+    ]
+  },
+  {
+    "city": "PHL",
+    "name": "Drexel University",
+    "images": [
+      "assets/places/school-drexel-1.jpg",
+      "assets/places/school-drexel-2.jpg",
+      "assets/places/school-drexel-3.jpg"
+    ],
+    "desc": "Known for its co-op program and engineering, beside Penn in University City. Students rent row houses in Powelton Village and Mantua; 30th Street Station is next door.",
+    "desc_zh": "以带薪实习（co-op）项目和工程专业闻名，与宾大同处大学城。学生多在Powelton Village和Mantua租排屋，紧邻30街火车站。",
+    "neighborhood": "University City, West Philadelphia",
+    "neighborhood_zh": "西费城大学城",
+    "address": "3141 Chestnut Street, Philadelphia, PA 19104",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Drexel_Main_Building.jpg",
+        "author": "User TexasDex on en.wikipedia",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Rush_Building_-_Drexel_University_-_IMG_7301.JPG",
+        "author": "Daderot",
+        "license": "Public domain"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Campus_view_-_Drexel_University_-_IMG_7326.JPG",
+        "author": "Daderot",
+        "license": "Public domain"
+      }
+    ]
+  },
+  {
+    "city": "PHL",
+    "name": "Temple University",
+    "images": [
+      "assets/places/school-temple-1.jpg",
+      "assets/places/school-temple-2.jpg",
+      "assets/places/school-temple-3.jpg"
+    ],
+    "desc": "Large public research university with the striking Charles Library. North Philly around campus has cheap rowhouse rentals; the Broad Street Line runs straight to Center City.",
+    "desc_zh": "大型公立研究型大学，查尔斯图书馆造型醒目。校园周边的北费城有大量平价排屋出租，宽街地铁线可直达市中心。",
+    "neighborhood": "North Philadelphia",
+    "neighborhood_zh": "北费城",
+    "address": "1801 North Broad Street, Philadelphia, PA 19122",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Charles_Library_winter_jeh.jpg",
+        "author": "Jim.henderson",
+        "license": "CC BY 4.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Howard_Gittis_Student_Center.jpg",
+        "author": "ImagineerJC",
+        "license": "CC0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Paley_Library.jpg",
+        "author": "Megan Miller",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "PHL",
+    "name": "Thomas Jefferson University",
+    "images": [
+      "assets/places/school-jefferson-1.jpg",
+      "assets/places/school-jefferson-2.jpg",
+      "assets/places/school-jefferson-3.jpg"
+    ],
+    "desc": "Health-sciences university home to Sidney Kimmel Medical College. Its Center City campus is near Washington Square and the Gayborhood, with historic rowhouses and great food.",
+    "desc_zh": "以健康科学见长的大学，设有西德尼·金梅尔医学院。市中心校区靠近华盛顿广场和Gayborhood，周边多历史排屋，餐饮丰富。",
+    "neighborhood": "Washington Square West, Center City",
+    "neighborhood_zh": "费城市中心华盛顿广场西",
+    "address": "1020 Walnut Street, Philadelphia, PA 19107",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Scott_Memorial_Library_-_Thomas_Jefferson_University_(53590170911).jpg",
+        "author": "ajay_suresh",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Sidney_Kimmel_Medical_College_-_Thomas_Jefferson_University_(53590615375).jpg",
+        "author": "ajay_suresh",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Thomas_Jefferson_University_Hospital_in_Philadelphia.jpg",
+        "author": "Tom Crane",
+        "license": "CC BY 3.0"
+      }
+    ]
+  },
+  {
+    "city": "PHL",
+    "name": "Saint Joseph's University",
+    "images": [
+      "assets/places/school-saint-josephs-1.jpg",
+      "assets/places/school-saint-josephs-2.jpg",
+      "assets/places/school-saint-josephs-3.jpg"
+    ],
+    "desc": "Jesuit university on Hawk Hill, known for business and its Gothic Barbelin Tower. It straddles City Ave at the edge of the Main Line; quieter, suburban, with regional rail nearby.",
+    "desc_zh": "坐落于鹰山的耶稣会大学，以商科和哥特式Barbelin塔闻名。校园横跨City大道，位于Main Line边缘，环境安静偏郊区，附近有区域铁路。",
+    "neighborhood": "Overbrook / Wynnefield, Philadelphia",
+    "neighborhood_zh": "费城奥弗布鲁克 / 温尼菲尔德",
+    "address": "5600 City Avenue, Philadelphia, PA 19131",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Barbelin_tower.JPG",
+        "author": "Brian O'Neill",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Mandeville_Hall,_Saint_Joseph%27s_University_(03-05-2007).jpg",
+        "author": "ChicagoMayne at English Wikipedia",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:McNeil_Science_And_Technology_Center.jpg",
+        "author": "SidewalkMD",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "city": "PHL",
+    "name": "University of the Arts",
+    "images": [
+      "assets/places/school-uarts-1.jpg",
+      "assets/places/school-uarts-2.jpg",
+      "assets/places/school-uarts-3.jpg"
+    ],
+    "desc": "Former arts university on Broad Street's Avenue of the Arts; it closed in June 2024. The area remains Center City's theater district, walkable and close to many apartments.",
+    "desc_zh": "曾位于宽街艺术大道的艺术大学，已于2024年6月停办。该区域仍是费城市中心的剧院区，步行便利，周边公寓众多。",
+    "neighborhood": "Avenue of the Arts, Center City",
+    "neighborhood_zh": "费城市中心艺术大道",
+    "address": "320 South Broad Street, Philadelphia, PA 19102",
+    "credits": [
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:The_University_of_the_Arts_(UArts)_(53590485989).jpg",
+        "author": "ajay_suresh",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Anderson_Hall_entrance.jpg",
+        "author": "Sjm8364",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "https://commons.wikimedia.org/wiki/File:Miller_Theater_(Philadelphia)_-_Entrance_(53590168896).jpg",
+        "author": "ajay_suresh",
+        "license": "CC BY 2.0"
+      }
+    ]
+  }
+]
